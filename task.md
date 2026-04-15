@@ -1,0 +1,5129 @@
+# HarmonyOS 开发文档目录抓取任务清单
+
+- 抓取时间（UTC）: 2026-04-15 11:42:25
+- 入口页面: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-edit
+- 目录 API: https://svc-drcn.developer.huawei.com/community/servlet/consumer/cn/documentPortal/getCatalogTree
+- 请求参数: `{"language":"cn","catalogName":"harmonyos-guides","objectId":"ide-code-edit"}`
+
+> 说明：以下为“目录菜单 + 子菜单”完整层级，用于后续逐项抓取正文内容。
+
+- 基础入门
+  - 应用开发导读 (`application-dev-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-guide
+  - 快速入门 (`quick-start`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/quick-start
+    - 开发准备 (`start-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-overview
+    - 构建第一个HarmonyOS应用（ArkTS） (`start-with-ets-stage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-with-ets-stage
+  - 开发基础知识 (`development-fundamentals`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/development-fundamentals
+    - 应用程序包基础知识 (`application-package-fundamentals`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-fundamentals
+      - 应用程序包概述 (`application-package-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-overview
+      - 应用程序包结构 (`application-package-structure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure
+        - Stage模型应用程序包结构 (`application-package-structure-stage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure-stage
+        - FA模型应用程序包结构 (`application-package-structure-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure-fa
+      - 应用程序包开发与使用 (`application-package-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-dev
+        - HAP (`hap-package`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package
+        - HAR (`har-package`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package
+        - HSP (`in-app-hsp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp
+      - 应用程序包安装卸载与更新 (`application-package-install`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-install
+        - 应用安装卸载与更新开发指导 (`application-package-install-uninstall`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-install-uninstall
+        - 应用安装与更新一致性校验 (`install-and-update-consistency-verification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/install-and-update-consistency-verification
+    - 应用配置文件（Stage模型） (`application-configuration-file-stage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-stage
+      - 应用配置文件概述（Stage模型） (`application-configuration-file-overview-stage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-overview-stage
+      - app.json5配置文件 (`app-configuration-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file
+      - module.json5配置文件 (`module-configuration-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file
+    - 应用配置文件（FA模型） (`application-configuration-file-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-fa
+      - 应用配置文件概述（FA模型） (`application-configuration-file-overview-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-overview-fa
+      - app对象内部结构 (`app-structure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-structure
+      - deviceConfig内部结构 (`deviceconfig-structure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deviceconfig-structure
+      - module对象内部结构 (`module-structure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-structure
+    - 典型场景的开发指导 (`application-typical-scenarios`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-typical-scenarios
+      - 创建应用静态快捷方式 (`typical-scenario-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/typical-scenario-configuration
+      - 创建应用分身 (`app-clone`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone
+      - 创建应用多实例 (`multiinstance`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multiinstance
+      - 配置应用图标和名称 (`layered-image`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/layered-image
+      - HAR转HSP指导 (`har-to-hsp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-to-hsp
+      - HSP转HAR指导 (`hsp-to-har`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hsp-to-har
+      - HAP转HAR指导 (`hap-to-har`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-to-har
+      - 集成态HSP (`integrated-hsp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/integrated-hsp
+    - 应用程序包常见问题 (`common-problem-of-application`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application
+    - 应用程序包术语 (`application-package-glossary`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-glossary
+  - 资源分类与访问 (`resource-categories-and-access`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access
+  - 学习ArkTS语言 (`learning-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/learning-arkts
+    - 初识ArkTS语言 (`arkts-get-started`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-get-started
+    - ArkTS语言介绍 (`introduction-to-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/introduction-to-arkts
+    - ArkTS编程规范 (`arkts-coding-style-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-coding-style-guide
+    - 从TypeScript到ArkTS的适配指导 (`typescript-to-arkts-migration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/typescript-to-arkts-migration
+      - ArkTS语法适配背景 (`arkts-migration-background`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-migration-background
+      - 从TypeScript到ArkTS的适配规则 (`typescript-to-arkts-migration-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/typescript-to-arkts-migration-guide
+      - 适配指导案例 (`arkts-more-cases`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-more-cases
+    - ArkTS高性能编程实践 (`arkts-high-performance-programming`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-high-performance-programming
+    - 面向其他语言的ArkTS迁移指导 (`arkts-for-other-languages`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-for-other-languages
+      - 从Java到ArkTS的迁移指导 (`getting-started-with-arkts-for-java-programmers`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/getting-started-with-arkts-for-java-programmers
+      - 从Swift到ArkTS的迁移指导 (`getting-started-with-arkts-for-swift-programmers`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/getting-started-with-arkts-for-swift-programmers
+  - HarmonyOS术语 (`glossary`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/glossary
+- 应用开发准备
+  - 应用开发准备 (`application-dev-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview
+- 应用框架
+  - Ability Kit（程序框架服务） (`ability-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-kit
+    - Ability Kit简介 (`abilitykit-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitykit-overview
+    - 应用模型 (`application-models`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-models
+    - Stage模型开发指导 (`stage-model-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-development
+      - Stage模型开发概述 (`stage-model-development-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-development-overview
+      - Stage模型应用组件 (`stage-model-application-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-application-components
+        - 应用/组件级配置 (`application-component-configuration-stage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-component-configuration-stage
+        - UIAbility组件 (`uiability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability
+          - UIAbility组件概述 (`uiability-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-overview
+          - UIAbility组件生命周期 (`uiability-lifecycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-lifecycle
+          - UIAbility组件启动模式 (`uiability-launch-type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type
+          - UIAbility组件基本用法 (`uiability-usage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage
+          - UIAbility组件与UI的数据同步 (`uiability-data-sync-with-ui`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-data-sync-with-ui
+          - 启动应用内的UIAbility组件 (`uiability-intra-device-interaction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-intra-device-interaction
+          - 通过Call调用实现多端协同 (`uiability-cross-device-interaction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-cross-device-interaction
+          - UIAbility备份恢复 (`ability-recover-guideline`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-recover-guideline
+        - ExtensionAbility组件 (`extensionability-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview
+          - EmbeddedUIExtensionAbility (`embeddeduiextensionability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/embeddeduiextensionability
+          - 使用AppServiceExtensionAbility组件实现后台服务 (`app-service-extension-ability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-service-extension-ability
+        - AbilityStage组件管理器 (`abilitystage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitystage
+        - 应用上下文Context (`application-context-stage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage
+        - 信息传递载体Want (`want`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/want
+          - Want概述 (`want-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/want-overview
+          - 显式Want与隐式Want匹配规则 (`explicit-implicit-want-mappings`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings
+          - 使用显式Want启动应用组件 (`ability-startup-with-explicit-want`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-startup-with-explicit-want
+          - 常见action与entities（不推荐使用） (`actions-entities`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/actions-entities
+        - 组件启动规则（Stage模型） (`component-startup-rules`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules
+        - 应用启动框架AppStartup (`app-startup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-startup
+        - 应用预加载 (`preload-application`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preload-application
+        - 获取应用异常退出原因 (`ability-exit-info-record`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-exit-info-record
+        - 获取/设置环境变量 (`subscribe-system-environment-variable-changes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/subscribe-system-environment-variable-changes
+      - 应用间跳转 (`inter-app-redirection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inter-app-redirection
+        - 应用间跳转概述 (`link-between-apps-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/link-between-apps-overview
+        - 拉起指定应用 (`directional-redirection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/directional-redirection
+          - 拉起指定应用概述 (`app-startup-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-startup-overview
+          - （可选）使用canOpenLink判断应用是否可访问 (`canopenlink`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canopenlink
+          - 获取目标应用的URL信息 (`obtaining-target-app-url-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtaining-target-app-url-info
+          - 使用App Linking实现应用间跳转 (`app-linking-startup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup
+          - 使用Deep Linking实现应用间跳转 (`deep-linking-startup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-linking-startup
+          - 显式Want跳转切换应用链接跳转适配指导 (`uiability-startup-adjust`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-startup-adjust
+          - 应用链接说明 (`app-uri-config`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-uri-config
+        - 拉起指定类型的应用 (`specified-type-app-redirection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specified-type-app-redirection
+          - 拉起指定类型的应用概述 (`start-intent-panel`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-intent-panel
+          - 拉起导航类应用（startAbilityByType） (`start-navigation-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-navigation-apps
+          - 拉起邮件类应用（startAbilityByType） (`start-email-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-email-apps
+          - 拉起邮件类应用（mailto方式） (`start-email-apps-by-mailto`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-email-apps-by-mailto
+          - 拉起金融类应用（startAbilityByType） (`start-finance-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-finance-apps
+          - 拉起航班类应用（startAbilityByType） (`start-flight-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-flight-apps
+          - 拉起快递类应用（startAbilityByType） (`start-express-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-express-apps
+          - 拉起图片编辑类应用（startAbilityByType） (`photoeditorextensionability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoeditorextensionability
+          - 拉起文件处理类应用（startAbility） (`file-processing-apps-startup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-processing-apps-startup
+        - 拉起系统应用 (`system-app-startup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-app-startup
+      - 进程模型 (`process-model-stage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-stage
+      - 线程模型 (`thread-model-stage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/thread-model-stage
+      - Stage模型应用配置文件 (`config-file-stage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/config-file-stage
+      - 意图框架开发指导 (`insight-intent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent
+        - 意图框架概述 (`insight-intent-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-overview
+        - 开发意图 (`insight-intent-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-development
+          - 意图开发概述 (`insight-intent-definition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-definition
+          - 使用配置文件开发意图 (`insight-intent-config-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-config-development
+          - 使用装饰器开发意图 (`insight-intent-decorator-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-decorator-development
+          - 附录：标准意图接入规范 (`insight-intent-access-specifications`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-access-specifications
+        - 调试意图 (`insight-intent-debug`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-debug
+    - FA模型开发指导 (`fa-model-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fa-model-development
+      - FA模型开发概述 (`fa-model-development-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fa-model-development-overview
+      - FA模型应用组件 (`fa-model-application-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fa-model-application-components
+        - 应用/组件级配置 (`application-component-configuration-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-component-configuration-fa
+        - PageAbility组件开发指导 (`pageability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability
+          - PageAbility组件概述 (`pageability-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-overview
+          - PageAbility组件配置 (`pageability-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-configuration
+          - PageAbility的生命周期 (`pageability-lifecycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-lifecycle
+          - PageAbility的启动模式 (`pageability-launch-type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-launch-type
+          - 创建PageAbility (`create-pageability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-pageability
+          - 启动本地PageAbility (`start-local-pageability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-local-pageability
+          - 停止PageAbility (`stop-pageability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stop-pageability
+          - 启动指定页面 (`start-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-page
+          - 窗口属性 (`window-properties`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-properties
+          - 申请授权 (`request-permissions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-permissions
+          - 跳转规则 (`redirection-rules`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/redirection-rules
+        - ServiceAbility组件开发指导 (`serviceability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability
+          - ServiceAbility组件概述 (`serviceability-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-overview
+          - ServiceAbility组件配置 (`serviceability-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-configuration
+          - ServiceAbility的生命周期 (`serviceability-lifecycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-lifecycle
+          - 创建ServiceAbility (`create-serviceability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-serviceability
+          - 启动ServiceAbility (`start-serviceability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-serviceability
+          - 连接ServiceAbility (`connect-serviceability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connect-serviceability
+        - DataAbility组件开发指导 (`dataability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability
+          - DataAbility组件概述 (`dataability-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-overview
+          - DataAbility组件配置 (`dataability-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-configuration
+          - DataAbility的生命周期 (`dataability-lifecycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-lifecycle
+          - 创建DataAbility (`create-dataability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-dataability
+          - 启动DataAbility (`start-dataability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-dataability
+          - 访问DataAbility (`access-dataability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-dataability
+          - DataAbility权限控制 (`dataability-permission-control`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-permission-control
+        - FA模型的Context (`application-context-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-fa
+        - 信息传递载体Want (`want-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/want-fa
+        - 组件启动规则（FA模型） (`component-startup-rules-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules-fa
+      - 进程模型概述 (`process-model-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-fa
+      - 线程模型 (`thread-model-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/thread-model-fa
+      - FA模型应用配置文件 (`config-file-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/config-file-fa
+    - Native子进程开发指导 (`native-childprocess-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-childprocess-development
+      - 创建/终止Native子进程（C/C++） (`capi-nativechildprocess-development-guideline`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/capi-nativechildprocess-development-guideline
+      - 获取Native子进程退出信息 (`capi-nativechildprocess-exit-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/capi-nativechildprocess-exit-info
+    - Ability Kit术语 (`ability-terminology`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology
+  - Accessibility Kit（无障碍服务） (`accessibility-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessibility-kit
+    - Accessibility Kit 简介 (`accessibilitykit-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessibilitykit-overview
+    - 提升应用的无障碍体验 (`accessibility-approve-experience`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessibility-approve-experience
+      - 提升屏幕朗读无障碍体验 (`improve-screen-reader-experience`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/improve-screen-reader-experience
+        - 标注屏幕朗读内容的场景 (`scenario-screen-reading`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-screen-reading
+        - 禁用屏幕朗读焦点的场景 (`scenario-disable-screen-reading-focus`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-disable-screen-reading-focus
+        - 多维嵌套场景 (`scenario-multidimensional-nesting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-multidimensional-nesting
+        - 组合场景 (`scenario-multicomponent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-multicomponent
+        - 按钮标注场景 (`scenario-button-annotation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-button-annotation
+        - 插画/视频/动画的播报场景 (`scenario-media-reading`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-media-reading
+        - 内容动态变化场景 (`scenario-dynamic-content-change`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-dynamic-content-change
+        - 控件状态变化场景 (`scenario-component-status-change`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-component-status-change
+        - 操作错误场景 (`scenario-operation-error`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-operation-error
+        - 多语种场景 (`scenario-multilingual`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-multilingual
+        - 控件位置调整场景 (`scenario-component-relocation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-component-relocation
+        - 重新设置新焦点位置的场景 (`scenario-focus-position-setting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-focus-position-setting
+        - 卡片自动居中的场景 (`scenario-card-automatically-centered`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-card-automatically-centered
+    - 测试应用的无障碍功能 (`test-app-accessibility`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-app-accessibility
+      - 测试屏幕朗读功能 (`test-screen-reader`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-screen-reader
+  - ArkData（方舟数据管理） (`arkdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkdata
+    - ArkData简介 (`data-mgmt-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-mgmt-overview
+    - 标准化数据定义 (`uniform-data-definition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-definition
+      - 标准化数据定义概述 (`unified-data-definition-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unified-data-definition-overview
+      - 标准化数据类型 (ArkTS) (`uniform-data-type-descriptors`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-descriptors
+      - 标准化数据类型 (C/C++) (`uniform-data-type-descriptors-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-descriptors-c
+      - 标准化数据结构 (ArkTS) (`uniform-data-structure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-structure
+      - 标准化数据结构 (C/C++) (`uniform-data-structure-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-structure-c
+      - 基于标准化数据结构的控件 (ArkTS) (`components-based-on-uniform-data-structure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/components-based-on-uniform-data-structure
+      - UTD预置列表 (`uniform-data-type-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-list
+    - 应用数据持久化 (`app-data-persistence`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-persistence
+      - 应用数据持久化概述 (`app-data-persistence-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-persistence-overview
+      - 通过用户首选项实现数据持久化 (ArkTS) (`data-persistence-by-preferences`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-preferences
+      - 通过用户首选项实现数据持久化 (C/C++) (`preferences-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preferences-guidelines
+      - 通过键值型数据库实现数据持久化 (ArkTS) (`data-persistence-by-kv-store`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-kv-store
+      - 通过关系型数据库实现数据持久化 (ArkTS) (`data-persistence-by-rdb-store`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-rdb-store
+      - 通过关系型数据库实现数据持久化 (C/C++) (`native-relational-store-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-relational-store-guidelines
+      - 通过向量数据库实现数据持久化 (ArkTS) (`data-persistence-by-vector-store`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-vector-store
+      - 通过向量数据库实现数据持久化 (C/C++) (`native-vector-store-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-vector-store-guidelines
+    - 同应用跨设备数据同步（分布式） (`distributed-data-sync`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-data-sync
+      - 同应用跨设备数据同步概述 (`sync-app-data-across-devices-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sync-app-data-across-devices-overview
+      - 键值型数据库跨设备数据同步 (ArkTS) (`data-sync-of-kv-store`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-sync-of-kv-store
+      - 关系型数据库跨设备数据同步 (ArkTS) (`data-sync-of-rdb-store`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-sync-of-rdb-store
+      - 分布式数据对象跨设备数据同步 (ArkTS) (`data-sync-of-distributed-data-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-sync-of-distributed-data-object
+    - 数据可靠性与安全性 (`data-reliability-security`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-reliability-security
+      - 数据可靠性与安全性概述 (`data-reliability-security-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-reliability-security-overview
+      - 数据库备份与恢复 (ArkTS) (`data-backup-and-restore`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-backup-and-restore
+      - 数据库备份与恢复 (C/C++) (`native-backup-and-restore`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-backup-and-restore
+      - 数据库加密 (ArkTS) (`data-encryption`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-encryption
+      - 数据库加密 (C/C++) (`native-data-encryption`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-data-encryption
+      - 基于设备分类和数据分级的访问控制 (ArkTS) (`access-control-by-device-and-data-level`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-control-by-device-and-data-level
+      - 基于设备分类和数据分级的访问控制 (C/C++) (`native-access-control-by-device-and-data-level`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-access-control-by-device-and-data-level
+      - E类加密数据库的使用 (ArkTS) (`encrypted-estore-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/encrypted-estore-guidelines
+    - 跨应用数据共享 (`cross-app-data-share`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cross-app-data-share
+      - 跨应用数据共享概述 (`data-share-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-share-overview
+      - 一对多跨应用数据共享 (`one-to-many-data-share`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/one-to-many-data-share
+        - 应用间配置共享 (ArkTS) (`share-config`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-config
+      - 多对多跨应用数据共享 (`many-to-many-data-share`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/many-to-many-data-share
+        - 通过标准化数据通路实现数据共享 (ArkTS) (`unified-data-channels`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unified-data-channels
+        - 通过标准化数据通路实现数据共享 (C/C++) (`unified-data-channels-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unified-data-channels-c
+    - 应用数据向量化 (ArkTS) (`aip-data-intelligence-embedding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aip-data-intelligence-embedding
+    - arkdata数据库调试工具 (`arkdata-debug-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkdata-debug-tool
+      - preferences数据库调试工具指导 (`preferences-debug-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preferences-debug-tool
+      - vector-store数据库调试工具指导 (`vector-store-debug-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vector-store-debug-tool
+    - SQLite调试工具指导 (`sqlite-database-debug-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sqlite-database-debug-tool
+    - ArkData术语 (`data-terminology`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-terminology
+    - ArkData常见问题 (`data-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-faq
+  - ArkTS（方舟编程语言） (`arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts
+    - ArkTS简介 (`arkts-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-overview
+    - ArkTS基础类库 (`arkts-utils`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-utils
+      - ArkTS基础类库概述 (`arkts-utils-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-utils-overview
+      - XML生成、解析与转换 (`xml-generation-parsing-conversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-generation-parsing-conversion
+        - XML概述 (`xml-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-overview
+        - XML生成 (`xml-generation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-generation
+        - XML解析 (`xml-parsing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-parsing
+        - XML转换 (`xml-conversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-conversion
+      - Buffer与FastBuffer (`buffer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/buffer
+      - JSON扩展库 (`arkts-json`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-json
+      - ArkTS容器类库 (`containers`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/containers
+        - 容器类库概述 (`container-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/container-overview
+        - 线性容器 (`linear-container`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/linear-container
+        - 非线性容器 (`nonlinear-container`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nonlinear-container
+      - 基础库常见问题 (`commonlibrary-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/commonlibrary-faq
+    - ArkTS并发 (`arkts-concurrency`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-concurrency
+      - 并发概述 (`concurrency-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/concurrency-overview
+      - 异步并发 (Promise和async/await) (`async-concurrency-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/async-concurrency-overview
+      - 多线程并发 (`multithread-concurrency`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multithread-concurrency
+        - 多线程并发概述 (`multi-thread-concurrency-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-concurrency-overview
+        - TaskPool简介 (`taskpool-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-introduction
+        - Worker简介 (`worker-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction
+        - TaskPool和Worker的对比 (TaskPool和Worker) (`taskpool-vs-worker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-vs-worker
+      - 并发线程间通信 (`interthread-communication`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication
+        - ArkTS线程间通信概述 (`interthread-communication-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication-overview
+        - 线程间通信对象 (`interthread-communication-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication-object
+          - 线程间通信对象概述 (`serializable-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serializable-overview
+          - 普通对象 (`normal-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/normal-object
+          - ArrayBuffer对象 (`arraybuffer-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arraybuffer-object
+          - SharedArrayBuffer对象 (`shared-arraybuffer-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/shared-arraybuffer-object
+          - Transferable对象（NativeBinding对象） (`transferabled-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/transferabled-object
+          - Sendable对象 (`sendable-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-object
+            - Sendable对象简介 (`arkts-sendable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable
+            - Sendable使用规则与约束 (`sendable-constraints`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-constraints
+            - 异步锁 (`arkts-async-lock-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-async-lock-introduction
+            - 异步等待 (`arkts-condition-variable-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-condition-variable-introduction
+            - ASON解析与生成 (`ason-parsing-generation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ason-parsing-generation
+            - 共享容器 (`arkts-collections-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-collections-introduction
+            - 共享模块 (`arkts-sendable-module`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable-module
+            - Sendable对象冻结 (`sendable-freeze`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-freeze
+            - Sendable使用场景 (`sendable-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-guide
+        - 线程间通信场景 (`interthread-communication-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication-guide
+          - 使用TaskPool执行独立的耗时任务 (`independent-time-consuming-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/independent-time-consuming-task
+          - 使用TaskPool执行多个耗时任务 (`multi-time-consuming-tasks`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-time-consuming-tasks
+          - TaskPool任务与宿主线程通信 (`taskpool-communicates-with-mainthread`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-communicates-with-mainthread
+          - Worker和宿主线程的即时消息通信 (`worker-communicates-with-mainthread`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-communicates-with-mainthread
+          - Worker同步调用宿主线程的接口 (`worker-invoke-mainthread-interface`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-invoke-mainthread-interface
+          - 多级Worker间高性能消息通信 (`worker-postmessage-sendable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-postmessage-sendable
+      - 应用多线程开发实践 (`multithread-develop-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multithread-develop-guide
+        - 应用多线程开发概述 (`multithread-develop-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multithread-develop-overview
+        - 耗时任务并发场景 (`time-consuming-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task
+          - 耗时任务并发场景简介 (`time-consuming-task-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task-overview
+          - CPU密集型任务开发指导 (TaskPool和Worker) (`cpu-intensive-task-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cpu-intensive-task-development
+          - I/O密集型任务开发指导 (TaskPool) (`io-intensive-task-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/io-intensive-task-development
+          - 同步任务开发指导 (TaskPool和Worker) (`sync-task-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sync-task-development
+        - 长时任务并发场景 (`long-time-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/long-time-task
+          - 长时任务并发场景简介 (`long-time-task-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/long-time-task-overview
+          - 长时任务开发指导（TaskPool） (`long-time-task-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/long-time-task-guide
+        - 常驻任务并发场景 (`resident-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resident-task
+          - 常驻任务并发场景简介 (`resident-task-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resident-task-overview
+          - 常驻任务开发指导（Worker） (`resident-task-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resident-task-guide
+        - 应用多线程开发实践案例 (`multithread-develop-case`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multithread-develop-case
+          - 批量数据写数据库场景 (`batch-database-operations-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/batch-database-operations-guide
+          - 业务模块并发加载场景 (`concurrent-loading-modules-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/concurrent-loading-modules-guide
+          - 全局配置项功能场景 (`global-configuration-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/global-configuration-guide
+          - ArkUI数据更新场景 (`makeobserved-sendable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/makeobserved-sendable
+          - C++线程间数据共享场景 (`native-interthread-shared`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-interthread-shared
+          - TaskPool指定任务并发度场景 (`taskpool-async-task-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-async-task-guide
+          - ArkUI瀑布流渲染场景 (`taskpool-waterflow`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-waterflow
+          - 获取最近访问列表场景 (`sendablelrucache-recent-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendablelrucache-recent-list
+          - 多线程取消TaskPool任务场景 (`multi-thread-cancel-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-cancel-task
+          - 自定义Native Transferable对象的多线程操作场景 (`napi-coerce-to-native-binding-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-coerce-to-native-binding-object
+          - 自定义Native Sendable对象的多线程操作场景 (`napi-define-sendable-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-define-sendable-object
+          - Worker常驻线程通过TaskPool进行多任务并发处理 (`worker-and-taskpool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-and-taskpool
+      - 并发常见问题 (`concurrency-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/concurrency-faq
+    - ArkTS跨语言交互 (`arkts-cross-language-interaction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-cross-language-interaction
+    - ArkTS运行时 (`arkts-runtime`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-runtime
+      - ArkTS运行时概述 (`arkts-runtime-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-runtime-overview
+      - GC垃圾回收 (`gc-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gc-introduction
+      - ArkTS模块化 (`arkts-runtime-module`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-runtime-module
+        - 模块化运行简介 (`module-principle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-principle
+        - 动态加载 (`arkts-dynamic-import`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dynamic-import
+        - 延迟加载（lazy import） (`arkts-lazy-import`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-lazy-import
+        - 同步方式动态加载Native模块 (`js-apis-load-native-module`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-apis-load-native-module
+        - 静态方式加载Native模块 (`arkts-import-native-module`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-import-native-module
+        - 基于Node-API加载模块 (`load-module-base-nodeapi`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/load-module-base-nodeapi
+        - 模块加载副作用及优化 (`arkts-module-side-effects`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-module-side-effects
+      - ArkTS运行时常见问题 (`arkts-runtime-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-runtime-faq
+    - ArkTS编译工具链 (`arkts-compilation-tool-chain`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-compilation-tool-chain
+      - ArkTS编译工具链概述 (`compilation-tool-chain-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/compilation-tool-chain-overview
+      - 方舟字节码 (`arkts-bytecode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode
+        - 方舟字节码概述 (`arkts-bytecode-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-overview
+        - 方舟字节码文件格式 (`arkts-bytecode-file-format`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-file-format
+        - 方舟字节码基本原理 (`arkts-bytecode-fundamentals`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-fundamentals
+        - 方舟字节码函数命名规则 (`arkts-bytecode-function-name`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-function-name
+        - 编译期自定义修改方舟字节码 (`customize-bytecode-during-compilation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/customize-bytecode-during-compilation
+        - 方舟字节码生成常见问题 (`es2abc-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/es2abc-faq
+      - Disassembler反汇编工具 (`tool-disassembler`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/tool-disassembler
+      - ArkGuard源码混淆工具 (`arkts-arkguard`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-arkguard
+        - ArkGuard源码混淆工具概述 (`source-obfuscation-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-overview
+        - ArkGuard混淆原理及功能 (`source-obfuscation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation
+        - ArkGuard混淆开启指南 (`source-obfuscation-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide
+        - 不同包类型的源码混淆建议 (`source-obfuscation-practice`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-practice
+        - ArkGuard混淆常见问题 (`source-obfuscation-questions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-questions
+      - ArkGuard字节码混淆工具 (`arkts-arkguard-bytecode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-arkguard-bytecode
+        - ArkGuard字节码混淆工具概述 (`bytecode-obfuscation-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-overview
+        - ArkGuard字节码混淆原理及功能 (`bytecode-obfuscation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation
+        - ArkGuard字节码混淆开启指南 (`bytecode-obfuscation-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-guide
+        - 不同包类型的字节码混淆建议 (`bytecode-obfuscation-practice`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-practice
+        - ArkGuard字节码混淆常见问题 (`bytecode-obfuscation-questions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-questions
+      - 在build-profile.json5中配置arkOptions (`arkoptions-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkoptions-guide
+  - ArkUI（方舟UI框架） (`arkui`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui
+    - ArkUI简介 (`arkui-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-overview
+    - UI开发 (ArkTS声明式开发范式) (`arkts-ui-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-development
+      - UI开发（ArkTS声明式开发范式）概述 (`arkts-ui-development-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-development-overview
+      - 学习UI范式基本语法 (`arkts-ui-paradigm-basic-syntax`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-paradigm-basic-syntax
+        - 基本语法概述 (`arkts-basic-syntax-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-basic-syntax-overview
+        - UI装饰器总览 (`arkts-decorator-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-decorator-overview
+        - 声明式UI描述 (`arkts-declarative-ui-description`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-declarative-ui-description
+        - 自定义组件 (`arkts-custom-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components
+          - 创建自定义组件 (`arkts-create-custom-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components
+          - 自定义组件生命周期 (`arkts-page-custom-components-lifecycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-custom-components-lifecycle
+          - 自定义组件的自定义布局 (`arkts-page-custom-components-layout`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-custom-components-layout
+          - 自定义组件成员属性访问限定符使用限制 (`arkts-custom-components-access-restrictions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components-access-restrictions
+          - 自定义组件复用 (`arkts-component-reusable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-component-reusable
+            - @Reusable装饰器：V1组件复用 (`arkts-reusable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable
+            - @ReusableV2装饰器：V2组件复用 (`arkts-new-reusablev2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2
+          - 自定义组件冻结 (`arkts-component-freeze`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-component-freeze
+            - 自定义组件冻结功能（V1） (`arkts-custom-components-freeze`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components-freeze
+            - 自定义组件冻结功能（V2） (`arkts-custom-components-freezev2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components-freezev2
+        - 组件扩展 (`arkts-extend-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-extend-components
+          - 组件扩展概述 (`arkts-extend-components-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-extend-components-overview
+          - @Builder装饰器：自定义构建函数 (`arkts-builder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder
+          - @LocalBuilder装饰器： 维持组件关系 (`arkts-localbuilder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localbuilder
+          - @BuilderParam装饰器：引用@Builder函数 (`arkts-builderparam`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builderparam
+          - wrapBuilder：封装全局@Builder (`arkts-wrapbuilder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-wrapbuilder
+          - mutableBuilder：实现全局@Builder动态更新 (`arkts-mutablebuilder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-mutablebuilder
+          - @Styles装饰器：定义组件重用样式 (`arkts-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-style
+          - @Extend装饰器：定义扩展组件样式 (`arkts-extend`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-extend
+          - stateStyles：多态样式 (`arkts-statestyles`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-statestyles
+          - @AnimatableExtend装饰器：定义可动画属性 (`arkts-animatable-extend`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animatable-extend
+        - @Require装饰器：校验构造传参 (`arkts-require`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-require
+      - 学习UI范式状态管理 (`arkts-state-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management
+        - 状态管理概述 (`arkts-state-management-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview
+        - 状态管理术语 (`arkts-state-management-glossary`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-glossary
+        - 状态管理原理介绍 (`arkts-state-management-introduce`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-introduce
+        - 状态管理V1和V2更新机制差异 (`arkts-v1-v2-update-difference`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-update-difference
+        - MVVM模式（V1） (`arkts-mvvm`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-mvvm
+        - MVVM模式（V2） (`arkts-mvvm-v2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-mvvm-v2
+        - 状态管理（V1） (`arkts-state-management-v1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-v1
+          - 管理组件拥有的状态 (`arkts-v1-component-state-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-component-state-management
+            - @State装饰器：组件内状态 (`arkts-state`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state
+            - @Prop装饰器：父子单向同步 (`arkts-prop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop
+            - @Link装饰器：父子双向同步 (`arkts-link`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link
+            - @Provide装饰器和@Consume装饰器：与后代组件双向同步 (`arkts-provide-and-consume`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume
+            - @Observed装饰器和@ObjectLink装饰器：嵌套类对象属性变化 (`arkts-observed-and-objectlink`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink
+            - @Watch装饰器：状态变量更改通知 (`arkts-watch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-watch
+          - 管理数据对象的状态 (`arkts-v1-data-object-state-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-data-object-state-management
+            - @Track装饰器：class对象属性级更新 (`arkts-track`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-track
+          - 管理应用拥有的状态 (`arkts-v1-application-state-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-application-state-management
+            - 管理应用拥有的状态概述 (`arkts-application-state-management-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-application-state-management-overview
+            - LocalStorage：页面级UI状态存储 (`arkts-localstorage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage
+            - AppStorage：应用全局的UI状态存储 (`arkts-appstorage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage
+            - PersistentStorage：持久化存储UI状态 (`arkts-persiststorage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage
+            - Environment：设备环境查询 (`arkts-environment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment
+        - 状态管理（V2） (`arkts-state-management-v2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-v2
+          - 管理组件拥有的状态 (`arkts-v2-manage-component-state`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v2-manage-component-state
+            - @Local装饰器：组件内部状态 (`arkts-new-local`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local
+            - @Param：组件外部输入 (`arkts-new-param`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param
+            - @Once：初始化同步一次 (`arkts-new-once`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-once
+            - @Event装饰器：规范组件输出 (`arkts-new-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-event
+            - @Provider装饰器和@Consumer装饰器：跨组件层级双向同步 (`arkts-new-provider-and-consumer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer
+          - 管理数据对象的状态 (`arkts-v2-manage-data-object-state`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v2-manage-data-object-state
+            - @ObservedV2装饰器和@Trace装饰器：类属性变化观测 (`arkts-new-observedv2-and-trace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace
+            - @Monitor装饰器：状态变量修改监听 (`arkts-new-monitor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor
+            - @Computed装饰器：计算属性 (`arkts-new-computed`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-computed
+            - @Type装饰器：标记类属性的类型 (`arkts-new-type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-type
+          - 管理应用拥有的状态 (`arkts-v2-manage-application-state`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v2-manage-application-state
+            - AppStorageV2: 应用全局UI状态存储 (`arkts-new-appstoragev2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-appstoragev2
+            - PersistenceV2: 持久化存储UI状态 (`arkts-new-persistencev2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-persistencev2
+        - 辅助接口 (`arkts-state-management-uiutils`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-uiutils
+          - getTarget接口：获取状态管理框架代理前的原始对象 (`arkts-new-gettarget`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-gettarget
+          - makeObserved接口：将非观察数据变为可观察数据 (`arkts-new-makeobserved`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved
+          - addMonitor/clearMonitor接口：动态添加/取消监听 (`arkts-new-addmonitor-clearmonitor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-addmonitor-clearmonitor
+          - applySync/flushUpdates/flushUIUpdates接口：同步刷新 (`arkts-new-applysync-flushupdates-flushuiupdates`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-applysync-flushupdates-flushuiupdates
+        - 语法糖 (`arkts-state-management-syntactic-sugar`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-syntactic-sugar
+          - $$语法：系统组件双向同步 (`arkts-two-way-sync`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync
+          - !!语法：双向绑定 (`arkts-new-binding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding
+        - 状态管理V1-V2迁移指导 (`arkts-v1-v2-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-guide
+          - V1-V2迁移概述 (`arkts-v1-v2-migration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration
+          - 状态管理V1向V2迁移场景 (`arkts-state-management-v1-v2-migration-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-v1-v2-migration-guide
+            - 组件内状态变量迁移 (`arkts-v1-v2-migration-inner-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-inner-component
+            - 数据对象状态变量迁移 (`arkts-v1-v2-migration-inner-class`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-inner-class
+            - 应用内状态变量迁移 (`arkts-v1-v2-migration-application`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-application
+            - 组件复用迁移 (`arkts-v1-v2-migration-reusable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-reusable
+            - 循环渲染迁移 (`arkts-v1-v2-migration-rendering-control-repeat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-rendering-control-repeat
+            - 内置对象的迁移 (`arkts-v1-v2-migration-inner-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-inner-object
+            - AnimateTo使用迁移 (`arkts-v1-v2-migration-animateto`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-animateto
+          - 状态管理V1和V2混用场景 (`v1v2-mixing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/v1v2-mixing
+            - 状态管理V1和V2混用指导（API version 19前） (`arkts-v1-v2-mixusage-before-api-version`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-mixusage-before-api-version
+            - 状态管理V1和V2混用指导（API version 19及之后） (`arkts-v1-v2-mixusage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-mixusage
+        - 状态管理常见问题 (`arkts-state-management-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq
+          - 组件内状态管理常见问题 (`arkts-state-management-faq-inner-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq-inner-component
+          - 数据对象状态管理常见问题 (`arkts-state-management-faq-inner-class`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq-inner-class
+          - 应用内状态管理和其他常见问题 (`arkts-state-management-faq-application-and-others`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq-application-and-others
+          - 状态变量改变不触发组件刷新问题常用定位方法 (`troubleshooting-state-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/troubleshooting-state-manage
+      - 学习UI范式渲染控制 (`arkts-rendering-control`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control
+        - 渲染控制概述 (`arkts-rendering-control-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-overview
+        - if/else：条件渲染 (`arkts-rendering-control-ifelse`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-ifelse
+        - ForEach：循环渲染 (`arkts-rendering-control-foreach`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach
+        - LazyForEach：数据懒加载 (`arkts-rendering-control-lazyforeach`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach
+        - Repeat：可复用的循环渲染 (`arkts-new-rendering-control-repeat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat
+        - LazyForEach迁移Repeat指南 (`arkts-lazyforeach-repeat-migration-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-lazyforeach-repeat-migration-guide
+        - ContentSlot：混合开发 (`arkts-rendering-control-contentslot`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-contentslot
+      - 学习响应式环境变量 (`arkts-env-property`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-env-property
+        - @Env：环境变量 (`arkts-env-system-property`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-env-system-property
+      - 设置组件导航和页面路由 (`arkts-set-navigation-routing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-set-navigation-routing
+        - 组件导航和页面路由概述 (`arkts-navigation-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-introduction
+        - 组件导航(Navigation) (推荐) (`arkts-navigation-navigation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation
+        - 页面路由 (@ohos.router)(不推荐) (`arkts-routing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing
+        - Router切换Navigation (`arkts-router-to-navigation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-router-to-navigation
+      - 组件布局 (`arkts-layout-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development
+        - 布局概述 (`arkts-layout-development-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-overview
+        - 构建布局 (`arkts-build-layout`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-build-layout
+          - 线性布局 (Row/Column) (`arkts-layout-development-linear`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-linear
+          - 层叠布局 (Stack) (`arkts-layout-development-stack-layout`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-stack-layout
+          - 弹性布局 (Flex) (`arkts-layout-development-flex-layout`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-flex-layout
+          - 相对布局 (RelativeContainer) (`arkts-layout-development-relative-layout`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-relative-layout
+          - 栅格布局 (GridRow/GridCol) (`arkts-layout-development-grid-layout`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-grid-layout
+          - 选项卡 (Tabs) (`arkts-navigation-tabs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-tabs
+        - 开发应用沉浸式效果 (`arkts-develop-apply-immersive-effects`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-develop-apply-immersive-effects
+      - 列表与网格 (`arkts-list-and-grid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-list-and-grid
+        - 列表与网格概述 (`arkts-list-grid-development-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-list-grid-development-overview
+        - 创建列表 (List) (`arkts-layout-development-create-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-list
+        - 弧形列表 (ArcList)（圆形屏幕推荐使用） (`arkts-layout-development-create-arclist`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-arclist
+        - 创建网格 (Grid/GridItem) (`arkts-layout-development-create-grid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-grid
+        - 创建瀑布流（WaterFlow） (`arkts-layout-development-create-waterflow`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-waterflow
+      - 使用文本 (`arkts-use-text`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-text
+        - 文本概述 (`arkts-text-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-text-introduction
+        - 文本显示 (Text/Span) (`arkts-common-components-text-display`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-display
+        - 文本输入 (TextInput/TextArea/Search) (`arkts-common-components-text-input`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input
+        - 富文本编辑（RichEditor） (`arkts-common-components-richeditor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-richeditor
+        - 图标小符号 (SymbolGlyph/SymbolSpan) (`arkts-common-components-symbol`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-symbol
+        - 属性字符串（StyledString/MutableStyledString） (`arkts-styled-string`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-styled-string
+        - 图文混排 (`arkts-text-image-layout`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-text-image-layout
+        - 管理软键盘 (`arkts-manage-keyboard`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-manage-keyboard
+      - 媒体展示 (`arkts-media-display`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-media-display
+        - 显示图片 (Image) (`arkts-graphics-display`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-graphics-display
+        - 视频播放 (Video) (`arkts-common-components-video-player`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-video-player
+        - 创建轮播 (Swiper) (`arkts-layout-development-create-looping`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-looping
+        - 创建弧形轮播 (ArcSwiper)（圆形屏幕推荐使用） (`arkts-layout-development-arcswiper`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-arcswiper
+      - 表单选择 (`arkts-form-selection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-form-selection
+        - 表单与选择组件概述 (`arkts-forms-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-forms-overview
+        - 按钮 (Button) (`arkts-common-components-button`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-button
+        - 弧形按钮 (ArcButton) (`arkts-advanced-components-arcbutton`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-advanced-components-arcbutton
+        - 单选框 (Radio) (`arkts-common-components-radio-button`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-radio-button
+        - 切换按钮 (Toggle) (`arkts-common-components-switch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-switch
+      - 添加组件 (`arkts-add-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-add-component
+        - 自定义渲染 (XComponent) (`napi-xcomponent-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-xcomponent-guidelines
+        - 进度条 (Progress) (`arkts-common-components-progress-indicator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-progress-indicator
+      - 使用弹窗 (`arkts-use-dialog`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-dialog
+        - 弹窗概述 (`arkts-dialog-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-overview
+        - 弹出框 (Dialog) (`arkts-use-dialogs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-dialogs
+          - 弹出框概述 (`arkts-base-dialog-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview
+          - 不依赖UI组件的全局自定义弹出框 (openCustomDialog) (`arkts-uicontext-custom-dialog`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-uicontext-custom-dialog
+          - 基础自定义弹出框 (CustomDialog) (`arkts-common-components-custom-dialog`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-custom-dialog
+          - 固定样式弹出框 (`arkts-fixes-style-dialog`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fixes-style-dialog
+          - 页面级弹出框 (`arkts-embedded-dialog`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-embedded-dialog
+          - 弹出框层级管理 (`arkts-dialog-levelorder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-levelorder
+          - 弹出框控制器 (`arkts-dialog-controller`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-controller
+          - 弹出框焦点策略 (`arkts-dialog-focusable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-focusable
+          - 弹出框蒙层控制 (`arkts-dialog-mask`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-mask
+        - 菜单 (`arkts-use-menu`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-menu
+          - 菜单概述 (`arkts-menu-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-menu-overview
+          - 菜单控制（Menu） (`arkts-popup-and-menu-components-menu`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-menu
+          - 不依赖UI组件的全局菜单 (openMenu) (`arkts-popup-and-menu-components-uicontext-menu`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-uicontext-menu
+        - 气泡提示 (`arkts-use-popup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-popup
+          - 气泡提示概述 (`arkts-popup-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-overview
+          - 气泡提示（Popup） (`arkts-popup-and-menu-components-popup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-popup
+          - 不依赖UI组件的全局气泡提示 (openPopup) (`arkts-popup-and-menu-components-uicontext-popup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-uicontext-popup
+        - 绑定模态页面 (`arkts-bind-modal`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bind-modal
+          - 绑定模态页面概述 (`arkts-modal-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modal-overview
+          - 绑定半模态页面（bindSheet） (`arkts-sheet-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sheet-page
+          - 绑定全模态页面（bindContentCover） (`arkts-contentcover-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-contentcover-page
+        - 即时反馈（Toast） (`arkts-create-toast`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-toast
+        - 设置浮层（OverlayManager） (`arkts-create-overlaymanager`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-overlaymanager
+      - 几何图形绘制 (`arkts-draw-graphics`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-draw-graphics
+        - 几何图形绘制概述 (`arkts-shape-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-shape-overview
+        - 绘制几何图形 (Shape) (`arkts-geometric-shape-drawing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-geometric-shape-drawing
+        - 形状裁剪（clipShape） (`arkts-clip-shape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-clip-shape
+      - 添加交互响应 (`arkts-interaction-development-guide-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-overview
+        - 交互响应概述 (`arkts-interaction-capability-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-capability-overview
+        - 交互基础机制说明 (`arkts-interaction-basic-principles`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles
+        - 输入设备与事件 (`rkts-interaction-development-guide-raw-input-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rkts-interaction-development-guide-raw-input-event
+          - 支持触屏输入事件 (`arkts-interaction-development-guide-touch-screen`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-touch-screen
+          - 支持鼠标输入事件 (`arkts-interaction-development-guide-mouse`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-mouse
+          - 支持触控板输入事件 (`arkts-interaction-development-guide-touchpad`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-touchpad
+          - 支持键盘输入事件 (`arkts-interaction-development-guide-keyboard`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-keyboard
+          - 支持表冠输入事件 (`arkts-common-events-crown-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-crown-event
+        - 添加手势响应 (`rkts-interaction-development-guide-support-gesture`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rkts-interaction-development-guide-support-gesture
+          - 绑定手势方法 (`arkts-gesture-events-binding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-binding
+          - 单一手势 (`arkts-gesture-events-single-gesture`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-single-gesture
+          - 组合手势 (`arkts-gesture-events-combined-gestures`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-combined-gestures
+          - 多层级手势事件 (`arkts-gesture-events-multi-level-gesture`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-multi-level-gesture
+          - 手势冲突处理 (`arkts-gesture-events-gesture-judge`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-gesture-judge
+        - 支持统一拖拽 (`arkts-common-events-drag-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-drag-event
+        - 支持焦点处理 (`arkts-common-events-focus-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-focus-event
+      - 使用动画 (`arkts-use-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-animation
+        - 动画概述 (`arkts-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation
+        - 属性动画 (`arkts-animation-attribute`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-attribute
+          - 属性动画概述 (`arkts-attribute-animation-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-animation-overview
+          - 实现属性动画 (`arkts-attribute-animation-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-animation-apis
+          - 自定义属性动画 (`arkts-custom-attribute-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-attribute-animation
+        - 转场动画 (`arkts-animation-transition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-transition
+          - 转场动画概述 (`arkts-transition-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-transition-overview
+          - 出现/消失转场 (`arkts-enter-exit-transition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-enter-exit-transition
+          - 模态转场 (`arkts-modal-transition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modal-transition
+          - 共享元素转场 (一镜到底) (`arkts-shared-element-transition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-shared-element-transition
+          - 旋转屏动画 (`arkts-rotation-transition-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rotation-transition-animation
+          - 页面转场动画 (不推荐) (`arkts-page-transition-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-transition-animation
+        - 粒子动画 (`arkts-particle-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-particle-animation
+        - 组件动画 (`arkts-component-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-component-animation
+        - 动画曲线 (`arkts-animation-curve`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-curve
+          - 动画曲线概述 (`arkts-curve-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-curve-overview
+          - 传统曲线 (`arkts-traditional-curve`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-traditional-curve
+          - 弹簧曲线 (`arkts-spring-curve`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-spring-curve
+        - 动画衔接 (`arkts-animation-smoothing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-smoothing
+        - 动画效果 (`arkts-animation-effects`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-effects
+          - 模糊 (`arkts-blur-effect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-blur-effect
+          - 阴影 (`arkts-shadow-effect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-shadow-effect
+          - 色彩 (`arkts-color-effect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-color-effect
+        - 帧动画（ohos.animator） (`arkts-animator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animator
+      - 使用自定义能力 (`arkts-user-defined-capabilities`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-capabilities
+        - 自定义能力概述 (`arkts-user-defined`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined
+        - 自定义组合 (`arkts-user-defined-composition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-composition
+        - 自定义节点 (`arkts-nodes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-nodes
+          - 自定义节点概述 (`arkts-user-defined-node`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-node
+          - 自定义占位节点 (`arkts-user-defined-place-holder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-place-holder
+          - 自定义组件节点 (FrameNode) (`arkts-user-defined-arktsnode-framenode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-framenode
+          - 自定义渲染节点 (RenderNode) (`arkts-user-defined-arktsnode-rendernode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-rendernode
+          - 自定义声明式节点 (BuilderNode) (`arkts-user-defined-arktsnode-buildernode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-buildernode
+          - 设置自定义节点跨语言属性 (`arkts-user-defined-arktsnode-crosslanguage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-crosslanguage
+        - 自定义绘制 (`arkts-draw`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-draw
+          - 使用画布绘制自定义图形 (Canvas) (`arkts-drawing-customization-on-canvas`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-drawing-customization-on-canvas
+          - 自定义绘制修改器 (DrawModifier) (`arkts-user-defined-extension-drawmodifier`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-extension-drawmodifier
+        - Modifier机制 (`arkts-modifier`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modifier
+          - 自定义扩展能力概述 (`arkts-user-defined-modifier`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-modifier
+          - 内容修改器 (ContentModifier) (`arkts-common-attributes-content-modifier`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-attributes-content-modifier
+          - 属性修改器 (AttributeModifier) (`arkts-user-defined-extension-attributemodifier`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-extension-attributemodifier
+          - 属性更新器 (AttributeUpdater) (`arkts-user-defined-extension-attributeupdater`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-extension-attributeupdater
+      - UI国际化 (`arkts-internationalization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-internationalization
+      - 无障碍与适老化 (`arkts-support-accessibility-friendliness`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-support-accessibility-friendliness
+        - 无障碍开发指导 (`arkts-universal-attributes-accessibility`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-universal-attributes-accessibility
+        - 支持适老化 (`arkui-support-for-aging-adaptation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-support-for-aging-adaptation
+      - 主题设置 (`arkts-theme`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-theme
+        - 应用深浅色适配 (`ui-dark-light-color-adaptation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-dark-light-color-adaptation
+        - 设置应用内主题换肤 (`theme_skinning`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme_skinning
+      - UI系统场景化能力 (`arkts-ui-system-scenarization-capability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-system-scenarization-capability
+        - 使用UI上下文接口操作界面（UIContext） (`arkts-global-interface`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface
+        - 使用组件截图（ComponentSnapshot） (`arkts-uicontext-component-snapshot`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-uicontext-component-snapshot
+        - 感知组件可见性 (`arkts-manage-components-visibility`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-manage-components-visibility
+        - 检查页面布局 (`arkts-inspector-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-inspector-overview
+        - 媒体查询 (@ohos.mediaquery) (`arkts-layout-development-media-query`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-media-query
+        - 嵌入式组件 (`arkts-ui-cross-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-cross-process
+          - 全屏启动元服务组件（FullScreenLaunchComponent） (`arkts-fullscreencomponent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fullscreencomponent
+          - 同应用进程嵌入式组件 (EmbeddedComponent) (`arkts-embedded-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-embedded-components
+    - UI开发 (基于NDK构建UI) (`arkts-use-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-ndk
+      - 基于NDK构建UI概述 (`ndk-build-ui-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-ui-overview
+      - 接入ArkTS页面 (`ndk-access-the-arkts-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page
+      - 添加交互事件 (`arkts-add-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-add-event
+        - 监听组件事件 (`ndk-listen-to-component-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-listen-to-component-events
+        - 绑定手势事件 (`ndk-bind-gesture-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-bind-gesture-events
+        - 拖拽事件 (`ndk-drag-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-drag-event
+        - 监听组件布局和绘制送显事件 (`ndk-inspector-component-observer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-inspector-component-observer
+      - 使用动画 (`ndk-use-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-use-animation
+      - 构建布局 (`arkts-build-layout-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-build-layout-ndk
+        - 使用列表 (`ndk-loading-long-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-loading-long-list
+        - 使用瀑布流 (`ndk-waterflow`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-waterflow
+      - 使用文本 (`arkts-build-text-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-build-text-ndk
+        - Text组件的文本绘制与显示 (`ndk-styled-string`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-styled-string
+        - 监听输入框事件 (`ndk-textarea-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-textarea-event
+      - 构建弹窗 (`ndk-build-pop-up-window`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-pop-up-window
+      - 构建自定义组件 (`ndk-build-custom-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-custom-components
+      - 嵌入ArkTS组件 (`ndk-embed-arkts-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embed-arkts-components
+      - 构建渲染节点 (`ndk-embed-render-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embed-render-components
+      - 通过XComponent接入无障碍 (`ndk-accessibility-xcomponent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-accessibility-xcomponent
+      - 自定义绘制 (`arkts-user-defined-draw`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-draw
+      - 查询和操作自定义节点 (`ndk-node-query-operate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-node-query-operate
+      - 通过EmbeddedComponent拉起EmbeddedUIExtensionAbility (`ndk-embedded-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embedded-component
+      - 在NDK中保证多实例场景功能正常 (`ndk-scope-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-scope-task
+      - 使用多线程NDK接口并行化构建UI页面 (`ndk-build-on-multi-thread`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-on-multi-thread
+    - UI开发 (兼容JS的类Web开发范式) (`ui-js-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-dev
+      - UI开发 (兼容JS的类Web开发范式)概述 (`ui-js-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-overview
+      - 框架说明 (`js-framework-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-overview
+        - 文件组织 (`js-framework-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-file
+        - js标签配置 (`js-framework-js-tag`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-js-tag
+        - app.js (`js-framework-js-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-js-file
+        - 语法 (`js-framework-syntax`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax
+          - HML语法参考 (`js-framework-syntax-hml`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-hml
+          - CSS语法参考 (`js-framework-syntax-css`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-css
+          - JS语法参考 (`js-framework-syntax-js`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-js
+        - 生命周期 (`js-framework-lifecycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-lifecycle
+        - 资源限定与访问 (`js-framework-resource-restriction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-resource-restriction
+        - 多语言支持 (`js-framework-multiple-languages`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-multiple-languages
+      - 构建用户界面 (`ui-js-building-ui`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui
+        - 组件介绍 (`ui-js-building-ui-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-component
+        - 构建布局 (`ui-js-building-layout`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-layout
+          - 布局说明 (`ui-js-building-ui-layout-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-layout-intro
+          - 添加标题行和文本区域 (`ui-js-building-ui-layout-text`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-layout-text
+          - 添加图片区域 (`ui-js-building-ui-layout-image`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-layout-image
+          - 添加留言区域 (`ui-js-building-ui-layout-comment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-layout-comment
+          - 添加容器 (`ui-js-building-ui-layout-external-container`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-layout-external-container
+        - 添加交互 (`ui-js-building-ui-interactions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-interactions
+        - 动画 (`ui-js-building-ui-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-animation
+        - 手势事件 (`ui-js-building-ui-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-event
+        - 页面路由 (`ui-js-building-ui-routes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-routes
+      - 常见组件开发指导 (`ui-js-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components
+        - 容器组件 (`ui-js-container-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-container-components
+          - list开发指导 (`ui-js-components-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-list
+          - dialog开发指导 (`ui-js-components-dialog`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-dialog
+          - form开发指导 (`ui-js-components-form`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-form
+          - stepper开发指导 (`ui-js-components-stepper`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-stepper
+          - tabs开发指导 (`ui-js-component-tabs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-component-tabs
+          - swiper开发指导 (`ui-js-components-swiper`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-swiper
+        - 基础组件 (`ui-js-basic-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-basic-components
+          - text开发指导 (`ui-js-components-text`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-text
+          - input开发指导 (`ui-js-components-input`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-input
+          - button开发指导 (`ui-js-components-button`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-button
+          - picker开发指导 (`ui-js-components-picker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-picker
+          - image开发指导 (`ui-js-components-images`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-images
+          - image-animator开发指导 (`ui-js-components-image-animator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-image-animator
+          - rating开发指导 (`ui-js-components-rating`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-rating
+          - slider开发指导 (`ui-js-components-slider`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-slider
+          - chart开发指导 (`ui-js-components-chart`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-chart
+          - switch开发指导 (`ui-js-components-switch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-switch
+          - toolbar开发指导 (`ui-js-components-toolbar`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-toolbar
+          - menu开发指导 (`ui-js-components-menu`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-menu
+          - marquee开发指导 (`ui-js-components-marquee`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-marquee
+          - qrcode开发指导 (`ui-js-components-qrcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-qrcode
+          - search开发指导 (`ui-js-components-search`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-search
+        - Canvas开发指导 (`ui-js-canvas`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-canvas
+          - Canvas对象 (`ui-js-components-canvas`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-canvas
+          - CanvasRenderingContext2D对象 (`ui-js-components-canvasrenderingcontext2d`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-canvasrenderingcontext2d
+          - Path2D对象 (`ui-js-components-path2d`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-path2d
+          - OffscreenCanvasRenderingContext2D对象 (`ui-js-components-offscreencanvas`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-offscreencanvas
+        - 栅格布局 (`ui-js-components-grid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-grid
+        - svg开发指导 (`ui-js-svg`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-svg
+          - 基础知识 (`ui-js-components-svg-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-overview
+          - 绘制图形 (`ui-js-components-svg-graphics`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-graphics
+          - 绘制路径 (`ui-js-components-svg-path`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-path
+          - 绘制文本 (`ui-js-components-svg-text`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-text
+      - 动效开发指导 (`ui-js-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animation
+        - CSS动画 (`ui-js-animation-css`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animation-css
+          - 属性样式动画 (`ui-js-animate-attribute-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-attribute-style
+          - transform样式动画 (`ui-js-animate-transform`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-transform
+          - background-position样式动画 (`ui-js-animate-background-position-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-background-position-style
+          - svg动画 (`ui-js-animate-svg`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-svg
+        - JS动画 (`ui-js-animation-js`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animation-js
+          - 组件动画 (`ui-js-animate-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-component
+          - 插值器动画 (`ui-js-interpolator-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-interpolator-animation
+            - 动画动效 (`ui-js-animate-dynamic-effects`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-dynamic-effects
+            - 动画帧 (`ui-js-animate-frame`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-frame
+      - 自定义组件 (`ui-js-custom-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-custom-components
+      - WebGL (`ui-js-webgl`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-webgl
+        - 使用WebGL绘制图形 (`webgl-2d-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/webgl-2d-guidelines
+    - UI开发调试调优 (`ui-debug-optimize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-debug-optimize
+      - UI稳定性故障调试 (`ui-stability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-stability
+        - UI稳定性故障分析概述 (`arkts-stability-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-stability-guide
+        - UI相关应用崩溃常见问题 (`arkts-stability-crash-issues`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-stability-crash-issues
+        - UI相关应用无响应常见问题 (`arkts-stability-freeze-issues`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-stability-freeze-issues
+      - UI显示异常调试 (`arkts-layout-debug`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-debug
+      - UI上下文异常调试 (`arkts-wrong-uicontext-debug`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-wrong-uicontext-debug
+      - UI预览 (`ui-ide-previewer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-ide-previewer
+      - UI调优 (`ui-inspector-profiler`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-inspector-profiler
+      - UI高性能开发 (`ui-performance-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-performance-overview
+      - UI开发常见问题 (`ui-development-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-development-faq
+        - 自定义节点常见问题 (`arkts-user-defined-node-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-node-faq
+        - 按钮与选择组件常见问题 (`arkts-select-component-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-select-component-faq
+        - 使用文本常见问题 (`arkts-text-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-text-faq
+        - 动态属性设置常见问题 (`arkts-attribute-modifier-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-modifier-faq
+        - 命令式节点常见问题 (`arkts-arkui-framenode-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-arkui-framenode-faq
+        - UI并行化常见问题 (`multi-thread-ui-build-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-ui-build-faq
+    - 窗口管理 (`window-manager`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-manager
+      - 窗口开发概述 (`window-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-overview
+      - 管理应用窗口（Stage模型） (`application-window-stage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage
+      - 管理应用窗口（FA模型） (`application-window-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-fa
+      - 窗口旋转 (`window-rotation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-rotation
+      - 窗口元数据配置 (`window-config-m`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-config-m
+      - 使用WindowManager管理多模输入事件（C/C++） (`native-window-event-filter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-window-event-filter
+      - 在应用程序中使用画中画功能 (`window-pipwindow`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-pipwindow
+        - 画中画开发概述 (`pipwindow-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-overview
+        - 使用XComponent实现画中画功能开发（ArkTS） (`pipwindow-xcomponent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-xcomponent
+        - 使用typeNode实现画中画功能开发（ArkTS） (`pipwindow-typenode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-typenode
+        - 使用NDK接口实现画中画功能开发（C/C++） (`pipwindow-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-native
+        - 画中画常见问题 (`pip-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pip-faqs
+      - 全局闪控球开发指导 (`floatingball-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/floatingball-guide
+      - 智慧多窗应用开发指南 (`multi-window-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-guide
+        - 智慧多窗简介 (`multi-window-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-intro
+        - 应用适配智慧多窗 (`multi-window-adapt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-adapt
+          - 应用声明支持智慧多窗 (`multi-window-support`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-support
+          - 应用布局适配智慧多窗 (`multi-window-layout-adapt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-layout-adapt
+          - 顶部窗口控制条避让适配智慧多窗 (`multi-window-controlbar-adapt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-controlbar-adapt
+      - 应用启动页的配置与使用 (`launch-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/launch-page
+        - 应用启动页简介 (`launch-page-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/launch-page-overview
+        - 配置应用启动页 (`launch-page-config`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/launch-page-config
+        - 启动页资源分类配置 (`launch-page-resource-config`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/launch-page-resource-config
+      - 窗口开发术语 (`window-terminology`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology
+      - 窗口开发常见问题 (`window-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-faqs
+    - 屏幕管理 (`display-manager`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-manager
+      - 屏幕管理简介 (`displaymanager-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaymanager-overview
+      - 使用OH_DisplayManager实现屏幕基础信息查询和状态监听 (C/C++) (`native-display-manager`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-display-manager
+      - 使用Display实现屏幕属性查询及状态监听 (ArkTS) (`screenproperty-guideline`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screenproperty-guideline
+      - 屏幕管理开发术语 (`display-terminology`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-terminology
+      - 屏幕开发常见问题 (`displaymanager-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaymanager-faqs
+    - ArkUI术语 (`arkui-glossary`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary
+  - ArkWeb（方舟Web） (`arkweb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb
+    - ArkWeb简介 (`web-component-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-component-overview
+    - ArkWeb进程 (`web_component_process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web_component_process
+    - Web组件的生命周期 (`web-event-sequence`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-event-sequence
+    - 设置基本属性和事件 (`web-set-attributes-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-set-attributes-events
+      - User-Agent开发指导 (`web-default-useragent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-default-useragent
+      - 管理Cookie及数据存储 (`web-cookie-and-data-storage-mgmt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-cookie-and-data-storage-mgmt
+      - Web深色模式适配 (`web-set-dark-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-set-dark-mode
+      - 在新窗口中打开页面 (`web-open-in-new-window`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-open-in-new-window
+      - 管理位置权限 (`web-geolocation-permission`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-geolocation-permission
+      - 使用隐私模式 (`web-incognito-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-incognito-mode
+      - 使用运动和方向传感器监测设备状态 (`web-sensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-sensor
+    - Web渲染和布局 (`web-render-layout`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-render-layout
+      - Web组件渲染模式 (`web-render-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-render-mode
+      - Web组件大小自适应页面内容布局 (`web-fit-content`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-fit-content
+      - 优化跳转至新Web组件过程中的页面闪烁现象 (`web-router-flash-optimization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-router-flash-optimization
+      - 获取网页内容高度 (`web-getpage-height`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-getpage-height
+    - 在应用中使用前端页面JavaScript (`web-use-frontend-page-js`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-use-frontend-page-js
+      - 应用侧调用前端页面函数 (`web-in-app-frontend-page-function-invoking`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-app-frontend-page-function-invoking
+      - 前端页面调用应用侧函数 (`web-in-page-app-function-invoking`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-page-app-function-invoking
+      - 建立应用侧与前端页面数据通道 (`web-app-page-data-channel`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-app-page-data-channel
+      - 应用侧与前端页面的相互调用(C/C++) (`arkweb-ndk-jsbridge`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-ndk-jsbridge
+      - 建立应用侧与前端页面数据通道(C/C++) (`arkweb-ndk-page-data-channel`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-ndk-page-data-channel
+    - 管理网页交互 (`web-manage-page-interaction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-manage-page-interaction
+      - Web组件嵌套滚动 (`web-nested-scrolling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-nested-scrolling
+      - Web页面显示内容滚动 (`web-content-scrolling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-content-scrolling
+      - Web组件对接软键盘 (`web-docking-softkeyboard`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-docking-softkeyboard
+      - Web组件焦点管理 (`web-focus`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-focus
+      - 使用Web组件的手势与应用交互 (`web-gesture`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-gesture
+      - 使用Web组件管理网页缩放 (`web-scale-zoom`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-scale-zoom
+      - 使用Web组件显示网页弹框 (`web-dialog`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-dialog
+      - 使用Web组件的拖拽功能与网页交互 (`web-drag`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-drag
+    - 管理Web组件的网络安全与隐私 (`web-manage-cyber-security-privacy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-manage-cyber-security-privacy
+      - 解决Web组件本地资源跨域问题 (`web-cross-origin`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-cross-origin
+      - 使用智能防跟踪功能 (`web-intelligent-tracking-prevention`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-intelligent-tracking-prevention
+      - 使用Web组件的广告过滤功能 (`web-adsblock`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-adsblock
+      - 坚盾守护模式 (`web-secure-shield-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-secure-shield-mode
+    - 管理网页加载与浏览记录 (`web-manage-loading-browsing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-manage-loading-browsing
+      - 使用Web组件加载页面 (`web-page-loading-with-web-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-page-loading-with-web-components
+      - 管理页面跳转及浏览记录导航 (`web-redirection-and-browsing-history-mgmt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-redirection-and-browsing-history-mgmt
+      - 拦截Web组件发起的网络请求 (`web-scheme-handler`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-scheme-handler
+      - 自定义页面请求响应 (`web-resource-interception-request-mgmt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-resource-interception-request-mgmt
+      - 加速Web页面的访问 (`web-predictor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-predictor
+      - 设置Web组件前进后退缓存 (`web-set-back-forward-cache`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-set-back-forward-cache
+      - Web组件在不同的窗口间迁移 (`web-component-migrate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-component-migrate
+    - 管理网页文件上传与下载 (`web-manage-upload-download`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-manage-upload-download
+      - 使用Web组件上传文件 (`web-file-upload`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-file-upload
+      - 使用Web组件的下载能力 (`web-download`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-download
+    - 使用网页多媒体 (`web-use-multimedia`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-use-multimedia
+      - 在Web中打开摄像头和麦克风 (`web-rtc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-rtc
+      - 托管网页中的媒体播放 (`app-takeovers-web-media`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-takeovers-web-media
+      - Web组件支持画中画 (`web-picture-in-picture`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-picture-in-picture
+      - Web组件支持视频沉浸式全屏播放 (`web_full_screen`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web_full_screen
+    - 处理网页内容 (`web-process-page-content`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-process-page-content
+      - 使用Web组件打印前端页面 (`web-print`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-print
+      - 使用Web组件保存前端页面为PDF (`web-createpdf`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-createpdf
+      - 使用Web组件的PDF文档预览能力 (`web-pdf-preview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-pdf-preview
+      - 网页中安全区域计算和避让适配 (`web-safe-area-insets`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-safe-area-insets
+      - 使用Web组件菜单处理网页内容 (`web-menu`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu
+      - 使用Web组件与系统剪贴板交互处理网页内容 (`web-clipboard`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-clipboard
+      - 使用Web组件的智能分词能力 (`web-data-detector`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-data-detector
+    - 同层渲染 (`web-same-layer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-same-layer
+    - 使用离线Web组件 (`web-offline-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-offline-mode
+    - 使用WebNativeMessagingExtensionAbility组件实现浏览器扩展和应用通信场景 (`web-native-messaging`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-native-messaging
+    - Web调试维测 (`web-debugging`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-debugging
+      - 使用DevTools工具调试前端页面 (`web-debugging-with-devtools`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-debugging-with-devtools
+      - 使用Crashpad收集Web组件崩溃信息 (`web-crashpad`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-crashpad
+      - 定位与解决Web白屏问题 (`web-white-screen`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-white-screen
+      - 使用Hypium实现ArkWeb自动化测试 (`web-hypium-autotests`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-hypium-autotests
+  - Background Tasks Kit（后台任务开发服务） (`background-task-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-kit
+    - Background Tasks Kit简介 (`background-task-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-overview
+    - 短时任务(ArkTS) (`transient-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/transient-task
+    - 短时任务(C/C++) (`native-transient-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-transient-task
+    - 长时任务(ArkTS) (`continuous-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task
+    - 延迟任务(ArkTS) (`work-scheduler`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/work-scheduler
+    - 代理提醒(ArkTS) (`agent-powered-reminder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agent-powered-reminder
+  - Core File Kit（文件基础服务） (`core-file-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-file-kit
+    - Core File Kit简介 (`core-file-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-file-kit-intro
+    - 应用文件 (`app-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file
+      - 应用文件概述 (`app-file-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-overview
+      - 应用沙箱目录 (`app-sandbox-directory`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory
+      - 应用文件访问与管理 (`app-file-access-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access-management
+        - 应用文件访问(ArkTS) (`app-file-access`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access
+        - 应用文件访问(C/C++) (`native-fileio-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fileio-guidelines
+        - 应用及文件系统空间统计 (`app-fs-space-statistics`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-fs-space-statistics
+      - 应用文件分享 (`share-app-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file
+      - 应用数据备份恢复 (`app-file-backup-restore`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-restore
+        - 应用数据备份恢复概述 (`app-file-backup-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-overview
+        - 应用接入数据备份恢复 (`app-file-backup-extension`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension
+        - 应用克隆适配指导 (`app-file-clone`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-clone
+        - 设备升级应用数据迁移适配指导 (`app-data-migration-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-guidelines
+          - 应用数据迁移功能介绍 (`app-data-migration-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-overview
+          - 适配流程 (`adaptation-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/adaptation-process
+          - 应用数据迁移适配指导 (`app-data-migration-adaptation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-adaptation
+          - 验证应用数据迁移 (`app-data-migration-verification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-verification
+            - 开发者自验证 (`self-verification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/self-verification
+            - 端到端验证 (`e2e-verification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/e2e-verification
+          - 常见问题与异常处理 (`app-data-migration-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-faqs
+          - 应用升级过程代码开发注意事项 (`code-precautions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-precautions
+    - 用户文件 (`user-files`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-files
+      - 用户文件概述 (`user-file-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-overview
+      - 用户文件URI介绍 (`user-file-uri-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro
+      - FileUri开发指导(C/C++) (`native-fileuri-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fileuri-guidelines
+      - 获取用户目录环境(C/C++) (`native-environment-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-environment-guidelines
+      - 选择与保存用户文件 (`select-save-user-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-save-user-file
+        - 选择用户文件 (`select-user-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-user-file
+        - 保存用户文件 (`save-user-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/save-user-file
+        - 授权持久化 (`file-persistpermission`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-persistpermission
+        - 授权持久化(C/C++) (`native-fileshare-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fileshare-guidelines
+      - 获取并使用公共目录 (`request-dir-permission`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-dir-permission
+    - 分布式文件系统 (`distributed-fs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-fs
+      - 分布式文件系统概述 (`distributed-fs-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-fs-overview
+      - 设置分布式文件数据等级 (`set-security-label`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/set-security-label
+      - 跨设备文件共享和访问 (`file-access-across-devices`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-access-across-devices
+      - 跨设备文件拷贝 (`file-copy-across-devices`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-copy-across-devices
+  - Data Augmentation Kit（数据增强服务） (`data-augmentation-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-kit-guide
+    - Data Augmentation Kit简介 (`dataaugmentation-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-introduction
+    - RAG (`dataaugmentation-rag`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-rag
+      - RAG概述 (`data-augmentation-rag-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-overview
+      - 知识问答 (`data-augmentation-rag-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-development
+      - 完整示例代码 (`data-augmentation-rag-demo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-demo
+    - 知识加工 (`data-augmentation-knowledge-processing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-knowledge-processing
+    - 智慧化数据检索 (`dataaugmentation-retrieval`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-retrieval
+    - 智慧化数据检索（C/C++） (`dataaugmentation-retrieval-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-retrieval-c
+    - 端侧问答模型 (`dataaugmentation-localchatmodel`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-localchatmodel
+  - Form Kit（卡片开发服务） (`form-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/form-kit
+    - Form Kit简介 (`formkit-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/formkit-overview
+    - ArkTS卡片开发（推荐） (`arkts-ui`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui
+      - ArkTS卡片概述 (`arkts-form-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-form-overview
+      - 创建ArkTS卡片 (`arkts-ui-widget-creation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation
+      - 配置ArkTS卡片的配置文件 (`arkts-ui-widget-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration
+      - 管理ArkTS卡片生命周期 (`arkts-ui-widget-lifecycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-lifecycle
+      - ArkTS卡片进程模型 (`arkts-ui-widget-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-process
+      - ArkTS卡片提供方开发指导 (`arkts-ui-widget`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget
+        - ArkTS卡片UI界面开发 (`arkts-ui-widget-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-page
+          - ArkTS卡片界面开发概述 (`arkts-ui-widget-page-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-page-overview
+          - ArkTS卡片为组件添加动效 (`arkts-ui-widget-page-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-page-animation
+          - ArkTS卡片使用画布组件绘制自定义图形 (`arkts-ui-widget-page-custom-drawing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-page-custom-drawing
+          - ArkTS卡片界面适配深浅色模式 (`arkts-ui-widget-dark-light-color-adapt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-dark-light-color-adapt
+          - ArkTS卡片使用自定义字体 (`arkts-ui-widget-load-custom-font`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-load-custom-font
+        - ArkTS卡片页面刷新 (`arkts-ui-widget-interaction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-interaction
+          - ArkTS卡片页面刷新概述 (`arkts-ui-widget-interaction-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-interaction-overview
+          - ArkTS卡片主动刷新 (`arkts-ui-widget-active-refresh`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-active-refresh
+          - ArkTS卡片被动刷新 (`arkts-ui-widget-passive-refresh`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-passive-refresh
+          - 刷新本地图片和网络图片 (`arkts-ui-widget-image-update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-image-update
+          - 根据卡片状态刷新不同内容 (`arkts-ui-widget-update-by-status`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-update-by-status
+        - ArkTS卡片页面交互 (`arkts-ui-widget-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event
+          - ArkTS卡片页面交互概述 (`arkts-ui-widget-event-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-overview
+          - 卡片跳转到应用页面（router事件） (`arkts-ui-widget-event-router`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-router
+          - 卡片拉起应用UIAbility到后台（call事件） (`arkts-ui-widget-event-call`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-call
+          - 卡片传递消息给应用（message事件） (`arkts-ui-widget-event-formextensionability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-formextensionability
+          - 通过router或call事件刷新卡片内容 (`arkts-ui-widget-event-uiability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-uiability
+        - ArkTS卡片编辑 (`arkts-ui-widget-edit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-edit
+          - ArkTS卡片编辑概述 (`-ui-widget-event-formeditextensionability-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/-ui-widget-event-formeditextensionability-overview
+        - 应用内请求卡片加桌 (`arkts-ui-widget-add`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-add
+          - 应用内拉起卡片管理加桌 (`arkts-ui-widget-open-formmanager`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-open-formmanager
+        - ArkTS锁屏卡片 (`arkts-ui-lockscreen-form`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-lockscreen-form
+          - 锁屏卡片开发指导 (`arkts-ui-lockscreen-form-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-lockscreen-form-development
+        - ArkTS背板透明卡片 (`arkts-ui-transparent-backplate-form`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-transparent-backplate-form
+          - 背板透明卡片开发指导 (`arkts-ui-transparent-backplate-form-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-transparent-backplate-form-development
+      - 互动卡片开发 (`arkts-ui-liveform`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform
+        - 互动卡片概述 (`arkts-ui-liveform-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-overview
+        - 趣味交互类型互动卡片开发指导 (`arkts-ui-liveform-funinteraction-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-funinteraction-development
+        - 场景动效类型互动卡片 (`arkts-ui-liveform-sceneanimation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation
+          - 场景动效类型互动卡片概述 (`arkts-ui-liveform-sceneanimation-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation-overview
+          - 场景动效类型互动卡片开发指导 (`arkts-ui-liveform-sceneanimation-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation-development
+      - ArkTS卡片适配常见问题 (`arkts-ui-widget-adapt-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-adapt-faq
+    - JS卡片开发 (`form-js-ui`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/form-js-ui
+      - JS卡片概述 (`js-ui-widget-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-ui-widget-overview
+      - JS卡片开发指导（Stage模型） (`js-ui-widget-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-ui-widget-development
+      - JS卡片开发指导（FA模型） (`widget-development-fa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/widget-development-fa
+  - IME Kit（输入法开发服务） (`ime-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit
+    - IME Kit简介 (`ime-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit-intro
+    - 实现一个输入法应用 (`inputmethod-application-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide
+    - 在自绘编辑框中使用输入法 (`use-inputmethod-in-custom-edit-box`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-inputmethod-in-custom-edit-box
+    - 切换输入法应用 (`switch-inputmethod-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/switch-inputmethod-guide
+    - 输入法子类型开发指南 (`input-method-subtype-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/input-method-subtype-guide
+    - 输入法安全模式介绍 (`ime-kit-security`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit-security
+    - 在自绘编辑框中使用输入法开发指导 (C/C++) (`use-inputmethod-in-custom-edit-box-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-inputmethod-in-custom-edit-box-ndk
+    - 输入法应用沉浸模式 (`inputmethod-immersive-mode-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-immersive-mode-guide
+    - Ime工具 (`inputmethod-hdc-commands-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-hdc-commands-guide
+    - 不可获焦窗口中输入框与输入法交互指南 (`use-inputmethod-in-not-focusable-window`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-inputmethod-in-not-focusable-window
+  - IPC Kit（进程间通信服务） (`ipc-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-kit
+    - IPC Kit简介 (`ipc-rpc-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-overview
+    - IPC与RPC通信开发指导(ArkTS) (`ipc-rpc-development-guideline`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-development-guideline
+    - IPC与RPC通信开发指导(C/C++) (`ipc-capi-development-guideline`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-capi-development-guideline
+    - 远端状态订阅开发实例 (`subscribe-remote-state`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/subscribe-remote-state
+  - Localization Kit（本地化开发服务） (`localization-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/localization-kit
+    - 国际化和本地化概述 (`i18n-l10n`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-l10n
+    - 应用国际化 (`i18n`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n
+      - 国际化界面设计 (`i18n-ui-design`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-ui-design
+      - 区域ID与文化习惯划分 (`i18n-locale-culture`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-locale-culture
+      - 语言与用户偏好 (`i18n-language-user-preferences`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-language-user-preferences
+        - 系统语言与区域 (`i18n-system-language-region`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-system-language-region
+        - 应用偏好语言 (`i18n-preferred-language`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-preferred-language
+        - 用户偏好 (`i18n-user-preferences`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-user-preferences
+      - 时间日期国际化 (`i18n-time-date`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-time-date
+      - 数字与度量衡国际化 (`i18n-numbers-weights-measures`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-numbers-weights-measures
+      - 电话号码格式化 (`i18n-phone-numbers`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-phone-numbers
+      - 设置日历和历法 (`i18n-calendar`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-calendar
+      - 时区与夏令时国际化 (`i18n-time-zone-dst`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-time-zone-dst
+        - 时区 (`i18n-time-zone`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-time-zone
+        - 夏令时跳变 (`i18n-dst-transition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-dst-transition
+      - 多语言排序 (`i18n-sorting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-sorting
+        - 概述 (`i18n-sorting-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-sorting-overview
+        - 本地习惯排序 (`i18n-sorting-local`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-sorting-local
+        - 创建索引 (`i18n-sorting-index`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-sorting-index
+      - 字符处理 (`i18n-character-processing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-character-processing
+      - 本地化名称 (`i18n-name-localization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-name-localization
+        - 概述 (`i18n-display-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-display-overview
+        - 本地化语言与地区名称 (`i18n-language-region-display`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-language-region-display
+    - 应用本地化 (`l10n`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n
+      - 多语言适配 (`l10n-multilingual-resources`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-multilingual-resources
+      - 提升可翻译性 (`l10n-translation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-translation
+        - 避免硬编码与拼接 (`l10n-hard-coding-concatenate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-hard-coding-concatenate
+        - 提供翻译场景 (`l10n-translation-scene`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-translation-scene
+        - 支持单复数 (`l10n-singular-plural`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-singular-plural
+    - 本地化测试 (`l10n-testing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-testing
+      - 伪本地化测试 (`pseudo-i18n-testing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pseudo-i18n-testing
+        - 伪本地化测试概述 (`pseudo-i18n-testing-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pseudo-i18n-testing-overview
+        - 翻译伪本地化测试 (`pseudo-i18n-testing-translation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pseudo-i18n-testing-translation
+        - 界面镜像伪本地化测试 (`pseudo-i18n-testing-mirror`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pseudo-i18n-testing-mirror
+      - 语言测试 (`linguistic-testing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/linguistic-testing
+  - UI Design Kit（UI设计套件） (`ui-design-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-kit-guide
+    - UI Design Kit简介 (`ui-design-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-introduction
+    - 图标处理 (`ui-design-icon-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-icon-process
+      - （推荐）分层图标处理 (`ui-design-layered-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-layered-process
+      - 单层图标处理 (`ui-design-normal-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-normal-process
+    - 组件导航 (`ui-design-navigation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation
+      - 设置动态模糊样式 (`ui-design-navigation-dynamic-blur`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-dynamic-blur
+      - 设置信息提醒 (`ui-design-navigation-message-reminder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-message-reminder
+      - 设置自定义区域 (`ui-design-navigation-customized-area`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-customized-area
+      - 标题栏动态显隐 (`ui-design-navigation-dynamic-display-and-hiding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-dynamic-display-and-hiding
+      - 半模态样式 (`ui-design-navigation-half-modal-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-half-modal-style
+      - 图标类型设置 (`ui-design-navigation-icon-type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-icon-type
+      - 设置应用内多窗 (`ui-design-navigation-set-multi-window`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-set-multi-window
+      - 开发实例 (`ui-design-navigation-dynamic-blur-demo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-dynamic-blur-demo
+    - 侧边栏样式 (`ui-design-sidebar`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-sidebar
+      - 设置overlay模式的侧边栏 (`ui-design-sidebar-overlay-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-sidebar-overlay-mode
+      - 设置embed模式的侧边栏 (`ui-design-sidebar-enbed-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-sidebar-enbed-mode
+    - 侧边栏菜单样式 (`ui-design-side-menu`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-side-menu
+    - 底部页签 (`ui-design-hds-tabs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs
+      - 设置页签栏的分割线 (`ui-design-hds-tabs-split-line`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-split-line
+      - 设置页签栏的模糊样式 (`ui-design-hds-tabs-fuzzy-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-fuzzy-style
+      - 设置页签的图标出血样式 (`ui-design-hds-tabs-icon-bleed-substyle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-icon-bleed-substyle
+      - 设置侧边栏半屏居中对齐样式 (`ui-design-hds-tabs-sidebar-alignment-substyle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-sidebar-alignment-substyle
+    - 即时操作 (`ui-design-snackbar`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-snackbar
+      - 设置常驻通知弹窗 (`ui-design-snackbar-resident-notification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-snackbar-resident-notification
+      - 设置定时通知弹窗 (`ui-design-snackbar-scheduled-notification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-snackbar-scheduled-notification
+    - 核心操作栏 (`ui-design-actionbar`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-actionbar
+      - 设置有主按钮的组件 (`ui-design-actionbar-main-buttons`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-actionbar-main-buttons
+      - 设置无主按钮的组件 (`ui-design-actionbar-without-master-button`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-actionbar-without-master-button
+    - 列表 (`ui-design-list-item-card`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-list-item-card
+      - 设置附带横滑的列表样式 (`ui-design-set-hds-slide-horizon-listitem`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-set-hds-slide-horizon-listitem
+      - 设置列表卡片样式 (`ui-design-set-listitem-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-set-listitem-style
+    - 应用加载自定义Symbol (`ui-design-config-custom-symbol`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-config-custom-symbol
+      - 资源注册 (`ui-design-custom-symbol-res-register`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-custom-symbol-res-register
+    - 视效 (`ui-design-visual-effect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect
+      - 点光源效果 (`ui-design-visual-effect-point-light`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-point-light
+      - 按压阴影 (`ui-design-visual-effect-background-color`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-background-color
+      - 双边边缘流光 (`ui-design-visual-effect-double-edge-streamer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-double-edge-streamer
+      - 背景流光 (`ui-design-visual-effect-background-streamer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-background-streamer
+      - 自带背景的双边流光 (`ui-design-visual-effect-background-streamer2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-background-streamer2
+    - 应用内多窗 (`ui-design-multiwindowentryinapp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-multiwindowentryinapp
+    - UI Design Kit常见问题 (`ui-design-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-faq
+      - 怎么获取layeredDrawableDescriptor对象信息？ (`ui-design-faq1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-faq1
+- 系统
+  - 安全 (`system-security`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-security
+    - 程序访问控制 (`access-control`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-control
+      - 访问控制概述 (`access-token-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-token-overview
+      - 应用权限管控 (`app-permission-mgmt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt
+        - 应用权限管控概述 (`app-permission-mgmt-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview
+        - 申请应用权限 (`request-app-permissions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-app-permissions
+          - 选择申请权限的方式 (`determine-application-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/determine-application-mode
+          - 声明权限 (`declare-permissions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions
+          - 向用户申请授权 (`request-user-authorization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization
+          - 再次向用户申请授权 (`request-user-authorization-second`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization-second
+          - 向用户申请单次授权 (`one-time-authorization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/one-time-authorization
+          - 手动设置授权 (`open-permission-on-setting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/open-permission-on-setting
+          - 申请受限权限 (`declare-permissions-in-acl`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl
+        - 应用权限列表 (`app-permissions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions
+          - 开放权限（系统授权） (`permissions-for-all`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all
+          - 开放权限（用户授权） (`permissions-for-all-user`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user
+          - 受限开放权限 (`restricted-permissions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions
+          - 企业类应用可用权限 (`permissions-for-enterprise-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-enterprise-apps
+          - 仅MDM应用可用权限 (`permissions-for-mdm-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-mdm-apps
+        - 应用权限组列表 (`app-permission-group-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-group-list
+        - 抓包/调试权限常见问题 (`faqs-permissions-debug`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/faqs-permissions-debug
+      - 使用安全控件 (`security-components`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-components
+        - 安全控件概述 (`security-component-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-component-overview
+        - 使用粘贴控件 (`pastebutton`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton
+        - 使用保存控件 (`savebutton`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/savebutton
+      - 使用系统Picker (`use-picker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-picker
+    - 密码自动填充服务 (`passwordvault`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault
+      - 密码自动填充服务概述 (`passwordvault-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-overview
+      - 应用接入密码保险箱 (`passwordvault-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-apps
+        - 快速适配 (`passwordvault-quick-adaptation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation
+        - 自动保存 (`passwordvault-autosave`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autosave
+          - 账号密码保存 (`passwordvault-save-acc-password`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-save-acc-password
+          - 账号密码更新 (`passwordvault-update-acc-password`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-update-acc-password
+        - 自动填充 (`passwordvault-autofill`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill
+          - 账号密码填充 (`passwordvault-autofill-acc-password`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-acc-password
+          - 强密码填充 (`passwordvault-autofill-strong-password`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-strong-password
+          - 为应用添加自动生成高强度密码的建议 (`passwordvault-custom-strong-password-rules`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-custom-strong-password-rules
+        - 自定义布局下的适配建议 (`passwordvault-adaptation-in-custom-layout`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-adaptation-in-custom-layout
+        - 系统可适配的场景 (`passwordvault-special-scenarios`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-special-scenarios
+      - 网页接入密码保险箱 (`arkweb-access-password-safe`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-access-password-safe
+      - 应用与网页共用账号密码 (`password-shared-apps-web-pages`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/password-shared-apps-web-pages
+    - 应用加密 (`code-protect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-protect
+    - Asset Store Kit（关键资产存储服务） (`asset-store-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-store-kit
+      - Asset Store Kit简介 (`asset-store-kit-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-store-kit-overview
+      - 常见场景 (`asset-scenarios`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-scenarios
+        - 保护密码类数据 (`asset-scenario1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-scenario1
+        - 保护需要用户认证的密码类数据 (`asset-scenario2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-scenario2
+      - Asset Store Kit开发指导(ArkTS) (`asset-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-arkts
+        - 新增关键资产(ArkTS) (`asset-js-add`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-add
+        - 删除关键资产(ArkTS) (`asset-js-remove`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-remove
+        - 更新关键资产(ArkTS) (`asset-js-update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-update
+        - 查询关键资产(ArkTS) (`asset-js-query`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-query
+        - 查询需要用户认证的关键资产(ArkTS) (`asset-js-query-auth`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-query-auth
+        - 管理群组关键资产(ArkTS) (`asset-js-group-access-control`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-group-access-control
+        - 同步（备份恢复）关键资产(ArkTS) (`asset-js-sync`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-sync
+      - Asset Store Kit开发指导(C/C++) (`asset-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native
+        - 新增关键资产(C/C++) (`asset-native-add`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-add
+        - 删除关键资产(C/C++) (`asset-native-remove`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-remove
+        - 更新关键资产(C/C++) (`asset-native-update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-update
+        - 查询关键资产(C/C++) (`asset-native-query`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-query
+        - 管理群组关键资产(C/C++) (`asset-native-group-access-control`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-group-access-control
+        - 同步（备份恢复）关键资产(C/C++) (`asset-native-sync`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-sync
+    - Crypto Architecture Kit（加解密算法框架服务） (`crypto-architecture-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit
+      - Crypto Architecture Kit简介 (`crypto-architecture-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit-intro
+      - 密钥生成和转换 (`crypto-key-generation-conversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion
+        - 密钥生成与转换介绍 (`crypto-key-generation-conversion-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion-overview
+        - 密钥生成和转换规格 (`crypto-key-generation-conversion-spec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion-spec
+          - 对称密钥生成和转换规格 (`crypto-sym-key-generation-conversion-spec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-key-generation-conversion-spec
+          - 非对称密钥生成和转换规格 (`crypto-asym-key-generation-conversion-spec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec
+        - 密钥生成和转换开发指导 (`crypto-key-generation-conversion-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion-dev
+          - 随机生成对称密钥(ArkTS) (`crypto-generate-sym-key-randomly`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-sym-key-randomly
+          - 随机生成对称密钥(C/C++) (`crypto-generate-sym-key-randomly-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-sym-key-randomly-ndk
+          - 指定二进制数据转换对称密钥(ArkTS) (`crypto-convert-binary-data-to-sym-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-convert-binary-data-to-sym-key
+          - 指定二进制数据转换对称密钥(C/C++) (`crypto-convert-binary-data-to-sym-key-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-convert-binary-data-to-sym-key-ndk
+          - 随机生成非对称密钥对(ArkTS) (`crypto-generate-asym-key-pair-randomly`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-asym-key-pair-randomly
+          - 随机生成非对称密钥对(C/C++) (`crypto-generate-asym-key-pair-randomly-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-asym-key-pair-randomly-ndk
+          - 指定二进制数据转换非对称密钥对(ArkTS) (`crypto-convert-binary-data-to-asym-key-pair`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-convert-binary-data-to-asym-key-pair
+          - 指定二进制数据转换非对称密钥对(C/C++) (`crypto-convert-binary-data-to-asym-key-pair-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-convert-binary-data-to-asym-key-pair-ndk
+          - 指定密钥参数生成非对称密钥对(ArkTS) (`crypto-generate-asym-key-pair-from-key-spec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-asym-key-pair-from-key-spec
+          - 指定密钥参数生成非对称密钥对(C/C++) (`crypto-generate-asym-key-pair-from-key-spec-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-asym-key-pair-from-key-spec-ndk
+          - 使用ECC压缩/非压缩公钥格式转换(ArkTS) (`ypto-convert-compressed-or-uncompressed-ecc-pubkey`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ypto-convert-compressed-or-uncompressed-ecc-pubkey
+          - 使用ECC压缩/非压缩公钥格式转换(C/C++) (`-convert-compressed-or-uncompressed-ecc-pubkey-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/-convert-compressed-or-uncompressed-ecc-pubkey-ndk
+          - 使用ECC压缩/非压缩点格式转换(ArkTS) (`rypto-convert-compressed-or-uncompressed-ecc-point`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rypto-convert-compressed-or-uncompressed-ecc-point
+          - 使用ECC压缩/非压缩点格式转换(C/C++) (`o-convert-compressed-or-uncompressed-ecc-point-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/o-convert-compressed-or-uncompressed-ecc-point-ndk
+          - 指定PEM格式字符串数据转换非对称密钥对(ArkTS) (`crypto-convert-string-data-to-asym-key-pair`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-convert-string-data-to-asym-key-pair
+          - 指定PEM格式字符串数据转换非对称密钥对(C/C++) (`crypto-convert-string-data-to-asym-key-pair-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-convert-string-data-to-asym-key-pair-ndk
+          - 使用RSA私钥进行编码解码(ArkTS) (`crypto-rsa-encoded-decoded`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-encoded-decoded
+          - 使用RSA私钥进行编码解码(C/C++) (`crypto-rsa-encoded-decoded-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-encoded-decoded-ndk
+      - 加解密 (`crypto-encryption-decryption`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encryption-decryption
+        - 加解密介绍 (`crypto-encryption-decryption-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encryption-decryption-overview
+        - 加解密算法规格 (`crypto-encrypt-decrypt-spec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encrypt-decrypt-spec
+          - 对称密钥加解密算法规格 (`crypto-sym-encrypt-decrypt-spec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-encrypt-decrypt-spec
+          - 非对称密钥加解密算法规格 (`crypto-asym-encrypt-decrypt-spec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-encrypt-decrypt-spec
+          - 分段加解密说明 (`crypto-encrypt-decrypt-by-segment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encrypt-decrypt-by-segment
+        - 加解密开发指导 (`crypto-encrypt-decrypt-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encrypt-decrypt-dev
+          - 使用AES对称密钥（GCM模式）加解密(ArkTS) (`crypto-aes-sym-encrypt-decrypt-gcm`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-gcm
+          - 使用AES对称密钥（GCM模式）加解密(C/C++) (`crypto-aes-sym-encrypt-decrypt-gcm-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-gcm-ndk
+          - 使用AES对称密钥（CCM模式）加解密(ArkTS) (`crypto-aes-sym-encrypt-decrypt-ccm`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-ccm
+          - 使用AES对称密钥（CCM模式）加解密(C/C++) (`crypto-aes-sym-encrypt-decrypt-ccm-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-ccm-ndk
+          - 使用AES对称密钥（CBC模式）加解密(ArkTS) (`crypto-aes-sym-encrypt-decrypt-cbc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-cbc
+          - 使用AES对称密钥（CBC模式）加解密(C/C++) (`crypto-aes-sym-encrypt-decrypt-cbc-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-cbc-ndk
+          - 使用AES对称密钥（ECB模式）加解密(ArkTS) (`crypto-aes-sym-encrypt-decrypt-ecb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-ecb
+          - 使用AES对称密钥（ECB模式）加解密(C/C++) (`crypto-aes-sym-encrypt-decrypt-ecb-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-ecb-ndk
+          - 使用AES对称密钥（GCM模式）分段加解密(ArkTS) (`crypto-aes-sym-encrypt-decrypt-gcm-by-segment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-gcm-by-segment
+          - 使用AES对称密钥（GCM模式）分段加解密(C/C++) (`crypto-aes-sym-encrypt-decrypt-gcm-by-segment-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-gcm-by-segment-ndk
+          - 使用DES对称密钥（ECB模式）加解密(ArkTS) (`crypto-des-sym-encrypt-decrypt-ecb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-des-sym-encrypt-decrypt-ecb
+          - 使用DES对称密钥（ECB模式）加解密(C/C++) (`crypto-des-sym-encrypt-decrypt-ecb-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-des-sym-encrypt-decrypt-ecb-ndk
+          - 使用3DES对称密钥加解密(ArkTS) (`crypto-3des-sym-encrypt-decrypt-ecb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-3des-sym-encrypt-decrypt-ecb
+          - 使用3DES对称密钥加解密(C/C++) (`crypto-3des-sym-encrypt-decrypt-ecb-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-3des-sym-encrypt-decrypt-ecb-ndk
+          - 使用SM4对称密钥（ECB模式）加解密(ArkTS) (`crypto-sm4-sym-encrypt-decrypt-ecb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm4-sym-encrypt-decrypt-ecb
+          - 使用SM4对称密钥（ECB模式）加解密(C/C++) (`crypto-sm4-sym-encrypt-decrypt-ecb-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm4-sym-encrypt-decrypt-ecb-ndk
+          - 使用SM4对称密钥（CBC模式）加解密(ArkTS) (`crypto-sm4-sym-encrypt-decrypt-cbc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm4-sym-encrypt-decrypt-cbc
+          - 使用SM4对称密钥（CBC模式）加解密(C/C++) (`crypto-sm4-sym-encrypt-decrypt-cbc-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm4-sym-encrypt-decrypt-cbc-ndk
+          - 使用SM4对称密钥（GCM模式）加解密(ArkTS) (`crypto-sm4-sym-encrypt-decrypt-gcm`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm4-sym-encrypt-decrypt-gcm
+          - 使用SM4对称密钥（GCM模式）加解密(C/C++) (`crypto-sm4-sym-encrypt-decrypt-gcm-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm4-sym-encrypt-decrypt-gcm-ndk
+          - 使用SM4对称密钥（GCM模式）分段加解密(ArkTS) (`crypto-sm4-sym-encrypt-decrypt-gcm-by-segment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm4-sym-encrypt-decrypt-gcm-by-segment
+          - 使用SM4对称密钥（GCM模式）分段加解密(C/C++) (`crypto-sm4-sym-encrypt-decrypt-gcm-by-segment-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm4-sym-encrypt-decrypt-gcm-by-segment-ndk
+          - 使用ChaCha20对称密钥加解密(ArkTS) (`crypto-chacha20-encrypt-decrypt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-chacha20-encrypt-decrypt
+          - 使用ChaCha20对称密钥加解密(C/C++) (`crypto-chacha20-encrypt-decrypt-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-chacha20-encrypt-decrypt-ndk
+          - 使用ChaCha20对称密钥（Poly1305模式）加解密(ArkTS) (`crypto-chacha20-encrypt-decrypt-poly1305`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-chacha20-encrypt-decrypt-poly1305
+          - 使用ChaCha20对称密钥（Poly1305模式）加解密(C/C++) (`crypto-chacha20-encrypt-decrypt-poly1305-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-chacha20-encrypt-decrypt-poly1305-ndk
+          - 使用RSA非对称密钥（PKCS1模式）加解密(ArkTS) (`crypto-rsa-asym-encrypt-decrypt-pkcs1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-asym-encrypt-decrypt-pkcs1
+          - 使用RSA非对称密钥（PKCS1模式）加解密(C/C++) (`crypto-rsa-asym-encrypt-decrypt-pkcs1-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-asym-encrypt-decrypt-pkcs1-ndk
+          - 使用RSA非对称密钥分段加解密(ArkTS) (`crypto-rsa-asym-encrypt-decrypt-by-segment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-asym-encrypt-decrypt-by-segment
+          - 使用RSA非对称密钥分段加解密(C/C++) (`crypto-rsa-asym-encrypt-decrypt-by-segment-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-asym-encrypt-decrypt-by-segment-ndk
+          - 使用RSA非对称密钥（PKCS1_OAEP模式）加解密 (`crypto-rsa-asym-encrypt-decrypt-pkcs1_oaep`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-asym-encrypt-decrypt-pkcs1_oaep
+          - 使用SM2非对称密钥加解密(ArkTS) (`crypto-sm2-asym-encrypt-decrypt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm2-asym-encrypt-decrypt
+          - 使用SM2非对称密钥加解密(C/C++) (`crypto-sm2-asym-encrypt-decrypt-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm2-asym-encrypt-decrypt-ndk
+          - 使用AES-WRAP算法对对称密钥加解密(ArkTS) (`crypto-aes-wrap-encrypt-decrypt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-wrap-encrypt-decrypt
+          - 使用AES-WRAP算法对对称密钥加解密(C/C++) (`crypto-aes-wrap-encrypt-decrypt-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-wrap-encrypt-decrypt-ndk
+          - 使用SM2密文格式转换(ArkTS) (`crypto-sm2-ciphertext-conversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm2-ciphertext-conversion
+          - 使用SM2密文格式转换(C/C++) (`crypto-sm2-ciphertext-conversion-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm2-ciphertext-conversion-ndk
+      - 签名验签 (`crypto-sign-sig-verify`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify
+        - 签名验签介绍及算法规格 (`crypto-sign-sig-verify-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview
+        - 签名验签开发指导 (`crypto-sign-sig-verify-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-dev
+          - 使用RSA密钥对（PKCS1模式）签名验签(ArkTS) (`crypto-rsa-sign-sig-verify-pkcs1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pkcs1
+          - 使用RSA密钥对签名验签 (PKCS1模式)(C/C++) (`crypto-rsa-sign-sig-verify-pkcs1-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pkcs1-ndk
+          - 使用RSA密钥对（PKCS1模式）签名及签名恢复(ArkTS) (`crypto-rsa-sign-sig-verify-recover-pkcs1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-recover-pkcs1
+          - 使用RSA密钥对（PKCS1模式）签名恢复(C/C++) (`crypto-rsa-sign-sig-verify-recover-pkcs1-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-recover-pkcs1-ndk
+          - 使用RSA密钥对分段签名验签（PKCS1模式）(ArkTS) (`crypto-rsa-sign-sig-verify-pkcs1-by-segment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pkcs1-by-segment
+          - 使用RSA密钥对分段签名验签 (PKCS1模式)(C/C++) (`crypto-rsa-sign-sig-verify-pkcs1-by-segment-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pkcs1-by-segment-ndk
+          - 使用RSA密钥对签名验签（PSS模式）(ArkTS) (`crypto-rsa-sign-sig-verify-pss`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pss
+          - 使用RSA密钥对签名验签 (PSS模式)(C/C++) (`crypto-rsa-sign-sig-verify-pss-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pss-ndk
+          - 使用ECDSA密钥对签名验签(ArkTS) (`crypto-ecdsa-sign-sig-verify`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-ecdsa-sign-sig-verify
+          - 使用ECDSA密钥对签名验签 (C/C++) (`crypto-ecdsa-sign-sig-verify-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-ecdsa-sign-sig-verify-ndk
+          - 使用SM2密钥对签名验签(ArkTS) (`crypto-sm2-sign-sig-verify-pkcs1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm2-sign-sig-verify-pkcs1
+          - 使用SM2密钥对签名验签 (C/C++) (`crypto-sm2-sign-sig-verify-pkcs1-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm2-sign-sig-verify-pkcs1-ndk
+          - SM2签名数据格式转换(ArkTS) (`crypto-sm2-sign-data-format-conversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm2-sign-data-format-conversion
+          - SM2签名数据格式转换 (C/C++) (`crypto-sm2-sign-data-format-conversion-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm2-sign-data-format-conversion-ndk
+      - 密钥协商 (`crypto-key-agreement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement
+        - 密钥协商介绍及算法规格 (`crypto-key-agreement-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-overview
+        - 密钥协商开发指导 (`crypto-key-agreement-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-dev
+          - 使用ECDH进行密钥协商(ArkTS) (`crypto-key-agreement-using-ecdh`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-ecdh
+          - 使用ECDH进行密钥协商(C/C++) (`crypto-key-agreement-using-ecdh-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-ecdh-ndk
+          - 使用X25519进行密钥协商(ArkTS) (`crypto-key-agreement-using-x25519`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-x25519
+          - 使用X25519进行密钥协商(C/C++) (`crypto-key-agreement-using-x25519-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-x25519-ndk
+          - 使用DH进行密钥协商(ArkTS) (`crypto-key-agreement-using-dh`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-dh
+          - 使用DH进行密钥协商(C/C++) (`crypto-key-agreement-using-dh-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-dh-ndk
+      - 消息摘要计算 (`crypto-generate-message`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message
+        - 消息摘要计算介绍及算法规格 (`crypto-generate-message-digest-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-overview
+        - 消息摘要计算开发指导 (`crypto-generate-message-digest-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-dev
+          - 消息摘要计算SHA256(ArkTS) (`crypto-generate-message-digest`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest
+          - 消息摘要计算SHA256(C/C++) (`crypto-generate-message-digest-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-ndk
+          - 消息摘要计算MD5(ArkTS) (`crypto-generate-message-digest-md5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-md5
+          - 消息摘要计算MD5(C/C++) (`crypto-generate-message-digest-md5-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-md5-ndk
+          - 消息摘要计算SHA3(ArkTS) (`crypto-generate-message-digest-sha3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-sha3
+          - 消息摘要计算SHA3-256(C/C++) (`crypto-generate-message-digest-sha3-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-sha3-ndk
+      - 消息认证码 (`crypto-compute-mac`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-mac
+        - 消息认证码计算介绍及算法规格 (`crypto-compute-mac-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-mac-overview
+        - 消息认证码计算HMAC(ArkTS) (`crypto-compute-hmac`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-hmac
+        - 消息认证码计算HMAC(C/C++) (`crypto-compute-hmac-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-hmac-ndk
+        - 消息认证码计算CMAC(ArkTS) (`crypto-compute-cmac`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-cmac
+        - 消息认证码计算CMAC(C/C++) (`crypto-compute-cmac-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-cmac-ndk
+      - 随机数 (`crypto-compute-rand`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-rand
+        - 安全随机数生成(ArkTS) (`crypto-generate-random-number`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-random-number
+        - 安全随机数生成(C/C++) (`crypto-generate-random-number-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-random-number-ndk
+        - 使用硬件熵源生成安全随机数(ArkTS) (`crypto-generate-random-number-hardware`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-random-number-hardware
+        - 使用硬件熵源生成安全随机数(C/C++) (`crypto-generate-random-number-hardware-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-random-number-hardware-ndk
+      - 密钥派生 (`crypto-key-derivation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation
+        - 密钥派生介绍及算法规格 (`crypto-key-derivation-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-overview
+        - 使用PBKDF2进行密钥派生(ArkTS) (`crypto-key-derivation-using-pbkdf2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-using-pbkdf2
+        - 使用PBKDF2进行密钥派生(C/C++) (`crypto-key-derivation-using-pbkdf2-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-using-pbkdf2-ndk
+        - 使用HKDF进行密钥派生(ArkTS) (`crypto-key-derivation-using-hkdf`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-using-hkdf
+        - 使用HKDF进行密钥派生(C/C++) (`crypto-key-derivation-using-hkdf-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-using-hkdf-ndk
+        - 使用SCRYPT进行密钥派生(ArkTS) (`crypto-key-derivation-using-scrypt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-using-scrypt
+        - 使用SCRYPT进行密钥派生(C/C++) (`crypto-key-derivation-using-scrypt-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-using-scrypt-ndk
+        - 使用X963KDF进行密钥派生(ArkTS) (`crypto-key-derivation-using-x963kdf`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-using-x963kdf
+        - 使用X963KDF进行密钥派生(C/C++) (`crypto-key-derivation-using-x963kdf-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-using-x963kdf-ndk
+      - 跨平台数据兼容实践指导 (`crypto-development-practice`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-development-practice
+      - Crypto Architecture Kit常见问题 (`crypto-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-faqs
+        - AES解密失败返回17630001 (`crypto-aes-decryption-error-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-decryption-error-faq
+    - Data Protection Kit（数据保护服务） (`data-protection-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-protection-kit
+      - 数据防泄漏服务 (`dlp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dlp
+        - 数据防泄漏服务简介 (`dlp-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dlp-overview
+        - 数据防泄漏服务开发指导 (`dlp-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dlp-guidelines
+        - 适配加密分享 (`dlp-adapting-encrypted-sharing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dlp-adapting-encrypted-sharing
+    - Device Certificate Kit（设备证书服务） (`device-certificate-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-certificate-kit
+      - Device Certificate Kit简介 (`device-certificate-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-certificate-kit-intro
+      - 证书算法库框架 (`certificate-framework`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certificate-framework
+        - 证书算法库框架概述 (`certificate-framework-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certificate-framework-overview
+        - 证书对象的创建、解析和校验 (`create-parse-verify-cert-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-parse-verify-cert-object
+        - 证书扩展信息对象的创建、解析和校验 (`create-parse-verify-certextension-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-parse-verify-certextension-object
+        - 证书吊销列表对象的创建、解析和校验 (`create-parse-verify-crl-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-parse-verify-crl-object
+        - 证书链校验时从p12文件构造TrustAnchor对象数组 (`create-trustanchor-from-p12`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-trustanchor-from-p12
+        - 证书链校验器对象的创建和校验 (`create-verify-cerchainvalidator-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-verify-cerchainvalidator-object
+        - 证书集合及证书吊销列表集合对象的创建和获取 (`create-get-cert-crl-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-get-cert-crl-object
+        - 证书链对象的创建和校验 (`create-verify-certchain-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-verify-certchain-object
+        - 使用系统预置CA证书校验证书链 (`verify-certchain-by-systemca`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/verify-certchain-by-systemca
+        - 证书CMS签名 (`create-cms-sign-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-cms-sign-object
+        - 证书CMS封装 (`create-cms-enveloped-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-cms-enveloped-object
+        - 证书CMS验签 (`create-cms-verify-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-cms-verify-object
+        - 证书CMS解封装 (`create-cms-decapsulation-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-cms-decapsulation-object
+        - 证书PKCS12的创建和解析 (`create-parse-pkcs12`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-parse-pkcs12
+        - 证书链在线校验证书吊销状态 (`create-verify-cerchainvalidator-revocation-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-verify-cerchainvalidator-revocation-object
+      - 证书管理 (`certmanager`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager
+        - 证书管理概述 (`certmanager-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-overview
+        - 应用证书凭据开发指导 (`certmanager-private-credential-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-private-credential-guidelines
+        - CA证书开发指导 (`certmanager-ca-certs-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-ca-certs-guidelines
+        - 证书管理对话框开发指导 (`certmanagerdialog-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanagerdialog-guidelines
+    - Device Security Kit（设备安全服务） (`device-security-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-security-kit-guide
+      - Device Security Kit简介 (`devicesecurity-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-introduction
+      - 服务配额 (`devicesecurity-quota`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-quota
+      - 开发准备 (`devicesecurity-prepare`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-prepare
+        - 开通Device Security服务 (`devicesecurity-deviceverify-activateservice`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-activateservice
+        - 基于服务账号生成鉴权令牌 (`devicesecurity-deviceverify-token`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-token
+        - （可选）申请使用受限权限 (`devicesecurity-prepare-declarepermissions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-prepare-declarepermissions
+      - 应用设备状态检测 (`devicesecurity-deviceverify-develop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-develop
+      - 安全检测 (`devicesecurity-safetydetect-develop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-safetydetect-develop
+        - 系统完整性检测 (`devicesecurity-sysintegrity-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-sysintegrity-check
+        - URL检测 (`devicesecurity-urlthreat-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-urlthreat-check
+        - 本地系统完整性检测 (`devicesecurity-sysintegrity-check-onlocal`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-sysintegrity-check-onlocal
+        - 系统完整性增强检测 (`devicesecurity-sysintegrityenhanced-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-sysintegrityenhanced-check
+      - 可信应用服务 (`devicesecurity-taas-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-dev
+        - 安全摄像头场景 (`devicesecurity-taas-securecamera`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securecamera
+        - 安全地理位置场景 (`devicesecurity-taas-securelocation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securelocation
+        - 安全图像压缩、裁剪场景 (`devicesecurity-taas-secimage-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-secimage-process
+        - 签名验证 (`devicesecurity-taas-verify`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-verify
+          - 验证匿名证书链 (`devicesecurity-taas-verifycertchain`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-verifycertchain
+          - 验证签名 (`devicesecurity-taas-verifysignature`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-verifysignature
+      - 数字盾服务 (`devicesecurity-trustedauth-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-service
+        - 数字盾服务概述 (`devicesecurity-trustedauth-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-overview
+        - 数字盾密码管理 (`devicesecurity-trustedauth-pwdmng`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-pwdmng
+          - 设置数字盾密码 (`devicesecurity-trustedauth-setpwd`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-setpwd
+          - 修改数字盾密码 (`devicesecurity-trustedauth-modifypwd`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-modifypwd
+          - 关闭数字盾服务 (`devicesecurity-trustedauth-disablepwd`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-disablepwd
+        - 交易信息密码认证 (`devicesecurity-trustedauth-verifybypwd`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-verifybypwd
+        - 生物特征绑定、认证与解绑 (`devicesecurity-trustedauth-bio`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-bio
+          - 开通生物特征认证能力 (`devicesecurity-trustedauth-enablebio`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-enablebio
+          - 生物特征认证交易 (`devicesecurity-trustedauth-verifybybio`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-verifybybio
+          - 关闭指定生物类型认证能力 (`devicesecurity-trustedauth-del-bio`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-del-bio
+        - 数字盾签名密钥备份与恢复 (`devicesecurity-trustedauth-backupdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-backupdata
+      - 安全审计 (`devicesecurity-audit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit
+        - 单客户端订阅场景 (`devicesecurity-audit-subscribe-arkts-suevent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-arkts-suevent
+        - 多客户端订阅场景 (`devicesecurity-audit-subscribe-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-arkts
+          - 订阅通知类事件 (`devicesecurity-audit-subscribe-arkts-filterevent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-arkts-filterevent
+          - 订阅阻断类事件 (`devicesecurity-audit-subscribe-arkts-auth`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-arkts-auth
+        - 进程信息查询场景 (`devicesecurity-audit-queryproc-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-queryproc-arkts
+        - 多客户端订阅场景（C/C++） (`devicesecurity-audit-subscribe-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-c
+          - 订阅通知类事件 (`devicesecurity-audit-subscribe-c-filterevent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-c-filterevent
+          - 订阅阻断类事件 (`devicesecurity-audit-subscribe-c-auth`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-c-auth
+        - 进程信息查询场景（C/C++） (`devicesecurity-audit-queryproc-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-queryproc-c
+      - 业务风险检测 (`devicesecurity-brid-develop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-brid-develop
+        - 涉诈剧本检测 (`devicesecurity-fraudriskdetection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-fraudriskdetection
+        - 模拟点击检测 (`devicesecurity-simulatedclickdetection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-simulatedclickdetection
+        - 模拟点击增强检测 (`devicesecurity-detectsimulatedclickriskenhanced`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-detectsimulatedclickriskenhanced
+      - 查询设备安全模式(C/C++) (`devicesecurity-securitymode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-securitymode
+      - 反诈选择器 (`devicesecurity-antifraudpicker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-antifraudpicker
+        - 获取诈骗消息 (`devicesecurity-selectfraudmessage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-selectfraudmessage
+        - 获取诈骗通话记录 (`devicesecurity-selectfraudcalllog`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-selectfraudcalllog
+        - 获取诈骗应用 (`devicesecurity-selectfraudapp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-selectfraudapp
+      - 防窥保护 (`devicesecurity-dlpantipeep`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-dlpantipeep
+      - 病毒防护服务管理(C) (`devicesecurity-vps-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-vps-c
+      - 超级隐私模式 (`devicesecurity-superprivacymode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-superprivacymode
+        - 查询当前状态场景 (`devicesecurity-getsuperprivacymode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-getsuperprivacymode
+        - 订阅状态改变事件场景 (`devicesecurity-subscribe-superprivacymode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-subscribe-superprivacymode
+      - 个人数据处理说明 (`devicesecurity-personal-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-personal-data
+      - 附录 (`devicesecurity-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-appendix
+        - 支持的国家/地区 (`devicesecurity-appendix-region`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-appendix-region
+    - Enterprise Data Guard Kit（企业数据保护服务） (`data-guard-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-guard-kit-guide
+      - Enterprise Data Guard Kit简介 (`dataguard-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-introduction
+      - 开发准备 (`dataguard-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-preparations
+      - 文件分级管控 (`dataguard-fileguard-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-fileguard-guide
+        - 启动公共目录文件扫描任务 (`fileguard-start-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-start-task
+        - 打开文件 (`fileguard-openfile`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-openfile
+        - 设置文件属性标签 (`fileguard-set-tags`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-set-tags
+        - 获取文件属性标签 (`fileguard-query-tags`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-query-tags
+        - 获取文件URI (`fileguard-get-file-url`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-get-file-url
+        - 删除扫描范围内的文件 (`fileguard-delete-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-delete-file
+        - 更新安全管控策略 (`fileguard-update-policy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-update-policy
+        - 设置KIA文件列表 (`fileguard-kia-file-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-kia-file-list
+        - 订阅或取消订阅KIA文件拷贝、重命名和压缩事件 (`fileguard-kia-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-kia-event
+        - 设置KIA文件水印图片 (`fileguard-set-kia-watermark`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-set-kia-watermark
+      - 企业恢复密钥 (`dataguard-enterprise-recoverykey`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-enterprise-recoverykey
+        - 获取解密硬盘数据的企业恢复密钥 (`recoverykey-getkeyfordecryptdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-getkeyfordecryptdata
+        - 获取重置锁屏密码的企业恢复密钥 (`recoverykey-getkeyforresetpin`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-getkeyforresetpin
+        - 获取挑战值 (`recoverykey-get-authchallenge`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-get-authchallenge
+        - 挑战值签名 (`recoverykey-signature`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature
+        - 更新企业公钥证书 (`recoverykey-update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-update
+        - 删除企业恢复密钥 (`recoverykey-delete`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-delete
+      - Enterprise Data Guard Kit常见问题 (`dataguard-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-faq
+        - Enterprise Data Guard Kit权限获取失败 (`dataguard-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-faq-1
+    - Online Authentication Kit（在线认证服务） (`online-authentication-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/online-authentication-kit-guide
+      - Online Authentication Kit简介 (`onlineauthentication-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-introduction
+      - 开发准备 (`onlineauthentication-preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-preparation
+      - FIDO免密身份认证 (`onlineauthentication-fido`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-fido
+      - IFAA免密身份认证 (`onlineauthentication-ifaa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-ifaa
+      - SOTER免密身份认证 (`onlineauthentication-soter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-soter
+      - 通行密钥 (`onlineauthentication-passkey`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-passkey
+        - 概述 (`onlineauthentication-passkey-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-passkey-intro
+        - 通行密钥身份认证（ArkTS） (`onlineauthentication-passkey-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-passkey-arkts
+        - 通行密钥身份认证（C/C++） (`onlineauthentication-passkey-cpp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-passkey-cpp
+      - 网站链接免责声明 (`onlineauthentication-website-disclaimer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-website-disclaimer
+    - Universal Keystore Kit（密钥管理服务） (`huks-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-kit
+      - Universal Keystore Kit简介 (`huks-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview
+      - 本地密钥管理 (`huks-local-key-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-local-key-management
+        - 本地密钥管理基础概念 (`huks-concepts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-concepts
+        - 密钥生成/导入 (`huks-key-generation-import`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-import
+          - 密钥生成 (`huks-key-generation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation
+            - 密钥生成介绍及算法规格 (`huks-key-generation-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview
+            - 生成密钥(ArkTS) (`huks-key-generation-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-arkts
+            - 生成密钥(C/C++) (`huks-key-generation-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-ndk
+          - 密钥导入 (`huks-key-import`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import
+            - 密钥导入介绍及算法规格 (`huks-key-import-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview
+            - 明文导入密钥(ArkTS) (`huks-import-key-in-plaintext-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-import-key-in-plaintext-arkts
+            - 明文导入密钥(C/C++) (`huks-import-key-in-plaintext-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-import-key-in-plaintext-ndk
+            - 安全导入密钥(ArkTS) (`huks-import-wrapped-key-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-import-wrapped-key-arkts
+            - 安全导入密钥(C/C++) (`huks-import-wrapped-key-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-import-wrapped-key-ndk
+        - 密钥使用 (`huks-key-use`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-use
+          - 密钥使用介绍及通用流程 (`huks-key-use-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-use-overview
+          - 加密/解密 (`huks-encryption-decryption`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption
+            - 加密/解密介绍及算法规格 (`huks-encryption-decryption-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption-overview
+            - 加解密(ArkTS) (`huks-encryption-decryption-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption-arkts
+            - 加解密(C/C++) (`huks-encryption-decryption-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption-ndk
+          - 签名/验签 (`huks-signing-signature-verification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification
+            - 签名/验签介绍及算法规格 (`huks-signing-signature-verification-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-overview
+            - 签名/验签(ArkTS) (`huks-signing-signature-verification-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts
+            - 签名/验签(C/C++) (`huks-signing-signature-verification-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-ndk
+          - 密钥协商 (`huks-key-agreement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement
+            - 密钥协商介绍及算法规格 (`huks-key-agreement-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement-overview
+            - 密钥协商(ArkTS) (`huks-key-agreement-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement-arkts
+            - 密钥协商(C/C++) (`huks-key-agreement-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement-ndk
+          - 密钥派生 (`huks-key-derivation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-derivation
+            - 密钥派生介绍及算法规格 (`huks-key-derivation-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-derivation-overview
+            - 密钥派生(ArkTS) (`huks-key-derivation-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-derivation-arkts
+            - 密钥派生(C/C++) (`huks-key-derivation-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-derivation-ndk
+          - 访问控制 (`huks-identity-authentication`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-identity-authentication
+            - 用户身份认证访问控制简介 (`huks-identity-authentication-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-identity-authentication-overview
+            - 用户身份认证访问控制开发指导 (`huks-user-identity-authentication`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-user-identity-authentication
+            - 细粒度用户身份认证访问控制开发指导 (`huks-refined-user-identity-authentication`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-refined-user-identity-authentication
+          - HMAC (`huks-hmac`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-hmac
+            - HMAC介绍及算法规格 (`huks-hmac-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-hmac-overview
+            - HMAC(ArkTS) (`huks-hmac-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-hmac-arkts
+            - HMAC(C/C++) (`huks-hmac-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-hmac-ndk
+          - CMAC (`huks-cmac`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac
+            - CMAC(ArkTS) (`huks-cmac-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac-arkts
+            - CMAC(C/C++) (`huks-cmac-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac-native
+        - 密钥删除 (`huks-delete-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-delete-key
+          - 密钥删除(ArkTS) (`huks-delete-key-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-delete-key-arkts
+          - 密钥删除(C/C++) (`huks-delete-key-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-delete-key-ndk
+        - 密钥证明 (`huks-key-attestation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-attestation
+          - 密钥证明介绍及算法规格 (`huks-key-attestation-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-attestation-overview
+          - 匿名密钥证明(ArkTS) (`huks-key-anon-attestation-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-anon-attestation-arkts
+          - 匿名密钥证明(C/C++) (`huks-key-anon-attestation-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-anon-attestation-ndk
+        - 应用真实性证明 (`device-attestation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation
+          - 应用真实性证明简介 (`device-attestation-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-intro
+          - 创建密钥确立可信凭证 (`device-attestation-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-guidelines
+            - 应用端开发 (`device-attestation-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-apps
+            - 服务器端开发 (`device-attestation-servers`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-servers
+          - 签名验签识别真实请求 (`attestation-signature-verification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/attestation-signature-verification
+            - 应用端开发 (`attestation-signature-verification-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/attestation-signature-verification-apps
+            - 服务器端开发 (`attestation-signature-verification-servers`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/attestation-signature-verification-servers
+          - 验证应用请求真实性集成设计实践 (`device-attestation-practice`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-practice
+        - 其他操作 (`huks-other-operations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-other-operations
+          - 查询密钥是否存在 (`huks-check-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-check-key
+            - 查询密钥是否存在(ArkTS) (`huks-check-key-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-check-key-arkts
+            - 查询密钥是否存在(C/C++) (`huks-check-key-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-check-key-ndk
+          - 获取密钥属性 (`huks-obtain-key-properties`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-obtain-key-properties
+            - 获取密钥属性(ArkTS) (`huks-obtain-key-properties-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-obtain-key-properties-arkts
+            - 获取密钥属性(C/C++) (`huks-obtain-key-properties-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-obtain-key-properties-ndk
+          - 密钥导出 (`huks-export-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-export-key
+            - 密钥导出(ArkTS) (`huks-export-key-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-export-key-arkts
+            - 密钥导出(C/C++) (`huks-export-key-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-export-key-ndk
+          - 查询密钥别名集 (`huks-list-aliases`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-list-aliases
+            - 查询密钥别名集(ArkTS) (`huks-list-aliases-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-list-aliases-arkts
+            - 查询密钥别名集(C/C++) (`huks-list-aliases-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-list-aliases-ndk
+      - 外部密钥管理扩展 (`huks-external-key-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-external-key-management
+        - 外部密钥管理扩展简介 (`huks-external-hardware-key-management-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-external-hardware-key-management-overview
+        - Provider管理 (`huks-provider-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-provider-management
+          - Provider管理介绍及规格 (`huks-provider-management-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-provider-management-overview
+          - 注册/注销Provider(ArkTS) (`ks-extension-registration-and-unregistration-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ks-extension-registration-and-unregistration-arkts
+          - 注册/注销Provider(C/C++) (`huks-extension-registration-and-unregistration-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-extension-registration-and-unregistration-ndk
+        - 资源管理 (`huks-resource-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-resource-management
+          - 资源管理介绍及规格 (`huks-resource-management-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-resource-management-overview
+          - 打开资源/关闭资源(C/C++) (`huks-open-close-resource-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-open-close-resource-ndk
+        - UkeyPIN码认证管理 (`huks-ukey-pin-authentication-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-pin-authentication-management
+          - Ukey PIN码认证介绍及规格 (`huks-ukey-pin-authentication-management-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-pin-authentication-management-overview
+          - 查询认证状态(ArkTS) (`huks-query-authentication-status-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-query-authentication-status-arkts
+          - 查询认证状态(C/C++) (`huks-query-authentication-status-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-query-authentication-status-ndk
+        - 签名/验签 (`huks-ukey-signing-signature-verification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-signing-signature-verification
+          - 签名/验签介绍及算法规格 (`huks-ukey-signing-signature-verification-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-signing-signature-verification-overview
+          - 签名/验签(ArkTS) (`huks-ukey-signing-signature-verification-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-signing-signature-verification-arkts
+          - 签名/验签(C/C++) (`huks-ukey-signing-signature-verification-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-signing-signature-verification-ndk
+        - 通用操作 (`huks-ukey-general-operation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-general-operation
+          - 通用查询介绍及规格 (`huks-ukey-general-query-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-general-query-overview
+          - 通用查询(ArkTS) (`huks-ukey-general-query-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-general-query-arkts
+          - 通用查询(C/C++) (`huks-ukey-general-query-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-general-query-ndk
+        - 驱动HAP ExtensionAbility适配指导 (`huks-extension-ability-support`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-extension-ability-support
+          - CryptoExtensionAbility扩展能力介绍 (`huks-extension-ability-support-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-extension-ability-support-overview
+          - CryptoExtensionAbility适配开发指导 (`huks-extension-ability-support-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-extension-ability-support-dev
+    - User Authentication Kit（用户认证服务） (`user-authentication-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-authentication-kit
+      - User Authentication Kit简介 (`user-authentication-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-authentication-overview
+      - 用户身份认证开发指导 (`user-authentication-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-authentication-dev
+        - 开发准备 (`prerequisites`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/prerequisites
+        - 查询支持的认证能力 (`obtain-supported-authentication-capabilities`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-authentication-capabilities
+        - 发起认证 (`start-authentication`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-authentication
+        - 认证过程中取消认证 (`cancel-authentication`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cancel-authentication
+        - 感知和调整认证过程 (`perceive-adjust-authentication-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/perceive-adjust-authentication-process
+        - 切换自定义认证 (`apply-custom-authentication`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apply-custom-authentication
+        - 查询用户注册凭据的状态 (`obtain-enrolled-state-capabilities`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-enrolled-state-capabilities
+        - 使用嵌入式用户身份认证控件 (`user-auth-icon`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-auth-icon
+        - 查询指定认证类型的认证冻结状态 (`obtain-auth-lock-state-capabilities`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-auth-lock-state-capabilities
+  - 网络 (`system-network`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-network
+    - Connectivity Kit（短距通信服务） (`connectivity-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit
+      - Connectivity Kit简介 (`connectivity-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit-intro
+      - 蓝牙 (`bluetooth`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bluetooth
+        - 蓝牙服务开发概述 (`bluetooth-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bluetooth-overview
+        - 蓝牙设置 (`br-development-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-development-guide
+        - 传统蓝牙 (`bluetooth-br`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bluetooth-br
+          - 查找设备 (`br-discovery-development-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-discovery-development-guide
+          - 配对与连接设备 (`br-pair-device-development-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-pair-device-development-guide
+          - 连接和传输数据 (`spp-development-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spp-development-guide
+        - 低功耗蓝牙 (`bluetooth-ble`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bluetooth-ble
+          - 查找设备 (`ble-development-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ble-development-guide
+          - 连接和传输数据 (`gatt-development-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gatt-development-guide
+      - NFC (`nfc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nfc
+        - NFC标签读写开发指南 (`nfc-tag-access-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nfc-tag-access-guide
+        - HCE卡模拟开发指南 (`nfc-hce-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nfc-hce-guide
+        - 安全单元访问开发指南 (`nfc-se-access-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nfc-se-access-guide
+      - WLAN (`wlan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wlan
+        - WLAN服务开发概述 (`wlan-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wlan-overview
+        - P2P模式开发指南 (`p2p-development-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/p2p-development-guide
+        - STA模式开发指南 (`sta-development-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sta-development-guide
+        - Wi-Fi扫描开发指南 (`scan-development-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-development-guide
+      - Connectivity Kit术语 (`terminology`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology
+    - Distributed Service Kit（分布式管理服务） (`distributed-service-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-service-kit
+      - Distributed Service Kit简介 (`distributedservice-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributedservice-kit-intro
+      - 分布式设备管理开发指南 (`devicemanager-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicemanager-guidelines
+      - 应用跨设备连接管理 (`abilityconnect-distributed`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilityconnect-distributed
+        - 跨设备连接UIAbility开发指南 (`abilityconnectmanager-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilityconnectmanager-guidelines
+        - 增强连接开发指导 (`linkenhance_development-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/linkenhance_development-guide
+    - NearLink Kit（星闪服务） (`nearlink-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-kit-guide
+      - NearLink Kit简介 (`nearlink-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-introduction
+      - NearLink Kit术语 (`nearlink-terminology`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-terminology
+      - 开发准备 (`nearlink-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-preparations
+      - 查询星闪开关状态 (`nearlink-getstate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-getstate
+      - 发送星闪广播 (`nearlink-send-advertising`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-send-advertising
+      - 发起星闪扫描 (`nearlink-start-scan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-start-scan
+      - SSAP连接及数据传输 (`nearlink-ssap-connect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-ssap-connect
+        - SSAP服务端 (`nearlink-ssap-server-connect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-ssap-server-connect
+        - SSAP客户端 (`nearlink-ssap-client-connect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-ssap-client-connect
+      - 使用星闪传输数据 (`nearlink-start-data-transfer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-start-data-transfer
+      - NearLink Kit常见问题 (`nearlink-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-faq
+    - Network Kit（网络服务） (`network-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit
+      - Network Kit简介 (`net-mgmt-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-mgmt-overview
+      - Network Kit术语 (`network-terminology`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-terminology
+      - 访问网络 (`network-kit-data-transmission`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit-data-transmission
+        - 使用HTTP访问网络 (`http-request`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request
+        - 使用WebSocket访问网络 (`websocket-connection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/websocket-connection
+        - 使用WebSocket访问网络(C/C++) (`native-websocket-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-websocket-guidelines
+        - 使用Socket访问网络 (`socket-connection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/socket-connection
+        - 使用MDNS访问局域网服务 (`net-mdns`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-mdns
+      - 连接网络 (`network-kit-network-connecttion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit-network-connecttion
+        - 管理网络连接 (`net-connection-manager`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-connection-manager
+        - 管理网络连接(C/C++) (`native-netmanager-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-netmanager-guidelines
+        - 连接VPN (`net-vpnextension`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-vpnextension
+      - 管理网络 (`network-kit-network-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit-network-management
+        - 统计网络流量消耗 (`net-statistics`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-statistics
+        - 使用网络防火墙 (`net-netfirewall`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-netfirewall
+        - 扩展认证 (`net-eap`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-eap
+    - Network Boost Kit（网络加速服务） (`network-boost-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-boost-kit-guide
+      - Network Boost Kit简介 (`networkboost-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-introduction
+      - 开发准备 (`networkboost-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-preparations
+      - 网络质量 (`networkboost-netqualityguide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netqualityguide
+        - 网络质量评估 (`networkboost-qoscallback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-qoscallback
+        - 网络场景识别 (`networkboost-scenecallback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-scenecallback
+        - 应用传输体验反馈 (`networkboost-appreportqoe`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-appreportqoe
+        - 弱网感知判决 (`networkboost-weaksignaljudge`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-weaksignaljudge
+      - 连接迁移（多网切换） (`networkboost-nethandoverguide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-nethandoverguide
+        - 连接迁移通知 (`networkboost-nethandovercallback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-nethandovercallback
+        - 迁移模式设置 (`networkboost-reporthandovermode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-reporthandovermode
+      - 连接迁移（多网并发） (`networkboost-netmultipathguide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipathguide
+        - 概述 (`networkboost-netmultipath-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-overview
+        - 业务场景设置 (`networkboost-netmultipath-setscenedesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-setscenedesc
+        - 多网状态监听 (`networkboost-netmultipath-statechangecallback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-statechangecallback
+        - 多网建议监听 (`networkboost-netmultipath-recommendcallback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-recommendcallback
+        - 多网配额查询 (`networkboost-netmultipath-getmultipathquota`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-getmultipathquota
+        - 多网发起和释放 (`networkboost-netmultipath-request-release`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-request-release
+      - 网络质量 (C/C++) (`networkboost-netqualityguide-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netqualityguide-c
+        - 网络质量评估 (C/C++) (`networkboost-qoscallback-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-qoscallback-c
+        - 网络场景识别 (C/C++) (`networkboost-scenecallback-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-scenecallback-c
+        - 应用传输体验反馈 (C/C++) (`networkboost-appreportqoe-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-appreportqoe-c
+        - 弱网感知判决 (C/C++) (`networkboost-weaksignaljudge-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-weaksignaljudge-c
+      - 连接迁移(多网切换) (C/C++) (`networkboost-nethandoverguide-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-nethandoverguide-c
+        - 连接迁移通知 (C/C++) (`networkboost-nethandovercallback-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-nethandovercallback-c
+        - 迁移模式设置 (C/C++) (`networkboost-reporthandovermode-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-reporthandovermode-c
+      - 连接迁移(多网并发)（C/C++） (`networkboost-netmultipathguide-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipathguide-c
+        - 业务场景设置(C/C++) (`networkboost-netmultipath-setscenedesc-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-setscenedesc-c
+        - 多网状态监听(C/C++) (`networkboost-netmultipath-statechangecallback-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-statechangecallback-c
+        - 多网建议监听(C/C++) (`networkboost-netmultipath-recommendcallbackp-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-recommendcallbackp-c
+        - 多网配额查询(C/C++) (`networkboost-netmultipath-getmultipathquota-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-getmultipathquota-c
+        - 多网发起和释放(C/C++) (`networkboost-netmultipath-request-release-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-request-release-c
+    - Remote Communication Kit（远场通信服务） (`remote-communication-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-kit-guide
+      - Remote Communication Kit简介 (`remote-communication-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-introduction
+      - 开发准备 (`remote-communication-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-preparations
+      - 使用HTTP协议进行网络通信 (`remote-communication-netcom`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netcom
+        - 发起HTTP请求，获取响应 (`remote-communication-netinit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netinit
+          - 发送网络请求（ArkTS） (`remote-communication-netsend-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netsend-arkts
+          - 取消网络请求（ArkTS） (`remote-communication-netcancle-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netcancle-arkts
+          - 关闭会话（ArkTS） (`remote-communication-netclose-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netclose-arkts
+          - 发送网络请求（C++） (`remote-communication-netsend-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netsend-c
+          - 取消网络请求（C++） (`remote-communication-netcancle-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netcancle-c
+          - 关闭会话（C++） (`remote-communication-netclose-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netclose-c
+        - 实现HTTP请求定制 (`remote-communication-customhttp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customhttp
+          - Configuration：高效实现定制功能 (`remote-communication-customconfig`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customconfig
+            - DnsConfiguration：定制DNS (`remote-communication-customdnsconfig`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customdnsconfig
+            - TransferConfiguration：定制数据传输 (`remote-communication-customtranferconfig`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customtranferconfig
+            - ProxyConfiguration：定制代理 (`remote-communication-customproxyconfig`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customproxyconfig
+            - SecurityConfiguration：定制安全传输行为 (`remote-communication-customsecurityconfig`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customsecurityconfig
+            - ProcessingConfiguration：定制处理行为 (`remote-communication-customprocessconfig`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customprocessconfig
+          - 拦截器：更丰富、更高阶的定制能力 (`remote-communication-interceptconfig`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-interceptconfig
+        - 文件上传下载 (`remote-communication-filetransfer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-filetransfer
+          - 快速实现上传下载 (`remote-communication-filetransferfast`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-filetransferfast
+          - 实现请求暂停、恢复与断点续传 (`remote-communication-pauseresume`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-pauseresume
+        - 实现流式请求 (`remote-communication-streamreq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-streamreq
+          - 流式传输 (`remote-communication-syncstreamreq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-syncstreamreq
+      - 提升HTTP传输性能 (`remote-communication-hpp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-hpp
+        - 基于TracingConfiguration实现性能维测 (`remote-communication-tpms`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-tpms
+        - 通过配置Configuration优化传输性能 (`remote-communication-cpo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cpo
+        - 使用HTTP缓存功能提升资源获取性能 (`remote-communication-cache`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cache
+          - HTTP缓存基本功能 (`remote-communication-cache-basic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cache-basic
+          - Session间缓存共享 (`remote-communication-cache-shared`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cache-shared
+          - 自定义缓存拦截器 (`remote-communication-cache-intercept`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cache-intercept
+      - URPC场景 (`remote-communication-urpc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-urpc
+        - 使用URPC进行远程程序调用 (`remote-communication-urpccall`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-urpccall
+    - Service Collaboration Kit（协同服务） (`service-collaboration-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/service-collaboration-kit-guide
+      - Service Collaboration Kit简介 (`servicecollaborationkit-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaborationkit-introduction
+      - 跨设备互通（ArkTS） (`servicecollaboration-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-service
+        - 跨设备互通特性简介 (`servicecollaboration-service-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-service-overview
+        - 跨设备互通开发指导 (`servicecollaboration-dev-guides`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-dev-guides
+      - 跨设备互通NDK（C） (`servicecollaboration-servicendk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-servicendk
+        - 跨设备互通NDK特性概述 (`servicecollaboration-servicendk-description`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-servicendk-description
+        - 跨设备互通NDK开发指导 (`servicecollaboration-servicendk-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-servicendk-guide
+      - 跨设备互通（RichEditor控件） (`servicecollaboration-richeditor-title`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-richeditor-title
+      - Service Collaboration Kit常见问题 (`servicecollaboration-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-faq
+        - 接入跨设备互通控件后，设备选择列表没有周围设备 (`servicecollaboration-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-faq-1
+    - Telephony Kit（蜂窝通信服务） (`telephony-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-kit
+      - Telephony Kit简介 (`telephony-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-overview
+      - 拨打电话 (`telephony-call`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-call
+      - 短信服务 (`telephony-sms`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-sms
+    - 网络调试调优 (`network-debug-optimize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-debug-optimize
+      - 使用网络领航员进行网络模拟 (`network-navigator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-navigator
+  - 基础功能 (`system-basicfun`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-basicfun
+    - Basic Services Kit（基础服务） (`basic-services-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-services-kit
+      - Basic Services Kit简介 (`basic-services-kit-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-services-kit-overview
+      - 进程线程通信 (`app-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-events
+        - 使用公共事件进行进程间通信 (`common-event-communication`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-communication
+          - 公共事件简介 (`common-event-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-overview
+          - 动态订阅公共事件 (`common-event-subscription`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-subscription
+          - 取消动态订阅公共事件 (`common-event-unsubscription`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-unsubscription
+          - 发布公共事件 (`common-event-publish`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-publish
+          - 订阅公共事件（C/C++） (`native-common-event-subscription`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-common-event-subscription
+          - 取消订阅公共事件（C/C++） (`native-common-event-unsubscription`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-common-event-unsubscription
+          - 发布公共事件（C/C++） (`native-common-event-publish`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-common-event-publish
+        - 使用Emitter进行线程间通信 (`itc-with-emitter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/itc-with-emitter
+      - 账号管理 (`account-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-management
+        - 应用账号 (`application-account`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-account
+          - 管理应用账号 (`manage-application-account`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/manage-application-account
+      - USB服务 (`usb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb
+        - 开发USB服务 (`usb-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-dev
+          - USB服务开发概述 (`usbhost-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usbhost-overview
+          - USB Host模式开发 (`usb-host-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-host-dev
+            - USB设备管理 (`devicemanager`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicemanager
+            - USB控制传输 (`controltransfer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/controltransfer
+            - USB中断传输 (`interrupttransfer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interrupttransfer
+            - USB批量传输 (`bulktransfer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bulktransfer
+            - USB实时传输 (`isochronoustransfer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/isochronoustransfer
+        - 开发USB串口通信服务 (`usb-serial-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-serial-dev
+          - USB串口通信服务开发概述 (`usbserial-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usbserial-overview
+          - USB串口配置管理 (`usbserial-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usbserial-configuration
+          - USB串口通信管理 (`usbserial-communication`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usbserial-communication
+        - 常见问题 (`faqs-usb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/faqs-usb
+        - USB服务开发术语 (`usb-glossary`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-glossary
+      - 升级服务 (`update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/update
+        - 示例服务器开发概述 (`sample-server-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sample-server-overview
+        - 示例服务器开发指导 (`sample-server-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sample-server-guidelines
+      - 剪贴板服务 (`pasteboard`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pasteboard
+        - 申请访问剪贴板权限 (`get-pastedata-permission-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines
+        - 使用剪贴板进行复制粘贴 (`use-pasteboard-to-copy-and-paste`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-pasteboard-to-copy-and-paste
+        - 使用剪贴板进行复制粘贴 (C/C++) (`native-use-pasteboard`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-use-pasteboard
+        - 使用剪贴板进行延迟复制粘贴 (`pasteboard-time-lapse-copy-and-paste`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pasteboard-time-lapse-copy-and-paste
+      - 上传下载 (`upload-download`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/upload-download
+        - 应用文件上传下载 (`app-file-upload-download`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-upload-download
+      - 压缩与解压 (`compress`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/compress
+        - 压缩与解压 (`deflate-and-inflate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deflate-and-inflate
+      - 打印 (`print`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/print
+        - 文件打印（C/C++） (`native-print-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-print-file
+        - 打印扩展能力 (`printextensionabilityguide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/printextensionabilityguide
+    - Desktop Extension Kit（桌面拓展服务） (`status-bar-extension-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/status-bar-extension-kit-guide
+      - DeskTop Extension Kit简介 (`statusbar-extension-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/statusbar-extension-introduction
+      - 应用接入状态栏 (`statusbar-extension-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/statusbar-extension-guide
+      - 应用接入快捷栏 (`desktop-quickbar-extension-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/desktop-quickbar-extension-guide
+    - FAST Kit（算法加速服务） (`fast-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-kit-guide
+      - FAST Kit简介 (`fast-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-introduction
+      - 使用SegmentMap查询维护区间信息 (`fast-segment-map`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-segment-map
+      - 使用RectPartition求解矩形划分 (`fast-rect-partition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-rect-partition
+    - Function Flow Runtime Kit（任务并发调度服务） (`ffrt-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-kit
+      - Function Flow Runtime Kit概述 (`ffrt-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-overview
+      - Function Flow Runtime并发范式 (`ffrt-concurrency-paradigm`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-paradigm
+      - Function Flow Runtime开发样例(C) (`ffrt-example-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-example-c
+        - Function Flow Runtime串行队列(C) (`ffrt-concurrency-serial-queue-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-serial-queue-c
+        - Function Flow Runtime并发队列(C) (`ffrt-concurrency-concurrent-queue-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-concurrent-queue-c
+        - Function Flow Runtime图依赖并发(C) (`ffrt-concurrency-graph-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-graph-c
+      - Function Flow Runtime开发样例(C++) (`ffrt-example-cpp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-example-cpp
+        - Function Flow Runtime串行队列(C++) (`ffrt-concurrency-serial-queue-cpp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-serial-queue-cpp
+        - Function Flow Runtime并发队列(C++) (`ffrt-concurrency-concurrent-queue-cpp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-concurrent-queue-cpp
+        - Function Flow Runtime图依赖并发(C++) (`ffrt-concurrency-graph-cpp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-graph-cpp
+        - Function Flow Runtime任务伙伴(C++) (`ffrt-concurrency-job-partner-cpp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-job-partner-cpp
+      - Function Flow Runtime开发指导 (`ffrt-development-guideline`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-development-guideline
+      - Function Flow Runtime C API (`ffrt-api-guideline-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-api-guideline-c
+    - Input Kit（多模输入服务） (`input-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/input-kit
+      - Input Kit简介 (`input-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/input-overview
+      - 输入设备开发指导 (`inputdevice-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputdevice-guidelines
+      - 优先响应系统功能键开发指导 (`keypressed-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/keypressed-guidelines
+      - 鼠标光标开发指导 (`pointerstyle-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pointerstyle-guidelines
+      - 事件监听开发指导（C/C++） (`monitor-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/monitor-guidelines
+      - 事件拦截开发指导（C/C++） (`interceptor-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interceptor-guidelines
+    - MDM Kit（企业设备管理服务） (`mdm-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit
+      - MDM Kit简介 (`mdm-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-intro
+      - MDM Kit开发指南 (`mdm-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-guide
+      - EnterpriseAdminExtensionAbility开发指南 (`mdm-kit-admin`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-admin
+      - MDM Kit术语 (`mdm-kit-term`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term
+  - 硬件 (`system-hardware`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-hardware
+    - Car Kit（车服务） (`car-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-kit-guide
+      - Car Kit简介 (`car-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-introduction
+      - 开发准备 (`car-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-preparations
+      - 实现车机导航流转 (`car-implement-navi-hop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-implement-navi-hop
+        - 导航流转至车机 (`car-navi-hop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-navi-hop
+        - 地址流转至车机 (`car-address-hop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-address-hop
+        - 下车步行导航流转 (`car-walk-navi-hop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-walk-navi-hop
+      - 获取HiCar连接状态 (`car-get-connect-status`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-get-connect-status
+        - 主动获取HiCar的连接状态 (`car-check-application-start`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-check-application-start
+        - 监听HiCar的连接状态 (`car-listener-connect-status`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-listener-connect-status
+      - 超级桌面应用接入分布式相机 (`car-superlauncher-camera-distributed`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-superlauncher-camera-distributed
+    - Driver Development Kit（驱动开发服务） (`driver-development-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/driver-development-kit
+      - Driver Development Kit简介 (`driverdevelopment-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/driverdevelopment-overview
+      - 环境准备 (`environmental-preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/environmental-preparation
+      - 扩展外设基础驱动开发 (`development-of-basic-drivers`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/development-of-basic-drivers
+        - 开发无UI界面基础驱动 (`driverextensionability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/driverextensionability
+        - 开发带UI界面基础驱动 (`externaldevice-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/externaldevice-guidelines
+      - 扩展外设专项驱动开发 (`specialized-driver-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-driver-development
+        - 开发适用USB协议的设备驱动 (`usb-ddk-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-ddk-guidelines
+        - 开发适用HID协议的设备驱动 (`hid-ddk-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hid-ddk-guidelines
+        - 开发适用串口协议的设备驱动 (`usb-serial-ddk-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-serial-ddk-guidelines
+        - 开发使用SCSI协议的设备驱动 (`scsi-peripheral-ddk-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scsi-peripheral-ddk-guidelines
+      - 常见问题 (`externaldevice-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/externaldevice-faqs
+      - 扩展外设驱动开发术语 (`terms`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terms
+    - Multimodal Awareness Kit（多模态融合感知服务） (`multimodal-awareness-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multimodal-awareness-kit
+      - Multimodal Awareness Kit简介 (`multimodalawareness-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multimodalawareness-kit-intro
+      - Stationary开发指导 (`stationary-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stationary-guidelines
+      - 获取用户动作开发指导 (`motion-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/motion-guidelines
+      - 设备状态感知开发指导 (`devicestatus-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicestatus-guidelines
+      - 用户状态感知开发指导 (`userstatus-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/userstatus-guidelines
+      - 记忆链接开发指导 (`metadatabinding-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/metadatabinding-guidelines
+    - Pen Kit（手写笔服务） (`pen-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-kit-guide
+      - Pen Kit简介 (`pen-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-introduction
+      - 手写功能开发 (`pen-features`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-features
+        - 接入手写套件 (`pen-suite`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-suite
+        - 接入报点预测 (`pen-point-prediction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-point-prediction
+        - 接入一笔成形 (`pen-instant-shape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-instant-shape
+        - 接入全局取色 (`pen-image-feature-picker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-image-feature-picker
+        - 接入手写交互 (`pen-stylus-interaction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-stylus-interaction
+      - 手写功能开发指导（C/C++） (`pen-introduction-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-introduction-c
+        - 接入全局取色 (`pen-image-feature-picker-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-image-feature-picker-c
+        - 接入报点预测 (`pen-point-prediction-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-point-prediction-c
+      - Pen Kit常见问题 (`pen-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq
+        - Pen Kit手写套件是否支持自定义笔刷？ (`pen-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-1
+        - Pen Kit手写套件是否支持自定义笔宽？ (`pen-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-2
+        - Pen Kit手写套件是否支持自定义颜色？ (`pen-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-3
+        - Pen Kit手写套件的工具栏是否可以单独提供？ (`pen-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-4
+        - 集成了Pen Kit手写套件，还需要集成报点预测吗？ (`pen-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-5
+        - 集成了Pen Kit手写套件，还需要集成一笔成形吗？ (`pen-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-6
+        - Pen Kit报点预测功能能够调整预测的程度吗？ (`pen-faq-7`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-7
+        - 为什么一笔成形识别不出来？ (`pen-faq-8`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-8
+    - Sensor Service Kit（传感器服务） (`sensor-service-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-service-kit
+      - Sensor Service Kit开发简介 (`sensorservice-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensorservice-kit-intro
+      - 传感器 (`sensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor
+        - 传感器开发概述 (`sensor-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-overview
+        - 传感器开发指导(ArkTS) (`sensor-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-guidelines
+        - 传感器开发指导(C/C++) (`sensor-guidelines-capi`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-guidelines-capi
+      - 振动 (`vibrator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vibrator
+        - 振动开发概述 (`vibrator-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vibrator-overview
+        - 振动开发指导(ArkTS) (`vibrator-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vibrator-guidelines
+        - 振动开发指导(C/C++) (`vibrator-guidelines-capi`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vibrator-guidelines-capi
+    - Mechanic Kit（机械设备管理服务） (`mechanic-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mechanic-kit
+      - Mechanic Kit简介 (`mechanic-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mechanic-kit-intro
+      - 智能拍摄跟踪开发指南 (`camera-tracking-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-tracking-guide
+    - Wear Engine Kit（穿戴服务） (`wear-engine-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wear-engine-kit-guide
+      - Wear Engine Kit简介 (`wearengine_introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_introduction
+        - 业务简介 (`we-business_introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-business_introduction
+        - 场景介绍 (`scene_introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scene_introduction
+      - 手机侧应用开发 (`wearengine_phonedev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_phonedev
+        - 接入准备 (`wearengine_preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_preparation
+          - 申请接入Wear Engine服务 (`wearengine_apply`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply
+          - 配置Client ID (`configuration_client_id`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/configuration_client_id
+        - 应用开发 (`wear-engine-app-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wear-engine-app-development
+          - 已连接穿戴设备查询 (`query_connected_devices`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices
+          - 请求用户授权 (`request_user_authorization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request_user_authorization
+          - 穿戴设备信息查询 (`query_device_info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_device_info
+          - 目标设备选择 (`we-device-selection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-device-selection
+          - 应用间消息通信 (`p2p_communication`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/p2p_communication
+          - 状态查询与订阅 (`query_and_subscribe_status`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_and_subscribe_status
+          - 穿戴设备模板化通知 (`device_notification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device_notification
+          - 穿戴设备传感器获取 (`device_sensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device_sensor
+          - 管理应用与Wear Engine服务的连接状态 (`wearengine_service_status`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_service_status
+      - 穿戴侧应用开发 (`wearengine_watchdev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_watchdev
+        - 已连接对端设备查询 (`watch_query_connected_devices`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_query_connected_devices
+        - 应用间消息通信 (`watch_p2p_communication`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_p2p_communication
+      - 调测验证 (`wearengine_verification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_verification
+      - Wear Engine常见问题 (`wearengine_faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq
+        - 如果工程已有APP ID，是否需要重新申请，填写新的APP ID (`wearengine_faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-1
+        - 使用AppInfo时，如何获取应用身份标识 (`wearengine_faq-9`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-9
+        - 没有弹出用户授权界面 (`wearengine_faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-2
+        - 接口调用时返回App has not applied for the Wear Engine service错误信息 (`wearengine_faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-3
+        - 打开HR传感器后，没有立刻上报数据 (`wearengine_faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-4
+        - HR传感器数据中，存在数值为0或255的异常情况 (`wearengine_faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-5
+        - 手机和轻量级智能穿戴设备通信，提示错误码206 (`wearengine_faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-6
+        - 手机侧应用发送文件给穿戴设备侧应用时，提示错误码1008500011 (`wearengine_faq-7`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-7
+        - 更多：若以上FAQ仍不能解决，可通过在线提单反馈 (`wearengine_faq-8`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-8
+      - 个人数据处理说明 (`wearengine_personal_data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_personal_data
+  - 调测调优 (`system-debug-optimize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-debug-optimize
+    - Performance Analysis Kit（性能分析服务） (`performance-analysis-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit
+      - Performance Analysis Kit简介 (`performance-analysis-kit-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-overview
+      - 故障检测 (`fault-analysis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-analysis
+        - 简介 (`fault-detection-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-detection-overview
+        - 崩溃检测 (`crash-detection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crash-detection
+          - JS Crash（进程崩溃）检测 (`jscrash-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines
+          - Cpp Crash（进程崩溃）检测 (`cppcrash-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines
+        - AddrSanitizer（地址越界）检测 (`address-sanitizer-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-guidelines
+        - AppFreeze（应用冻屏）检测 (`appfreeze-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines
+        - Resource Leak（资源泄漏）检测 (`resource-leak-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines
+        - 任务超时检测 (`apptask-timeout-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines
+        - App Killed（应用终止）检测 (`appkilled-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appkilled-guidelines
+      - 功耗检测 (`power-detection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-detection
+      - 性能检测 (`perf-detection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/perf-detection
+      - 日志打印 (`hilog-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-dev
+        - 使用HiLog打印日志（ArkTS） (`hilog-guidelines-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-guidelines-arkts
+        - 使用HiLog打印日志（C/C++） (`hilog-guidelines-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-guidelines-ndk
+      - 事件订阅 (`hiappevent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent
+        - HiAppEvent介绍 (`hiappevent-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-intro
+        - 使用HiAppEvent订阅事件 (`event-subscription`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/event-subscription
+          - 事件订阅简介 (`event-subscription-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/event-subscription-overview
+          - 事件订阅（ArkTS） (`hiappevent-watcher-app-events-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-events-arkts
+          - 事件订阅（C/C++） (`hiappevent-watcher-app-events-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-events-ndk
+          - 系统事件 (`system-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-events
+            - 崩溃事件 (`crash-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crash-events
+              - 崩溃事件介绍 (`hiappevent-watcher-crash-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events
+              - 订阅崩溃事件（ArkTS） (`hiappevent-watcher-crash-events-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events-arkts
+              - 订阅崩溃事件（C/C++） (`hiappevent-watcher-crash-events-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events-ndk
+            - 应用冻屏事件 (`freeze-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/freeze-events
+              - 应用冻屏事件介绍 (`hiappevent-watcher-freeze-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events
+              - 订阅应用冻屏事件（ArkTS） (`hiappevent-watcher-freeze-events-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events-arkts
+              - 订阅应用冻屏事件（C/C++） (`hiappevent-watcher-freeze-events-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events-ndk
+            - 资源泄漏事件 (`resource-leak-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-events
+              - 资源泄漏事件介绍 (`hiappevent-watcher-resourceleak-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events
+              - 订阅资源泄漏事件（ArkTS） (`hiappevent-watcher-resourceleak-events-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events-arkts
+              - 订阅资源泄漏事件（C/C++） (`hiappevent-watcher-resourceleak-events-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events-ndk
+            - 地址越界事件 (`address-sanitizer-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-events
+              - 地址越界事件介绍 (`hiappevent-watcher-address-sanitizer-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events
+              - 订阅地址越界事件（ArkTS） (`hiappevent-watcher-address-sanitizer-events-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events-arkts
+              - 订阅地址越界事件（C/C++） (`hiappevent-watcher-address-sanitizer-events-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events-ndk
+            - 主线程超时事件 (`main-thread-jank-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/main-thread-jank-events
+              - 主线程超时事件介绍 (`hiappevent-watcher-mainthreadjank-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events
+              - 订阅主线程超时事件（ArkTS） (`hiappevent-watcher-mainthreadjank-events-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events-arkts
+              - 订阅主线程超时事件（C/C++） (`hiappevent-watcher-mainthreadjank-events-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events-ndk
+            - 任务执行超时事件 (`app-hicollie-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-hicollie-events
+              - 任务执行超时事件介绍 (`hiappevent-watcher-apphicollie-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-apphicollie-events
+              - 订阅任务执行超时事件（ArkTS） (`hiappevent-watcher-apphicollie-events-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-apphicollie-events-arkts
+              - 订阅任务执行超时事件（C/C++） (`hiappevent-watcher-apphicollie-events-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-apphicollie-events-ndk
+            - 应用终止事件 (`app-killed-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-killed-events
+              - 应用终止事件介绍 (`hiappevent-watcher-app-killed-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events
+              - 订阅应用终止事件（ArkTS） (`hiappevent-watcher-app-killed-events-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events-arkts
+              - 订阅应用终止事件（C/C++） (`hiappevent-watcher-app-killed-events-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events-ndk
+            - 启动耗时事件 (`startup-duration-events`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/startup-duration-events
+              - 启动耗时事件介绍 (`hiappevent-watcher-app-launch-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-launch-event
+              - 订阅启动耗时事件（ArkTS） (`hiappevent-watcher-app-launch-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-launch-arkts
+            - 滑动丢帧事件 (`frame-drops-event-during-scrolling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/frame-drops-event-during-scrolling
+              - 滑动丢帧事件介绍 (`hiappevent-watcher-scroll-jank-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-scroll-jank-event
+              - 订阅滑动丢帧事件（ArkTS） (`hiappevent-watcher-scroll-jank-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-scroll-jank-arkts
+            - CPU高负载事件 (`high-cpu-load-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/high-cpu-load-event
+              - CPU高负载事件介绍 (`hiappevent-watcher-cpu-usage-high-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-cpu-usage-high-event
+              - 订阅CPU高负载事件（ArkTS） (`hiappevent-watcher-cpu-usage-high-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-cpu-usage-high-arkts
+            - 24h功耗器件分解统计事件 (`24-hour-battery-usage-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/24-hour-battery-usage-event
+              - 24h功耗器件分解统计事件介绍 (`hiappevent-watcher-battery-usage-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-battery-usage-event
+              - 订阅24h功耗器件分解统计事件（ArkTS） (`hiappevent-watcher-battery-usage-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-battery-usage-arkts
+            - 音频卡顿事件 (`hiappevent-audio-jank-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-audio-jank-event
+              - 音频卡顿事件介绍 (`hiappevent-watcher-audio-jank-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-audio-jank-event
+              - 订阅音频卡顿事件（ArkTS） (`hiappevent-watcher-audio-jank-event-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-audio-jank-event-arkts
+              - 订阅音频卡顿事件（C/C++） (`hiappevent-watcher-audio-jank-event-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-audio-jank-event-c
+        - HiAppEvent常见问题 (`hiappevent-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-faq
+        - 使用FaultLogExtensionAbility订阅事件 (`fault-log-extension-app-events-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-log-extension-app-events-arkts
+      - 性能跟踪 (`hitracemeter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter
+        - HiTraceMeter介绍 (`hitracemeter-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-intro
+        - 使用HiTraceMeter跟踪性能（ArkTS） (`hitracemeter-guidelines-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-guidelines-arkts
+        - 使用HiTraceMeter跟踪性能（C/C++） (`hitracemeter-guidelines-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-guidelines-ndk
+        - 查看HiTraceMeter日志 (`hitracemeter-view`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-view
+      - 分布式调用链跟踪 (`hitracechain`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain
+        - HiTraceChain介绍 (`hitracechain-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-intro
+        - 使用HiTraceChain打点（ArkTS） (`hitracechain-guidelines-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-guidelines-arkts
+        - 使用HiTraceChain打点（C/C++） (`hitracechain-guidelines-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-guidelines-ndk
+      - 检测模式 (`hichecker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hichecker
+        - 使用HiChecker检测问题（ArkTS） (`hichecker-guidelines-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hichecker-guidelines-arkts
+      - 系统调试信息获取 (`hidebug`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug
+        - HiDebug能力概述 (`hidebug-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines
+        - HiDebug接口使用示例(ArkTS) (`hidebug-guidelines-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines-arkts
+        - HiDebug接口使用示例(C/C++) (`hidebug-guidelines-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines-ndk
+      - 业务线程超时检测 (`hicollie`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hicollie
+        - 使用HiCollie检测业务线程卡死卡顿问题（C/C++） (`hicollie-guidelines-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hicollie-guidelines-ndk
+        - 使用HiCollie监控函数执行时间超长问题（C/C++） (`hicollie-settimer-guidelines-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hicollie-settimer-guidelines-ndk
+      - 错误管理及应用恢复 (`error-manager`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/error-manager
+        - 错误管理开发指导 (`errormanager-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/errormanager-guidelines
+        - 应用恢复开发指导 (`apprecovery-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apprecovery-guidelines
+      - Performance Analysis Kit术语 (`performance-analysis-kit-terminology`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology
+    - Test Kit（应用测试服务） (`test-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-kit
+      - Test Kit简介 (`test-kit-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-kit-overview
+    - 调试命令 (`debugging-commands`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debugging-commands
+      - SDK命令行工具简介 (`command-line-tools-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/command-line-tools-overview
+      - hdc (`hdc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc
+      - aa工具 (`aa-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool
+      - bm工具 (`bm-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool
+      - 打包拆包工具 (`packing-unpacking`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/packing-unpacking
+        - 打包工具 (`packing-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/packing-tool
+        - 拆包工具 (`unpacking-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unpacking-tool
+      - 扫描工具 (`app-check-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-check-tool
+      - cem工具 (`cem-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cem-tool
+      - anm工具 (`anm-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/anm-tool
+      - edm工具 (`edm-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/edm-tool
+      - restool工具 (`restool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restool
+      - param工具 (`param-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/param-tool
+      - power-shell工具 (`power-shell`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-shell
+      - atm工具 (`atm-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/atm-tool
+      - network-cfg工具 (`network-cfg`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-cfg
+      - hilog (`hilog`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog
+      - hilogtool (`hilog-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-tool
+      - hidumper (`hidumper-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper-tool
+        - hidumper (`hidumper`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper
+        - PrivacyManagerService (`hidumper-privacymanagerservice`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper-privacymanagerservice
+      - hitrace (`hitrace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitrace
+      - hiperf (`hiperf`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiperf
+      - hiprofiler (`hiprofiler`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiprofiler
+      - uinput (`uinput`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uinput
+      - 命令行工具 (`command-line-utilities`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/command-line-utilities
+        - toybox (`toybox`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/toybox
+        - 媒体库资源访问工具 (`mediatool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mediatool
+        - devicedebug工具 (`devicedebug-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicedebug-tool
+        - rawheap-translator工具 (`rawheap-translator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawheap-translator
+        - netcopilot工具 (`network-netcopilot`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-netcopilot
+      - 二进制签名工具 (`binary-sign-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/binary-sign-tool
+- 媒体
+  - 媒体开发概览 (`multimedia-development-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multimedia-development-overview
+  - 使用HDR Vivid特性开发媒体应用 (`multimedia-hdr-vivid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multimedia-hdr-vivid
+  - Audio Kit（音频服务） (`audio-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-kit
+    - Audio Kit简介 (`audio-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-kit-intro
+    - 使用合适的音频流类型 (`using-right-streamusage-and-sourcetype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-and-sourcetype
+    - 音频焦点和音频会话管理 (`audio-session`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session
+      - 音频焦点介绍 (`audio-playback-concurrency`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency
+      - 音频会话管理 (`audio-session-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session-management
+      - 使用OHAudio开发音频会话功能(C/C++) (`using-ohaudio-for-session`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-session
+    - 音频播放 (`audio-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback
+      - 音频播放开发概述 (`audio-playback-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-overview
+      - 推荐使用OHAudio开发音频播放功能(C/C++) (`using-ohaudio-for-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback
+      - 使用AudioRenderer开发音频播放功能(ArkTs) (`using-audiorenderer-for-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback
+      - 低时延音频播放(C/C++) (`audio-fast-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-fast-playback
+      - 低功耗音频播放 (`power-saving-for-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-saving-for-playback
+      - 使用AudioHaptic开发音振协同播放功能(ArkTs) (`using-audiohaptic-for-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiohaptic-for-playback
+      - 播放音量管理 (`volume-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/volume-management
+      - 空间音频能力查询和状态订阅 (`public-audio-spatialization-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/public-audio-spatialization-management
+      - 音频播放流管理 (`audio-playback-stream-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-stream-management
+    - 音频录制 (`audio-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-recording
+      - 音频录制开发概述 (`audio-recording-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-recording-overview
+      - 推荐使用OHAudio开发音频录制功能(C/C++) (`using-ohaudio-for-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-recording
+      - 使用AudioCapturer开发音频录制功能(ArkTs) (`using-audiocapturer-for-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiocapturer-for-recording
+      - 低时延音频录制(C/C++) (`audio-fast-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-fast-recording
+      - 管理麦克风静音状态 (`mic-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mic-management
+      - 查询和监听其他应用录制状态 (`audio-recording-stream-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-recording-stream-management
+      - 录音并发策略说明 (`audio-recording-concurrency`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-recording-concurrency
+      - 实现音频耳返 (`audio-ear-monitor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-ear-monitor
+      - 实现音频低时延耳返 (`audio-ear-monitor-loopback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-ear-monitor-loopback
+    - 音频设备路由管理 (`audio-device`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-device
+      - 查询和监听音频输入设备 (`audio-input-device-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-input-device-management
+      - 查询和监听音频输出设备 (`audio-output-device-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-management
+      - 实现音频输入设备路由切换 (`audio-input-device-switcher`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-input-device-switcher
+      - 实现音频输出设备路由切换 (`audio-output-device-switcher`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-switcher
+      - 响应输出设备变更时合理暂停 (`audio-output-device-change`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-change
+    - 音频通话 (`audio-call`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call
+      - 音频通话开发概述 (`audio-call-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call-overview
+      - 开发音频通话功能 (`audio-call-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call-development
+    - 音频性能调优 (`audio-performance-optimization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-performance-optimization
+      - 提升音频性能体验 (`audio-performance`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-performance
+      - 音频工作组管理 (`audio-workgroup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-workgroup
+    - 音频编创 (`audio-production-creation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-production-creation
+      - 音频编创开发概述(C/C++) (`audio-suite`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite
+      - 离线编辑(C/C++) (`audio-suite-manual-rendering`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-manual-rendering
+      - 实时渲染(C/C++) (`audio-suite-real-time-rendering`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-real-time-rendering
+    - OpenSL ES开发指导(不再推荐) (`not-recommended`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/not-recommended
+      - 从OpenSL ES切换到OHAudio(C/C++) (`replace-opensles-by-ohaudio`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/replace-opensles-by-ohaudio
+      - 使用OpenSL ES开发音频播放功能(C/C++) (`using-opensl-es-for-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-opensl-es-for-playback
+      - 使用OpenSL ES开发音频录制功能(C/C++) (`using-opensl-es-for-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-opensl-es-for-recording
+  - AVCodec Kit（音视频编解码服务） (`avcodec-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-kit
+    - AVCodec Kit简介 (`avcodec-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-kit-intro
+    - AVCodec支持的格式 (`avcodec-support-formats`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats
+    - 音视频编解码 (`audio-video-codec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-codec
+      - 获取支持的编解码能力 (`obtain-supported-codecs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs
+      - 音频编码 (`audio-encoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-encoding
+      - 音频编码同步模式 (`synchronous-audio-encoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-audio-encoding
+      - 音频解码 (`audio-decoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-decoding
+      - 音频解码同步模式 (`synchronous-audio-decoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-audio-decoding
+      - 视频编码 (`video-encoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding
+      - 视频编码同步模式 (`synchronous-video-encoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-video-encoding
+      - 时域可分层视频编码 (`video-encoding-temporal-scalability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-temporal-scalability
+      - B帧视频编码 (`video-encoding-b-frame`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-b-frame
+      - 典型场景的视频编码配置 (`video-encoding-configuration-typical-scenarios`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-configuration-typical-scenarios
+      - ROI视频编码 (`video-encoding-roi`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-roi
+      - 视频解码 (`video-decoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding
+      - 视频解码同步模式 (`synchronous-video-decoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-video-decoding
+      - 创建视频解码器和NativeWindow初始化并行 (`parallel-decoding-nativewindow`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/parallel-decoding-nativewindow
+      - 视频可变帧率 (`video-variable-refreshrate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-variable-refreshrate
+      - Audio Vivid能力 (`audiovivid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid
+        - Audio Vivid能力介绍 (`audiovivid-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-intro
+        - Audio Vivid解封装 (`audiovivid-avdemuxer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-avdemuxer
+        - Audio Vivid解码 (`audiovivid-audiodecoder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-audiodecoder
+        - Audio Vivid播放 (`audiovivid-audiorenderer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-audiorenderer
+      - HDR Vivid能力 (`hdr-vivid-capability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-capability
+        - HDR Vivid视频播放 (`hdr-vivid-video-player`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-player
+        - HDR Vivid视频录制 (`hdr-vivid-video-recorder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-recorder
+        - 视频解码支持HDRVivid2SDR (`hdrvivid2sdr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdrvivid2sdr
+    - 媒体数据封装与解析 (`file-muxing-demuxing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-muxing-demuxing
+      - 媒体数据封装 (`audio-video-muxer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-muxer
+      - 媒体数据解析 (`audio-video-demuxer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer
+  - AVSession Kit（音视频播控服务） (`avsession-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-kit
+    - AVSession Kit简介 (`avsession-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-overview
+    - 本地媒体会话 (`local-avsession`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/local-avsession
+      - 本地媒体会话概述 (`local-avsession-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/local-avsession-overview
+      - 媒体会话提供方 (`using-avsession-developer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avsession-developer
+      - 媒体会话提供方(C/C++) (`using-ohavsession-developer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohavsession-developer
+      - 应用接入AVSession场景介绍 (`avsession-access-scene`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene
+      - 后台播放 (`avsession-background-scene`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-background-scene
+    - 分布式媒体会话 (`distributed-avsession`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-avsession
+      - 使用通话设备切换组件 (`using-switch-call-devices`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-switch-call-devices
+      - 使用投播组件 (`distributed-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback
+        - 播控特性简介 (`distributed-playback-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-overview
+        - 投播组件开发指导 (`distributed-playback-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide
+        - 扩展屏投播开发指导 (`avsession-extended-screen`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-extended-screen
+    - 应用接入播控自检 (`playback-control-access-selfcheck`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-control-access-selfcheck
+      - 应用接入播控自检表 (`playback-control-access-checklist`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-control-access-checklist
+      - 应用接入播控检查项详细说明 (`access-checklist`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-checklist
+        - 基础播控 (`basic-playback-control`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control
+        - 快捷播放 (`quick-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/quick-playback
+        - 音视频投播 (`avcastpicker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcastpicker
+    - 播控推荐服务 (`avsession-recommendation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-recommendation
+  - Camera Kit（相机服务） (`camera-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-kit
+    - Camera Kit简介 (`camera-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-overview
+    - 申请相机开发的权限 (`camera-preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation
+    - 开发相机应用必选能力(ArkTS) (`camera-dev-arkts-mandatory`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dev-arkts-mandatory
+      - 相机管理(ArkTS) (`camera-device-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-management
+      - 设备输入(ArkTS) (`camera-device-input`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-input
+      - 会话管理(ArkTS) (`camera-session-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management
+    - 开发相机应用基础能力(ArkTS) (`camera-dev-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dev-arkts
+      - 通过系统相机拍照和录像(CameraPicker) (`camera-picker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-picker
+      - 预览(ArkTS) (`camera-preview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preview
+      - 双路预览(ArkTS) (`camera-dual-channel-preview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dual-channel-preview
+      - 拍照(ArkTS) (`camera-shooting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting
+      - 拍照实践(ArkTS) (`camera-shooting-case`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting-case
+      - 录像(ArkTS) (`camera-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-recording
+      - 录像实践(ArkTS) (`camera-recording-case`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-recording-case
+      - 元数据(ArkTS) (`camera-metadata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-metadata
+      - 手电筒使用(ArkTS) (`camera-torch-use`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-torch-use
+      - 适配不同折叠状态的摄像头变更(ArkTS) (`camera-foldable-display`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-foldable-display
+      - 分段式拍照(ArkTS) (`camera-deferred-capture`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-deferred-capture
+      - 分段式拍照实践(ArkTS) (`camera-deferred-capture-case`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-deferred-capture-case
+      - 动态照片拍摄(ArkTS) (`camera-moving-photo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-moving-photo
+      - 相机基础动效(ArkTS) (`camera-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-animation
+      - 在Worker线程中使用相机(ArkTS) (`camera-worker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-worker
+      - 相机启动恢复实践(ArkTS) (`camera-background-recovery`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-background-recovery
+      - 自动切换摄像头实践(ArkTS) (`camera-auto-switch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-auto-switch
+      - 白平衡设置(ArkTS) (`camera-whitebalance`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-whitebalance
+      - 压力管控(ArkTS) (`camera-system-pressure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-system-pressure
+      - 相机控制器(ArkTS) (`camera-control-center`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-control-center
+      - 微距能力设置(ArkTS) (`camera-macro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-macro
+      - 多摄同开(ArkTS) (`camera-concurrent-open`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-concurrent-open
+      - 对焦(ArkTS) (`camera-focus`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-focus
+      - 相机旋转 (`camera-rotation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation
+        - 适配相机旋转角度(ArkTS) (`camera-rotation-angle-adaptation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-angle-adaptation
+        - 相机旋转角度的术语 (`camera-rotation-term`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term
+      - 安全相机(ArkTS) (`camera-secure-photo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-secure-photo
+      - 动态调整预览帧率(ArkTS) (`camera-framerate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-framerate
+      - 使用相机预配置(ArkTS) (`camera-preconfig`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preconfig
+      - HDR Vivid相机拍照(ArkTS) (`camera-hdr-shooting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-hdr-shooting
+      - HDR Vivid相机录像(ArkTS) (`camera-hdr-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-hdr-recording
+    - 开发相机应用必选能力(C/C++) (`camera-dev-native-mandatory`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dev-native-mandatory
+      - 相机管理 (C/C++) (`native-camera-device-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-device-management
+      - 设备输入(C/C++) (`native-camera-device-input`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-device-input
+      - 会话管理(C/C++) (`native-camera-session-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management
+    - 开发相机应用基础能力(C/C++) (`camera-dev-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dev-native
+      - 预览(C/C++) (`native-camera-preview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-preview
+      - 预览流二次处理(C/C++) (`native-camera-preview-imagereceiver`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-preview-imagereceiver
+      - 拍照(C/C++) (`native-camera-shooting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-shooting
+      - 拍照实践(C/C++) (`native-camera-shooting-case`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-shooting-case
+      - 分段式拍照(C/C++) (`native-camera-deferred-capture`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-deferred-capture
+      - 录像(C/C++) (`native-camera-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-recording
+      - 录像实践(C/C++) (`native-camera-recording-case`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-recording-case
+      - 元数据(C/C++) (`native-camera-metadata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-metadata
+      - 手电筒使用(C++) (`native-camera-torch-use`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-torch-use
+      - 压力管控(C/C++) (`native-camera-system-pressure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-system-pressure
+      - 微距能力设置(C/C++) (`native-camera-macro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-macro
+      - 多摄同开(C/C++) (`native-camera-concurrent-open`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-concurrent-open
+      - 对焦(C/C++) (`camera-focus-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-focus-native
+      - 相机旋转 (`camera-rotation-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-native
+        - 适配相机旋转角度(C/C++) (`camera-rotation-angle-adaptation-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-angle-adaptation-native
+        - 相机旋转角度的术语 (`camera-rotation-term-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term-native
+      - 动态调整预览帧率(C/C++) (`camera-setframerate-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-setframerate-native
+      - 使用相机预配置(C/C++) (`camera-preconfig-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preconfig-native
+  - DRM Kit（数字版权保护服务） (`drm-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-kit
+    - DRM Kit 简介 (`drm-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-overview
+    - 数字版权保护(ArkTS) (`drm-arkts-dev-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-arkts-dev-guide
+    - 数字版权保护(C/C++) (`drm-c-dev-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-c-dev-guide
+    - 基于AVPlayer播放DRM节目(ArkTS) (`drm-avplayer-arkts-integration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-avplayer-arkts-integration
+    - 基于AVCodec播放DRM节目(C/C++) (`drm-avcodec-integration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-avcodec-integration
+  - Image Kit（图片处理服务） (`image-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-kit
+    - Image Kit简介 (`image-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-overview
+    - 图片开发指导(ArkTS) (`image-arkts-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-arkts-dev
+      - 图片解码 (`image-decoding-arts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding-arts
+        - 使用ImageSource完成图片解码 (`image-decoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding
+        - 使用ImageSource完成多图对象解码 (`image-picture-decoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-picture-decoding
+        - 图片解码内存优化(ArkTS) (`image-allocator-type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-allocator-type
+      - 图片编码 (`image-encoding-arts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding-arts
+        - 使用ImagePacker完成图片编码 (`image-encoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding
+        - 使用ImagePacker完成多图对象编码 (`image-picture-encoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-picture-encoding
+      - 图片编辑和处理 (`image-editing-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-editing-arkts
+        - 使用PixelMap完成图像变换 (`image-transformation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-transformation
+        - 使用PixelMap完成位图操作 (`image-pixelmap-operation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-pixelmap-operation
+        - 使用VideoProcessingEngine完成图片超分 (`image-processing-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-processing-arkts
+        - 编辑图片EXIF信息 (`image-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-tool
+      - 图片接收 (`image-receiving-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-receiving-arkts
+        - 使用ImageReceiver完成图片接收 (`image-receiver`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-receiver
+    - 图片开发指导(C/C++) (`image-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-native
+      - 图片解码 (`image-decoding-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding-c
+        - 使用Image_NativeModule完成图片解码 (`image-source-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-source-c
+        - 使用Image_NativeModule完成多图对象解码 (`image-source-picture-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-source-picture-c
+        - 申请图片解码内存(C/C++) (`image-allocator-type-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-allocator-type-c
+      - 图片编码 (`image-encoding-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding-c
+        - 使用Image_NativeModule完成图片编码 (`image-packer-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-packer-c
+        - 使用Image_NativeModule完成多图对象编码 (`image-packer-picture-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-packer-picture-c
+      - 图片编辑和处理 (`image-editing-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-editing-c
+        - 使用Image_NativeModule完成位图操作 (`pixelmap-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pixelmap-c
+        - 使用ImageEffect编辑图片 (`image-effect-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-effect-guidelines
+        - 使用ImageProcessing处理图片 (`image-processing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-processing
+          - 图片缩放 (`image-scaling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-scaling
+          - 图片动态元数据生成 (`image-dynamic-metadata-generation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-dynamic-metadata-generation
+          - 图片色彩空间转换 (`image-csc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-csc
+          - 单层HDR图片转换双层 (`hdr-single-to-dual`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-single-to-dual
+          - 双层HDR图片转换单层 (`hdr-dual-to-single`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-dual-to-single
+        - 使用Image_NativeModule编辑图片Exif信息 (`image-tool-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-tool-c
+      - 图片接收 (`image-receiving-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-receiving-c
+        - 使用Image_NativeModule完成图片接收 (`image-receiver-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-receiver-c
+    - Image Kit常见问题 (`image-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-faqs
+      - 如何处理HEIF图片 (`heif-adapter-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/heif-adapter-faq
+      - 如何获取图片的旋转角度信息 (`image-rotate-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-rotate-faq
+      - Image Kit异常处理 (`image-error-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-error-faq
+    - 图片开发指导(依赖JS对象)(不再推荐) (`image-native-js-objects`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-native-js-objects
+      - 图片解码 (`image-decoding-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding-native
+      - 图片编码 (`image-encoding-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding-native
+      - 图像变换 (`image-transformation-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-transformation-native
+      - 位图操作 (`image-pixelmap-operation-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-pixelmap-operation-native
+      - 图片接收 (`image-receiver-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-receiver-native
+  - Media Kit（媒体服务） (`media-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit
+    - Media Kit简介 (`media-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro
+    - 媒体开发指导(ArkTS) (`media-kit-dev--arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-dev--arkts
+      - 播放 (`media-playback-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-playback-arkts
+        - 使用AVPlayer播放音频(ArkTS) (`using-avplayer-for-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avplayer-for-playback
+        - 使用AVPlayer播放视频(ArkTS) (`video-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-playback
+        - 使用AVPlayer设置播放URL(ArkTS) (`playback-url-setting-method`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-url-setting-method
+        - 使用AVPlayer播放流媒体(ArkTS) (`streaming-media-playback-development-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/streaming-media-playback-development-guide
+        - 使用AVPlayer添加视频外挂字幕(ArkTS) (`video-subtitle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-subtitle
+        - 使用SoundPool播放短音频(ArkTS) (`using-soundpool-for-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-soundpool-for-playback
+      - 录制 (`media-recording-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-recording-arkts
+        - 使用AVRecorder录制音频(ArkTS) (`using-avrecorder-for-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avrecorder-for-recording
+        - 使用AVRecorder录制视频(ArkTS) (`video-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-recording
+        - 使用AVScreenCaptureRecorder录屏写文件(ArkTS) (`using-avscreencapture-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avscreencapture-arkts
+      - 媒体信息查询 (`media-info-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-info-arkts
+        - 使用AVMetadataExtractor提取音视频元数据信息(ArkTS) (`avmetadataextractor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avmetadataextractor
+        - 使用AVImageGenerator提取视频指定时间图像(ArkTS) (`avimagegenerator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avimagegenerator
+      - 视频转码 (`media-transcoder-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-transcoder-arkts
+        - 使用AVTranscoder实现视频转码(ArkTS) (`using-avtranscoder-for-transcodering`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avtranscoder-for-transcodering
+        - 创建异步线程执行AVTranscoder视频转码(ArkTS) (`avtranscoder-practice`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avtranscoder-practice
+        - 转码常见问题 (`avtranscoder-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avtranscoder-faq
+    - 媒体开发指导(C/C++) (`media-kit-dev--c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-dev--c
+      - 播放 (`media-playback-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-playback-c
+        - 使用AVPlayer播放音频(C/C++) (`using-ndk-avplayer-for-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-playback
+        - 使用AVPlayer播放视频(C/C++) (`using-ndk-avplayer-for-video-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-video-playback
+        - 使用LPP播放器播放音视频 (C/C++) (`using-ndk-lpp-for-playback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-lpp-for-playback
+      - 录制 (`media-recording-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-recording-c
+        - 使用AVRecorder录制音频(C/C++) (`using-ndk-avrecorder-for-audio-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avrecorder-for-audio-recording
+        - 使用AVRecorder录制视频(C/C++) (`using-ndk-avrecorder-for-video-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avrecorder-for-video-recording
+        - 使用AVScreenCapture录屏取码流(C/C++) (`using-avscreencapture-for-buffer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avscreencapture-for-buffer
+          - AVScreenCapture录屏基础流程 (`avscreencapture-c-basic-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avscreencapture-c-basic-process
+          - AVScreenCapture录屏自定义场景 (`avscreencapture-c-custom-scenarios`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avscreencapture-c-custom-scenarios
+          - 录屏常见问题 (`avscreencapture-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avscreencapture-faqs
+        - 使用AVScreenCapture录屏写文件(C/C++) (`using-avscreencapture-for-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avscreencapture-for-file
+        - 屏幕录制支持矩形区域录制 (`video-supports-rectangular-area-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-supports-rectangular-area-recording
+      - 媒体信息查询 (`media-info-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-info-c
+        - 使用AVMetadataExtractor获取元数据(C/C++) (`using-ndk-avmetadataextractor-for-media`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avmetadataextractor-for-media
+        - 使用AVImageGenerator获取视频帧(C/C++) (`using-ndk-avimagegenerator-for-video`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avimagegenerator-for-video
+      - 视频转码 (`media-transcoder-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-transcoder-c
+        - 使用AVTranscoder实现视频转码(C/C++) (`using-ndk-avtranscoder-for-transcodering`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avtranscoder-for-transcodering
+      - 视频处理 (`videoprocessing-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/videoprocessing-guidelines
+        - 视频缩放 (`generate-super-resolution-video`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/generate-super-resolution-video
+        - 视频动态元数据生成 (`generate-video-dynamic-metadata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/generate-video-dynamic-metadata
+        - 视频色彩空间转换 (`video-csc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-csc
+  - Media Library Kit（媒体文件管理服务） (`medialibrary-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/medialibrary-kit
+    - Media Library Kit 简介 (`photoaccesshelper-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-overview
+    - 使用Picker选择媒体库资源 (`photoaccesshelper-photoviewpicker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker
+    - 保存媒体库资源 (`photoaccesshelper-savebutton`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton
+    - 使用PhotoPicker组件访问图片/视频 (`component-guidelines-photoviewpicker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-guidelines-photoviewpicker
+    - 使用AlbumPicker组件访问相册列表 (`component-guidelines-albumpicker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-guidelines-albumpicker
+    - 使用RecentPhoto组件获取最近一张图片 (`component-guidelines-recentphoto`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-guidelines-recentphoto
+    - 使用PickerController将编辑后的图片替换原图 (`medialibrary-pickercontroller`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/medialibrary-pickercontroller
+    - 使用PhotoPicker推荐图片 (`smart-photopicker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/smart-photopicker
+    - 动态照片 (`movingphoto`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/movingphoto
+      - 访问和管理动态照片资源 (`photoaccesshelper-movingphoto`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-movingphoto
+      - 使用MovingPhotoView播放动态照片 (`movingphotoview-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/movingphotoview-guidelines
+    - 设备升级继承媒体文件访问权限 (`medialibrary-request-photouris-permission`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/medialibrary-request-photouris-permission
+    - 受限开放能力 (`restricted-open-capabilities`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-open-capabilities
+      - 开发准备 (`photoaccesshelper-preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation
+      - 媒体资源使用指导 (`photoaccesshelper-resource-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-resource-guidelines
+      - 用户相册资源使用指导 (`photoaccesshelper-useralbum-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-useralbum-guidelines
+      - 系统相册资源使用指导 (`photoaccesshelper-systemalbum-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-systemalbum-guidelines
+      - 媒体资源变更通知相关指导 (`photoaccesshelper-notify-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-notify-guidelines
+      - 使用MediaAssetManager请求媒体资源(C/C++) (`using-ndk-mediaassetmanager-for-request-resource`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-mediaassetmanager-for-request-resource
+  - Ringtone Kit（铃声服务） (`ringtone-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ringtone-kit-guide
+    - Ringtone Kit简介 (`ringtone-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ringtone-introduction
+    - 设置铃声 (`ringtone-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ringtone-preparations
+  - Scan Kit（统一扫码服务） (`scan-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-kit-guide
+    - Scan Kit简介 (`scan-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-introduction
+    - 开发准备 (`scan-config-agc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-config-agc
+    - 接入“扫码直达”服务 (`scan-directservice`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-directservice
+    - 默认界面扫码 (`scan-scanbarcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-scanbarcode
+    - 自定义界面扫码 (`scan-customscan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-customscan
+    - 图像识码 (`scan-imagerecognition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-imagerecognition
+      - 识别本地图片 (`scan-detectbarcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-detectbarcode
+      - 识别图像数据 (`scan-decodeimage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-decodeimage
+    - 码图生成 (`scan-generate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-generate
+      - 通过文本生成码图 (`scan-barcodegenerate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-barcodegenerate
+      - 通过字节数组生成码图 (`scan-generatearray`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-generatearray
+    - Scan Kit常见问题 (`scan-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq
+      - 如何添加“扫码直达”服务的快速入口 (`scan-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-1
+      - 扫码直达跳转失败 (`scan-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-2
+      - Scan Kit无法识别多个码图 (`scan-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-3
+      - 上传软件包时提示“上传的软件包与声明支持设备不一致” (`scan-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-4
+      - 相册扫码识别多码失败 (`scan-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-5
+      - 条形码识别错误 (`scan-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-6
+      - 条形码识别坐标信息为空 (`scan-faq-7`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-7
+      - 自定义界面扫码预览画面出现拉伸 (`scan-faq-8`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-8
+      - 自定义界面扫码黑屏现象 (`scan-faq-9`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-9
+      - 自定义界面扫码如何连续扫码（customScan.rescan） (`scan-faq-10`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-10
+      - 通过字节数组生成码图无法识别 (`scan-faq-11`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-11
+      - 默认界面扫码取消后，如何感知 (`scan-faq-12`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-12
+      - H5场景如何接入扫码 (`scan-faq-13`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-13
+      - 如何主动通过手势缩放变焦比 (`scan-faq-14`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-14
+      - 自定义界面扫码如何实现扫码框 (`scan-faq-15`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-15
+      - 默认界面扫码/自定义界面扫码体验设计 (`scan-faq-16`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-16
+      - 自定义界面扫码如何增加重试机制 (`scan-faq-17`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-17
+      - 自定义界面扫码同时调用本地图片识码时，应用概率性自动退出 (`scan-faq-18`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-18
+      - 如何将码图背景颜色设置成透明色 (`scan-faq-19`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-19
+    - 个人数据处理说明 (`scan-personal-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-personal-data
+- 图形
+  - AR Engine（AR引擎服务） (`ar-engine-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ar-engine-kit-guide
+    - AR Engine简介 (`arengine-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-introduction
+      - 能力介绍 (`arengine-ability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-ability
+      - 坐标系说明 (`arengine-coordinate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-coordinate
+    - 开发准备 (`arengine-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations
+    - AR Engine开发指导（ArkTS） (`arengine-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-guide
+      - 管理AR会话 (`arengine-arsession`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arsession
+      - 获取设备位姿 (`arengine-get-pose`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-pose
+      - 检测环境中的平面 (`arengine-get-plane`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-plane
+      - 识别平面语义 (`arengine-get-semantics`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-semantics
+      - 获取深度估计信息 (`arengine-get-depth`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-depth
+      - 获取网格扫描信息 (`arengine-get-mesh`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-mesh
+      - 图像跟踪 (`arengine-image-track`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-image-track
+      - AR物体摆放 (`arengine-arworld`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arworld
+      - 高精几何重建 (`arengine-volume-measurement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-volume-measurement
+      - 数据类型转换说明 (`arengine-arraybuffer-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arraybuffer-info
+    - AR Engine开发指导（C/C++） (`arengine-c-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-guide
+      - 管理AR会话 (`arengine-c-arsession`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arsession
+      - 获取设备位姿 (`arengine-c-get-pose`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-pose
+      - 检测环境中的平面 (`arengine-c-get-plane`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-plane
+      - 识别平面语义 (`arengine-c-get-semantics`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-semantics
+      - 识别目标形状 (`arengine-c-get-plane-shape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-plane-shape
+      - 获取深度图 (`arengine-c-get-depth`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-depth
+      - 获取网格扫描信息 (`arengine-c-get-mesh`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-mesh
+      - 图像跟踪 (`arengine-c-image-track`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-image-track
+      - AR物体摆放 (`arengine-c-arworld`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arworld
+      - 高精几何重建 (`arengine-c-volume-measurement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-volume-measurement
+    - AR Engine常见问题 (`arengine-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq
+      - 获取检测平面的二维顶点数组时报错：“plane is nullptr!”，返回错误码：401 (`arengine-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq-1
+      - 摄像头被遮挡一段时间后再放开，输出的位姿有跳变 (`arengine-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq-2
+      - 反光、光线暗或者弱纹理场景（输入图像颜色变化小）下无法识别平面 (`arengine-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq-3
+      - 某些特殊场景下（如附近存在磁场干扰、手机发烫或扫描到重复纹理等），出现平面漂移或者位姿数据跳变现象 (`arengine-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq-4
+    - 个人数据处理说明 (`arengine-personal-privacy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-personal-privacy
+    - 附录 (`arengine-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-appendix
+  - ArkGraphics 2D（方舟2D图形服务） (`arkgraphics-2d`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics-2d
+    - ArkGraphics 2D简介 (`arkgraphics2d-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics2d-introduction
+    - 使用可变帧率能力定制不同内容的绘制帧率 (`displaysync`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync
+      - 可变帧率简介 (`displaysync-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-overview
+      - 请求动画绘制帧率 (`displaysync-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-animation
+      - 请求UI绘制帧率 (`displaysync-ui`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-ui
+      - 请求自绘制内容绘制帧率 (`displaysync-xcomponent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-xcomponent
+      - NativeDisplaySoloist开发指导 (C/C++) (`displaysoloist-native-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysoloist-native-guidelines
+    - 过度绘制调试使用指导 (`overdraw-dfx-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/overdraw-dfx-guidelines
+    - 图形绘制与显示 (`graphic-drawing-and-display`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphic-drawing-and-display
+      - 图形绘制与显示开发概述 (`graphic-drawing-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphic-drawing-overview
+      - 画布的获取与绘制结果的显示 (`canvas-get-result-draw`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw
+        - 画布的获取与绘制结果的显示（ArkTS） (`canvas-get-result-draw-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw-arkts
+        - 画布的获取与绘制结果的显示（C/C++） (`canvas-get-result-draw-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw-c
+      - 画布操作及状态 (`canvas-operation-state`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-operation-state
+        - 画布操作及状态处理（ArkTS） (`canvas-operation-state-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-operation-state-arkts
+        - 画布操作及状态处理（C/C++） (`canvas-operation-state-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-operation-state-c
+      - 绘制效果 (`drawing-effect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drawing-effect
+        - 绘制效果概述 (`drawing-effect-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drawing-effect-overview
+        - 基础绘制效果（ArkTS） (`basic-drawing-effect-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-drawing-effect-arkts
+        - 复杂绘制效果（ArkTS） (`complex-drawing-effect-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-drawing-effect-arkts
+        - 基础绘制效果（C/C++） (`basic-drawing-effect-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-drawing-effect-c
+        - 复杂绘制效果（C/C++） (`complex-drawing-effect-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-drawing-effect-c
+      - 图元绘制 (`primitive-drawing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/primitive-drawing
+        - 图元绘制概述 (`primitive-drawing-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/primitive-drawing-overview
+        - 几何形状绘制（ArkTS） (`geometric-shape-drawing-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geometric-shape-drawing-arkts
+        - 图片绘制（ArkTS） (`pixelmap-drawing-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pixelmap-drawing-arkts
+        - 字块绘制（ArkTS） (`textblock-drawing-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/textblock-drawing-arkts
+        - 几何形状绘制（C/C++） (`geometric-shape-drawing-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geometric-shape-drawing-c
+        - 图片绘制（C/C++） (`pixelmap-drawing-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pixelmap-drawing-c
+        - 字块绘制（C/C++） (`textblock-drawing-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/textblock-drawing-c
+    - 文本 (`text`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text
+      - 文本开发概述 (`text-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-overview
+      - 字体管理 (`font-manager`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/font-manager
+        - 使用主题字体（ArkTS） (`theme-font-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme-font-arkts
+        - 自定义字体的注册和使用（ArkTS） (`custom-font-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/custom-font-arkts
+        - 系统字体的信息获取和使用（ArkTS） (`system-font-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-font-arkts
+        - 使用主题字体（C/C++） (`theme-font-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme-font-c
+        - 自定义字体的注册和使用（C/C++） (`custom-font-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/custom-font-c
+        - 系统字体的信息获取和使用（C/C++） (`system-font-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-font-c
+      - 文本测量 (`text-measure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-measure
+        - 文本测量（ArkTS） (`text-measure-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-measure-arkts
+        - 文本测量（C/C++） (`text-measure-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-measure-c
+      - 文本绘制与显示 (`draw-text-display`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/draw-text-display
+        - 简单文本绘制与显示（ArkTS） (`simple-text-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/simple-text-arkts
+        - 复杂文本绘制与显示（ArkTS） (`complex-text-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-text-arkts
+        - 自定义文本绘制与显示（ArkTS） (`text-custom-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-custom-arkts
+        - 简单文本绘制与显示（C/C++） (`simple-text-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/simple-text-c
+        - 复杂文本绘制与显示（C/C++） (`complex-text-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-text-c
+        - 自定义文本绘制与显示（C/C++） (`text-custom-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-custom-c
+      - 文本开发常见问题 (`text-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-faqs
+    - 离线图像处理 (`offline-image-processing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/offline-image-processing
+      - 添加图像效果（C/C++） (`effectkit-filter-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/effectkit-filter-c
+    - NativeBuffer开发指导 (C/C++) (`native-buffer-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-buffer-guidelines
+    - NativeImage开发指导 (C/C++) (`native-image-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-image-guidelines
+    - NativeVSync开发指导 (C/C++) (`native-vsync-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-vsync-guidelines
+    - NativeWindow开发指导 (C/C++) (`native-window-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-window-guidelines
+    - GPU/CPU内存访问同步操作开发指南 (C/C++) (`native-fence-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fence-guidelines
+    - 图形开发术语 (`graphic-term`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphic-term
+  - ArkGraphics 3D（方舟3D图形） (`arkgraphics-3d`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics-3d
+    - ArkGraphics 3D简介 (`arkgraphics3d-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-overview
+    - ArkGraphics 3D场景搭建以及管理 (`arkgraphics3d-scene`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-scene
+    - ArkGraphics 3D资源创建以及使用 (`arkgraphics3d-resource`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-resource
+      - 创建并使用材质资源 (`arkgraphics3d-resource-material`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-resource-material
+      - 创建并使用图片资源 (`arkgraphics3d-resource-image`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-resource-image
+      - 创建并使用环境资源 (`arkgraphics3d-resource-environment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-resource-environment
+      - .shader资源文件格式要求 (`arkgraphics3d-shader-resource`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-shader-resource
+    - ArkGraphics 3D场景动画控制以及管理 (`arkgraphics3d-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-animation
+    - ArkGraphics Editor插件及编辑器的下载与安装 (`arkgraphics-editor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics-editor
+  - Graphics Accelerate Kit（图形加速服务） (`graphics-accelerate-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-kit-guide
+    - Graphics Accelerate Kit简介 (`graphics-accelerate-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-introduction
+    - 游戏渲染加速服务 (`graphics-accelerate-rendering`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-rendering
+      - 业务概述 (`graphics-accelerate-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-overview
+      - 超帧功能开发 (`graphics-accelerate-fg`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg
+        - 内插模式 (`graphics-accelerate-fg-interpolation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-interpolation
+          - 概述 (`graphics-accelerate-fg-interpolation-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-interpolation-overview
+          - OpenGL ES平台 (`graphics-accelerate-fg-interpolation-gles`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-interpolation-gles
+          - Vulkan平台 (`graphics-accelerate-fg-interpolation-vulkan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-interpolation-vulkan
+        - 外插模式 (`graphics-accelerate-fg-extrapolation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-extrapolation
+          - 概述 (`graphics-accelerate-fg-extrapolation-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-extrapolation-overview
+          - OpenGL ES平台 (`graphics-accelerate-fg-extrapolation-gles`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-extrapolation-gles
+          - Vulkan平台 (`graphics-accelerate-fg-extrapolation-vulkan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-extrapolation-vulkan
+        - 顶点标记 (`graphics-accelerate-fg-mv`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-mv
+          - 概述 (`graphics-accelerate-fg-mv-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-mv-overview
+          - OpenGL ES平台 (`graphics-accelerate-fg-mv-gles`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-mv-gles
+          - Vulkan平台 (`graphics-accelerate-fg-mv-vulkan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-mv-vulkan
+        - 系统送显模式 (`graphics-accelerate-fg-systempresent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-systempresent
+          - 概述 (`graphics-accelerate-fg-systempresent-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-systempresent-overview
+          - OpenGL ES平台 (`graphics-accelerate-fg-systempresent-gles`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-systempresent-gles
+          - Vulkan平台 (`graphics-accelerate-fg-systempresent-vulkan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-systempresent-vulkan
+        - AI超帧模式 (`graphics-accelerate-fg-ai`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-ai
+          - 概述 (`graphics-accelerate-fg-ai-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-ai-overview
+          - Vulkan平台 (`graphics-accelerate-fg-ai-vulkan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-ai-vulkan
+      - ABR功能开发 (`graphics-accelerate-abr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-abr
+      - OpenGTX功能开发 (`graphics-accelerate-opengtx`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-opengtx
+    - 游戏资源加速服务 (`graphics-accelerate-assetdownload`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload
+      - 资源包后台下载 (`graphics-accelerate-assetdownload-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-service
+        - 业务概述 (`graphics-accelerate-assetdownload-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-introduction
+        - 开发准备 (`graphics-accelerate-assetdownload-prepare`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-prepare
+        - 系统后台下载资源包 (`graphics-accelerate-assetdownload-back`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back
+          - extension系统托管下载 (`graphics-accelerate-assetdownload-back-system`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back-system
+          - extension协同下载 (`graphics-accelerate-assetdownload-back-self`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back-self
+        - 应用前台下载资源包 (`graphics-accelerate-assetdownload-fore`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-fore
+        - 系统后台切应用前台接续下载资源包 (`graphics-accelerate-assetdownload-back-fore`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back-fore
+        - 发布资源包下载任务 (`graphics-accelerate-assetdownload-release`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-release
+        - 查看资源包分发数据 (`graphics-accelerate-assetdownload-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-data
+    - 游戏启动加速服务 (`graphics-accelerate-launchacceleration-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launchacceleration-service
+      - 秒级启动 (`graphics-accelerate-mirror-launch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-mirror-launch
+        - 业务概述 (`graphics-accelerate-launch-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-introduction
+        - 开发准备 (`graphics-accelerate-launch-prepare`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-prepare
+        - 实现游戏启动加速 (`graphics-accelerate-launch-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-development
+    - Graphics Accelerate Kit常见问题 (`graphics-accelerate-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq
+      - 游戏渲染加速服务 (`graphics-accelerate-rendering-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-rendering-faq
+        - 超帧和ABR支持的图形API有哪些？ (`graphics-accelerate-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-1
+        - Kit支持的设备类型有哪些？ (`graphics-accelerate-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-6
+        - 开启超帧外插模式后运动物体边缘出现严重拖影现象，可能的原因是什么？ (`graphics-accelerate-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-2
+        - 哪些特征的Buffer适合使能ABR？ (`graphics-accelerate-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-3
+        - ABR进行Buffer分辨率调整引起其他Pass渲染效果异常，该如何解决？ (`graphics-accelerate-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-4
+        - 集成ABR后，从游戏引擎获取到的Native纹理内容为空，该如何解决? (`graphics-accelerate-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-5
+      - 游戏资源加速服务 (`graphics-accelerate-assetdownload-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq
+        - 上传至华为CDN的资源包文件支持哪些格式类型？ (`graphics-accelerate-assetdownload-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-1
+        - 集成游戏资源加速ExtensionAbility方法，未配置游戏资源加速ExtensionAbility组件类型信息，导致功能未生效。 (`graphics-accelerate-assetdownload-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-2
+        - 集成了游戏资源加速ExtensionAbility方法，未配置网络权限，导致功能未生效。 (`graphics-accelerate-assetdownload-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-3
+        - 游戏资源加速ExtensionAbility方法中使用static静态变量为什么不生效？ (`graphics-accelerate-assetdownload-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-4
+        - 如何解析华为CDN场景下manifestUrl对应的xml文件？ (`graphics-accelerate-assetdownload-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-5
+        - 是否可以仅接入下载ExtensionAbility，而不改写原先在游戏引擎内部的下载逻辑或下载中间件？ (`graphics-accelerate-assetdownload-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-6
+        - 接入资源包后台下载功能后如何使用指定测试设备进行自测？ (`graphics-accelerate-assetdownload-faq-7`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-7
+        - 是否可以终止已发布的下载任务，例如游戏出现问题时是否能够及时关闭？ (`graphics-accelerate-assetdownload-faq-8`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-8
+        - 是否可以申请长时任务，在游戏前台下载资源包过程中切后台时免冻结并继续下载资源包？ (`graphics-accelerate-assetdownload-faq-9`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-9
+        - 若开发者在游戏中使用Unity Addressables资源管理框架，如何集成游戏资源包后台下载功能？ (`graphics-accelerate-assetdownload-faq-10`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-10
+      - 游戏启动加速服务 (`graphics-accelerate-launch-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq
+        - 通过加载内存镜像启动的游戏会全屏显示来电提醒，应该如何避免？ (`graphics-accelerate-launch-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-1
+        - 游戏上划退出后，场景切换阶段存在振动，应该如何避免？ (`graphics-accelerate-launch-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-2
+        - 快速启动的游戏存在三方SDK功能异常，应该如何排查？ (`graphics-accelerate-launch-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-3
+        - 游戏调用UnityEngine.Application.Quit侧滑退出时出现黑屏现象，应该如何避免？ (`graphics-accelerate-launch-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-4
+        - 日志中频繁打印BusinessError: The Worker instance is not running, maybe worker is terminated when PostMessage错误信息，应该如何排查？ (`graphics-accelerate-launch-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-5
+        - 游戏出现卡死后，应该如何避免下一次秒启后还是卡死场景？ (`graphics-accelerate-launch-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-6
+        - 秒级启动后，游戏出现类似UIContent is nullptr报错导致登录等异常，应该如何排查？ (`graphics-accelerate-launch-faq-7`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-7
+        - 游戏因未实现防沉迷提醒提审被拒，应该如何解决？ (`graphics-accelerate-launch-faq-8`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-8
+        - 游戏秒级启动场景中闪屏播放与游戏音频恢复不同步，应该如何解决？ (`graphics-accelerate-launch-faq-9`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-9
+        - 游戏接入秒级启动后无法热更应该如何处理？ (`graphics-accelerate-launch-faq-10`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-10
+  - Spatial Recon Kit（空间建模服务） (`spatial-recon-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-kit-guide
+    - Spatial Recon Kit简介 (`spatial-recon-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-introduction
+    - Spatial Recon Kit术语 (`spatial-recon-glossary`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-glossary
+    - 加载3DGS模型 (`spatial-recon-load`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-load
+    - 添加滤镜效果 (`spatial-recon-filter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-filter
+  - XEngine Kit（GPU加速引擎服务） (`xengine-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-guide
+    - XEngine Kit简介 (`xengine-kit-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-introduction
+    - 开发准备 (`xengine-kit-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-preparations
+    - 空域GPU超分 (`xengine-kit-gpu-spatial-upscaling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-gpu-spatial-upscaling
+    - 时域AI超分 (`xengine-kit-ai-temporal-upscaling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-ai-temporal-upscaling
+    - 空域AI超分 (`xengine-kit-ai-spatial-upscaling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-ai-spatial-upscaling
+    - 自适应VRS (`xengine-kit-adaptive-vrs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-adaptive-vrs
+    - Subpass Shading (`xengine-kit-subpass-shading`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-subpass-shading
+    - 光线追踪反射 (`xengine-kit-rt-reflection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-rt-reflection
+    - 光线追踪阴影和环境光遮蔽 (`xengine-kit-rt-shadow-and-ao`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-rt-shadow-and-ao
+    - 光线追踪全局光照 (`xengine-kit-rt-global-illumination`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-rt-global-illumination
+    - Maleoon API (`xengine-kit-maleoon-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-maleoon-api
+      - 高性能GPU排序 (`xengine-kit-high-performance-gpu-sorting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-high-performance-gpu-sorting
+    - XEngine Kit常见问题 (`xengine-kit-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq
+      - 创建特性实例失败如何处理 (`xengine-kit-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-1
+      - 超分和自适应VRS特性是否可以同时使用 (`xengine-kit-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-2
+      - 自适应VRS深度附件使用说明 (`xengine-kit-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-3
+      - 空域AI超分的输出颜色附件是否需要通过OH_NativeBuffer创建 (`xengine-kit-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-4
+- 应用服务
+  - Account Kit（华为账号服务） (`account-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-kit-guide
+    - Account Kit简介 (`account-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-introduction
+    - 开发者使用Account Kit的登录能力的管理细则 (`account-detailedrules`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-detailedrules
+    - 开发准备 (`account-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-preparations
+      - 申请账号权限 (`account-config-permissions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions
+      - 配置签名和指纹 (`account-sign-fingerprints`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints
+      - 配置Client ID (`account-client-id`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id
+    - 登录 (`account-quick-login`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-quick-login
+      - 概述 (`account-quick-login-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-quick-login-overview
+      - 华为账号一键登录（获取手机号和UnionID/OpenID） (`account-phone-unionid-login`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login
+      - 华为账号登录（获取UnionID/OpenID） (`account-unionid-login`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login
+        - 使用“华为账号登录”按钮登录 (`account-unionid-login-button`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login-button
+        - 使用自定义按钮登录 (`account-unionid-login-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login-api
+      - 静默登录 (`account-silent-login`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-silent-login
+      - 订阅华为账号的登录/登出事件 (`account-login-state`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-login-state
+    - 获取华为账号用户信息 (`account-get-user-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-user-info
+      - 概述 (`account-get-user-info-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-user-info-overview
+      - 获取头像昵称 (`account-get-avatar-nickname`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-avatar-nickname
+      - 获取手机号 (`account-get-phone`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-phone
+        - 概述 (`account-get-phone-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-phone-overview
+        - 快速验证 (`account-get-phonenumber`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-phonenumber
+      - 获取收货地址 (`account-choose-address-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-choose-address-dev
+      - 获取发票抬头 (`account-select-invoice-title`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-select-invoice-title
+      - 获取风险等级 (`account-get-risklevel`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel
+        - 概述 (`account-get-risklevel-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-introduction
+        - 通过华为账号一键登录获取用户风险等级 (`account-get-risklevel-byquicklogin`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-byquicklogin
+        - 华为账号其他方式登录获取用户风险等级 (`account-get-risklevel-on-demand-acquisition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-on-demand-acquisition
+    - 未成年人模式 (`account-minorsprotection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-minorsprotection
+      - 概述 (`account-overview-minorsprotection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-overview-minorsprotection
+      - 应用与系统实现未成年人模式联动 (`account-follow-minorsprotection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-follow-minorsprotection
+        - 应用与系统联动切换未成年人模式 (`account-system-minorsprotection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-system-minorsprotection
+        - 应用内开启未成年人模式 (`account-app-turn-on-minorsprotection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-app-turn-on-minorsprotection
+        - 应用内关闭未成年人模式 (`account-app-turn-off-minorsprotection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-app-turn-off-minorsprotection
+          - 关闭应用的未成年人模式（推荐） (`account-appself-turn-off-minorsprotection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-appself-turn-off-minorsprotection
+          - 关闭系统的未成年人模式 (`account-system-turn-off-minorsprotection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-system-turn-off-minorsprotection
+        - 应用内调整未成年人模式设置 (`account-password-minorsprotection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-password-minorsprotection
+    - 订阅和处理用户信息变更 (`subscribe-process-userinfo-change`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/subscribe-process-userinfo-change
+    - Account Kit常见问题 (`account-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq
+      - 1001500001 应用指纹证书校验失败的可能原因和解决办法 (`account-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-1
+      - 1001502014 应用未申请scopes或permissions权限的可能原因和解决方法 (`account-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-2
+      - 一键登录场景下无法获取到匿名手机号如何解决 (`account-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-3
+      - 一键登录场景下无法获取到明文手机号如何解决 (`account-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-4
+      - 一键登录场景下，应用已展示一键登录页，此时用户退出、切换或注销华为账号应该如何处理 (`account-faq-17`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-17
+      - 使用华为账号一键登录功能时，是以华为账号的UnionID/OpenID还是以手机号作为用户的主要标识 (`account-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-5
+      - HarmonyOS APK应用和HarmonyOS应用在一键登录场景下的用户数据如何互通 (`account-faq-7`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-7
+      - 无法获取到头像昵称如何解决 (`account-faq-8`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-8
+      - OpenID和UnionID的格式说明 (`account-faq-9`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9
+      - Access Token和Refresh Token的有效时长是多久 (`account-faq-10`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-10
+      - Access Token和Refresh Token长度限制要求 (`account-faq-11`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-11
+      - ID Token的使用场景与使用方法 (`account-faq-12`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-12
+      - 未成年人模式开启后USB断连如何解决 (`account-faq-13`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-13
+      - 订阅到系统未成年人模式开启了，这个时候应用要怎么处理 (`account-faq-14`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-14
+      - 三方开发框架接入华为账号一键登录 (`account-faq-18`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-18
+      - 不同开发者的应用之间如何实现用户数据互通 (`account-faq-19`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-19
+      - 401 参数检查失败的可能原因和解决办法 (`account-faq-20`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-20
+      - 60180007 服务端通过Authorization Code无法获取到华为账号一键登录手机号如何解决 (`account-faq-21`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-21
+    - 个人数据处理说明 (`account-personal-data-processing-description`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-personal-data-processing-description
+    - 附录 (`account-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-appendix
+      - 支持的国家/地区 (`account-appendix-support-regions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-appendix-support-regions
+  - Ads Kit（广告服务） (`ads-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-kit-guide
+    - Ads Kit简介 (`ads-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-introduction
+    - Ads Kit术语 (`ads-kit-glossary`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-kit-glossary
+    - 开发准备 (`development-preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/development-preparation
+    - 流量变现服务开发 (`ads-publisher-service-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-dev
+      - 流量变现服务开发概述 (`ads-publisher-service-dev-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-dev-overview
+      - 横幅广告 (`ads-publisher-service-banner`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-banner
+      - 原生广告 (`ads-publisher-service-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-native
+      - 激励广告 (`ads-publisher-service-reward`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-reward
+      - 插屏广告 (`ads-publisher-service-interstitial`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-interstitial
+      - 开屏广告 (`ads-publisher-service-splash`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-splash
+      - 贴片广告 (`ads-publisher-service-roll`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-roll
+      - 实时竞价 (`ads-real-time-bidding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-real-time-bidding
+      - 流量变现服务常见问题 (`ads-publisher-service-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-faq
+        - 展示广告时显示白屏 (`ads-publisher-service-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-faq-4
+        - 鲸鸿动能媒体服务平台打开受限 (`ads-publisher-service-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-faq-6
+        - PC设备请求或展示广告时返回了801错误码 (`device-request`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-request
+    - 开放匿名设备标识服务 (`oaid-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/oaid-service
+    - 鲸鸿动能Ads Kit个人数据处理说明 (`description-of-personal-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/description-of-personal-data
+  - AppGallery Kit（应用市场服务） (`store-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-kit-guide
+    - AppGallery Kit简介 (`store-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-introduction
+    - 数字商品服务 (`store-iap`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap
+      - 概述 (`store-iap-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-introduction
+      - 接入流程 (`store-iap-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-preparations
+      - 启用数字商品服务 (`store-iap-enabling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-enabling
+        - 开通相关服务和配置参数 (`store-iap-config-agc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-config-agc
+        - 配置应用 (`store-iap-config-app`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-config-app
+      - 配置数字商品 (`store-iap-config-product`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-config-product
+        - 数字商品介绍 (`store-iap-product`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-product
+        - 通过AppGallery Connect配置数字商品 (`store-iap-product-agc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-product-agc
+        - 通过Server API配置数字商品 (`store-iap-product-server`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-product-server
+      - 应用内分发数字商品 (`store-iap-distribute`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute
+        - 展示数字商品 (`store-iap-distribute-query`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-query
+        - 购买数字商品 (`store-iap-distribute-purchase`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-purchase
+        - 发放数字商品权益 (`store-iap-distribute-delivering`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-delivering
+      - 测试数字商品服务 (`store-iap-sandbox`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-sandbox
+    - 应用市场推荐 (`store-productview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-productview
+    - 产品特性按需分发 (`store-moduleinstall`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-moduleinstall
+      - 产品特性按需分发(ArkTS) (`store-moduleinstall_arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-moduleinstall_arkts
+      - 产品特性按需分发(C/C++) (`store-moduleinstall_c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-moduleinstall_c
+    - 生态查询服务 (`store-erms`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-erms
+    - 应用市场更新功能 (`store-update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-update
+    - 应用归因服务 (`store-attribution`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution
+      - 开发概述 (`store-attribution-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-introduction
+      - 开发准备 (`store-attribution-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-preparations
+        - 注册企业账号 (`store-attribution-config-agc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-config-agc
+        - 管理归因角色 (`store-attribution-register`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-register
+        - 管理转化事件 (`store-attribution-trigger`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-trigger
+          - 标准转化事件 (`store-attribution-trigger-standard`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-trigger-standard
+          - 自定义转化事件 (`store-attribution-trigger-custom`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-trigger-custom
+        - 管理归因策略 (`appgallery-attribution-strategy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-attribution-strategy
+      - 登记归因来源及转化 (`store-attribution-developmentguide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-developmentguide
+      - 归因结果回传 (`store-attribution-receive`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-receive
+      - 接入调试功能 (`store-attribution-test`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-test
+    - 隐私管理服务 (`store-privacy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-privacy
+    - 图标管理服务 (`appgallery-appinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-appinfo
+      - 通过AppGallery Connect动态管理应用图标 (`appgallery-appinfo-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-appinfo-manage
+      - 实现应用图标动态切换 (`appgallery-appinfo-use`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-appinfo-use
+    - 应用评论服务 (`appgallery-comment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-comment
+    - AppGallery Kit常见问题 (`store-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq
+      - AppGallery Connect中可以配置多个订阅关键事件回调地址吗？ (`store-faq-9`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-9
+      - AppGallery Connect获取的IAP公钥最大长度是多少？便于用户存储设置的最大长度是多少？ (`store-faq-10`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-10
+      - AppGallery Connect商品管理页面，商品价格编辑界面的默认价格表示什么意思？ (`store-faq-11`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-11
+      - 在AppGallery Connect中单独修改商品在某个地区的价格，以后汇率变动，是否会影响应用内的商品价格？ (`store-faq-12`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-12
+      - AppGallery Connect商品管理页面中，价格展示是否做了数字调整？比如小数点第二位6/9等调整？ (`store-faq-13`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-13
+      - 是否必须使用SHA256的证书才能通过验签？ (`store-faq-14`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-14
+      - 签名校验是否可以都在服务端执行？ (`store-faq-15`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-15
+      - 支付界面是否仅有一种UI设计？是否存在其他支付界面方案？ (`store-faq-16`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-16
+      - 是否能在删除商品后添加具有相同productId的商品？ (`store-faq-18`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-18
+      - 数字商品服务器支持证书 (`store-faq-19`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-19
+      - 数字商品服务器支持加密套件 (`store-faq-20`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-20
+      - 数字商品服务中订单订购状态有哪些？ (`store-faq-22`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-22
+      - 订阅商品的续费周期规则是什么？ (`store-faq-23`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-23
+      - 订阅型商品中的续费周期1个月是指30天、31天还是自然月？同理，2个月、3个月具体包含多少天数？ (`store-faq-24`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-24
+      - 订阅时长按照自然月计算时，2月份是28天还是29天？ (`store-faq-25`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-25
+      - 应用市场推荐展示元服务卡片异常 (`store-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-1
+      - 按需加载场景中加载动态模块失败 (`store-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-2
+      - 按需加载模块是否支持单独上架应用市场或单独更新？ (`store-faq-28`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-28
+      - 按需加载场景中，应用在加载指定模块后重启，还是已加载状态吗？是否需要重新发起按需加载请求？ (`store-faq-29`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-29
+      - 按需加载场景中，用户在加载指定模块后是否可以卸载，然后重新发起请求？ (`store-faq-30`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-30
+      - 按需加载场景中，是否支持依赖模块同步加载? (`appgallery-faq-33`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-faq-33
+      - 按需加载场景中，是否支持同时存在多个任务？ (`store-faq-34`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-34
+      - 未上架应用市场的应用，如何快速接入调试产品特性按需分发功能？ (`store-faq-26`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-26
+      - 生态查询服务场景中获取自身场景值为空 (`store-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-3
+      - 应用市场更新功能抛出不在前台异常 (`store-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-4
+      - 向用户显示应用更新提示弹框文案能否自定义？ (`store-faq-27`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-27
+      - 调用应用归因服务登记归因来源接口报错身份检查错误 (`store-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-5
+      - 如何过滤应用归因服务的日志？ (`store-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-6
+      - 如何过滤应用内快捷方式加桌的日志？ (`store-faq-31`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-31
+      - 应用内快捷方式加桌返回401错误码 (`appgallery-faq-32`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-faq-32
+    - 附录 (`store-attribution-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-appendix
+      - 标准化事件及应用归因签名 (`appgallery-attribution-appendix-triger`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-attribution-appendix-triger
+      - 支持的国家/地区 (`appgallery-support-regions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-support-regions
+      - 场景值 (`appgallery-scene-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-scene-list
+  - App Linking Kit（应用链接服务） (`app-linking-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-kit-guide
+    - App Linking Kit简介 (`applinking-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-introduction
+    - 开发准备 (`applinking-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-preparations
+      - 基本准备工作 (`applinking-basic-preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-basic-preparation
+      - 开通App Linking服务 (`applinking-enable-applinking`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-enable-applinking
+    - 通过App Linking应用链接拉起指定应用 (`app-linking-startupapp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp
+    - 通过直达应用市场能力跳转至应用市场下载详情页 (`applinking-direct-to-ag`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-direct-to-ag
+    - 通过延迟链接跳转至应用详情页 (`applinking-deferredlink`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink
+    - 通过聚合链接按指定方式跳转至应用 (`applinking-cross-platform`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-cross-platform
+  - Call Service Kit（通话服务） (`call-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-kit-guide
+    - Call Service Kit简介 (`call-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-introduction
+    - 开发准备 (`call-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-preparations
+    - 来电场景 (`incoming-calls`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/incoming-calls
+    - 去电场景 (`outgoing-calls`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/outgoing-calls
+    - 企业联系人信息来去电页面显示 (`callservice-enterprise-contact-display`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/callservice-enterprise-contact-display
+    - Call Service Kit常见问题 (`call-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-faq
+      - 来电横幅无法拉起 (`call-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-faq-1
+      - 来电横幅通知头像无法显示 (`call-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-faq-2
+  - Cloud Foundation Kit（云开发服务） (`cloud-foundation-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloud-foundation-kit-guide
+    - Cloud Foundation Kit简介 (`cloudfoundation-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-introduction
+    - 开发准备 (`cloudfoundation-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-preparations
+      - 基本准备工作 (`cloudfoundation-basic-preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-basic-preparation
+      - 开通云函数服务 (`cloudfoundation-enable-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-function
+      - 开通云数据库服务 (`cloudfoundation-enable-database`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-database
+      - 开通云存储服务 (`cloudfoundation-enable-storage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-storage
+      - 开通预加载服务 (`cloudfoundation-enable-prefetch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-prefetch
+    - 云函数 (`cloudfoundation-function-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-function-service
+      - 开发云函数 (`cloudfoundation-develop-cloud-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-develop-cloud-function
+        - 开发函数 (`cloudfoundation-develop-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-develop-function
+          - Node.js (`cloudfoundation-develop-function-nodejs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-develop-function-nodejs
+        - 创建函数 (`cloudfoundation-create-and-config-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-create-and-config-function
+        - 测试函数 (`cloudfoundation-test-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-test-function
+        - 调用函数 (`cloudfoundation-call-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-function
+      - （可选）通过端云一体化开发工程调试本地云函数 (`cloudfoundation-debug-local-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-debug-local-function
+        - 启动本地云函数 (`cloudfoundation-start-local-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-start-local-function
+        - 调用本地云函数 (`cloudfoundation-call-local-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-local-function
+    - 云数据库 (`cloudfoundation-database-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-service
+      - 新增对象类型 (`cloudfoundation-database-add-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-object
+      - 新增存储区 (`cloudfoundation-database-add-zone`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-zone
+      - 引入对象类型文件 (`cloudfoundation-database-add-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-file
+      - 初始化数据库访问 (`cloudfoundation-database-initialize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-initialize
+      - 查询数据 (`cloudfoundation-database-query`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-query
+      - 写入数据 (`cloudfoundation-database-upsert`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-upsert
+      - 删除数据 (`cloudfoundation-database-delete`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-delete
+    - 云存储 (`cloudfoundation-storage-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-service
+      - 设置云存储配置项 (`cloudfoundation-storage-config`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-config
+      - 初始化全局应用上下文 (`cloudfoundation-storage-initialize-context`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-initialize-context
+      - 初始化存储实例 (`cloudfoundation-storage-initialize-bucket`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-initialize-bucket
+      - 上传指定文件至云侧 (`cloudfoundation-storage-upload-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-upload-file
+      - 下载云侧文件至本地 (`cloudfoundation-storage-download-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-download-file
+      - 获取云侧文件下载地址 (`cloudfoundation-storage-getdownloadurl`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-getdownloadurl
+      - 删除云侧文件 (`cloudfoundation-storage-delete-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-delete-file
+      - 获取云侧文件列表 (`cloudfoundation-storage-list-files`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-list-files
+      - 获取云侧文件的元数据 (`cloudfoundation-storage-getmetadata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-getmetadata
+      - 设置云侧文件的元数据 (`cloudfoundation-storage-setmetadata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-setmetadata
+    - 预加载 (`cloudfoundation-prefetch-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-service
+      - 概述 (`cloudfoundation-prefetch-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-overview
+      - 开发流程 (`cloudfoundation-prefetch-devprocess`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-devprocess
+      - 配置预加载 (`cloudfoundation-prefetch-config`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-config
+      - 开发预加载资源接口 (`cloudfoundation-prefetch-cloud-interdev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-cloud-interdev
+      - 调用预加载 (`cloudfoundation-prefetch-call`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-call
+        - 添加预加载依赖类 (`cloudfoundation-prefetch-add-dependency-class`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-add-dependency-class
+          - 预加载工具类 (`cloudfoundation-prefetch-tool-class`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-tool-class
+          - 预加载实现类 (`cloudfoundation-prefetch-implementation-class`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-implementation-class
+        - 调用安装预加载 (`cloudfoundation-call-installprefetch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-installprefetch
+        - 调用周期性预加载 (`cloudfoundation-call-periodicprefetch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-periodicprefetch
+        - 调用安装预加载和周期性预加载 (`cloudfoundation-call-install-and-periodic-prefetch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-install-and-periodic-prefetch
+      - （可选）使用命令行工具调试周期性预加载 (`cloudfoundation-prefetch-debugging`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-debugging
+        - 调试周期性预加载 (`cloudfoundation-commandtool-debug`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-commandtool-debug
+        - 错误码 (`cloudfoundation-commandtool-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-commandtool-errorcode
+    - 使用模拟器调试 (`cloudfoundation-emulator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-emulator
+    - Cloud Foundation Kit常见问题 (`cloudfoundation-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq
+      - 云存储 (`cloudfoundation-faq-cloudstorage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-cloudstorage
+        - 使用云存储上传文件失败，提示“404:Product does not exist” (`cloudfoundation-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-1
+        - 使用云存储上传文件失败，app日志提示“"state":65”，upload进程日志提示“403 Forbidden” (`cloudfoundation-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-2
+        - 调用云存储业务接口失败，app日志提示“"state":65”，upload进程日志提示“404 Not Found” (`cloudfoundation-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-6
+      - 预加载 (`cloudfoundation-faq-prefetch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-prefetch
+        - 如何通过应用侧日志定位预加载问题 (`cloudfoundation-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-5
+        - 运行应用时提示“appid **** is not in white list, to skip” (`cloudfoundation-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-3
+        - 运行应用时报“XXX Read timed out”异常 (`cloudfoundation-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-4
+    - 个人数据处理说明 (`cloudfoundation-personal-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-personal-data
+    - 附录 (`cloudfoundation-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-appendix
+      - 支持的国家/地区 (`cloudfoundation-supported-regions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-supported-regions
+  - Calendar Kit（日历服务） (`calendar-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendar-kit
+    - Calendar Kit简介 (`calendarmanager-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-overview
+    - 日历账户管理 (`calendarmanager-calendar-developer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-calendar-developer
+    - 日程管理 (`calendarmanager-event-developer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-event-developer
+    - 注册并管理一键服务日程 (`calendar-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendar-service
+    - 日历服务实践案例 (`calendarmanager-practice-developer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-practice-developer
+  - Contacts Kit（联系人服务） (`contacts-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-kit
+    - Contacts Kit简介 (`contacts-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-intro
+    - 使用picker管理联系人 (`contacts-addcontactviaui`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-addcontactviaui
+  - Enterprise Space Kit（企业数字空间服务） (`enterprise-space-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprise-space-kit-guide
+    - Enterprise Space Kit简介 (`enterprisespace-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-introduction
+    - 开发准备 (`enterprisespace-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-preparations
+    - 空间互传 (`enterprisespace-spacedatatransfer-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-spacedatatransfer-guide
+      - 设置审批信息 (`enterprisespace-set-audit-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-audit-info
+      - 获取审批信息 (`enterprisespace-get-audit-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-get-audit-info
+      - 配置空间互传单双通策略 (`enterprisespace-policy-push`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-policy-push
+    - 空间管理 (`enterprisespace-spacemanager-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-spacemanager-guide
+      - 创建工作空间 (`enterprisespace-create-workspace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-create-workspace
+      - 使能工作空间 (`enterprisespace-enable-workspace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-enable-workspace
+      - 查询工作空间 (`enterprisespace-query-workspace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-query-workspace
+      - 移除工作空间 (`enterprisespace-remove-workspace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-remove-workspace
+      - 设置工作空间信息 (`enterprisespace-set-workspace-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-workspace-info
+      - 设置工作空间资料照片 (`enterprisespace-set-workspace-profile-photo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-workspace-profile-photo
+      - 订阅空间事件 (`enterprisespace-subscribe-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-subscribe-event
+      - 取消订阅空间事件 (`enterprisespace-unsubscribe-event`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-unsubscribe-event
+      - 设置系统服务进程不可访问后台用户数据的功能 (`enterprisespace-set-restrict-access-bg-userdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-restrict-access-bg-userdata
+      - 获取系统服务进程不可访问的后台用户数据状态 (`enterprisespace-get-restricted-access-status`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-get-restricted-access-status
+      - 获取不可访问后台用户数据的系统服务进程列表 (`enterprisespace-get-restricted-access-process-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-get-restricted-access-process-list
+      - 新增系统服务进程不可访问后台用户数据路径列表 (`enterprisespace-add-restricted-access-process-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-add-restricted-access-process-list
+      - 删除系统服务进程不可访问后台用户数据路径列表 (`enterprisespace-del-restricted-access-process-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-del-restricted-access-process-list
+      - 设置工作空间策略 (`enterprisespace-set-workspace-policy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-workspace-policy
+      - 查询工作空间策略 (`enterprisespace-get-workspace-policy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-get-workspace-policy
+      - 设置深度冻结豁免名单 (`enterprisespace-set-lockdown-exemption-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-lockdown-exemption-apps
+      - 查询深度冻结豁免名单 (`enterprisespace-get-lockdown-exemption-apps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-get-lockdown-exemption-apps
+    - Enterprise Space Kit常见问题 (`enterprisespace-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-faq
+      - 编译失败，该如何解决？ (`enterprisespace-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-faq-1
+  - File Manager Service Kit（文件管理服务） (`file-manager-service-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-manager-service-kit-guide
+    - File Manager Service Kit简介 (`filemanagerservice-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-introduction
+    - 删除文件到回收站 (`filemanagerservice-deletetotrash`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-deletetotrash
+    - 获取文件图标 (`filemanagerservice-getfileicon`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-getfileicon
+  - Game Controller Kit（游戏控制器服务） (`game-controller-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-kit
+    - Game Controller Kit简介 (`game-controller-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-introduction
+    - 监听设备上下线（C/C++） (`game-controller-monitor-device`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-monitor-device
+    - 监听游戏手柄的轴和按键事件（C/C++） (`game-controller-monitor-pad`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-monitor-pad
+  - Game Service Kit（游戏服务） (`game-service-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-service-kit-guide
+    - Game Service Kit简介 (`gameservice-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-introduction
+    - 基础游戏服务（必选） (`gameservice-gameplayer-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-dev
+      - 游戏登录 (`gameservice-gameplayer-gamelogin`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-gamelogin
+        - 概述 (`gameservice-gameplayer-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-introduction
+        - 网络游戏登录 (`gameservice-gameplayer-network`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-network
+          - 网络游戏登录概述 (`gameservice-network-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-network-introduction
+          - 使用华为账号登录（必选） (`gameservice-gameplayer-huawei`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-huawei
+          - 使用游戏官方账号登录 (`gameservice-gameplayer-official`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-official
+        - 单机游戏登录 (`gameservice-single-access`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-single-access
+        - 开发后自检 (`gameservice-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-check
+      - 小游戏 (`gameservice-gameplayer-minigame`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame
+        - 概述 (`gameservice-gameplayer-minigame-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-introduction
+        - 开发准备 (`gameservice-gameplayer-minigame-preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-preparation
+        - 小游戏登录（必选） (`gameservice-gameplayer-minigame-login`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-login
+        - 小游戏支付 (`gameservice-gameplayer-minigame-pay`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-pay
+      - 基础游戏服务术语 (`gameservice-gameplayer-terminology`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-terminology
+    - 游戏场景感知（可选） (`gameservice-gameperformance-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameperformance-dev
+      - 概述 (`gameservice-gameperformance-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameperformance-introduction
+      - 开发准备 (`gameservice-gameperformance-config-agc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameperformance-config-agc
+      - 开发指导(ArkTS) (`gameservice-gameperformance-access-procedure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameperformance-access-procedure
+      - 开发指导(C/C++) (`gameservice-gameperformance-access-procedure-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameperformance-access-procedure-c
+    - 游戏近场快传（可选） (`gameservice-nearbytransfer-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-dev
+      - 概述 (`gameservice-nearbytransfer-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-introduction
+      - 开发准备 (`gameservice-nearbytransfer-config-agc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-config-agc
+      - 开发指导(ArkTS) (`gameservice-nearbytransfer-access-procedure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-access-procedure
+    - 个人数据处理说明 (`gameservice-personal-data-processing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-personal-data-processing
+    - Game Service Kit常见问题 (`gameservice-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq
+      - 基础游戏服务 (`gameservice-faq-unlogin`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq-unlogin
+        - 若游戏无HarmonyOS 4及以下系统包时，是否可以不配置APP ID映射关系？ (`gameservice-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq-1
+        - 游戏官方账号图标大小是多少？ (`gameservice-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq-2
+        - 游戏如何实现不展示官方账号登录？ (`gameservice-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq-3
+        - 玩家选错登录账号后如何处理？ (`gameservice-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq-4
+      - 游戏场景感知 (`gameservice-faq-performance`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq-performance
+        - 使用C#语言开发的游戏是否可以接入游戏场景感知功能？ (`gameservice-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq-6
+    - 附录 (`gameservice-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-appendix
+      - 配置回调地址 (`gameservice-address`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-address
+      - 获取游戏密钥 (`gameservice-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-key
+  - Health Service Kit（运动健康服务） (`health-service-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-service-kit-guide
+    - Health Service Kit简介 (`health-service-kit-ability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-service-kit-ability
+    - 接入流程 (`health-application-access`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-application-access
+    - 应用开发者申请资质说明 (`health-application-qualifications`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-application-qualifications
+    - 开发接入 (`health-harmonyos`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-harmonyos
+      - 数据开放总览 (`health-data-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-overview
+      - 开发准备 (`health-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-preparations
+        - 申请运动健康服务 (`health-apply`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply
+        - 配置Client ID (`health-configuration-client-id`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-configuration-client-id
+      - Phone/Tablet应用开发 (`health-app-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-app-dev
+        - 拉起运动健康App隐私授权 (`health-privacy-authorization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-privacy-authorization
+        - 管理用户授权 (`health-add-permissions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-add-permissions
+        - 管理数据源 (`health-datasource-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-datasource-manage
+        - 管理运动健康数据 (`health-data-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-manage
+          - 运动健康采样数据 (`health-samplepoint-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-samplepoint-manage
+          - 锻炼记录 (`health-exercisesequence-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-exercisesequence-manage
+          - 健康记录 (`health-healthsequence-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-healthsequence-manage
+          - 实时三环数据 (`health-three-ring-read`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-three-ring-read
+        - 手动数据同步 (`health-cloudsync`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-cloudsync
+      - Wearable应用开发 (`health-wearable-app-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-app-dev
+        - 管理用户授权 (`health-wearable-add-permissions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-add-permissions
+        - 管理运动健康数据 (`health-wearable-data-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-data-manage
+          - 读取运动健康采样数据 (`health-wearable-samplepoint-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-samplepoint-manage
+          - 读取锻炼记录 (`health-wearable-exercisesequence-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-exercisesequence-manage
+          - 读取健康记录 (`health-wearable-healthsequence-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-healthsequence-manage
+          - 实时三环数据 (`health-wearable-three-ring-read`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-three-ring-read
+      - 数据类型 (`health-data-type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-type
+        - 概要 (`health-data-type-summary`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-type-summary
+        - 权限说明 (`health-permission-description`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-permission-description
+        - 采样数据 (`health-samplepoint`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-samplepoint
+          - 日常活动 (`health-daily-activities`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-daily-activities
+          - 心率 (`health-heart-rate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-heart-rate
+          - 血氧 (`health-blood-oxygen`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-blood-oxygen
+          - 压力 (`health-pressure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-pressure
+          - 体温 (`health-body-temperature`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-body-temperature
+          - 血压 (`health-blood-pressure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-blood-pressure
+          - 体重 (`health-weight`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-weight
+          - 身高 (`health-height`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-height
+          - 情绪 (`health-emotion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-emotion
+          - 心率变异性 (`ide-heart-rate-variability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-heart-rate-variability
+        - 锻炼记录数据 (`health-exercisesequence`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-exercisesequence
+          - 简介 (`health-exercisesequence-summary`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-exercisesequence-summary
+          - 跑步 (`health-running`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-running
+          - 健走 (`health-walking`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-walking
+          - 骑行 (`health-cycling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-cycling
+          - 跳绳 (`health-jumping-rope`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-jumping-rope
+          - 户外探险 (`health-adventures`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-adventures
+          - 篮球 (`health-basketball`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-basketball
+          - 滑雪 (`health-skiing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-skiing
+          - 潜水闭气测试 (`health-breath-holding-test`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-breath-holding-test
+          - 潜水闭气训练 (`health-breath-holding-train`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-breath-holding-train
+          - 潜水 (`health-diving`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-diving
+          - 椭圆机 (`health-elliptical`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-elliptical
+          - 高尔夫 (`health-golf`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-golf
+          - 登山 (`health-mountain-hike`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-mountain-hike
+          - 游泳 (`health-swim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-swim
+          - 划船机 (`health-rower`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-rower
+          - 其他运动 (`health-other-sport`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-other-sport
+        - 健康记录数据 (`health-healthsequence`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-healthsequence
+          - 睡眠 (`health-sleeprecord`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-sleeprecord
+      - 申请验证获取正式权限 (`health-verification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-verification
+      - 个人数据处理说明 (`health-personal-data-processing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-personal-data-processing
+    - Health Service Kit常见问题 (`health-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-faqs
+      - 读取今天的日常活动数据统计，与运动健康App页面数据不一致 (`health-faqs-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-faqs-1
+      - 授权后仍然没有数据类型权限 (`health-faqs-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-faqs-2
+      - 在授权时上报1001502003错误 (`health-faqs-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-faqs-3
+      - 在授权时上报1001502014错误 (`health-faqs-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-faqs-4
+      - 用户隐私未同意，如何引导用户打开运动健康App (`health-faqs-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-faqs-5
+    - 附录 (`health-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-appendix
+      - 标志使用规范 (`health-logo-usage-regulations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-logo-usage-regulations
+  - IAP Kit（应用内支付服务） (`iap-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-kit-guide
+    - IAP Kit简介 (`iap-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-introduction
+    - IAP Kit接入规范 (`iap-access-specifications`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-access-specifications
+    - 接入Skill（可选） (`iap-skill--introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-skill--introduction
+    - 使用入门 (`iap-dev-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-dev-guide
+    - 开发准备 (`iap-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-preparations
+      - 基本准备工作 (`iap-basic-preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-basic-preparation
+        - 开通商户服务 (`iap-enable-merchant-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-merchant-service
+        - 创建项目和应用 (`iap-create-project-and-application`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-create-project-and-application
+        - 开启和激活应用内购买服务 (`iap-enable-in-app-purchases`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases
+        - （可选）配置应用内购买服务参数 (`iap-set-necessary-parameters`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-set-necessary-parameters
+      - 配置商品信息 (`iap-config-product`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product
+      - 配置签名 (`iap-config-sign`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-sign
+      - 配置应用身份信息 (`iap-config-app-identity-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-app-identity-info
+    - 商品购买 (`iap-purchases`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-purchases
+      - 消耗型/非消耗型商品购买 (`iap-purchase`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-purchase
+        - 接入购买 (`iap-integrate-purchase`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-purchase
+        - 权益发放 (`iap-delivering-products`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-products
+      - 自动续期订阅商品购买 (`iap-subscription`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription
+        - 自动续期订阅说明 (`iap-subscription-functions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions
+        - 接入自动续期订阅 (`iap-integrate-subscription`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-subscription
+        - 权益发放 (`iap-delivering-subscriptions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-subscriptions
+      - 非续期订阅商品购买 (`iap-nonrenewable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-nonrenewable
+        - 接入购买 (`iap-integrate-nonrenewable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-nonrenewable
+        - 权益发放 (`iap-delivering-nonrenewable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-nonrenewable
+    - 沙盒测试 (`iap-sandbox`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-sandbox
+    - 收益分析和报告 (`iap-data-analysis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-data-analysis
+    - 退款 (`iap-refund`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-refund
+    - IAP Kit常见问题 (`iap-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq
+      - AppGallery Connect中可以配置多个关键事件通知接收地址吗？ (`iap-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-2
+      - AppGallery Connect获取的IAP公钥最大长度是多少？便于用户存储设置的最大长度是多少？ (`iap-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-3
+      - AppGallery Connect商品管理页面，商品价格编辑界面的默认价格表示什么意思？ (`iap-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-4
+      - 在AppGallery Connect中单独修改商品在某个地区的价格，以后汇率变动，是否会影响应用内的商品价格？ (`iap-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-5
+      - AppGallery Connect商品管理页面中，价格展示是否做了数字调整？比如小数点第二位6/9等调整？ (`iap-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-6
+      - 是否必须使用SHA256的证书才能通过验签？ (`iap-faq-7`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-7
+      - 签名校验是否可以都在服务端执行？ (`iap-faq-8`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-8
+      - 是否能在删除商品后添加具有相同productId的商品？ (`iap-faq-11`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-11
+      - IAP服务器支持的证书范围 (`iap-faq-12`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-12
+      - IAP服务器支持的加密套件范围 (`iap-faq-13`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-13
+      - 如何解决证书链不完整？ (`iap-faq-14`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-14
+      - 应用在子窗口中调用createPurchase拉起IAP Kit收银台时，子窗口会被隐藏，此现象正常吗？ (`iap-faq-15`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-15
+      - 在沙盒环境进行测试，但是实际需要真实支付是为什么？ (`iap-faq-16`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-16
+      - HarmonyOS元服务和HarmonyOS应用是否可以共用同一个API密钥？ (`iap-faq-17`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-17
+      - purchaseToken和purchaseOrderId这两个参数的最大长度是多少？ (`iap-faq-19`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-19
+      - subGroupId（订阅组ID）、subGroupGenerationId（订阅组的代ID）和subscriptionId（订阅ID）说明 (`iap-faq-20`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-20
+      - developerPayload处理机制及使用建议 (`iap-faq-21`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-21
+      - 应用迁移后，JWT密钥验签错误自查方法 (`iap-faq-22`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-22
+      - 自动续期订阅商品，A切换B且立即生效时，新订阅有效期的组成 (`iap-faq-23`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-23
+    - 附录 (`iap-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-appendix
+      - 华为IAP范围覆盖 (`iap-appendix-coverage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-appendix-coverage
+  - Live View Kit（实况窗服务） (`live-view-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/live-view-kit-guide
+    - Live View Kit简介 (`liveview-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction
+    - 实况窗设计规范 (`liveview-design-formula`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-design-formula
+    - 开发准备 (`liveview-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-preparations
+      - 基本准备工作 (`liveview-base`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-base
+      - 开通推送服务权益 (`liveview-push-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-push-service
+      - 设置数据处理位置 (`liveview-data-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-data-process
+      - 开通实况窗服务权益 (`liveview-rights`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-rights
+      - 接入联调测试 (`liveview-joint-commission-test`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-joint-commission-test
+      - 申请实况窗正式权限 (`liveview-formal-authority`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-formal-authority
+    - 开发实况窗场景 (`liveview-scenes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-scenes
+      - 开发实况窗须知 (`liveview-scenes-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-scenes-intro
+      - 构建本地实况窗 (`liveview-create-locally`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-create-locally
+      - 通过Push Kit更新实况窗 (`liveview-update-by-push`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-update-by-push
+    - Live View Kit常见问题 (`liveview-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq
+      - 更新实况窗被频控的问题 (`liveview-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq-1
+      - 三方开发框架接入的问题 (`liveview-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq-2
+      - 关于实况窗生命周期的问题 (`liveview-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq-3
+      - 关于实况窗模板使用的问题 (`liveview-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq-4
+      - 关于实况窗数量约束的问题 (`liveview-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq-5
+  - Location Kit（位置服务） (`location-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-kit
+    - Location Kit简介 (`location-kit-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-kit-intro
+    - 开发准备 (`location-preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-preparation
+      - 申请位置权限开发指导 (`location-permission-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-permission-guidelines
+      - 申请开放能力权限指导 (`location-apply-open-capability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-apply-open-capability
+    - 获取设备的位置信息开发指导 (`location-guidelines-index`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-guidelines-index
+      - 获取设备的位置信息开发指导（ArkTS） (`location-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-guidelines
+      - 获取设备的位置信息开发指导（C/C++） (`location-guidelines-capi`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-guidelines-capi
+    - 正地理编码与逆地理编码开发指导 (`geocode-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geocode-guidelines
+    - 地理围栏开发指导 (`geofence-guidelines-index`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geofence-guidelines-index
+      - 地理围栏简介 (`geofence-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geofence-intro
+      - 端侧GNSS围栏开发指导 (`geofence-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geofence-guidelines
+      - 云侧围栏开发指导 (`fenceextensionability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fenceextensionability
+    - 个人数据处理说明 (`location-personal-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-personal-data
+    - 相关实例 (`app-samples`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-samples
+    - 附录 (`location-kit-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-kit-appendix
+  - Map Kit（地图服务） (`map-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-kit-guide
+    - Map Kit简介 (`map-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-introduction
+    - 开发准备 (`map-config-agc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc
+    - 创建地图 (`map-creation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-creation
+      - 显示地图 (`map-presenting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-presenting
+      - 切换地图类型 (`map-type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-type
+      - 显示我的位置 (`map-location`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location
+      - 显示自定义地图 (`map-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-style
+    - 地图交互 (`map-interaction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-interaction
+      - 控件交互 (`map-controls-and-interaction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-controls-and-interaction
+      - 手势交互 (`map-controls-and-gestures`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-controls-and-gestures
+      - 事件交互 (`map-listening`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-listening
+      - 更改地图位置 (`map-camera`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-camera
+      - 地图截图 (`map-screenshots`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-screenshots
+    - 在地图上绘制 (`map-drawing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-drawing
+      - 标记 (`map-marker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-marker
+      - 折线 (`map-polyline`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-polyline
+      - 弧线 (`map-arc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-arc
+      - 多边形 (`map-polygon`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-polygon
+      - 圆形 (`map-circle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-circle
+      - 点注释 (`map-annotation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-annotation
+      - 气泡 (`map-bubble`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-bubble
+      - 点聚合 (`map-aggregate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-aggregate
+      - 覆盖物 (`map-coverings`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-coverings
+      - 3D建筑 (`map-3dbuilding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-3dbuilding
+      - 动态轨迹 (`map-dyntrajectories`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-dyntrajectories
+      - 设置地图元素压盖顺序 (`map-display-order`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-display-order
+      - 瓦片图层 (`map-tile`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-tile
+      - 热力图 (`map-heat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-heat
+      - 矢量图层 (`map-mvt-overlay`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-mvt-overlay
+      - 流场图层 (`map-flow-field`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-flow-field
+      - 海量点图层 (`map-mass-point`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-mass-point
+    - 位置搜索 (`map-location-services`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-services
+      - POI搜索 (`map-site-search`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-site-search
+      - 地理编码 (`map-site-geocode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-site-geocode
+    - 路径规划 (`map-navi`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-navi
+      - 出行路线规划 (`map-navi-routes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-navi-routes
+      - 批量算路 (`map-navi-matrix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-navi-matrix
+      - 轨迹绑路 (`map-navi-snap`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-navi-snap
+    - 静态图 (`map-static-diagram`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-static-diagram
+    - 地图Picker (`map-advanced-controls`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-advanced-controls
+      - 地点详情展示 (`map-location-details`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-details
+      - 地点选取 (`map-location-selecting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-selecting
+      - 区划选择 (`map-location-division`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-division
+    - 通过地图应用实现导航等能力 (`map-petalmaps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-petalmaps
+    - 地图计算工具 (`map-calculation-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-calculation-tool
+      - 坐标纠偏 (`map-convert-coordinate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-convert-coordinate
+      - 距离计算 (`map-calculate-distance`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-calculate-distance
+    - Map Kit常见问题 (`map-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq
+      - 地图不显示 (`map-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-1
+      - siteId参数如何获取 (`map-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-2
+      - 手势卡顿或者不生效 (`map-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-3
+      - 设置地图Logo始终显示 (`map-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-4
+      - 场景化控件的language参数生效范围 (`map-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-5
+    - 个人数据处理说明 (`map-personal-privacy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-personal-privacy
+    - 上架前准备-获取地图服务协议及资质证明 (`preparations_before`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preparations_before
+    - 附录 (`map-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-appendix
+      - 地图数据版权声明 (`map-privacy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-privacy
+      - 支持的语言 (`map-language`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-language
+      - 支持的国家/地区 (`map-supported`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-supported
+  - Notification Kit（用户通知服务） (`notification-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-kit
+    - Notification Kit简介 (`notification-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-overview
+    - 请求通知授权 (`notification-enable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-enable
+    - 管理通知角标 (`notification-badge`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-badge
+    - 管理通知渠道 (`notification-slot`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-slot
+    - 发布通知 (`publish-notification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/publish-notification
+      - 发布文本类型通知 (`text-notification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-notification
+      - 发布进度条类型通知 (`progress-bar-notification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/progress-bar-notification
+      - 为通知添加行为意图 (`notification-with-wantagent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-with-wantagent
+    - 更新通知 (`notification-update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-update
+    - 取消通知 (`notification-cancel`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-cancel
+    - 跨设备协同通知 (`notification-distributed`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-distributed
+      - 跨设备协同通知概述 (`notification-distributed-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-distributed-overview
+      - 清除跨设备场景下的重复通知 (`notification-distributed-messageid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-distributed-messageid
+    - 通知订阅扩展能力 (`notification-subscriber-extension`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-subscriber-extension
+      - NotificationSubscriberExtensionAbility (开发概述) (`notification-subscriber-extension-ability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-subscriber-extension-ability
+      - 通知订阅扩展能力开发步骤 (`ion-subscriber-extension-ability-development-steps`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ion-subscriber-extension-ability-development-steps
+    - 应用内通知设置快捷入口 (`notification-shortcut-settings`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-shortcut-settings
+  - Payment Kit（鸿蒙支付服务） (`payment-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-kit-guide
+    - Payment Kit简介 (`payment-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-introduction
+    - 接入规范学习 (`payment-access-specifications`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-access-specifications
+    - 接入Skill说明 (`payment-skill-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-skill-introduction
+    - 收银台设计规范 (`payment-cashier-design`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-cashier-design
+    - 开发准备 (`payment-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-preparations
+      - 商户入网和获取商户号 (`payment-merc-regist-apply`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-merc-regist-apply
+      - （可选）特定场景配置操作 (`payment-product-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-product-configuration
+      - 开通支付服务 (`payment-config-agc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-agc
+      - 商户号绑定AppID (`payment-binding-appid-to-merc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-binding-appid-to-merc
+      - 准备证书 (`payment-certificates-config`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-certificates-config
+      - 端侧应用配置 (`payment-config-app-identity-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-app-identity-info
+      - 云侧服务准备 (`payment-server-connect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-server-connect
+      - （可选）数字人民币接入准备 (`payment-digital-cny-pay-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay-preparations
+      - （可选）用户身份验证服务接入准备 (`payment-real-name-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-preparations
+    - 商户基础支付场景 (`payment-payment-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-payment-process
+    - 平台类商户合单支付场景 (`payment-partner-combined`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-partner-combined
+    - 免密支付接入 (`payment-password-free-pay`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-password-free-pay
+      - 免密代扣说明 (`payment-password-free-pay-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-password-free-pay-overview
+      - 支付并签约场景 (`payment-pay-and-sign`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-pay-and-sign
+      - 签约代扣场景 (`payment-withhold-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-withhold-process
+    - 数字人民币支付场景 (`payment-digital-cny-pay`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay
+    - 通用收银台接入 (`payment-common-pay-connect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-connect
+      - 业务规则说明 (`payment-common-pay-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction
+      - 混合支付场景 (`payment-common-pay-mix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-mix
+      - 纯外部支付场景 (`payment-common-pay-external`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-external
+      - 拉起三方支付收银台 (`payment-launch-third-party-payment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment
+        - 基于URL跳转方式 (`payment-launch-third-party-payment-url`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment-url
+        - 基于接口拉起方式 (`payment-launch-third-party-payment-sdk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment-sdk
+        - 三方支付问题处理 (`payment-third-party-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-third-party-faq
+    - 引导用户绑卡场景 (`payment-partner-bindcard`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-partner-bindcard
+    - 用户身份验证服务 (`payment-real-name-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-service
+      - 实名信息验证/授权场景 (`payment-real-name-verification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-verification
+      - 人脸核身实人验证场景 (`payment-real-name-face-verification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-face-verification
+      - 身份验证服务调用记录查看 (`payment-real-name-service-req-query`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-service-req-query
+    - 沙盒环境验证 (`payment-sandbox-test`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-sandbox-test
+    - 服务与支持 (`payment-service-support`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-service-support
+    - Payment Kit常见问题 (`payment-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq
+      - 接入开发时，请求参数的签名、结果验签在什么场景使用？ (`payment-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-1
+      - Payment Kit的签名公私钥怎么获取？ (`payment-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-2
+      - GET请求的bodySign是对谁签名得到的？ (`payment-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-3
+      - 拉起收银台无反应或报错？ (`payment-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-5
+      - 支付成功后没有收到回调？ (`payment-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-6
+      - 同一用户重复签约，会生成多笔签约吗？ (`payment-faq-7`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-7
+      - 华为支付签约的免密代扣在哪里可以解约？ (`payment-faq-8`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-8
+      - 关于支付回调的验签，为什么预下单请求验签的时候使用SHA256，回调验签却使用SM2？只能使用SM2进行验签吗？ (`payment-faq-9`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-9
+      - 接口请求响应“无效的签名”应该如何排查？ (`payment-faq-10`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-10
+      - 收银台报错“服务暂不可用，请稍后重试”？ (`payment-faq-11`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-11
+      - 预下单请求报错“交易订单状态异常”？ (`payment-faq-12`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-12
+      - 预下单一段时间后再支付，能否有接口查到prepayId？ (`payment-faq-13`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-13
+      - 部分提供通知回调的API接口中的callbackUrl参数是否可以自定义？回调通知的报文是否支持商户自定义？ (`payment-faq-14`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-14
+      - 同一次支付请求接收到多次回调通知，怎么解决？ (`payment-faq-15`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-15
+      - 商户提供的回调通知接口在Payment Kit生产环境需要加网络允许清单吗？如何验证提供的回调地址Payment Kit服务器访问是否正常？ (`payment-faq-16`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-16
+      - 商户侧没有传营销信息，支付回调里面为什么会有营销信息？ (`payment-faq-17`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-17
+      - App和元服务接口入参除了appId不同，其他如商户号、证书、密钥这些可以使用相同的吗？ (`payment-faq-18`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-18
+      - 商户入网后，有商户接入联调环境吗？ (`payment-faq-19`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-19
+      - 请求头PayMercAuth中的callerId和请求体中的mercNo或者combineMercNo是什么关系？ (`payment-faq-20`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-20
+      - 请求接口加签验证中，如果请求头“PayMercAuth”中bodySign字段为空值，会做验签吗？还是会先校验字段？ (`payment-faq-21`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-21
+      - 不更换商户订单号重复发起退款，返回000000，不返回退款金额的原因是什么？ (`payment-faq-22`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-22
+      - Payment Kit的退款操作，除了通过接入指导中的退款接口退款，还有财务功能相关平台吗？能从这个平台进行退款？ (`payment-faq-23`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-23
+      - 下载账单文件后，应该使用哪种格式来解析日期？ (`payment-faq-24`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-24
+      - 收银台支付报错“应用信息校验不通过，请联系商家处理”？ (`payment-faq-25`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-25
+      - 商户号绑定AppID提示“主体不一致”？ (`payment-faq-26`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-26
+      - 如何联系运营机构或受理服务机构获取开发指引？ (`payment-faq-27`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-27
+      - 找不到“支付服务（非虚拟类）”菜单或AppID关联授权的页面怎么处理？ (`payment-faq-28`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-28
+  - PDF Kit（PDF服务） (`pdf-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-kit-guide
+    - PDF Kit简介 (`pdf-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-introduction
+    - pdfService能力 (`pdf-pdfservice-implements`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfservice-implements
+      - 打开和保存PDF文档 (`pdf-open-document`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-open-document
+      - 添加、删除PDF页 (`pdf-add-delete-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-delete-page
+      - PDF页面文本、图片和批注 (`pdf-add-txt-img-annot`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-txt-img-annot
+      - 转换PDF文档为图片 (`pdf-doc-to-imgs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-doc-to-imgs
+        - 转换指定页面或指定区域为图片 (`pdf-get-img`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-get-img
+        - 转换整个PDF文档为图片 (`pdf-convert-img`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-convert-img
+      - 判断PDF文档是否加密及删除加密 (`pdf-isencrypt-removesecurity`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-isencrypt-removesecurity
+      - 添加、删除书签 (`pdf-add-bookmark`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-bookmark
+      - 添加、删除页眉页脚 (`pdf-add-headerfooter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-headerfooter
+      - 添加、删除水印 (`pdf-add-watermark`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-watermark
+      - 添加、删除背景 (`pdf-add-background`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-background
+    - PdfView预览组件 (`pdf-pdfview-implements`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-implements
+      - 预览PDF文档 (`pdf-pdfview-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-component
+      - 打开和保存PDF文档 (`pdf-pdfview-open`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-open
+      - 设置PDF文档预览效果 (`pdf-pdfview-preview-method`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-preview-method
+      - 搜索关键字 (`pdf-pdfview-search`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-search
+      - 高亮显示PDF文档 (`pdf-pdfview-highlight`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-highlight
+      - 批注 (`pdf-pdfview-annotation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-annotation
+      - PDF缩略图转换为图片 (`pdf-pdfview-page2img`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-page2img
+      - 优化PDF文档切换体验 (`pdf-pdfview-switch-optimize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-switch-optimize
+    - PDF Kit 常见问题 (`pdf-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-faq
+      - PDF Kit可以移除具体页面的页眉页脚、水印、背景吗？ (`pdf-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-faq-4
+      - PDF文档支持在线预览吗？ (`pdf-faq-4-online-preview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-faq-4-online-preview
+  - Preview Kit（文件预览服务） (`preview-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-kit-guide
+    - Preview Kit简介 (`preview-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-introduction
+    - 文件预览 (`preview-filepreview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filepreview
+    - 文件打开加速（C/C++） (`preview-openfileboost`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost
+    - 文件打开加速状态感知 (`preview-openfileboost-stateawareness`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost-stateawareness
+    - Preview Kit常见问题 (`preview-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-faq
+      - openPreview打开显示预览失败 (`preview-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-faq-1
+      - 使用DocumentViewPicker拿到的uri通过openPreview打开显示预览失败 (`preview-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-faq-2
+  - Push Kit（推送服务） (`push-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-kit-guide
+    - Push Kit简介 (`push-kit-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-kit-introduction
+    - 使用入门 (`push-gettingstart`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-gettingstart
+    - 开发准备 (`push-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-preparations
+      - 学习Push Kit接入规范 (`push-specification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-specification
+      - 开通推送服务 (`push-config-setting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-config-setting
+      - 申请推送场景化消息权益 (`push-apply-right`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right
+      - 获取Push Token (`push-get-token`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token
+    - 推送场景化消息 (`push-scenes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-scenes
+      - 推送通知消息 (`push-alert`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-alert
+        - 发送通知消息 (`push-send-alert`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-alert
+        - 撤回通知消息 (`push-revoke-alert`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-revoke-alert
+      - 推送卡片刷新消息 (`push-form-update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-form-update
+      - 推送语音播报消息 (`push-extend-noti`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-extend-noti
+        - 发送语音播报消息 (`push-send-extend-noti`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-extend-noti
+        - 撤回语音播报消息 (`push-revoke-extend-noti`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-revoke-extend-noti
+      - 推送后台消息 (`push-background`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-background
+      - 推送实况窗消息 (`push-update-liveview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-update-liveview
+      - 推送应用内通话消息 (`push-voip`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-voip
+    - 端云调试 (`push-server`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-server
+      - 端云调试概述 (`push-server-intro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-server-intro
+      - 基于服务账号生成鉴权令牌 (`push-jwt-token`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-jwt-token
+      - 推送场景化消息 (`push-scenes-send`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-scenes-send
+      - （可选）开发消息回执 (`push-msg-receipt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-msg-receipt
+      - （可选）推送报告 (`push-delivery-report`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-delivery-report
+    - 获取AAID (`push-get-aaid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-aaid
+    - Push Kit常见问题 (`push-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq
+      - 如何处理推送消息时遇到的问题 (`push-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-1
+      - 关于云侧接口推送成功但设备收不到推送消息的问题 (`push-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-2
+      - 如何处理误分类问题 (`push-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-3
+      - 如何处理推送通知消息数量不够用问题 (`push-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-4
+      - 关于通知消息被频控的问题 (`push-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-5
+      - 应用内通话消息在设备重启后的首次锁屏状态问题 (`push-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-6
+      - 应用内通话消息来电横幅问题 (`push-faq-7`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-7
+      - 场景化消息中的请求URL版本问题 (`push-faq-8`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-8
+      - 应用处于后台时应用内如何接收消息 (`push-faq-9`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-9
+      - 要实现即时聊天功能应该使用什么类型的场景化消息 (`push-faq-10`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-10
+      - 如何收费 (`push-faq-11`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-11
+      - 如何更换回执服务器证书的问题 (`push-faq-12`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-12
+    - 个人数据处理说明 (`push-personal-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-personal-data
+    - 附录 (`push-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-appendix
+      - 通知内容管理细则 (`push-detail-rules`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-detail-rules
+      - 通知违规处罚标准 (`push-punishment-standards`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-punishment-standards
+      - 支持的国家/地区 (`push-country`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-country
+  - Reader Kit（阅读服务） (`reader-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-kit-guide
+    - Reader Kit简介 (`reader-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-introduction
+    - 书籍内容解析 (`reader-parser`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-parser
+      - 获取书籍信息 (`reader-book-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-book-info
+      - 获取目录列表 (`reader-catalog-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-catalog-list
+    - 书籍内容排版 (`reader-content`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-content
+      - 构建阅读器 (`reader-read-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-read-page
+      - 修改阅读设置 (`reader-setting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting
+        - 自定义字体 (`reader-setting-font`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-font
+        - 自定义页面背景 (`reader-setting-background`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-background
+        - 修改翻页方式、字体大小及行间距 (`reader-setting-other`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-other
+        - 适配深、浅色模式 (`reader-setting-color-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-color-mode
+        - 监听文本缩放因子变化 (`reader-setting-scaled-density`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-scaled-density
+    - 书籍内容交互 (`reader-interaction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-interaction
+      - 手动触发翻页 (`reader-flip-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-flip-page
+      - 阅读进度通知 (`reader-progress`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-progress
+  - Scenario Fusion Kit（融合场景服务） (`scenario-fusion-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-guide
+    - Scenario Fusion Kit简介 (`scenario-fusion-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction
+    - 开发准备 (`scenario-fusion-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-preparations
+    - 场景化Button (`scenario-fusion-button`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button
+      - 快速验证手机号Button (`scenario-fusion-button-getphonenumber`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-getphonenumber
+      - 选择头像Button (`scenario-fusion-button-chooseavatar`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-chooseavatar
+      - 打开APP Button (`scenario-fusion-button-launchapp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-launchapp
+      - 选择收货地址Button (`scenario-fusion-button-ship-to`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-ship-to
+      - 选择发票抬头Button (`scenario-fusion-button-invoice-title`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-invoice-title
+      - 地图选点Button (`scenario-fusion-button-selecting-point`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-selecting-point
+      - 权限设置Button (`scenario-fusion-button-permissiononsetting`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-permissiononsetting
+      - 获取手机号和风险等级Button (`scenario-fusion-button-get-risklevel`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-get-risklevel
+    - 场景化Input (`scenario-fusion-input`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-input
+      - 省市区选择器Input (`scenario-fusion-input-zone-selectors`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-input-zone-selectors
+    - 场景化API (`scenario-fusion-api-information-attribute`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-information-attribute
+      - 通过API获取系统信息属性 (`scenario-fusion-api-system-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-system-info
+      - 通过API异步获取系统信息属性 (`scenario-fusion-api-asyn-system-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-asyn-system-info
+      - 通过API获取系统设置属性 (`scenario-fusion-api-system-setup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-system-setup
+      - 通过API展示关注组件 (`scenario-fusion-api-followcomponent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-followcomponent
+    - 文件路径转换API (`scenario-fusion-api-path-conversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-path-conversion
+    - 智能填充服务 (`scenario-fusion-intelligent-filling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligent-filling
+      - 智能填充概述 (`scenario-fusion-introduction-to-smart-fill`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction-to-smart-fill
+      - 典型场景展示 (`scenario-fusion-introduction-typical-scenario`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction-typical-scenario
+      - 动态修改ContentType值 (`scenario-fusion-intelligentfilling-amend`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-amend
+      - 自动补全地址表单所在地区 (`scenario-fusion-intelligentfilling-autocomplete`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-autocomplete
+      - 推荐车牌号场景 (`scenario-fusion-licenseplateno`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-licenseplateno
+      - 推荐数据源及推荐逻辑说明 (`scenario-fusion-intelligentfilling-explain`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-explain
+      - ContentType使用场景说明 (`scenario-fusion-intelligentfilling-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-appendix
+      - 三方框架+H5接入智能填充 (`scenario-fusion-tripartiteframework`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-tripartiteframework
+        - H5接入智能填充 (`scenario-fusion-h5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-h5
+        - React Native框架+H5接入智能填充 (`scenario-fusion-reactnative`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-reactnative
+        - Flutter框架+H5接入智能填充 (`scenario-fusion-flutter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-flutter
+        - Taro框架+H5接入智能填充 (`scenario-fusion-taro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-taro
+        - Weex框架+H5接入智能填充 (`scenario-fusion-weex`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-weex
+        - mPaas框架+H5接入智能填充 (`scenario-fusion-mpass`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-mpass
+        - H5/三方框架和HarmonyOS配置项映射关系 (`scenario-fusion-mappingrelationship`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-mappingrelationship
+    - Scenario Fusion Kit常见问题 (`scenario-fusion-button-frequently-asked-questions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-frequently-asked-questions
+      - 单击快速验证手机号按钮，无法拉起页面 (`scenario-fusion-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-1
+      - 打开应用功能跳转第三方应用失败 (`scenario-fusion-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-2
+      - 剪贴板粘贴框遮挡智能填充选择框 (`scenario-fusion-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-3
+    - 个人数据处理说明 (`scenario-fusion-personal-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-personal-data
+    - 附录 (`scenario-fusion-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-appendix
+      - 支持的国家/地区 (`scenario-fusion-appendix-support-regions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-appendix-support-regions
+  - Screen Time Guard Kit（屏幕时间守护服务） (`screen-time-guard-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screen-time-guard-kit-guide
+    - Screen Time Guard Kit简介 (`screentimeguard-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-introduction
+    - 开发准备 (`screentimeguard-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-preparations
+      - 配置签名 (`screentimeguard-app-signature`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-app-signature
+      - 受限ACL权限申请 (`screentimeguard-permission-application`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-permission-application
+    - 用户授权管理 (`screentimeguard-interface-call-auth`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-interface-call-auth
+      - 概述 (`screentimeguard-interface-call-auth-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-interface-call-auth-overview
+      - 请求用户授权 (`screentimeguard-request-user-auth`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-request-user-auth
+      - 取消用户授权 (`screentimeguard-revoke-user-auth`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-revoke-user-auth
+      - 健康使用设备授权列表页中应用授权开关打开/关闭时触发回调 (`screentimeguard-switch-state-change-callback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-switch-state-change-callback
+    - 应用选择页 (`screentimeguard-app-picker-pages`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-app-picker-pages
+      - 概述 (`screentimeguard-app-picker-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-app-picker-overview
+      - 拉起应用选择页 (`screentimeguard-start-app-picker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-start-app-picker
+      - 拉起许可应用跳转页 (`screentimeguard-start-app-form`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-start-app-form
+    - 守护策略管理 (`screentimeguard-guard-strategy-manage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-guard-strategy-manage
+      - 概述 (`screentimeguard-guard-strategy-manage-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-guard-strategy-manage-overview
+      - 添加策略 (`screentimeguard-add-guard-strategy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-add-guard-strategy
+      - 修改策略 (`screentimeguard-update-guard-strategy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-update-guard-strategy
+      - 查询策略 (`screentimeguard-query-guard-strategies`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-query-guard-strategies
+      - 删除策略 (`screentimeguard-remove-guard-strategy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-remove-guard-strategy
+      - 启动策略 (`screentimeguard-start-guard-strategy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-start-guard-strategy
+      - 停止策略 (`screentimeguard-stop-guard-strategy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-stop-guard-strategy
+    - 应用访问限制 (`screentimeguard-apps-restriction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-apps-restriction
+      - 概述 (`screentimeguard-apps-restriction-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-apps-restriction-overview
+      - 设置应用访问限制 (`screentimeguard-set-apps-restriction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-set-apps-restriction
+      - 解除应用访问限制 (`screentimeguard-release-apps-restriction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-release-apps-restriction
+  - Share Kit（分享服务） (`share-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-kit-guide
+    - Share Kit简介 (`share-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-introduction
+    - Share Kit术语 (`share-terminology`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-terminology
+    - Share Kit体验规范 (`share-access-precautions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-precautions
+      - 宿主应用发起分享需使用精细化的utd类型 (`share-access-utd`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-utd
+      - 目标设备接收分享数据一步直达体验 (`share-access-one-step`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-one-step
+    - 系统分享 (`system-share`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-share
+      - 概述 (`system-share-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-share-overview
+      - 宿主应用发起分享 (`share-map-creation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-map-creation
+        - 宿主应用接入模式 (`share-access-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-mode
+        - 通过分享面板发起分享 (`share-mobilephone-app-share`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-mobilephone-app-share
+        - 配置目标应用名单（仅对企业应用开放） (`share-app-sharing-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-sharing-mode
+        - 自定义配置操作区 (`share-app-actions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-actions
+        - 获取分享结果 (`share-share-completed`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-share-completed
+      - 目标应用处理分享内容 (`share-target-application`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-target-application
+        - 应用内处理分享内容 (`share-interface-description`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-interface-description
+        - 分享详情页处理分享内容 (`share-sec-panel`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-sec-panel
+        - 分享详情页关闭分享面板 (`share-sec-panel-back`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-sec-panel-back
+        - 判断应用是否被系统分享拉起 (`share-launch-param`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-launch-param
+        - 共享联系人信息到分享推荐区 (`share-intents-share`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-intents-share
+        - 目标应用设计规范 (`share-design-specification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-design-specification
+      - 常见分享场景 (`share-service-scenarios`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-service-scenarios
+        - 分享链接 (`share-utd-link`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-link
+        - 分享图片 (`share-utd-image`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-image
+        - 分享视频 (`share-utd-video`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-video
+        - 分享文本 (`share-utd-text`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-text
+    - 碰一碰分享 (`knock-share`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share
+      - 手机与手机碰一碰分享 (`knock-share-between-phones`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones
+        - 概述 (`knock-share-between-phones-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-overview
+        - 内容分享 (`knock-share-between-phones-content`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-content
+        - 邀请组队 (`knock-share-between-phones-group`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-group
+      - 手机与PC/2in1碰一碰分享 (`knock-share-pc-phones`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-pc-phones
+        - 概述 (`knock-share-pc-phones-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-pc-phones-overview
+        - 分享内容直达应用界面 (`knock-share-pc-phones-sandbox`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-pc-phones-sandbox
+        - 手机与PC/2in1间相互分享 (`knock-share-pc-phones-mutually`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-pc-phones-mutually
+    - 隔空传送 (`gestures-share`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share
+      - 概述 (`gestures-share-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-overview
+      - 打开设备侧隔空传送开关 (`gestures-share-open`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-open
+      - 可信任设备间传输 (`gestures-share-trust`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-trust
+      - 分享App Linking直达应用 (`gestures-share-scenes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-scenes
+    - Share Kit常见问题 (`share-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-faq
+      - 拉起系统分享框失败 (`share-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-faq-1
+      - 分享数据类型不支持 (`share-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-faq-2
+      - 分享时提示“您选择的文件不支持分享” (`share-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-faq-3
+  - Wallet Kit（钱包服务） (`wallet-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-kit-guide
+    - Wallet Kit简介 (`wallet-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-introduction
+    - 创建Wallet Kit服务 (`wallet-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations
+    - 数字车钥匙 (`wallet-carkey`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-carkey
+      - 概述 (`wallet-carkey-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-carkey-overview
+      - 云侧开发准备 (`wallet-carkey-cloud`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-carkey-cloud
+      - 钥匙开通 (`wallet-carkey-operation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-carkey-operation
+      - 车控 (`wallet-carkey-control`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-carkey-control
+    - 接入交通卡 (`wallet-transport`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport
+      - 概述 (`wallet-transport-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-overview
+      - 云侧准备 (`wallet-transport-cloud`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-cloud
+      - 交通卡开通 (`wallet-transport-operation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-operation
+      - 交通卡充值 (`wallet-transport-recharge`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-recharge
+      - 交通卡更新 (`wallet-transport-update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-update
+      - 交通卡删卡 (`wallet-transport-delete`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-delete
+    - Wallet Kit常见问题 (`wallet-kit-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-kit-faq
+      - 开发者应用使用Wallet Kit，是否需要集成华为Account Kit？ (`wallet-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-2
+      - 如果用户没有登录华为账号，添加卡券时如何处理？ (`wallet-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-3
+      - 现有提供的几种接入方式中，比较常用的是哪种？ (`wallet-faq-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-4
+      - 添加卡券时商户服务器主要需要执行哪些步骤？ (`wallet-faq-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-5
+      - 如何查看已添加卡券？ (`wallet-faq-6`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-6
+      - 用户领取了同一商户的多张卡券，但是打开华为钱包后只显示一张卡券 (`wallet-faq-7`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-7
+      - 用户删卡时会删除哪些信息？ (`wallet-faq-8`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-8
+  - Weather Service Kit（天气服务） (`weather-service-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-kit-guide
+    - Weather Service Kit简介 (`weather-service-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-introduction
+    - 开发准备 (`weather-service-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-preparations
+    - 获取天气数据 (`weather-service-getweather`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-getweather
+    - Weather Service Kit 常见问题 (`weather-service-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-faq
+      - 如何获取指定城市的天气数据？ (`weather-service-faq-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-faq-1
+      - Weather Service Kit接口有定位功能吗？ (`weather-service-faq-2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-faq-2
+      - 请求了分钟级降水预报/天气预警/潮汐，未返回任何数据。 (`weather-service-faq-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-faq-3
+    - 个人数据处理说明 (`weather-service-personal-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-personal-data
+- AI
+  - Agent Framework Kit（智能体框架服务） (`harmony-agent-framework-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/harmony-agent-framework-kit-guide
+    - Agent Framework Kit简介 (`hmaf-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hmaf-introduction
+    - 通过Function组件拉起智能体 (`hmaf-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hmaf-function
+  - CANN Kit（CANN异构计算框架服务） (`cann-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cann-kit-guide
+    - CANN Kit简介 (`cannkit-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-introduction
+    - 开发准备 (`cannkit-preparations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-preparations
+    - 模型优化 (`cannkit-model-optimization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-model-optimization
+      - Model Zoo (`cannkit-model-zoo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-model-zoo
+      - 模型轻量化 (`cannkit-lightweight-tool-instructions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-lightweight-tool-instructions
+        - 概述 (`cannkit-lightweight-tool-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-lightweight-tool-overview
+        - 无训练量化 (`cannkit-no-training-and-quantization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-no-training-and-quantization
+        - 插件式量化 (`cannkit-plugin-based-quantization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-plugin-based-quantization
+        - Transformer结构量化 (`cannkit-large-language-model`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-large-language-model
+          - LLM模型一站式量化 (`cannkit-large-language-one-stop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-large-language-one-stop
+          - 插件式量化 (`cannkit-plug-in-quantification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-plug-in-quantification
+          - 量化基模外挂LoRA微调 (`cannkit-external-lora-fine-tuning`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-external-lora-fine-tuning
+        - 网络结构搜索训练 (`cannkit-network-structure-search-training`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-network-structure-search-training
+        - 模型轻量化示例 (`cannkit-examples`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-examples
+        - 常见问题 (`cannkit-model-size-reduction-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-model-size-reduction-faqs
+        - 模型收益 (`cannkit-model-benefits`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-model-benefits
+    - 模型转换 (`cannkit-model-conversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-model-conversion
+      - 离线模型转换 (`cannkit-offline-model-conversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-offline-model-conversion
+        - 模型转换前准备 (`cannkit-preparing-for-model-conversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-preparing-for-model-conversion
+        - 模型转换示例 (`cannkit-model-conversion-example`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-model-conversion-example
+        - OMG参数 (`cannkit-overall-parameter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-overall-parameter
+      - AIPP (`cannkit-aipp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-aipp
+        - 概述 (`cannkit-aipp-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-aipp-overview
+        - AIPP参数 (`cannkit-aipp-parameters`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-aipp-parameters
+        - 模型转换AIPP配置文件说明 (`cannkit-aipp-configuration-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-aipp-configuration-file
+      - 可变data_type (`cannkit-variable-data_type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-variable-data_type
+    - 端侧部署 (`cannkit-on-device-deployment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-on-device-deployment
+      - 部署全流程 (`cannkit-whole-deployment-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-whole-deployment-process
+      - 模型推理 (`cannkit-model-inference`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-model-inference
+      - AIPP部署 (`cannkit-aipp-deployment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-aipp-deployment
+      - 异构 (`cannkit-optimization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-optimization
+      - 维测调优 (`cannkit-debugging-and-optimization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-debugging-and-optimization
+      - 内存零拷贝 (`cannkit-zero-memory-copy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-zero-memory-copy
+      - 深度融合 (`cannkit-in-depth-convergence`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-in-depth-convergence
+      - App集成 (`cannkit-app-integration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-app-integration
+        - 创建项目 (`cannkit-creating-a-project`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-creating-a-project
+        - 配置项目NAPI (`cannkit-compiling-the-napi`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiling-the-napi
+        - 集成模型 (`cannkit-integration-model`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-integration-model
+    - 单算子应用 (`cannkit-single-operator-application`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-single-operator-application
+    - AscendC算子开发 (`cannkit-ascendc-operator-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascendc-operator-development
+      - 自定义算子开发 (`cannkit-custom-operator-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-custom-operator-development
+        - AscendC简介 (`cannkit-introduction-to-ascend-c`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-introduction-to-ascend-c
+        - 环境准备 (`cannkit-environment-preparation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-environment-preparation
+        - 快速入门 (`cannkit-operator-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-development
+        - 基本概念 (`cannkit-basic-concepts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-concepts
+          - 硬件架构 (`cannkit-hardware-architecture`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-hardware-architecture
+            - 基本架构 (`cannkit-basic-architecture`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-architecture
+            - 计算单元 (`cannkit-computing-unit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-computing-unit
+            - 存储单元 (`cannkit-storage-unit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storage-unit
+            - 控制单元 (`cannkit-control-unit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-control-unit
+          - 编程模型 (`cannkit-programming-model`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-programming-model
+            - SPMD模型 (`cannkit-spmd-model`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-spmd-model
+            - 核函数 (`cannkit-kernel-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-kernel-function
+            - 硬件架构抽象 (`cannkit-hardware-architecture-abstraction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-hardware-architecture-abstraction
+            - 编程范式 (`cannkit-programming-paradigm`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-programming-paradigm
+          - 编程API (`cannkit-programming-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-programming-apis
+            - 接口概述 (`cannkit-api-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-api-overview
+            - 基础API (`cannkit-programmingapi-basic-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-programmingapi-basic-apis
+            - 高阶API (`cannkit-high-level-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-high-level-apis
+        - 算子实现 (`cannkit-operator-implementation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-implementation
+          - 算子实现概述 (`cannkit-operator-implementation-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-implementation-overview
+          - 矢量编程 (`cannkit-vector-programming`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-programming
+          - 矩阵编程（高阶API） (`cannkit-matrix-programming-high-level-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matrix-programming-high-level-api
+            - 基础知识 (`cannkit-basic-knowledge`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-knowledge
+            - 矩阵编程算子实现 (`cannkit-matrix-programming-operator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matrix-programming-operator
+          - 工程化算子开发 (`cannkit-project-based-operator-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-project-based-operator-development
+            - 工程化算子开发概述 (`cannkit-overview-of-engineering-operator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-overview-of-engineering-operator
+            - 创建算子工程 (`cannkit-creating-an-operator-project`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-creating-an-operator-project
+            - 基于工程实现算子 (`cannkit-operator-based-on-engineering`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-based-on-engineering
+              - 算子原型定义实现 (`cannkit-operator-prototype-definition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-prototype-definition
+              - Kernel侧算子实现 (`cannkit-operator-implementation-on-the`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-implementation-on-the
+              - Host侧Tiling实现 (`cannkit-tiling-implementation-on-the-host`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tiling-implementation-on-the-host
+            - 算子编译安装 (`cannkit-compilation-and-deployment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compilation-and-deployment
+              - 算子工程编译 (`cannkit-operator-project-compilation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-project-compilation
+              - 算子包安装 (`cannkit-operator-package-deployment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-package-deployment
+        - 算子调试调优 (`cannkit-usage-of-the-commissioning-tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-usage-of-the-commissioning-tool
+          - 算子调试概述 (`cannkit-commissioning-tools`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-tools
+          - 数据准备和配置说明 (`cannkit-data-preparation-and-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-data-preparation-and-configuration
+            - 输入数据和标杆数据准备 (`cannkit-preparing-input-data-and-benchmark`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-preparing-input-data-and-benchmark
+            - 算子json配置模板获取 (`cannkit-obtaining-the-json-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-obtaining-the-json-configuration
+            - 固定输入/输出顺序的算子json配置 (`cannkit-json-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-json-configuration
+            - params归一格式的算子json配置 (`cannkit-operator-json-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-json-configuration
+          - 调测功能介绍 (`cannkit-commissioning-functions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-functions
+            - Tiling调测功能 (`cannkit-tiling-tuning`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tiling-tuning
+            - CPU孪生调试功能 (`cannkit-cpu-twin-debugging`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-cpu-twin-debugging
+            - Simulator性能仿真功能 (`cannkit-simulator-performance-simulation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-simulator-performance-simulation
+            - 更多功能 (`cannkit-more-functions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-more-functions
+              - printf/PRINTF功能 (`cannkit-commissioning-function-printf`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-function-printf
+              - DumpTensor功能 (`cannkit-commissioning-function-dumptensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-function-dumptensor
+              - DumpAccChkPoint功能 (`cannkit-commissioning-function-dumpaccchkpoint`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-function-dumpaccchkpoint
+              - assert功能 (`cannkit-commissioning-function-assert`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-function-assert
+              - gdb调试 (`cannkit-gdb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gdb
+        - 算子部署 (`cannkit-deploying-operators`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-deploying-operators
+          - 算子入图（GE图）开发 (`cannkit-operator-development-in-graph-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-development-in-graph-mode
+            - 算子入图概述 (`cannkit-overview-of-operators-into-the-graph`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-overview-of-operators-into-the-graph
+            - 开发流程 (`cannkit-development-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-development-process
+            - 图编译和图执行 (`cannkit-graph-compilation-and-execution`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-graph-compilation-and-execution
+          - AI框架算子适配 (`cannkit-ai-framework-operator-adaptation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ai-framework-operator-adaptation
+            - AI框架算子适配概述 (`cannkit-overview-of-ai-framework-operator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-overview-of-ai-framework-operator
+            - ONNX框架 (`cannkit-onnx-framework`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-onnx-framework
+        - 附录 (`cannkit-featured-topics`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-featured-topics
+          - Tensor基础知识参考 (`cannkit-tensor-basics`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-basics
+            - Tensor基本概念 (`cannkit-basic-concepts-of-tensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-concepts-of-tensor
+            - 数据排布格式 (`cannkit-data-layout-format`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-data-layout-format
+          - 如何使用double buffer优化性能 (`cannkit-double-buffer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-double-buffer
+          - 如何申请workspace作为临时内存 (`cannkit-workspace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-workspace
+          - 如何升级工程到最新版本 (`cannkit-project-upgrade`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-project-upgrade
+          - 算子工程创建工具参数说明 (`cannkit-creating-operator-project-msopgen`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-creating-operator-project-msopgen
+          - 调测工具样例与参数说明 (`cannkit-commissioning-tool-parameter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-tool-parameter
+            - 数据生成脚本适配样例 (`cannkit-data-generation-script-adaptation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-data-generation-script-adaptation
+            - 算子json配置文件样例 (`cannkit-example-of-the-operator-json`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-example-of-the-operator-json
+            - 精度比对结果输出样例 (`cannkit-example-of-the-precision-comparison`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-example-of-the-precision-comparison
+            - 同源算子调测样例 (`cannkit-introduction-to-single-sourced`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-introduction-to-single-sourced
+            - ascendebug调测工具参数说明 (`cannkit-cli-parameters`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-cli-parameters
+        - 算子开发常见问题 (`cannkit-faqs-operator-development`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-faqs-operator-development
+      - AscendC算子接口 (`cannkit-ascendc-operator-interface`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascendc-operator-interface
+        - AscendC API (`cannkit-ascend-c-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascend-c-api
+          - AscendC API列表 (`cannkit-ascend-c-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascend-c-apis
+          - 通用约束 (`cannkit-general-constraints`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-general-constraints
+          - 数据类型定义 (`cannkit-data-type-definition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-data-type-definition
+            - LocalTensor (`cannkit-localtensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-localtensor
+            - GlobalTensor (`cannkit-globaltensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-globaltensor
+            - ShapeInfo (`cannkit-shapeinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shapeinfo
+            - UnaryRepeatParams (`cannkit-unaryrepeatparams`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-unaryrepeatparams
+            - BinaryRepeatParams (`cannkit-binaryrepeatparams`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-binaryrepeatparams
+          - 基础API (`cannkit-basic-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-apis
+            - 标量计算 (`cannkit-scalar-computation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-computation
+              - ScalarGetCountOfValue (`cannkit-scalargetcountofvalue`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalargetcountofvalue
+              - ScalarCountLeadingZero (`cannkit-scalarcountleadingzero`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalarcountleadingzero
+              - ScalarCast (`cannkit-scalarcast`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalarcast
+              - CountBitsCntSameAsSignBit (`cannkit-countbitscntsameassignbit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-countbitscntsameassignbit
+              - ScalarGetSFFValue (`cannkit-scalargetsffvalue`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalargetsffvalue
+            - 矢量计算 (`cannkit-vector-computation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-computation
+              - 单目指令 (`cannkit-vector-calculation-monocular`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-monocular
+                - Exp (`cannkit-vector-calculation-exp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-exp
+                - Ln (`cannkit-vector-calculation-lnln`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-lnln
+                - Abs (`cannkit-vector-calculation-abs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-abs
+                - Reciprocal (`cannkit-reciprocal`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-reciprocal
+                - Sqrt (`cannkit-vector-calculation-sqrt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-sqrt
+                - Rsqrt (`cannkit-rsqrt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-rsqrt
+                - Not (`cannkit-vector-calculation-not`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-not
+                - Relu (`cannkit-vector-calculation-relu`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-relu
+                - 更多样例 (`cannkit-vector-calculation-binocular-more`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-binocular-more
+              - 双目指令 (`cannkit-vector-calculation-binocular`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-binocular
+                - Add (`cannkit-add`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-add
+                - Sub (`cannkit-cannkit-sub`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-cannkit-sub
+                - Mul (`cannkit-vector-calculation-binocular-mul`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-binocular-mul
+                - Div (`cannkit-vector-calculation-binocular-div`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-binocular-div
+                - Max (`cannkit-vector-calculation-binocular-max`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-binocular-max
+                - Min (`cannkit-vector-calculation-binocular-min`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-binocular-min
+                - And (`cannkit-vector-calculation-binocular-and`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-binocular-and
+                - Or (`cannkit-vector-calculation-binocular-or`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vector-calculation-binocular-or
+                - 更多样例 (`cannkitvectorcalculation-binocularinstructions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkitvectorcalculation-binocularinstructions
+              - 标量双目指令 (`cannkit-scalar-binocular-instruction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-instruction
+                - Adds (`cannkit-scalar-binocular-adds`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-adds
+                - Muls (`cannkit-scalar-binocular-muls`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-muls
+                - Maxs (`cannkit-scalar-binocular-maxs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-maxs
+                - Mins (`cannkit-scalar-binocular-mins`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-mins
+                - ShiftLeft (`cannkit-scalar-binocular-shiftleft`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-shiftleft
+                - ShiftRight (`cannkit-scalar-binocular-shiftright`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-shiftright
+                - LeakyRelu (`cannkit-scalar-binocular-leakyrelu`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-leakyrelu
+                - 更多样例 (`cannkit-scalar-binocularinstructions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocularinstructions
+              - 标量三目指令 (`cannkit-scalar-ternary-instruction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-ternary-instruction
+                - Axpy (`cannkit-axpy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-axpy
+                - 更多样例 (`scalar-ternaryinstructions-more-examples`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scalar-ternaryinstructions-more-examples
+              - 精度转换指令 (`cannkit-precision-conversion-instruction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-precision-conversion-instruction
+              - 数据转换 (`cannkit-data-conversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-data-conversion
+                - Transpose (`cannkit-transpose`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-transpose
+                - TransDataTo5HD (`cannkit-transdatato5hd`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-transdatato5hd
+              - 数据填充 (`cannkit-data-filling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-data-filling
+                - Duplicate (`cannkit-data-duplicate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-data-duplicate
+                - CreateVecIndex (`cannkit-data-createvecindex`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-data-createvecindex
+              - 数据分散/数据收集 (`cannkit-data-distribution-collection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-data-distribution-collection
+            - 数据搬运 (`cannkit-vectorcalculation-data-movement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vectorcalculation-data-movement
+              - DataCopy (`cannkit-datacopy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-datacopy
+                - 普通数据搬运 (`cannkit-common-data-movement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-common-data-movement
+                - 随路格式转换 (`cannkit-channel-associated-format-conversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-channel-associated-format-conversion
+              - DataCopyPad (`cannkit-datacopypad`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-datacopypad
+            - 内存管理与同步控制 (`cannkit-memory-management-and-synchronization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-memory-management-and-synchronization
+              - TPipe (`cannkit-tpipe`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tpipe
+                - 构造函数 (`cannkit-tpipe-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tpipe-constructor
+                - InitBuffer (`cannkit-tpipe-initbuffer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tpipe-initbuffer
+                - Init (`cannkit-tpipe-init`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tpipe-init
+                - Destroy (`cannkit-destroy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-destroy
+                - Reset (`cannkit-tpipe-reset`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tpipe-reset
+                - AllocEventID (`cannkit-alloceventid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-alloceventid
+                - ReleaseEventID (`cannkit-releaseeventid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-releaseeventid
+                - FetchEventID (`cannkit-fetcheventid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-fetcheventid
+                - GetBaseAddr (`cannkit-getbaseaddr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getbaseaddr
+                - InitBufPool (`cannkit-tpipe-initbufpool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tpipe-initbufpool
+              - GetTPipePtr (`cannkit-gettpipeptr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gettpipeptr
+              - TBufPool (`cannkit-tbufpool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tbufpool
+                - 简介 (`cannkit-tbufpool-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tbufpool-overview
+                - 构造函数 (`cannkit-tbufpool-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tbufpool-constructor
+                - InitBufPool (`cannkit-initbufpool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-initbufpool
+                - InitBuffer (`cannkit-initbuffer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-initbuffer
+                - Reset (`cannkit-reset`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-reset
+              - TQue (`cannkit-tque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tque
+                - 简介 (`cannkit-tque-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tque-overview
+                - AllocTensor (`cannkit-tque-alloctensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tque-alloctensor
+                - FreeTensor (`cannkit-tque-freetensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tque-freetensor
+                - EnQue (`cannkit-tque-enque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tque-enque
+                - DeQue (`cannkit-tque-deque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tque-deque
+                - VacantInQue (`cannkit-tque-vacantinque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tque-vacantinque
+                - HasTensorInQue (`cannkit-tque-hastensorinque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tque-hastensorinque
+                - GetTensorCountInQue (`cannkit-tque-gettensorcountinque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tque-gettensorcountinque
+                - HasIdleBuffer (`cannkit-tque-hasidlebuffer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tque-hasidlebuffer
+                - FreeAllEvent (`cannkit-tque-freeallevent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tque-freeallevent
+              - TQueBind (`cannkit-tquebind`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tquebind
+                - 简介 (`cannkit-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-overview
+                - 构造函数 (`cannkit-tquebind-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tquebind-constructor
+                - AllocTensor (`cannkit-alloctensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-alloctensor
+                - FreeTensor (`cannkit-freetensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-freetensor
+                - EnQue (`cannkit-enque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-enque
+                - DeQue (`cannkit-deque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-deque
+                - VacantInQue (`cannkit-vacantinque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-vacantinque
+                - HasTensorInQue (`cannkit-hastensorinque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-hastensorinque
+                - GetTensorCountInQue (`cannkit-gettensorcountinque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gettensorcountinque
+                - HasIdleBuffer (`cannkit-hasidlebuffer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-hasidlebuffer
+                - FreeAllEvent (`cannkit-freeallevent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-freeallevent
+              - TBuf (`cannkit-tbuf`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tbuf
+                - 简介 (`cannkit-tbuf-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tbuf-overview
+                - 构造函数 (`cannkit-tbuf-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tbuf-constructor
+                - Get (`cannkit-tbuf-get`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tbuf-get
+                - GetWithOffset (`cannkit-getwithoffset`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getwithoffset
+              - workspace (`cannkit-workspace-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-workspace-api
+                - GetSysWorkSpacePtr (`cannkit-getsysworkspaceptr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getsysworkspaceptr
+                - SetSysWorkSpace (`cannkit-setsysworkspace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setsysworkspace
+                - GetUserWorkspace (`cannkit-getuserworkspace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getuserworkspace
+              - 核内同步 (`cannkit-nuclear-synchronization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-nuclear-synchronization
+                - PipeBarrier(ISASI) (`cannkit-pipebarrier`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-pipebarrier
+              - TPosition (`cannkit-tposition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tposition
+            - 系统变量访问 (`cannkit-system-variable-access`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-system-variable-access
+              - GetBlockNum (`cannkit-getblocknum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getblocknum
+              - GetBlockIdx (`cannkit-getblockidx`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getblockidx
+            - 调测接口 (`cannkit-debugging-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-debugging-apis
+              - DumpTensor (`cannkit-commissioning-interfaces-dumptensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-interfaces-dumptensor
+              - printf (`cannkit-commissioning-interfaces-printf`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-interfaces-printf
+              - assert (`cannkit-commissioning-interfaces-assert`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-interfaces-assert
+              - DumpAccChkPoint (`cannkit-commissioning-interfaces-dumpaccch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-interfaces-dumpaccch
+              - Trap (`cannkit-trap`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-trap
+            - Kernel Tiling (`cannkit-kernel-tiling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-kernel-tiling
+              - GET_TILING_DATA (`cannkit-get-tiling-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-get-tiling-data
+              - GET_TILING_DATA_WITH_STRUCT (`cannkit-get-tiling-data-with-struct`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-get-tiling-data-with-struct
+              - TILING_KEY_IS (`cannkit-tiling-key-is`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tiling-key-is
+          - 高阶API (`cannkit-advanced-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-advanced-apis
+            - 矩阵相乘 (`cannkit-matmul`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul
+              - Matmul (`cannkit-matmul1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul1
+                - 使用说明 (`cannkit-matmul-usage-description`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul-usage-description
+                - Matmul模板参数 (`cannkit-template-parameters`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-template-parameters
+                - MatmulConfig (`cannkit-matmulconfig`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmulconfig
+                - Init (`cannkit-matmul-init`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul-init
+                - SetTensorA (`cannkit-settensora`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-settensora
+                - SetTensorB (`cannkit-settensorb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-settensorb
+                - Iterate (`cannkit-iterate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-iterate
+                - GetTensorC (`cannkit-gettensorc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gettensorc
+                - IterateAll (`cannkit-iterateall`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-iterateall
+                - End (`cannkit-end`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-end
+              - Matmul Tiling (`cannkit-matmul-tiling-class`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul-tiling-class
+                - 使用说明 (`cannkit-matmul-tiling-usage-description`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul-tiling-usage-description
+                - 构造函数 (`cannkit-matmul-tiling-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul-tiling-constructor
+                - TCubeTiling结构体 (`cannkit-tcubetiling-structure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tcubetiling-structure
+            - 数学库 (`cannkit-math`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-math
+              - Tanh (`cannkit-math-tanh`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-math-tanh
+            - 激活函数 (`cannkit-activation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-activation
+              - SoftmaxFlashV2 (`cannkit-activation-softmaxflashv2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-activation-softmaxflashv2
+              - Sigmoid (`cannkit-activation-sigmoid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-activation-sigmoid
+            - 数据填充 (`cannkit-high-data-filling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-high-data-filling
+          - Host API (`cannkit-host-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-host-api
+            - 原型注册与管理 (`cannkit-prototype-registration-and-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-prototype-registration-and-management
+              - 原型注册接口(OP_ADD) (`cannkit-prototype-api-registration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-prototype-api-registration
+              - OpDef (`cannkit-opdef`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-opdef
+                - Input (`cannkit-input`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-input
+                - Output (`cannkit-output`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-output
+                - Attr (`cannkit-attr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-attr
+                - SetInferShape (`cannkit-setinfershape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setinfershape
+                - SetInferDataType (`cannkit-setinferdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setinferdatatype
+                - AICore (`cannkit-aicore`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-aicore
+              - OpParamDef (`cannkit-opparamdef`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-opparamdef
+                - ParamType (`cannkit-paramtype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-paramtype
+                - DataType (`cannkit-datatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-datatype
+                - Format (`cannkit-format`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-format
+                - ValueDepend (`cannkit-valuedepend`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-valuedepend
+                - Follow (`cannkit-follow`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-follow
+              - OpAttrDef (`cannkit-opattrdef`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-opattrdef
+              - OpAICoreDef (`cannkit-opaicoredef`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-opaicoredef
+                - SetTiling (`cannkit-settiling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-settiling
+                - AddConfig (`cannkit-addconfig`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-addconfig
+            - Tiling数据结构注册 (`cannkit-tiling-data-structure-registration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tiling-data-structure-registration
+              - TilingData结构定义 (`cannkit-tilingdata-structure-definition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tilingdata-structure-definition
+              - TilingData结构注册 (`cannkit-tilingdata-structure-registration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tilingdata-structure-registration
+            - 平台信息获取PlatformAscendC (`cannkit-platformascendc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-platformascendc
+              - 简介 (`cannkit-platformascendc-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-platformascendc-introduction
+              - GetCoreNum (`cannkit-getcorenum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getcorenum
+              - GetSocVersion (`cannkit-getsocversion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getsocversion
+              - GetCoreNumAic (`cannkit-getcorenumaic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getcorenumaic
+              - GetCoreNumAiv (`cannkit-getcorenumaiv`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getcorenumaiv
+              - CalcTschBlockDim (`cannkit-calctschblockdim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-calctschblockdim
+              - GetCoreMemSize (`cannkit-getcorememsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getcorememsize
+              - GetCoreMemBw (`cannkit-getcoremembw`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getcoremembw
+              - GetLibApiWorkSpaceSize (`cannkit-getlibapiworkspacesize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getlibapiworkspacesize
+            - 内部关联接口 (`cannkit-platformascendc-internal-associated`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-platformascendc-internal-associated
+          - 算子调测API (`cannkit-operator-debugging-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-debugging-apis
+            - GmAlloc (`cannkit-gmalloc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gmalloc
+            - GmFree (`cannkit-gmfree`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gmfree
+            - ICPU_RUN_KF (`cannkit-icpu-run-kf`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-icpu-run-kf
+            - ICPU_SET_TILING_KEY (`cannkit-icpu-set-tiling-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-icpu-set-tiling-key
+        - 基础数据结构和接口 (`cannkit-basic-data-structure-and-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-data-structure-and-apis
+          - 基础数据结构和接口列表 (`cannkit-basic-data-structure-and-api-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-data-structure-and-api-list
+          - gert命名空间 (`cannkit-gert-namespace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gert-namespace
+            - AnchorInstanceInfo (`cannkit-anchorinstanceinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-anchorinstanceinfo
+              - 简介 (`cannkit-anchorinstanceinfo-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-anchorinstanceinfo-introduction
+              - 构造函数 (`cannkit-anchorinstanceinfo-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-anchorinstanceinfo-constructor
+              - GetInstanceNum (`cannkit-getinstancenum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinstancenum
+              - GetInstanceStart (`cannkit-getinstancestart`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinstancestart
+              - SetInstanceStart (`cannkit-setinstancestart`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setinstancestart
+              - SetInstantiationNum (`cannkit-setinstantiationnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setinstantiationnum
+            - CompileTimeTensorDesc (`cannkit-compiletimetensordesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc
+              - 构造函数 (`cannkit-compiletimetensordesc-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-constructor
+              - GetDataType (`cannkit-compiletimetensordesc-getdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-getdatatype
+              - GetFormat (`cannkit-compiletimetensordesc-getformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-getformat
+              - GetOriginFormat (`cannkit-compiletimetensordesc-getoriginformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-getoriginformat
+              - GetStorageFormat (`cannkit-compiletimetensordesc-getstorageformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-getstorageformat
+              - GetExpandDimsType (`cannkit-compiletimetensordesc-getexpanddimstype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-getexpanddimstype
+              - SetDataType (`cannkit-compiletimetensordesc-setdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-setdatatype
+              - SetStorageFormat (`cannkit-compiletimetensordesc-setstorageformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-setstorageformat
+              - SetOriginFormat (`cannkit-compiletimetensordesc-setoriginformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-setoriginformat
+              - SetExpandDimsType (`cannkit-compiletimetensordesc-setexpanddimstype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-setexpanddimstype
+            - ComputeNodeInfo (`cannkit-computenodeinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-computenodeinfo
+              - 简介 (`cannkit-computenodeinfo-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-computenodeinfo-introduction
+              - 构造函数 (`cannkit-computenodeinfo-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-computenodeinfo-constructor
+              - GetNodeType (`cannkit-computenodeinfo-getnodetype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-computenodeinfo-getnodetype
+              - GetNodeName (`cannkit-computenodeinfo-getnodename`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-computenodeinfo-getnodename
+              - GetIrInputsNum (`cannkit-getirinputsnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getirinputsnum
+              - GetInputsNum (`cannkit-getinputsnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputsnum
+              - GetOutputsNum (`cannkit-getoutputsnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoutputsnum
+              - GetIrOutputsNum (`cannkit-getiroutputsnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getiroutputsnum
+              - GetInputInstanceInfo (`cannkit-getinputinstanceinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputinstanceinfo
+              - GetOutputInstanceInfo (`cannkit-getoutputinstanceinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoutputinstanceinfo
+              - GetInputTdInfo (`cannkit-getinputtdinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputtdinfo
+              - GetOutputTdInfo (`cannkit-getoutputtdinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoutputtdinfo
+              - GetAttrs (`cannkit-computenodeinfo-getattrs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-computenodeinfo-getattrs
+              - MutableInputInstanceInfo (`cannkit-mutableinputinstanceinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutableinputinstanceinfo
+              - MutableOutputInstanceInfo (`cannkit-mutableoutputinstanceinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutableoutputinstanceinfo
+              - MutableInputTdInfo (`cannkit-mutableinputtdinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutableinputtdinfo
+              - MutableOutputTdInfo (`cannkit-mutableoutputtdinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutableoutputtdinfo
+              - MutableAttrs (`cannkit-mutableattrs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutableattrs
+              - SetNodeType (`cannkit-setnodetype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setnodetype
+              - SetNodeName (`cannkit-setnodename`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setnodename
+              - Init (`cannkit-computenodeinfo-init`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-computenodeinfo-init
+              - CalcSize (`cannkit-calcsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-calcsize
+            - ContinuousVectorVector (`cannkit-continuousvectorvector`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvectorvector
+              - 简介 (`cannkit-continuousvectorvector-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvectorvector-introduction
+              - Init (`cannkit-continuousvectorvector-init`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvectorvector-init
+              - Add (`cannkit-continuousvectorvector-add`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvectorvector-add
+              - Get (`cannkit-get`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-get
+              - GetSize (`cannkit-continuousvectorvector-getsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvectorvector-getsize
+              - GetOverHeadLength (`cannkit-getoverheadlength`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoverheadlength
+            - ContinuousVector (`cannkit-continuousvector`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvector
+              - 简介 (`cannkit-continuousvector-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvector-introduction
+              - Create (`cannkit-continuousvector-create`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvector-create
+              - Init (`cannkit-continuousvector-init`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvector-init
+              - GetSize (`cannkit-continuousvector-getsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvector-getsize
+              - SetSize (`cannkit-continuousvector-setsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvector-setsize
+              - GetCapacity (`cannkit-continuousvector-getcapacity`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvector-getcapacity
+              - GetData (`cannkit-continuousvector-getdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvector-getdata
+              - MutableData (`cannkit-continuousvector-mutabledata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvector-mutabledata
+            - ExpandDimsType (`cannkit-expanddimstype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-expanddimstype
+              - 简介 (`cannkit-expanddimstype-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-expanddimstype-introduction
+              - 构造函数 (`cannkit-expanddimstype-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-expanddimstype-constructor
+              - operator== (`cannkit-expanddimstype-operator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-expanddimstype-operator
+              - GetFullSize (`cannkit-getfullsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getfullsize
+              - SetExpandIndex (`cannkit-setexpandindex`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setexpandindex
+              - IsExpandIndex (`cannkit-isexpandindex`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-isexpandindex
+              - Expand（输出新shape） (`cannkit-expand-output-a-new-shape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-expand-output-a-new-shape
+              - Expand(更改原shape) (`cannkit-expand-change-the-original-shape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-expand-change-the-original-shape
+            - ExtendedKernelContext (`cannkit-extendedkernelcontext`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-extendedkernelcontext
+              - GetInputDesc (`cannkit-getinputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputdesc
+              - GetOutputDesc (`cannkit-getoutputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoutputdesc
+              - GetOptionalInputDesc (`cannkit-getoptionalinputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoptionalinputdesc
+              - GetDynamicInputDesc (`cannkit-getdynamicinputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdynamicinputdesc
+              - GetRequiredInputDesc (`cannkit-getrequiredinputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getrequiredinputdesc
+              - GetIrInputInstanceInfo (`cannkit-getirinputinstanceinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getirinputinstanceinfo
+              - GetIrOutputInstanceInfo (`cannkit-getiroutputinstanceinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getiroutputinstanceinfo
+              - GetComputeNodeInputNum (`cannkit-getcomputenodeinputnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getcomputenodeinputnum
+              - GetComputeNodeOutputNum (`cannkit-getcomputenodeoutputnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getcomputenodeoutputnum
+              - GetAttrs (`cannkit-getattrs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getattrs
+              - GetNodeType (`cannkit-getnodetype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getnodetype
+              - GetNodeName (`cannkit-getnodename`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getnodename
+              - GetComputeNodeInfo (`cannkit-getcomputenodeinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getcomputenodeinfo
+              - GetKernelName (`cannkit-getkernelname`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getkernelname
+              - GetKernelType (`cannkit-getkerneltype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getkerneltype
+              - GetExtendInfo (`cannkit-getextendinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getextendinfo
+            - InferDataTypeContext (`cannkit-inferdatatypecontext`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-inferdatatypecontext
+              - GetInputDataType (`cannkit-getinputdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputdatatype
+              - GetOptionalInputDataType (`cannkit-getoptionalinputdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoptionalinputdatatype
+              - GetRequiredInputDataType (`cannkit-getrequiredinputdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getrequiredinputdatatype
+              - GetOutputDataType (`cannkit-getoutputdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoutputdatatype
+              - SetOutputDataType (`cannkit-setoutputdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setoutputdatatype
+            - InferShapeContext (`cannkit-infershapecontext`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext
+              - GetInputShape (`cannkit-infershapecontext-getinputshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getinputshape
+              - GetInputTensor (`cannkit-infershapecontext-getinputtensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getinputtensor
+              - GetOptionalInputShape (`cannkit-infershapecontext-getoptionalinputshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getoptionalinputshape
+              - GetRequiredInputTensor (`cannkit-infershapecontext-getrequiredinputtensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getrequiredinputtensor
+              - GetRequiredInputShape (`cannkit-infershapecontext-getrequiredinputshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getrequiredinputshape
+              - GetOutputShape (`cannkit-infershapecontext-getoutputshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getoutputshape
+            - InferShapeRangeContext (`cannkit-infershaperangecontext`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershaperangecontext
+              - GetInputShapeRange (`cannkit-getinputshaperange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputshaperange
+              - GetInputTensorRange (`cannkit-getinputtensorrange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputtensorrange
+              - GetOptionalInputTensorRange (`cannkit-getoptionalinputtensorrange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoptionalinputtensorrange
+              - GetDynamicInputTensorRange (`cannkit-getdynamicinputtensorrange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdynamicinputtensorrange
+              - GetOptionalInputShapeRange (`cannkit-getoptionalinputshaperange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoptionalinputshaperange
+              - GetDynamicInputShapeRange (`cannkit-getdynamicinputshaperange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdynamicinputshaperange
+              - GetRequiredInputShapeRange (`cannkit-getrequiredinputshaperange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getrequiredinputshaperange
+              - GetRequiredInputTensorRange (`cannkit-getrequiredinputtensorrange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getrequiredinputtensorrange
+              - GetOutputShapeRange (`cannkit-getoutputshaperange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoutputshaperange
+            - OpImplRegisterV2 (`cannkit-opimpiregisterv2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-opimpiregisterv2
+              - 构造和析构函数 (`cannkit-opimpiregisterv2-construction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-opimpiregisterv2-construction
+              - InferShape (`cannkit-infershape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershape
+              - InferShapeRange (`cannkit-infershaperange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershaperange
+              - InferDataType (`cannkit-inferdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-inferdatatype
+              - Tiling (`cannkit-tiling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tiling
+              - PrivateAttr (`cannkit-privateattr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-privateattr
+              - TilingParse (`cannkit-tilingparse`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tilingparse
+              - InputsDataDependency (`cannkit-inputsdatadependency`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-inputsdatadependency
+              - InferOutDataTypeSameWithFirstInput (`cannkit-inferoutdatatypesamewithfirstinput`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-inferoutdatatypesamewithfirstinput
+              - GenSimplifiedKey (`cannkit-gensimplifiedkey`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gensimplifiedkey
+              - OpExecuteFunc (`cannkit-opexecutefunc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-opexecutefunc
+              - TilingInputsDataDependency (`cannkit-tilinginputsdatadependency`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tilinginputsdatadependency
+              - HostInputs (`cannkit-hostinputs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-hostinputs
+              - OutputShapeDependOnCompute (`cannkit-outputshapedependoncompute`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-outputshapedependoncompute
+            - Range (`cannkit-range`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-range
+              - 简介 (`cannkit-range-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-range-introduction
+              - 构造函数 (`cannkit-range-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-range-constructor
+              - operator== (`cannkit-range-operator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-range-operator
+              - SetMin (`cannkit-setmin`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setmin
+              - SetMax (`cannkit-setmax`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setmax
+              - GetMin (`cannkit-getmin`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getmin
+              - GetMax (`cannkit-getmax`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getmax
+            - RuntimeAttrs (`cannkit-runtimeattrs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-runtimeattrs
+              - 构造函数 (`cannkit-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-constructor
+              - GetAttrPointer (`cannkit-getattrpointer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getattrpointer
+              - GetInt (`cannkit-getint`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getint
+              - GetListInt (`cannkit-getlistint`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getlistint
+              - GetListListInt (`cannkit-getlistlistint`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getlistlistint
+              - GetStr (`cannkit-getstr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getstr
+              - GetTensor (`cannkit-gettensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gettensor
+              - GetFloat (`cannkit-getfloat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getfloat
+              - GetBool (`cannkit-getbool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getbool
+              - GetListFloat (`cannkit-getlistfloat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getlistfloat
+              - GetListListFloat (`cannkit-getlistlistfloat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getlistlistfloat
+              - GetAttrNum (`cannkit-getattrnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getattrnum
+            - Shape (`cannkit-shape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shape
+              - 简介 (`cannkit-shape-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shape-introduction
+              - 构造函数 (`cannkit-shape-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shape-constructor
+              - operator== (`cannkit-operatora`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operatora
+              - operator!= (`cannkit-operatorb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operatorb
+              - operator[] (`cannkit-operatorc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operatorc
+              - IsScalar (`cannkit-isscalar`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-isscalar
+              - SetScalar (`cannkit-setscalar`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setscalar
+              - GetDimNum (`cannkit-getdimnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdimnum
+              - SetDimNum (`cannkit-setdimnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setdimnum
+              - GetDim (`cannkit-getdim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdim
+              - SetDim (`cannkit-setdim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setdim
+              - AppendDim (`cannkit-appenddim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-appenddim
+            - StorageFormat (`cannkit-storageformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageformat
+              - 构造函数 (`cannkit-storageformat-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageformat-constructor
+              - GetOriginFormat (`cannkit-getoriginformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoriginformat
+              - SetOriginFormat (`cannkit-setoriginformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setoriginformat
+              - GetStorageFormat (`cannkit-getstorageformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getstorageformat
+              - SetStorageFormat (`cannkit-setstorageformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setstorageformat
+              - GetExpandDimsType (`cannkit-getexpanddimstype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getexpanddimstype
+              - SetExpandDimsType (`cannkit-setexpanddimstype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setexpanddimstype
+              - MutableExpandDimsType (`cannkit-mutableexpanddimstype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutableexpanddimstype
+              - operator== (`cannkit-storageformat-operatora`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageformat-operatora
+              - operator!= (`cannkit-storageformat-operatorb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageformat-operatorb
+            - StorageShape (`cannkit-storageshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageshape
+              - 简介 (`cannkit-storageshape-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageshape-introduction
+              - 构造函数 (`cannkit-storageshape-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageshape-constructor
+              - GetOriginShape (`cannkit-getoriginshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoriginshape
+              - GetStorageShape (`cannkit-getstorageshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getstorageshape
+              - MutableOriginShape (`cannkit-mutableoriginshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutableoriginshape
+              - MutableStorageShape (`cannkit-mutablestorageshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutablestorageshape
+              - operator== (`cannkit-storageshape-operatora`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageshape-operatora
+              - operator!= (`cannkit-storageshape-operatorb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageshape-operatorb
+            - TensorData (`cannkit-tensordata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordata
+              - 构造函数与析构函数 (`cannkit-construction-and-destructor-functions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-construction-and-destructor-functions
+              - operator (`cannkit-operator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator
+              - GetAddr (`cannkit-getaddr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getaddr
+              - GetSize (`cannkit-getsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getsize
+              - SetSize (`cannkit-setsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setsize
+              - GetPlacement (`cannkit-getplacement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getplacement
+              - SetPlacement (`cannkit-setplacement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setplacement
+              - Free (`cannkit-free`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-free
+              - SetAddr (`cannkit-setaddr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setaddr
+              - IsSharedWith (`cannkit-issharedwith`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-issharedwith
+              - ShareFrom (`cannkit-sharefrom`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-sharefrom
+            - TensorPlacementUtils (`cannkit-tensorplacementutils`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensorplacementutils
+            - Tensor (`cannkit-tensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor
+              - 构造函数 (`cannkit-tensor-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-constructor
+              - GetShapeSize (`cannkit-getshapesize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getshapesize
+              - GetData (`cannkit-getdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdata
+              - SetData (`cannkit-setdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setdata
+              - GetAddr (`cannkit-tensor-getaddr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getaddr
+              - GetSize (`cannkit-ge-tensor-getsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ge-tensor-getsize
+              - SetSize (`cannkit-tensor-setsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-setsize
+              - GetDataType (`cannkit-getdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdatatype
+              - SetDataType (`cannkit-setdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setdatatype
+              - CreateFollowing (`cannkit-createfollowing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-createfollowing
+              - GetStorageShape (`cannkit-tensor-getstorageshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getstorageshape
+              - MutableStorageShape (`cannkit-tensor-mutablestorageshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-mutablestorageshape
+              - GetOriginShape (`cannkit-tensor-getoriginshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getoriginshape
+              - MutableOriginShape (`cannkit-tensor-mutableoriginshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-mutableoriginshape
+              - GetShape (`cannkit-getshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getshape
+              - GetStorageFormat (`cannkit-tensor-getstorageformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getstorageformat
+              - SetStorageFormat (`cannkit-setsorageformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setsorageformat
+              - GetOriginFormat (`cannkit-ge-tensor-getoriginformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ge-tensor-getoriginformat
+              - SetOriginFormat (`cannkit-tensor-setoriginformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-setoriginformat
+              - GetFormat (`cannkit-getformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getformat
+              - MutableFormat (`cannkit-mutableformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutableformat
+              - GetExpandDimsType (`cannkit-tensor-getexpanddimstype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getexpanddimstype
+              - SetExpandDimsType (`cannkit-tensor-setexpanddimstype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-setexpanddimstype
+              - GetPlacement (`cannkit-ge-tensor-getplacement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ge-tensor-getplacement
+              - SetPlacement (`cannkit-ge-tensor-setplacement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ge-tensor-setplacement
+              - GetTensorData (`cannkit-gettensordata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gettensordata
+              - MutableTensorData (`cannkit-mutabletensordata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutabletensordata
+            - TilingContext (`cannkit-tilingcontext`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tilingcontext
+              - GetInputShape (`cannkit-getinputshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputshape
+              - GetInputTensor (`cannkit-getinputtensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputtensor
+              - GetOptionalInputTensor (`cannkit-getoptionalinputtensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoptionalinputtensor
+              - GetRequiredInputTensor (`cannkit-getrequiredinputtensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getrequiredinputtensor
+              - GetOptionalInputShape (`cannkit-getoptionalinputshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoptionalinputshape
+              - GetRequiredInputShape (`cannkit-getrequiredinputshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getrequiredinputshape
+              - GetOutputShape (`cannkit-getoutputshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoutputshape
+              - SetTilingKey (`cannkit-settilingkey`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-settilingkey
+              - GetTilingKey (`cannkit-gettilingkey`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gettilingkey
+              - SetBlockDim (`cannkit-setblockdim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setblockdim
+              - GetBlockDim (`cannkit-getblockdim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getblockdim
+              - SetTilingCond (`cannkit-settilingcond`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-settilingcond
+              - GetTilingCond (`cannkit-gettilingcond`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gettilingcond
+              - GetTilingData (`cannkit-gettilingdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gettilingdata
+              - GetRawTilingData (`cannkit-getrawtilingdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getrawtilingdata
+              - GetWorkspaceSizes (`cannkit-getworkspacesizes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getworkspacesizes
+              - GetWorkspaceNum (`cannkit-getworkspacenum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getworkspacenum
+              - GetPlatformInfo (`cannkit-getplatforminfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getplatforminfo
+            - TilingData (`cannkit-tilingdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tilingdata
+              - 构造函数 (`cannkit-tilingdata-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tilingdata-constructor
+              - GetCapacity (`cannkit-getcapacity`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getcapacity
+              - GetDataSize (`cannkit-getdatasize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdatasize
+              - SetDataSize (`cannkit-setdatasize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setdatasize
+              - GetData (`cannkit-tilingdata-getdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tilingdata-getdata
+              - Append (`cannkit-append`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-append
+              - CreateCap (`cannkit-createcap`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-createcap
+              - CalcTotalSize (`cannkit-calctotalsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-calctotalsize
+              - Init (`cannkit-init`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-init
+              - operator (`cannkit-tilingdata-operator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tilingdata-operator
+            - TypedContinuousVector (`cannkit-typedcontinuousvector`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-typedcontinuousvector
+              - 简介 (`cannkit-typedcontinuousvector-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-typedcontinuousvector-introduction
+              - MutableData (`cannkit-mutabledata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutabledata
+              - GetData (`cannkit-typedcontinuousvector-getdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-typedcontinuousvector-getdata
+            - TensorPlacement (`cannkit-tensorplacement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensorplacement
+            - 内部关联接口 (`cannkit-internal-associated-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-internal-associated-apis
+          - ge命名空间 (`cannkit-ge-namespace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ge-namespace
+            - Allocator (`cannkit-allocator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-allocator
+              - 构造函数和析构函数 (`cannkit-allocator-construction-and-destructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-allocator-construction-and-destructor
+              - Malloc (`cannkit-malloc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-malloc
+              - Free (`cannkit-allocator-free`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-allocator-free
+              - MallocAdvise (`cannkit-mallocadvise`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mallocadvise
+            - AscendString (`cannkit-ascendstring`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascendstring
+              - 构造函数和析构函数 (`cannkit-ascendstring-construction-and-destructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascendstring-construction-and-destructor
+              - GetString (`cannkit-getstring`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getstring
+              - 关系符重载 (`cannkit-reloading-relational-operators`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-reloading-relational-operators
+              - Find (`cannkit-find`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-find
+              - Hash (`cannkit-hash`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-hash
+              - GetLength (`cannkit-getlength`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getlength
+            - AttrValue (`cannkit-attrvalue`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-attrvalue
+              - 构造函数和析构函数 (`cannkit-attrvalue-construction-and-destructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-attrvalue-construction-and-destructor
+              - CreateFrom (`cannkit-createfrom`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-createfrom
+              - GetValue (`cannkit-getvalue`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getvalue
+            - AutoMappingSubgraphIOIndexFuncRegister (`cannkit-automappingsubgraphioindexfuncregister`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-automappingsubgraphioindexfuncregister
+            - FrameworkRegistry (`cannkit-frameworkregistry`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-frameworkregistry
+              - 构造函数和析构函数 (`cannkit-frameworkregistry-construction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-frameworkregistry-construction
+              - GetAutoMappingSubgraphIOIndexFunc (`cannkit-getautomappingsubgraphioindexfunc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getautomappingsubgraphioindexfunc
+              - AddAutoMappingSubgraphIOIndexFunc (`cannkit-addautomappingsubgraphioindexfunc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-addautomappingsubgraphioindexfunc
+            - InferenceContext (`cannkit-inferencecontext`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-inferencecontext
+              - 构造函数和析构函数 (`cannkit-inferencecontext-construction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-inferencecontext-construction
+              - SetInputHandleShapesAndTypes (`cannkit-setinputhandleshapesandtypes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setinputhandleshapesandtypes
+              - SetOutputHandleShapesAndTypes (`cannkit-setoutputhandleshapesandtypes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setoutputhandleshapesandtypes
+              - GetInputHandleShapesAndTypes (`cannkit-getinputhandleshapesandtypes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputhandleshapesandtypes
+              - GetOutputHandleShapesAndTypes (`cannkit-getoutputhandleshapesandtypes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoutputhandleshapesandtypes
+              - SetMarks (`cannkit-setmarks`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setmarks
+              - GetMarks (`cannkit-getmarks`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getmarks
+              - Create (`cannkit-create`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-create
+              - GetResourceContext (`cannkit-getresourcecontext`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getresourcecontext
+              - SetResourceContext (`cannkit-setresourcecontext`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setresourcecontext
+              - RegisterReliedOnResourceKey (`cannkit-registerreliedonresourcekey`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-registerreliedonresourcekey
+              - AddChangedResourceKey (`cannkit-addchangedresourcekey`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-addchangedresourcekey
+              - GetReliedOnResourceKeys (`cannkit-getreliedonresourcekeys`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getreliedonresourcekeys
+              - GetChangedResourceKeys (`cannkit-getchangedresourcekeys`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getchangedresourcekeys
+              - ClearChangedResourceKeys (`cannkit-clearchangedresourcekeys`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-clearchangedresourcekeys
+            - InferFormatFuncRegister (`cannkit-inferformatfuncregister`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-inferformatfuncregister
+            - InferShapeFuncRegister (`cannkit-infershapefuncregister`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapefuncregister
+            - InferValueRangeFuncRegister (`cannkit-infervaluerangefuncregister`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infervaluerangefuncregister
+            - ListTensorType (`cannkit-listtensortype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-listtensortype
+            - MemBlock (`cannkit-memblock`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-memblock
+              - 构造函数和析构函数 (`cannkit-memblock-construction-and-destructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-memblock-construction-and-destructor
+              - GetAddr (`cannkit-memblock-getaddr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-memblock-getaddr
+              - GetSize (`cannkit-memblock-getsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-memblock-getsize
+              - SetSize (`cannkit-memblock-setsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-memblock-setsize
+              - Free (`cannkit-memblock-free`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-memblock-free
+              - AddCount (`cannkit-addcount`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-addcount
+              - SubCount (`cannkit-subcount`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-subcount
+              - GetCount (`cannkit-getcount`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getcount
+            - OperatorCreatorRegister (`cannkit-operatorcreatorregister`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operatorcreatorregister
+            - OperatorFactory (`cannkit-operatorfactory`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operatorfactory
+              - CreateOperator (`cannkit-createoperator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-createoperator
+              - GetOpsTypeList (`cannkit-getopstypelist`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getopstypelist
+              - IsExistOp (`cannkit-isexistop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-isexistop
+            - Operator (`cannkit-ge-operator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ge-operator
+              - 构造函数和析构函数 (`cannkit-operator-construction-and-destructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-construction-and-destructor
+              - AddControlInput (`cannkit-addcontrolinput`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-addcontrolinput
+              - BreakConnect (`cannkit-breakconnect`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-breakconnect
+              - IsEmpty (`cannkit-isempty`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-isempty
+              - InferShapeAndType (`cannkit-infershapeandtype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapeandtype
+              - GetAttr (`cannkit-getattr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getattr
+              - GetAllAttrNamesAndTypes (`cannkit-getallattrnamesandtypes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getallattrnamesandtypes
+              - GetAllIrAttrNamesAndTypes (`cannkit-getallirattrnamesandtypes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getallirattrnamesandtypes
+              - GetDynamicInputNum (`cannkit-getdynamicinputnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdynamicinputnum
+              - GetDynamicInputDesc (`cannkit-operator-getdynamicinputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-getdynamicinputdesc
+              - GetDynamicOutputNum (`cannkit-getdynamicoutputnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdynamicoutputnum
+              - GetDynamicOutputDesc (`cannkit-getdynamicoutputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdynamicoutputdesc
+              - GetDynamicSubgraph (`cannkit-getdynamicsubgraph`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdynamicsubgraph
+              - GetDynamicSubgraphBuilder (`cannkit-getdynamicsubgraphbuilder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdynamicsubgraphbuilder
+              - GetInferenceContext (`cannkit-getinferencecontext`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinferencecontext
+              - GetInputConstData (`cannkit-getinputconstdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputconstdata
+              - GetInputsSize (`cannkit-getinputssize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputssize
+              - GetInputDesc (`cannkit-operator-getinputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-getinputdesc
+              - GetName (`cannkit-getname`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getname
+              - GetSubgraph (`cannkit-getsubgraph`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getsubgraph
+              - GetSubgraphBuilder (`cannkit-getsubgraphbuilder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getsubgraphbuilder
+              - GetSubgraphNamesCount (`cannkit-getsubgraphnamescount`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getsubgraphnamescount
+              - GetSubgraphNames (`cannkit-getsubgraphnames`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getsubgraphnames
+              - GetOpType (`cannkit-getoptype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoptype
+              - GetOutputDesc (`cannkit-operator-getoutputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-getoutputdesc
+              - GetOutputsSize (`cannkit-getoutputssize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoutputssize
+              - SetAttr (`cannkit-setattr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setattr
+              - SetInput (`cannkit-setinput`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setinput
+              - SetInferenceContext (`cannkit-setinferencecontext`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setinferencecontext
+              - SetInputAttr (`cannkit-setinputattr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setinputattr
+              - SetOutputAttr (`cannkit-setoutputattr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setoutputattr
+              - GetInputAttr (`cannkit-getinputattr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputattr
+              - GetOutputAttr (`cannkit-getoutputattr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoutputattr
+              - TryGetInputDesc (`cannkit-trygetinputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-trygetinputdesc
+              - UpdateInputDesc (`cannkit-updateinputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-updateinputdesc
+              - UpdateOutputDesc (`cannkit-updateoutputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-updateoutputdesc
+              - UpdateDynamicInputDesc (`cannkit-updatedynamicinputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-updatedynamicinputdesc
+              - UpdateDynamicOutputDesc (`cannkit-updatedynamicoutputdesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-updatedynamicoutputdesc
+              - VerifyAllAttr (`cannkit-verifyallattr`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-verifyallattr
+              - DynamicInputRegister (`cannkit-dynamicinputregister`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-dynamicinputregister
+              - DynamicInputRegisterByIndex (`cannkit-dynamicinputregisterbyindex`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-dynamicinputregisterbyindex
+              - DynamicOutputRegister (`cannkit-dynamicoutputregister`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-dynamicoutputregister
+              - SubgraphCountRegister (`cannkit-subgraphcountregister`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-subgraphcountregister
+              - SetSubgraphBuilder (`cannkit-setsubgraphbuilder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setsubgraphbuilder
+            - OpReceiver (`cannkit-opreceiver`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-opreceiver
+            - OpRegistrationData (`cannkit-opregistrationdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-opregistrationdata
+              - 总体说明 (`cannkit-general-description`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-general-description
+              - 构造函数和析构函数 (`cannkit-opregistrationdata-construction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-opregistrationdata-construction
+              - REGISTER_CUSTOM_OP宏 (`cannkit-register-custom-op-macro`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-register-custom-op-macro
+              - FrameworkType (`cannkit-frameworktype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-frameworktype
+              - OriginOpType (`cannkit-originoptype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-originoptype
+              - ParseParamsFn (`cannkit-parseparamsfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-parseparamsfn
+              - ParseParamsByOperatorFn (`cannkit-parseparamsbyoperatorfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-parseparamsbyoperatorfn
+              - FusionParseParamsFn (`cannkit-fusionparseparamsfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-fusionparseparamsfn
+              - FusionParseParamsFn（Overload） (`cannkit-fusionparseparamsfn-overload`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-fusionparseparamsfn-overload
+              - ParseSubgraphPostFn (`cannkit-parsesubgraphpostfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-parsesubgraphpostfn
+              - ParseOpToGraphFn (`cannkit-parseoptographfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-parseoptographfn
+              - ImplyType (`cannkit-implytype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-implytype
+              - DelInputWithCond (`cannkit-delinputwithcond`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-delinputwithcond
+              - DelInputWithOriginalType (`cannkit-delinputwithoriginaltype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-delinputwithoriginaltype
+              - GetImplyType (`cannkit-getimplytype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getimplytype
+              - GetOmOptype (`cannkit-getomoptype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getomoptype
+              - GetOriginOpTypeSet (`cannkit-getoriginoptypeset`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoriginoptypeset
+              - GetFrameworkType (`cannkit-getframeworktype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getframeworktype
+              - GetParseParamFn (`cannkit-getparseparamfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getparseparamfn
+              - GetParseParamByOperatorFn (`cannkit-getparseparambyoperatorfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getparseparambyoperatorfn
+              - GetFusionParseParamFn (`cannkit-getfusionparseparamfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getfusionparseparamfn
+              - GetFusionParseParamByOpFn (`cannkit-getfusionparseparambyopfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getfusionparseparambyopfn
+              - GetParseSubgraphPostFn (`cannkit-getparsesubgraphpostfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getparsesubgraphpostfn
+              - GetParseOpToGraphFn (`cannkit-getparseoptographfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getparseoptographfn
+              - AutoMappingFn (`cannkit-automappingfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-automappingfn
+              - AutoMappingByOpFn (`cannkit-automappingbyopfn`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-automappingbyopfn
+              - AutoMappingFnDynamic (`cannkit-automappingfndynamic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-automappingfndynamic
+              - AutoMappingByOpFnDynamic (`cannkit-automappingbyopfndynamic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-automappingbyopfndynamic
+              - AutoMappingSubgraphIndex (`cannkit-automappingsubgraphindex`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-automappingsubgraphindex
+              - InputReorderVector (`cannkit-inputreordervector`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-inputreordervector
+            - Promote (`cannkit-promote`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-promote
+            - ShapeAndType (`cannkit-shapeandtype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shapeandtype
+              - 构造函数和析构函数 (`cannkit-shapeandtype-construction-and-destructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shapeandtype-construction-and-destructor
+              - SetShape (`cannkit-setshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setshape
+              - GetShape (`cannkit-shapeandtype-getshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shapeandtype-getshape
+              - SetType (`cannkit-settype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-settype
+              - GetDataType (`cannkit-shapeandtype-getdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shapeandtype-getdatatype
+            - Shape (`cannkit-ge-shape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ge-shape
+              - 构造函数和析构函数 (`cannkit-shape-construction-and-destructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shape-construction-and-destructor
+              - GetDim (`cannkit-shape-getdim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shape-getdim
+              - GetDims (`cannkit-getdims`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdims
+              - GetDimNum (`cannkit-shape-getdimnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shape-getdimnum
+              - GetShapeSize (`cannkit-shape-getshapesize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shape-getshapesize
+              - SetDim (`cannkit-shape-setdim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shape-setdim
+            - TensorDescInfo (`cannkit-tensordescinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordescinfo
+            - TensorDesc (`cannkit-tensordesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc
+              - 构造函数和析构函数 (`cannkit-tensordesc-construction-and-destructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-construction-and-destructor
+              - GetConstData (`cannkit-getconstdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getconstdata
+              - GetDataType (`cannkit-tensordesc-getdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-getdatatype
+              - GetExpandDimsRule (`cannkit-getexpanddimsrule`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getexpanddimsrule
+              - GetFormat (`cannkit-tensordesc-getformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-getformat
+              - GetName (`cannkit-tensordesc-getname`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-getname
+              - GetOriginFormat (`cannkit-tensordesc-getoriginformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-getoriginformat
+              - GetOriginShape (`cannkit-tensordesc-getoriginshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-getoriginshape
+              - GetPlacement (`cannkit-tensordesc-getplacement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-getplacement
+              - GetRealDimCnt (`cannkit-getrealdimcnt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getrealdimcnt
+              - GetShape (`cannkit-tensordesc-getshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-getshape
+              - GetShapeRange (`cannkit-getshaperange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getshaperange
+              - GetSize (`cannkit-tensordesc-getsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-getsize
+              - SetConstData (`cannkit-setconstdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setconstdata
+              - SetDataType (`cannkit-tensordesc-setdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-setdatatype
+              - SetExpandDimsRule (`cannkit-setexpanddimsrule`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setexpanddimsrule
+              - SetFormat (`cannkit-setformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setformat
+              - SetName (`cannkit-setname`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setname
+              - SetOriginFormat (`cannkit-tensordesc-setoriginformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-setoriginformat
+              - SetOriginShape (`cannkit-setoriginshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setoriginshape
+              - SetPlacement (`cannkit-tensordesc-setplacement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-setplacement
+              - SetRealDimCnt (`cannkit-setrealdimcnt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setrealdimcnt
+              - SetSize (`cannkit-tensordesc-setsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-setsize
+              - SetShape (`cannkit-tensordesc-setshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensordesc-setshape
+              - SetShapeRange (`cannkit-setshaperange`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setshaperange
+              - SetUnknownDimNumShape (`cannkit-setunknowndimnumshape`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setunknowndimnumshape
+              - Update (`cannkit-update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-update
+            - TensorType (`cannkit-tensortype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensortype
+            - Tensor (`cannkit-ge-tensor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ge-tensor
+              - 构造函数和析构函数 (`cannkit-tensor-construction-and-destructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-construction-and-destructor
+              - Clone (`cannkit-clone`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-clone
+              - IsValid (`cannkit-isvalid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-isvalid
+              - GetData (`cannkit-tensor-getdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getdata
+              - GetDataType (`cannkit-tensor-getdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getdatatype
+              - GetExpandDimsRule (`cannkit-tensor-getexpanddimsrule`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getexpanddimsrule
+              - GetFormat (`cannkit-tensor-getformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getformat
+              - GetOriginFormat (`cannkit-tensor-getoriginformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getoriginformat
+              - GetOriginShapeDim (`cannkit-getoriginshapedim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoriginshapedim
+              - GetOriginShapeDimNum (`cannkit-getoriginshapedimnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoriginshapedimnum
+              - GetPlacement (`cannkit-tensor-getplacement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getplacement
+              - GetSize (`cannkit-tensor-getsize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-getsize
+              - GetShapeDimNum (`cannkit-getshapedimnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getshapedimnum
+              - GetShapeDim (`cannkit-getshapedim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getshapedim
+              - GetTensorDesc (`cannkit-gettensordesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gettensordesc
+              - SetData (`cannkit-tensor-setdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-setdata
+              - SetDataType (`cannkit-tensor-setdatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-setdatatype
+              - SetExpandDimsRule (`cannkit-tensor-setexpanddimsrule`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-setexpanddimsrule
+              - SetFormat (`cannkit-tensor-setformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-setformat
+              - SetOriginFormat (`cannkit-tensor-setoriginformat1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-setoriginformat1
+              - SetOriginShapeDim (`cannkit-setoriginshapedim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setoriginshapedim
+              - SetOriginShapeDimNum (`cannkit-setoriginshapedimnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setoriginshapedimnum
+              - SetPlacement (`cannkit-tensor-setplacement`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tensor-setplacement
+              - SetShapeDimNum (`cannkit-setshapedimnum`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setshapedimnum
+              - SetShapeDim (`cannkit-setshapedim`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setshapedim
+              - SetTensorDesc (`cannkit-settensordesc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-settensordesc
+              - ResetData (`cannkit-resetdata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-resetdata
+            - TypeUtils (`cannkit-typeutils`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-typeutils
+              - DataTypeToAscendString (`cannkit-datatypetoascendstring`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-datatypetoascendstring
+              - AscendStringToDataType (`cannkit-ascendstringtodatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascendstringtodatatype
+              - FormatToAscendString (`cannkit-formattoascendstring`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-formattoascendstring
+              - AscendStringToFormat (`cannkit-ascendstringtoformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascendstringtoformat
+              - DataTypeToSerialString (`cannkit-datatypetoserialstring`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-datatypetoserialstring
+              - SerialStringToDataType (`cannkit-serialstringtodatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-serialstringtodatatype
+              - FormatToSerialString (`cannkit-formattoserialstring`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-formattoserialstring
+              - SerialStringToFormat (`cannkit-serialstringtoformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-serialstringtoformat
+              - DataFormatToFormat (`cannkit-dataformattoformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-dataformattoformat
+              - GetDataTypeLength (`cannkit-getdatatypelength`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getdatatypelength
+            - VerifyFuncRegister (`cannkit-verifyfuncregister`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-verifyfuncregister
+            - ConvertToAscendString (`cannkit-converttoascendstring`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-converttoascendstring
+            - ConvertToListAscendString (`cannkit-converttolistascendstring`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-converttolistascendstring
+            - GetC0Format (`cannkit-getc0format`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getc0format
+            - GetC0Value (`cannkit-getc0value`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getc0value
+            - GetFormatFromC0 (`cannkit-getformatfromc0`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getformatfromc0
+            - GetFormatFromSub (`cannkit-getformatfromsub`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getformatfromsub
+            - GetFormatFromSubAndC0 (`cannkit-getformatfromsubandc0`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getformatfromsubandc0
+            - GetFormatName (`cannkit-getformatname`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getformatname
+            - GetPrimaryFormat (`cannkit-getprimaryformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getprimaryformat
+            - GetSizeByDataType (`cannkit-getsizebydatatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getsizebydatatype
+            - GetSizeInBytes (`cannkit-getsizeinbytes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getsizeinbytes
+            - GetSubFormat (`cannkit-getsubformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getsubformat
+            - HasC0Format (`cannkit-hasc0format`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-hasc0format
+            - HasSubFormat (`cannkit-hassubformat`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-hassubformat
+            - ge::graphStatus (`cannkit-gegraphstatus`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gegraphstatus
+            - DataType (`cannkit-ge-datatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ge-datatype
+            - Format (`cannkit-ge-format`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ge-format
+            - BROADCAST_INFER (`cannkit-broadcast-infer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-broadcast-infer
+            - COMMON_INFER_FUNC_REG (`cannkit-common-infer-func-reg`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-common-infer-func-reg
+            - DECLARE_ERRORNO (`cannkit-declare-errorno`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-declare-errorno
+            - ELMTWISE_INFER_SHAPEANDTYPE (`cannkit-elmtwise-infer-shapeandtype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-elmtwise-infer-shapeandtype
+            - IMPLEMT_COMMON_INFERFUNC (`cannkit-implemt-common-inferfunc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-implemt-common-inferfunc
+            - IMPLEMT_INFERFORMAT_FUNC (`cannkit-implemt-inferformat-func`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-implemt-inferformat-func
+            - IMPLEMT_INFERFUNC (`cannkit-implemt-inferfunc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-implemt-inferfunc
+            - IMPLEMT_VERIFIER (`cannkit-implemt-verifier`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-implemt-verifier
+            - INFER_FORMAT_FUNC_REG (`cannkit-infer-format-func-reg`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infer-format-func-reg
+            - INFER_FUNC_REG (`cannkit-infer-func-reg`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infer-func-reg
+            - 原型定义接口（REG_OP） (`cannkit-prototype-definition-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-prototype-definition-api
+            - 原型定义衍生接口说明 (`cannkit-prototype-definition-derivative-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-prototype-definition-derivative-api
+            - VERIFY_FUNC_REG (`cannkit-verify-func-reg`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-verify-func-reg
+      - AscendC昇腾到麒麟兼容性迁移指南 (`cannkit-ascend-kirin-compatibility`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascend-kirin-compatibility
+        - 兼容性说明 (`cannkit-compatibility-rule`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compatibility-rule
+        - 昇腾和麒麟同代AI处理器的映射关系 (`cannkit-ascend-kirin-map`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascend-kirin-map
+        - Ascend910B/Ascend910C到KirinX90/Kirin9030迁移指导 (`cannkit-ascend910b-kirinx90`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascend910b-kirinx90
+          - 概述 (`cannkit-migration-guidance-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-migration-guidance-overview
+          - 基础API迁移指导 (`cannkit-basic-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-api
+            - L2 Cache (`cannkit-basic-l2cache`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-l2cache
+            - 数据类型 (`cannkit-basic-datatype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-datatype
+            - 原子操作 (`cannkit-basic-atomic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-atomic
+            - 同步控制 (`cannkit-basic-sync`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-sync
+            - 矩阵计算 (`cannkit-basic-matrix-computation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-matrix-computation
+            - 数据搬运 (`cannkit-basic-datacopy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-datacopy
+            - 资源管理 (`cannkit-basic-resource-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-resource-management
+            - 系统变量 (`cannkit-basic-system-var`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-system-var
+            - Kernel Tiling (`cannkit-basic-kernel-tiling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-kernel-tiling
+            - SuperKernel (`cannkit-basic-superkernel`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-superkernel
+          - 高阶API迁移指导 (`cannkit-adv-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-adv-api
+          - 算子编译迁移指导 (`cannkit-operator-compilation-migration-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-compilation-migration-guide
+    - CANN Kit常见问题 (`cannkit-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-faqs
+      - 判断模型能否在手机上运行？ (`cannkit-faqs-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-faqs-1
+      - 推理函数支持的数据格式有哪些？ (`cannkit-faqs-3`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-faqs-3
+      - 如何处理OMG离线模型输出算子类型错误？ (`cannkit-faqs-4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-faqs-4
+      - 算法在设计模型时，如何确认哪些算子在CANN上性能较优？ (`cannkit-faqs-5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-faqs-5
+    - 附录 (`cannkit-appendixes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-appendixes
+      - 版本获取方法 (`cannkit-obtaining-the-version`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-obtaining-the-version
+      - 支持的算子 (`cannkit-supported-operators`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-supported-operators
+      - 可视化工具 (`cannkit-visualization-tool-usage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-visualization-tool-usage
+  - Core Speech Kit（基础语音服务） (`core-speech-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-speech-kit-guide
+    - Core Speech Kit简介 (`core-speech-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-speech-introduction
+    - 文本转语音 (`texttospeech-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/texttospeech-guide
+    - 语音识别 (`speechrecognizer-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speechrecognizer-guide
+    - 个人数据处理说明 (`corespeechkit-personal-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/corespeechkit-personal-data
+  - Core Vision Kit（基础视觉服务） (`core-vision-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-kit-guide
+    - Core Vision Kit简介 (`core-vision-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-introduction
+    - 通用文字识别 (`core-vision-text-recognition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-text-recognition
+    - 人脸检测 (`core-vision-face-detector`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-face-detector
+    - 人脸比对 (`core-vision-face-comparator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-face-comparator
+    - 主体分割 (`core-vision-subject-segmentation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-subject-segmentation
+    - 多目标识别 (`core-vision-object-detection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-object-detection
+    - 骨骼点检测 (`core-vision-skeleton-detection`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-skeleton-detection
+    - 个人数据处理说明 (`corevisionkit-personal-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/corevisionkit-personal-data
+  - Intents Kit（意图框架服务） (`intents-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-kit-guide
+    - Intents Kit简介 (`intents-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-introduction
+    - Intents Kit接入流程 (`intents-access-flow`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-access-flow
+    - 习惯推荐方案 (`intents-habit-rec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec
+      - 概述 (`intents-habit-rec-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-introduction
+      - 场景体验 (`intents-habit-rec-scene-experience`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-scene-experience
+      - 接入方案 (`intents-habit-rec-access-programme`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-access-programme
+      - 开发者测试 (`intents-habit-rec-dp-self-validation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-dp-self-validation
+    - 事件推荐方案 (`intents-event-rec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec
+      - 概述 (`intents-event-rec-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec-introduction
+      - 场景体验 (`intents-event-rec-scene-experience`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec-scene-experience
+      - 接入方案 (`intents-event-rec-access-programme`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec-access-programme
+      - 开发者测试 (`intents-event-rec-dp-self-validation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec-dp-self-validation
+    - 位置推荐方案 (`intents-local-rec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec
+      - 概述 (`intents-local-rec-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec-introduction
+      - 场景体验 (`intents-local-rec-scene-experience`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec-scene-experience
+      - 接入方案 (`intents-local-rec-access-programme`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec-access-programme
+      - 开发者测试 (`intents-local-rec-dp-self-validation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec-dp-self-validation
+        - POI方案 (`intents-poi-scheme`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-poi-scheme
+        - Beacon（蓝牙信标设备）方案 (`intents-beacon-scheme`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-beacon-scheme
+    - 技能调用方案 (`intents-skill-all-rec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec
+      - 概述 (`intents-skill-all-rec-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-introduction
+      - 场景体验 (`intents-skill-all-rec-scene-experience`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-scene-experience
+      - 接入方案 (`intents-skill-all-rec-access-programme`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-access-programme
+        - 概述 (`intents-skill-all-rec-access-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-access-introduction
+        - 任务执行类场景方案（配置文件接入方式） (`intents-skill-all-rec-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-configuration
+        - 任务执行类场景方案（装饰器接入方式） (`intents-skill-all-rec-decorator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator
+          - 方案概述 (`intents-skill-all-rec-decorator-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-overview
+          - 基于Link的装饰器方案 (`intents-skill-all-rec-decorator-link`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-link
+          - 基于Page的装饰器方案 (`intents-skill-all-rec-decorator-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-page
+          - 基于函数的装饰器方案 (`intents-skill-all-rec-decorator-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-function
+          - 自定义意图相关信息定义规范 (`intents-skill-all-rec-specification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-specification
+        - 功能一步达场景方案 (`intents-skill-all-rec-one-step`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-one-step
+      - 开发者测试 (`intents-skill-all-rec-dp-self-validation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-dp-self-validation
+        - 配置文件接入方式自测试方案 (`intents-skill-all-rec-dp-self-validation-con`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-dp-self-validation-con
+        - 装饰器接入方式自测试方案 (`intents-skill-all-rec-dp-self-validation-decorator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-dp-self-validation-decorator
+    - 本地搜索方案 (`intents-search-rec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-search-rec
+      - 概述 (`intents-search-rec-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-search-rec-introduction
+      - 场景体验 (`intents-search-rec-scene-experience`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-search-rec-scene-experience
+      - 接入方案 (`intents-search-rec-access-programme`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-search-rec-access-programme
+        - 功能搜索方案 (`intents-skill-all-rec-function-search`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-function-search
+        - 内容搜索方案 (`intents-skill-all-rec-content-search`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-content-search
+    - 意图框架上架配置指导 (`intents-kit-listing-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-kit-listing-configuration
+      - 意图标准协议上架指导 (`intents-kit-listing-standard-protocol`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-kit-listing-standard-protocol
+      - MCP协议上架指导 (`intents-kit-listing-mcp-protocol`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-kit-listing-mcp-protocol
+    - 常见问题 (`intents-frequently-asked-questions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-frequently-asked-questions
+      - intentName报错Intent 'xxxxxx' is not included in domain 'xxxxxx'. Select an intent from the list of suggestions.如何解决？ (`intents-frequently-asked-questions-one`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-frequently-asked-questions-one
+      - inputParams报错Value should be one of: "intentName", "domain", "intentVersion", "srcEntry", "uiAbility", "serviceExtension", "uiExtension", "form"如何解决？ (`intents-frequently-asked-questions-two`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-frequently-asked-questions-two
+      - 使用意图框架调试助手Agent进行联调时，小艺拉起应用后，出现闪退情况，应该如何处理？ (`intents-frequently-asked-questions-three`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-frequently-asked-questions-three
+      - 功能一步达场景是否有云侧动态声明词条的方案？ (`four`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/four
+    - 附录A：获取华为账号对应UID的方式 (`intents-appendix-a-get-uid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-appendix-a-get-uid
+  - MindSpore Lite Kit（昇思推理框架服务） (`mindspore-lite-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-kit
+    - MindSpore Lite Kit简介 (`mindspore-lite-kit-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-kit-introduction
+    - 使用MindSpore Lite进行模型转换 (`mindspore-lite-converter-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-converter-guidelines
+    - 模型部署 (`deployment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deployment
+      - 使用MindSpore Lite进行模型推理 (C/C++) (`mindspore-lite-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-guidelines
+      - 使用MindSpore Lite进行端侧训练 (C/C++) (`mindspore-lite-train-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-train-guidelines
+    - 使用MindSpore Lite实现图像分类（ArkTS） (`mindspore-guidelines-based-js`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-guidelines-based-js
+    - 使用MindSpore Lite实现图像分类（C/C++） (`mindspore-guidelines-based-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-guidelines-based-native
+    - 使用MindSpore Lite实现语音识别（C/C++） (`mindspore-asr-based-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-asr-based-native
+    - 附录 (`mindspore-lite-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-appendix
+      - MindSpore Lite Kit算子支持列表 (`mindspore-lite-supported-operators`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-supported-operators
+  - Natural Language Kit（自然语言理解服务） (`natural-language-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/natural-language-kit-guide
+    - Natural Language Kit简介 (`natural-language-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/natural-language-introduction
+    - 分词 (`natural-language-getwordsegmentation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/natural-language-getwordsegmentation
+    - 实体抽取 (`natural-language-getentity`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/natural-language-getentity
+  - Neural Network Runtime Kit（Neural Network运行时服务） (`neural-network-runtime-kit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/neural-network-runtime-kit
+    - Neural Network Runtime Kit简介 (`neural-network-runtime-kit-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/neural-network-runtime-kit-introduction
+    - Neural Network Runtime对接AI推理框架开发指导 (`neural-network-runtime-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/neural-network-runtime-guidelines
+  - Speech Kit（场景化语音服务） (`speech-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speech-kit-guide
+    - Speech Kit简介 (`speech-production`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speech-production
+    - 朗读控件 (`speech-textreader-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speech-textreader-guide
+    - AI字幕控件 (`speech-aicaption-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speech-aicaption-guide
+  - Vision Kit（场景化视觉服务） (`vision-kit-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-kit-guide
+    - Vision Kit简介 (`vision-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-introduction
+    - 人脸活体检测 (`vision-interactiveliveness`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-interactiveliveness
+    - 卡证识别 (`vision-cardrecognition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-cardrecognition
+    - 文档扫描 (`vision-documentscanner`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-documentscanner
+    - AI识图 (`vision-imageanalyzer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-imageanalyzer
+    - 个人数据处理说明 (`visionkit-personal-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/visionkit-personal-data
+- 一次开发，多端部署
+  - 一次开发，多端部署文档路径调整 (`multi-device-overview-path-change`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-device-overview-path-change
+- 自由流转
+  - 自由流转文档路径调整 (`hopping-path-change`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hopping-path-change
+- NDK开发
+  - NDK开发导读 (`ndk-development-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-development-overview
+  - 创建NDK工程 (`create-with-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-with-ndk
+  - 构建NDK工程 (`build-with-ndk`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk
+    - NDK工程构建概述 (`build-with-ndk-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-overview
+    - 使用DevEco Studio模板构建NDK工程 (`build-with-ndk-ide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-ide
+    - 使用命令行CMake构建NDK工程 (`build-with-ndk-cmake`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-cmake
+    - 在NDK工程中使用预构建库 (`build-with-ndk-prebuilts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-prebuilts
+    - 毕昇编译器 (`bisheng-compiler`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bisheng-compiler
+  - 代码开发 (`coding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/coding
+    - 代码开发概述 (`develop-code-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/develop-code-overview
+    - C/C++标准库 (`c-cpp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/c-cpp
+      - C/C++标准库机制概述 (`c-cpp-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/c-cpp-overview
+      - fdsan使用指导 (`fdsan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fdsan
+    - 使用Node-API实现ArkTS/JS与C/C++语言交互 (`using-napi-interaction-with-cpp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-napi-interaction-with-cpp
+      - Node-API简介 (`napi-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-introduction
+      - Node-API接口返回状态码介绍 (`napi_status_introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi_status_introduction
+      - Node-API支持的数据类型和接口 (`napi-data-types-interfaces`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-data-types-interfaces
+      - Node-API开发规范 (`napi-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines
+      - 使用Node-API实现跨语言交互开发流程 (`use-napi-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process
+      - Node-API使用指导 (`napi-use`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-use
+        - 使用Node-API进行扩展能力功能开发 (`use-napi-about-extension`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-extension
+        - 使用Node-API接口进行array相关开发 (`use-napi-about-array`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-array
+        - 使用Node-API接口进行ArrayBuffer相关开发 (`use-napi-about-arraybuffer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-arraybuffer
+        - 使用Node-API接口操作bigint类型值 (`use-napi-about-bigint`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-bigint
+        - 使用Node-API接口进行buffer相关开发 (`use-napi-about-buffer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-buffer
+        - 使用Node-API接口创建基本数据类型 (`use-napi-basic-data-types`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-basic-data-types
+        - 使用Node-API进行class相关开发 (`use-napi-about-class`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-class
+        - 使用Node-API接口注册和使用环境清理钩子 (`use-napi-about-cleanuphook`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-cleanuphook
+        - 使用Node-API接口进行Date相关开发 (`use-napi-about-date`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-date
+        - 使用Node-API接口进行错误处理开发 (`use-napi-about-error`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-error
+        - 使用Node-API接口关联数据，使其生命周期与当前环境的生命周期相关联 (`use-napi-about-environmental-life-cycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-environmental-life-cycle
+        - 使用Node-API接口进行函数创建和调用 (`use-napi-about-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-function
+        - 使用Node-API接口进行生命周期相关开发 (`use-napi-life-cycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-life-cycle
+        - 使用Node-API接口进行object相关开发 (`use-napi-about-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-object
+        - 使用Node-API其他实用接口 (`use-napi-about-other-practical-tools`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-other-practical-tools
+        - 使用Node-API接口进行primitive类相关开发 (`use-napi-about-primitive`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-primitive
+        - 使用Node-API接口处理异步操作 (`use-napi-about-promise`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-promise
+        - 使用Node-API接口设置ArkTS对象的属性 (`use-napi-about-property`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property
+        - 使用Node-API接口创建和获取string值 (`use-napi-about-string`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-string
+        - 使用Node-API进行自定义异步操作相关开发 (`use-napi-about-custom-asynchronous-operations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-custom-asynchronous-operations
+      - Node-API典型使用场景 (`napi-scenarios`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-scenarios
+        - 使用Node-API接口进行异步任务开发 (`use-napi-asynchronous-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-asynchronous-task
+        - 使用Node-API接口进行线程安全开发 (`use-napi-thread-safety`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-thread-safety
+        - Native与ArkTS对象绑定 (`use-napi-object-wrap`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-object-wrap
+        - Native与Sendable ArkTS对象绑定 (`use-sendable-napi`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-sendable-napi
+        - 使用Node-API接口创建ArkTS运行时环境 (`use-napi-ark-runtime`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-ark-runtime
+        - 使用Node-API接口在主线程中进行模块加载 (`use-napi-load-module`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-load-module
+        - 使用扩展的Node-API接口在异步线程中运行和停止事件循环 (`use-napi-event-loop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-event-loop
+        - 使用Node-API接口进行模块加载 (`use-napi-load-module-with-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-load-module-with-info
+        - 使用Node-API接口从异步线程向ArkTS线程投递指定优先级和入队方式的任务 (`use-call-threadsafe-function-with-priority`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-call-threadsafe-function-with-priority
+        - 使用扩展的Node-API接口在当前线程中创建、切换和销毁上下文环境 (`use-napi-about-context`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-context
+        - 使用扩展的Node-API接口创建对ArkTS对象的强引用 (`use-napi-about-strong-reference`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-strong-reference
+        - 使用扩展的Node-API接口创建和销毁临界区作用域及访问字符串内容 (`use-napi-about-critical`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-critical
+        - 使用Node-API接口产生的异常日志/崩溃分析 (`use-napi-about-crash`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-crash
+        - 使用Node-API调用返回值为promise的ArkTS方法 (`use-napi-method-promise`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-method-promise
+        - 使用扩展的Node-API接口创建对ArkTS对象的Sendable强引用 (`use-napi-about-sendable-reference`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-sendable-reference
+      - Node-API常见问题汇总 (`napi-questions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-questions
+        - Node-API常见问题 (`use-napi-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-faqs
+        - 稳定性相关问题汇总 (`napi-faq-about-stability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-stability
+        - 内存泄漏相关问题汇总 (`napi-faq-about-memory-leak`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-memory-leak
+        - 常见基本功能问题汇总 (`napi-faq-about-common-basic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-common-basic
+    - 使用JSVM-API实现JS与C/C++语言交互 (`jsvm`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm
+      - JSVM-API简介 (`jsvm-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-introduction
+      - JSVM-API 支持的数据类型和接口 (`jsvm-data-types-interfaces`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-data-types-interfaces
+      - 使用JSVM-API实现JS与C/C++语言交互开发流程 (`use-jsvm-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process
+      - JSVM-API开发规范 (`jsvm-development-standards`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-development-standards
+        - JSVM-API使用规范 (`jsvm-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-guidelines
+        - JSVM-API常见问题 (`jsvm-frequently-questions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-frequently-questions
+      - JSVM-API使用指导 (`jsvm-use`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-use
+        - 使用JSVM-API接口进行任务队列相关开发 (`use-jsvm-execute_tasks`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-execute_tasks
+        - 使用JSVM-API接口进行虚拟机快照相关开发 (`use-jsvm-create-snapshot`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-create-snapshot
+        - 使用JSVM-API接口进行WebAssembly模块相关开发 (`use-jsvm-about-wasm`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-wasm
+        - 使用JSVM-API接口进行函数创建和调用 (`use-jsvm-function-call`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-function-call
+        - 使用JSVM-API接口进行JSON操作 (`use-jsvm-about-json`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-json
+        - 使用JSVM-API接口进行array相关开发 (`use-jsvm-about-array`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-array
+        - 使用JSVM-API接口进行ArrayBuffer相关开发 (`use-jsvm-about-arraybuffer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-arraybuffer
+        - 使用JSVM-API接口操作bigint类型值 (`use-jsvm-about-bigint`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-bigint
+        - 使用JSVM-API接口进行class相关开发 (`use-jsvm-about-class`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-class
+        - 使用JSVM-API接口进行Date相关开发 (`use-jsvm-about-date`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-date
+        - 使用JSVM-API接口进行debug操作 (`use-jsvm-about-debug-option`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-debug-option
+        - 使用JSVM-API接口进行object相关开发 (`use-jsvm-about-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-object
+        - 使用JSVM-API接口进行primitive类相关开发 (`use-jsvm-about-primitive`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-primitive
+        - 使用JSVM-API接口处理异步操作 (`use-jsvm-about-promise`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-promise
+        - 使用JSVM-API接口设置JavaScript对象的属性 (`use-jsvm-about-property`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-property
+        - 使用JSVM-API接口创建和获取string值 (`use-jsvm-about-string`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-string
+        - 使用JSVM-API接口获取JSVM API的版本号 (`use-jsvm-about-version`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-version
+        - 使用JSVM-API接口进行错误处理开发 (`use-jsvm-error`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-error
+        - 使用JSVM-API接口进行JavaScript代码调试调优 (`m-heapstatistics-debugger-cpuprofiler-heapsnapshot`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/m-heapstatistics-debugger-cpuprofiler-heapsnapshot
+        - 使用JSVM-API接口进行生命周期相关开发 (`use-jsvm-life-cycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-life-cycle
+        - 使用JSVM-API进行内存管理 (`use-jsvm-memory-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-memory-management
+        - 使用JSVM-API判断给定的两个JS value是否严格相等 (`use-jsvm-strict-equals`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-strict-equals
+        - 使用JSVM-API进行异常的定制化处理 (`use-jsvm-trigger-exceptions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-trigger-exceptions
+        - 使用JSVM-API感知JSVM引擎生命周期管理 (`use-jsvm-trigger-gc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-trigger-gc
+        - 使用JSVM-API接口进行private相关开发 (`use-jsvm-about-private`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-private
+        - 使用JSVM-API接口提供Latin1/UTF16格式字符串相关开发 (`use-jsvm-about-external-string`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-external-string
+        - 使用JSVM-API提供的proxy接口 (`use-jsvm-about-proxy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-proxy
+        - 使用JSVM-API接口进行Well-known symbols相关开发 (`use-jsvm-about-well-known-symbols`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-well-known-symbols
+        - 使用JSVM-API接口进行Wrapper object相关开发 (`use-jsvm-about-wrapper-object`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-wrapper-object
+        - 使用JSVM-API接口创建和获取数值 (`use-jsvm-basic-data-types`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-basic-data-types
+      - JSVM-API典型使用场景指导 (`jsvm-scenarios`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-scenarios
+        - JSVM-API调试&定位 (`jsvm-debugger-cpuprofiler-heapsnapshot`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-debugger-cpuprofiler-heapsnapshot
+        - 使用JSVM-API接口进行Trace相关开发 (`use-jsvm-about-trace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-trace
+        - JSVM-API 申请JIT权限指导 (`jsvm-apply-jit-profile`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-apply-jit-profile
+        - JSVM-API 坚盾守护模式 (`jsvm-secure-shield-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-secure-shield-mode
+        - JSVM-API 内存泄漏问题定位指导 (`jsvm-locate-memory-leak`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-locate-memory-leak
+        - JSVM-API调优&高性能使用示例 (`jsvm-usage-examples`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-usage-examples
+          - 使用JSVM-API接口创建多个引擎执行JS代码并销毁 (`use-jsvm-runtime-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-runtime-task
+          - 使用code cache加速编译 (`use-jsvm-about-code-cache`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-code-cache
+          - JSVM通用调优实践 (`jsvm-optimizations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-optimizations
+      - JSVM性能调试指导 (`jsvm-performance`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-performance
+        - 使用HiSmartPerf采集V8 trace (`use-jsvm-about-v8-trace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-v8-trace
+    - Longque-JS-API (`longque`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/longque
+      - Longque-JS-API使用指导 (`use-longque-js-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-longque-js-api
+    - OpenMP支持 (`openmp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/openmp
+      - OpenMP简介 (`openmp-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/openmp-overview
+      - OpenMP应用构建和运行指南 (`openmp-guideline`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/openmp-guideline
+    - 资源管理 (`resource-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-management
+      - Rawfile开发指导 (`rawfile-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawfile-guidelines
+    - 线程调度 (`thread-scheduling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/thread-scheduling
+      - QoS 开发指导 (`qos-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/qos-guidelines
+      - 格物开发指导 (`gewu-ndk-api-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gewu-ndk-api-guidelines
+    - 内存管理 (`memory-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/memory-management
+      - 内存管理purgeable内存开发指导 (`purgeable-memory-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/purgeable-memory-guidelines
+    - 包管理 (`bundle-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bundle-management
+      - NativeBundle开发指导 (`native-bundle-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-bundle-guidelines
+  - 调试和性能分析 (`debugging-profiling`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debugging-profiling
+    - 调试和性能分析概述 (`debug-performance-profiling-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-performance-profiling-overview
+    - C/C++内存错误检测 (`debug-asan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-asan
+    - LLDB高性能调试器 (`debug-lldb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-lldb
+  - 硬件兼容性 (`hardware-compatibility`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hardware-compatibility
+    - 硬件兼容性简介 (`hw-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hw-guide
+    - HarmonyOS ABI (`ohos-abi`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ohos-abi
+    - CPU特性 (`cpu-features`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cpu-features
+    - 使用Neon指令扩展 (`neon-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/neon-guide
+- 开发环境搭建
+  - 工具概述 (`ide-tools-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tools-overview
+  - 下载与安装DevEco Studio (`ide-software-install`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-software-install
+  - 使用新UI (`ide-new-ui`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-new-ui
+  - 工程创建 (`ide-project`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-project
+    - 工程介绍 (`ide-project-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-project-overview
+    - 工程目录结构 (`ide-project-structure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-project-structure
+    - 工程模板介绍 (`ide-template`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-template
+    - 创建一个新的工程 (`ide-create-new-project`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project
+    - 生成单层图标 (`ide-apply-generated-icon`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-apply-generated-icon
+    - 模块管理 (`ide-module-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-module-management
+      - 添加/删除模块 (`ide-add-new-module`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-add-new-module
+      - 开发及发布共享包 (`ide-creating-har-api9`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-creating-har-api9
+        - 开发静态共享包 (`ide-har`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-har
+        - 开发动态共享包 (`ide-hsp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hsp
+        - 发布共享包 (`ide-har-publish`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-har-publish
+      - 引用及管理共享包 (`ide-har-import`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-har-import
+      - ohpm-repo私仓搭建工具 (`ide-ohpm-repo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo
+        - 概述 (`ide-ohpm-repo-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-overview
+        - 快速开始 (`ide-ohpm-repo-quickstart`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-quickstart
+        - 配置文件 (`ide-ohpm-repo-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-configuration
+        - 日志 (`ide-ohpm-repo-log`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-log
+        - 相关命令 (`ide-ohpm-repo-command`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-command
+          - ohpm-repo help (`ide-ohpm-repo-help`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-help
+          - ohpm-repo install (`ide-ohpm-repo-install`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-install
+          - ohpm-repo start (`ide-ohpm-repo-start`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-start
+          - ohpm-repo restart (`ide-ohpm-repo-restart`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-restart
+          - ohpm-repo stop (`ide-ohpm-repo-stop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-stop
+          - ohpm-repo --version (`ide-ohpm-repo--version`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo--version
+          - ohpm-repo encrypt_password (`ide-ohpm-repo-encrypt_password`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-encrypt_password
+          - ohpm-repo pack (`ide-ohpm-repo-pack`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-pack
+          - ohpm-repo deploy (`ide-ohpm-repo-deploy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-deploy
+          - ohpm-repo restore (`ide-ohpm-repo-restore`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-restore
+          - ohpm-repo mirror_storage (`ide-ohpm-repo-mirror_storage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-mirror_storage
+          - ohpm-repo check_storage (`ide-ohpm-repo-check_storage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-check_storage
+          - ohpm-repo remove_instance (`ide-ohpm-repo-remove_instance`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-remove_instance
+          - 数据迁移相关命令 (`ide-ohpm-repo-command-data-migration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-command-data-migration
+            - ohpm-repo export_pkginfo (`ide-ohpm-repo-export-pkginfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-export-pkginfo
+            - ohpm-repo batch_download (`ide-ohpm-repo-batch-download`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-batch-download
+            - ohpm-repo batch_publish (`ide-ohpm-repo-batch-publish`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-batch-publish
+            - ohpm-repo export_userinfo (`ide-ohpm-repo-export-userinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-export-userinfo
+            - ohpm-repo import_userinfo (`ide-ohpm-repo-import-userinfo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-import-userinfo
+            - ohpm-repo export_pkgPermission (`ide-ohpm-repo-export-pkgpermission`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-export-pkgpermission
+            - ohpm-repo import_pkgPermission (`ide-ohpm-repo-import-pkgpermission`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-import-pkgpermission
+        - 部署指导 (`ide-ohpm-deploy-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-deploy-guide
+          - 单点部署 (`ide-ohpm-deploy-single-instance`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-deploy-single-instance
+          - 多实例部署 (`ide-ohpm-deploy-multiple-instances`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-deploy-multiple-instances
+        - 页面功能介绍 (`ide-ohpm-web-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-web-introduction
+          - 前台页面 (`ide-ohpm-web-front-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-web-front-page
+          - 个人中心主页 (`ide-ohpm-web-user-center`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-web-user-center
+          - 用户管理 (`ide-ohpm-user-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-user-management
+          - 仓库管理 (`ide-ohpm-depot-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-depot-management
+          - 包权限管理 (`ide-package-permission-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-package-permission-management
+          - 认证管理 (`ide-ohpm-certification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-certification
+          - 组织管理 (`ide-ohpm-organization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-organization
+          - 操作日志 (`ide-ohpm-repo-operation-log`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-operation-log
+          - 系统设置 (`ide-ohpm-system-settings`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-system-settings
+        - 安全配置指南 (`ide-ohpm-repo-configuration-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-configuration-guide
+        - 常见问题FAQ (`ide-ohpm-repo-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-faq
+        - 附录 (`ide-ohpm-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-appendix
+          - 数据迁移 (`ide-ohpm-repo-data-migration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-data-migration
+          - 版本升级 (`ide-ohpm-repo-upgrade`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-upgrade
+            - 升级版本1.0.1至2.X.X/5.X.X (`ide-upgrade-101_to_2xx`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-upgrade-101_to_2xx
+            - 升级版本1.1.0至2.X.X/5.X.X (`ide-upgrade-110_to_2xx`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-upgrade-110_to_2xx
+            - 2.X.X与5.X.X版本升级 (`ide-upgrade-2xx_to_2xx`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-upgrade-2xx_to_2xx
+          - 自定义存储插件 (`ide-ohpm-repo-storageplugin`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-storageplugin
+            - 自定义存储插件配置 (`ide-ohpm-repo-plugin-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-plugin-configuration
+            - 模板文件 (`ide-ohpm-repo-template-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-template-file
+          - 自定义认证插件 (`ide-custom-auth-plugin`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-custom-auth-plugin
+            - 自定义认证插件配置 (`ide-custom-auth-plugin-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-custom-auth-plugin-configuration
+            - 模板文件 (`ide-custom-auth-plugin-template`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-custom-auth-plugin-template
+          - 数据备份 (`ide-ohpm-repo-data-backup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-data-backup
+          - 导出OpenHarmony三方库中心仓元数据至ohpm-repo (`ide-ohpm-repo-export-metadata`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-export-metadata
+          - ohpm仓库接口协议 (`ide-interface-protocol`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-interface-protocol
+          - 自定义元数据规则校验插件 (`ide-custom-metadata-rule-validation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-custom-metadata-rule-validation
+            - 自定义元数据规则校验插件配置 (`ide-custom-metadata-rule-validation-config`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-custom-metadata-rule-validation-config
+            - 模板文件 (`ide-rule-verification-template-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-rule-verification-template-file
+          - 基于Dockerfile部署ohpm-repo私仓 (`ide-ohpm-dockerfile`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-dockerfile
+      - 在模块中添加Ability (`ide-add-new-ability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-add-new-ability
+      - 创建服务卡片 (`ide-service-widget`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-service-widget
+      - 添加Page (`ide-add-page`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-add-page
+      - 端云一体化开发 (`agc-harmonyos-clouddevguide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddevguide
+        - 业务介绍 (`agc-harmonyos-clouddev-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-overview
+        - 开发准备 (`agc-harmonyos-clouddev-prerequisite`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-prerequisite
+          - 注册华为开发者账号并实名认证 (`agc-harmonyos-clouddev-account`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-account
+          - 搭建开发环境 (`agc-harmonyos-clouddev-setup`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-setup
+          - 在AGC创建项目和HarmonyOS应用/元服务 (`agc-harmonyos-clouddev-createproject`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-createproject
+        - 开发端云工程 (`agc-harmonyos-clouddev-devprocess`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-devprocess
+          - 创建端云一体化开发工程 (`agc-harmonyos-clouddev-devproject`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-devproject
+            - 创建HarmonyOS应用工程 (`agc-harmonyos-create-appproject`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-appproject
+            - 创建元服务工程 (`agc-harmonyos-create-faproject`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject
+            - 历史工程转换为端云一体化开发工程 (`agc-harmonyos-project-migration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-project-migration
+          - 开发云侧工程 (`agc-harmonyos-clouddev-develop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-develop
+            - 开发云函数 (`agc-harmonyos-clouddev-cloudfunctions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-cloudfunctions
+              - 开发流程 (`agc-harmonyos-clouddev-functionprocess`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-functionprocess
+              - 创建并配置函数 (`agc-harmonyos-clouddev-createfunc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-createfunc
+              - 开发函数 (`agc-harmonyos-clouddev-funccoding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-funccoding
+              - 调试函数 (`agc-harmonyos-clouddev-debugfunc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-debugfunc
+              - 部署函数 (`agc-harmonyos-clouddev-deployfunc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-deployfunc
+            - 开发云对象 (`agc-harmonyos-clouddev-cloudobj`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-cloudobj
+              - 开发流程 (`agc-harmonyos-clouddev-cloudobjprocess`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-cloudobjprocess
+              - 创建云对象 (`agc-harmonyos-clouddev-createcloudobj`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-createcloudobj
+              - 开发云对象 (`agc-harmonyos-clouddev-cloudobj-coding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-cloudobj-coding
+              - 调试云对象 (`agc-harmonyos-clouddev-debugcloudobj`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-debugcloudobj
+              - 部署云对象 (`agc-harmonyos-clouddev-deploycloudobj`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-deploycloudobj
+            - 开发云数据库 (`agc-harmonyos-clouddev-clouddb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-clouddb
+              - 开发流程 (`agc-harmonyos-clouddev-dbprocess`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-dbprocess
+              - 创建对象类型 (`agc-harmonyos-clouddev-objecttype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-objecttype
+              - 添加数据条目 (`agc-harmonyos-clouddev-dataentry`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-dataentry
+              - 部署云数据库 (`agc-harmonyos-clouddev-deploydatabase`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-deploydatabase
+              - (可选）一键生成Model Class (`agc-harmonyos-clouddev-modelclass`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-modelclass
+          - 部署云侧工程 (`agc-harmonyos-clouddev-deploy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-deploy
+          - （可选）同步云端代码至DevEco Studio工程 (`agc-harmonyos-clouddev-sync`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-sync
+          - 开发端侧工程 (`agc-harmonyos-clouddev-appdevelop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-appdevelop
+            - 在端侧调用云侧代码 (`agc-harmonyos-clouddev-invokecloudcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-invokecloudcode
+              - 在端侧调用云函数 (`agc-harmonyos-clouddev-invokecloudfunc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-invokecloudfunc
+              - 在端侧调用云对象 (`agc-harmonyos-clouddev-invokecloudobj`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-invokecloudobj
+              - 在端侧访问云数据库 (`agc-harmonyos-clouddev-invokeclouddatabase`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-invokeclouddatabase
+              - 在端侧调用云存储 (`agc-harmonyos-clouddev-invokecloudstorage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-invokecloudstorage
+        - （可选）通过CloudDev面板获取云开发资源支持 (`agc-harmonyos-clouddev-console`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-console
+        - 打包测试 (`agc-harmonyos-clouddev-compile`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-compile
+        - 发布上架 (`agc-harmonyos-clouddev-release`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-release
+        - FAQ (`agc-harmonyos-clouddev-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-faq
+        - 附录：云开发工程模板 (`agc-harmonyos-clouddev-template`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-template
+          - 通用云开发模板 (`agc-harmonyos-clouddev-emptyability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-emptyability
+      - 导入Sample工程 (`ide-import-sample`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-import-sample
+      - 创建意图框架 (`ide-insight-intent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-intent
+  - 离线环境配置指导 (`ide-no-network`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-no-network
+- 应用测试
+  - HarmonyOS 开发者测试服务概述 (`app-testing-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-testing-overview
+  - 单元测试和UI测试 (`ut`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ut
+    - 自动化测试框架使用指导 (`arkxtest-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkxtest-guidelines
+      - 单元测试框架使用指导 (`unittest-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unittest-guidelines
+      - UI测试框架使用指导 (`uitest-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uitest-guidelines
+      - 白盒性能测试框架使用指导 (`perftest-guideline`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/perftest-guideline
+    - 应用UI测试（基于Python） (`hypium-python-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hypium-python-guidelines
+    - 自定义性能脚本测试（基于Python） (`hypium-perf-python-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hypium-perf-python-guidelines
+  - 专项测试 (`test-service`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-service
+    - 命令行工具 (`indev_cmd`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/indev_cmd
+      - HiSmartPerf Device性能使用指导 (`smartperf-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/smartperf-guidelines
+      - wukong稳定性工具使用指导 (`wukong-guidelines`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wukong-guidelines
+    - DevEco Testing (`deveco-testing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing
+      - 快速上手 (`get-familiar`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-familiar
+      - 专项测试 (`specialized-testing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing
+      - 上架预检 (`publish-testing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/publish-testing
+      - 探索测试 (`exploratory-testing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/exploratory-testing
+      - 回归测试 (`regression-test`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/regression-test
+      - 实用工具 (`tool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/tool
+      - 常见问题 (`faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/faq
+- 使用AI智能辅助编程
+  - 版本说明 (`ide-codegenie-releasenote`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-codegenie-releasenote
+  - 工具概述 (`ide-codegenie`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-codegenie
+  - 智能问答 (`ide-harmonyos-ask`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-harmonyos-ask
+    - 知识问答 (`ide-code-generation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-generation
+    - 代码分析 (`ide-code-analyse`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-analyse
+  - 智能执行 (`ide-harmonyos-act`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-harmonyos-act
+    - 代码生成 (`ide--code-generation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide--code-generation
+    - 代码修改 (`ide-code-modify`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-modify
+  - 编辑区代码生成 (`ide-codegenie-code-edit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-codegenie-code-edit
+    - 对话生成 (`ide-edit-area-code-generation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-edit-area-code-generation
+    - 代码续写 (`ide-code-continuation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-continuation
+  - 页面生成 (`ide-page-generation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-page-generation
+  - 万能卡片生成 (`ide-codegenie-service-widget`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-codegenie-service-widget
+  - 单元测试用例生成 (`ide-ut-generation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ut-generation
+  - 代码智能解读 (`ide-explain-code`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-explain-code
+  - 编译报错智能分析 (`ide-compilation-error-analysis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-compilation-error-analysis
+  - 智慧调优 (`ide-ai-profiler`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ai-profiler
+  - 应用UI生成 (`ide-ui-generator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-generator
+  - 意图装饰器生成和小艺智能体创建 (`ide-insight-intent2`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-intent2
+  - 自定义智能体配置 (`ide-agent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-agent
+    - 模型上下文协议（MCP）配置 (`ide-agent-mcp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-agent-mcp
+    - 模型（Model）配置 (`ide-agent-model`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-agent-model
+    - 规则（Rules）配置 (`ide-agent-rules`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-agent-rules
+    - 自定义智能体（Agent）配置和调用 (`ide-agent-use`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-agent-use
+  - 本地知识库配置 (`ide-ocal-knowledge`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ocal-knowledge
+- 编写与调试应用
+  - 代码编辑 (`ide-code-edit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-edit
+    - 代码阅读 (`ide-editer-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-editer-overview
+    - 代码生成/补全 (`ide-code-completion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-completion
+    - 代码检查 (`ide-code-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-check
+      - 代码实时检查及快速修复 (`ide-realtime-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-realtime-check
+      - Code Linter代码检查 (`ide-code-linter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter
+      - Code Linter代码检查规则 (`ide-codelinter-rule`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-codelinter-rule
+        - 规则变更说明 (`ide-codelinter-rules-change`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-codelinter-rules-change
+        - recommended推荐规则清单 (`ide-coderlinter-recommended-rules`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-coderlinter-recommended-rules
+        - 通用规则@typescript-eslint (`ide-typescript-eslint`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-typescript-eslint
+          - @typescript-eslint/adjacent-overload-signatures (`ide_adjacent-overload-signatures`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_adjacent-overload-signatures
+          - @typescript-eslint/array-type (`ide_array-type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_array-type
+          - @typescript-eslint/await-thenable (`ide_await-thenable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_await-thenable
+          - @typescript-eslint/ban-ts-comment (`ide_ban-ts-comment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_ban-ts-comment
+          - @typescript-eslint/ban-tslint-comment (`ide_ban-tslint-comment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_ban-tslint-comment
+          - @typescript-eslint/ban-types (`ide_ban-types`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_ban-types
+          - @typescript-eslint/brace-style (`ide_brace-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_brace-style
+          - @typescript-eslint/class-literal-property-style (`ide_class-literal-property-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_class-literal-property-style
+          - @typescript-eslint/comma-dangle (`ide_comma-dangle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_comma-dangle
+          - @typescript-eslint/comma-spacing (`ide_comma-spacing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_comma-spacing
+          - @typescript-eslint/consistent-indexed-object-style (`ide_consistent-indexed-object-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_consistent-indexed-object-style
+          - @typescript-eslint/consistent-type-assertions (`ide_consistent-type-assertions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_consistent-type-assertions
+          - @typescript-eslint/consistent-type-definitions (`ide_consistent-type-definitions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_consistent-type-definitions
+          - @typescript-eslint/consistent-type-imports (`ide_consistent-type-imports`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_consistent-type-imports
+          - @typescript-eslint/default-param-last (`ide_default-param-last`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_default-param-last
+          - @typescript-eslint/dot-notation (`ide_dot-notation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_dot-notation
+          - @typescript-eslint/explicit-function-return-type (`ide_explicit-function-return-type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_explicit-function-return-type
+          - @typescript-eslint/explicit-member-accessibility (`ide_explicit-member-accessibility`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_explicit-member-accessibility
+          - @typescript-eslint/explicit-module-boundary-types (`ide_explicit-module-boundary-types`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_explicit-module-boundary-types
+          - @typescript-eslint/func-call-spacing (`ide_func-call-spacing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_func-call-spacing
+          - @typescript-eslint/init-declarations (`ide_init-declarations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_init-declarations
+          - @typescript-eslint/keyword-spacing (`ide_keyword-spacing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_keyword-spacing
+          - @typescript-eslint/lines-between-class-members (`ide_lines-between-class-members`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_lines-between-class-members
+          - @typescript-eslint/member-delimiter-style (`ide_member-delimiter-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_member-delimiter-style
+          - @typescript-eslint/member-ordering (`ide_member-ordering`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_member-ordering
+          - @typescript-eslint/method-signature-style (`ide_method-signature-style`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_method-signature-style
+          - @typescript-eslint/naming-convention (`ide_naming-convention`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_naming-convention
+          - @typescript-eslint/no-array-constructor (`ide_no-array-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-array-constructor
+          - @typescript-eslint/no-base-to-string (`ide_no-base-to-string`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-base-to-string
+          - @typescript-eslint/no-confusing-non-null-assertion (`ide_no-confusing-non-null-assertion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-confusing-non-null-assertion
+          - @typescript-eslint/no-confusing-void-expression (`ide_no-confusing-void-expression`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-confusing-void-expression
+          - @typescript-eslint/no-dupe-class-members (`ide_no-dupe-class-members`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-dupe-class-members
+          - @typescript-eslint/no-duplicate-imports (`ide_no-duplicate-imports`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-duplicate-imports
+          - @typescript-eslint/no-dynamic-delete (`ide_no-dynamic-delete`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-dynamic-delete
+          - @typescript-eslint/no-empty-function (`ide_no-empty-function`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-empty-function
+          - @typescript-eslint/no-empty-interface (`ide_no-empty-interface`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-empty-interface
+          - @typescript-eslint/no-explicit-any (`ide_no-explicit-any`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-explicit-any
+          - @typescript-eslint/no-extraneous-class (`ide_no-extraneous-class`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-extraneous-class
+          - @typescript-eslint/no-extra-non-null-assertion (`ide_no-extra-non-null-assertion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-extra-non-null-assertion
+          - @typescript-eslint/no-extra-parens (`ide_no-extra-parens`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-extra-parens
+          - @typescript-eslint/no-extra-semi (`ide_no-extra-semi`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-extra-semi
+          - @typescript-eslint/no-floating-promises (`ide_no-floating-promises`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-floating-promises
+          - @typescript-eslint/no-for-in-array (`ide_no-for-in-array`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-for-in-array
+          - @typescript-eslint/no-implicit-any-catch (`ide_no-implicit-any-catch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-implicit-any-catch
+          - @typescript-eslint/no-implied-eval (`ide_no-implied-eval`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-implied-eval
+          - @typescript-eslint/no-inferrable-types (`ide_no-inferrable-types`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-inferrable-types
+          - @typescript-eslint/no-invalid-this (`ide_no-invalid-this`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-invalid-this
+          - @typescript-eslint/no-invalid-void-type (`ide_no-invalid-void-type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-invalid-void-type
+          - @typescript-eslint/no-loop-func (`ide_no-loop-func`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-loop-func
+          - @typescript-eslint/no-loss-of-precision (`ide_no-loss-of-precision`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-loss-of-precision
+          - @typescript-eslint/no-magic-numbers (`ide_no-magic-numbers`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-magic-numbers
+          - @typescript-eslint/no-misused-new (`ide_no-misused-new`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-misused-new
+          - @typescript-eslint/no-misused-promises (`ide_no-misused-promises`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-misused-promises
+          - @typescript-eslint/no-namespace (`ide_no-namespace`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-namespace
+          - @typescript-eslint/no-non-null-asserted-optional-chain (`ide_no-non-null-asserted-optional-chain`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-non-null-asserted-optional-chain
+          - @typescript-eslint/no-non-null-assertion (`ide_no-non-null-assertion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-non-null-assertion
+          - @typescript-eslint/no-parameter-properties (`ide_no-parameter-properties`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-parameter-properties
+          - @typescript-eslint/no-redeclare (`ide_no-redeclare`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-redeclare
+          - @typescript-eslint/no-require-imports (`ide_no-require-imports`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-require-imports
+          - @typescript-eslint/no-restricted-syntax (`ide_no-restricted-syntax`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-restricted-syntax
+          - @typescript-eslint/no-shadow (`ide_no-shadow`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-shadow
+          - @typescript-eslint/no-this-alias (`ide_no-this-alias`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-this-alias
+          - @typescript-eslint/no-throw-literal (`ide_no-throw-literal`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-throw-literal
+          - @typescript-eslint/no-type-alias (`ide_no-type-alias`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-type-alias
+          - @typescript-eslint/no-unnecessary-boolean-literal-compare (`ide_no-unnecessary-boolean-literal-compare`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unnecessary-boolean-literal-compare
+          - @typescript-eslint/no-unnecessary-condition (`ide_no-unnecessary-condition`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unnecessary-condition
+          - @typescript-eslint/no-unnecessary-qualifier (`ide_no-unnecessary-qualifier`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unnecessary-qualifier
+          - @typescript-eslint/no-unnecessary-type-arguments (`ide_no-unnecessary-type-arguments`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unnecessary-type-arguments
+          - @typescript-eslint/no-unnecessary-type-assertion (`ide_no-unnecessary-type-assertion`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unnecessary-type-assertion
+          - @typescript-eslint/no-unnecessary-type-constraint (`ide_no-unnecessary-type-constraint`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unnecessary-type-constraint
+          - @typescript-eslint/no-unsafe-argument (`ide_no-unsafe-argument`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-argument
+          - @typescript-eslint/no-unsafe-assignment (`ide_no-unsafe-assignment`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-assignment
+          - @typescript-eslint/no-unsafe-call (`ide_no-unsafe-call`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-call
+          - @typescript-eslint/no-unsafe-member-access (`ide_no-unsafe-member-access`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-member-access
+          - @typescript-eslint/no-unsafe-return (`ide_no-unsafe-return`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-return
+          - @typescript-eslint/no-unused-expressions (`ide_no-unused-expressions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unused-expressions
+          - @typescript-eslint/no-unused-vars (`ide_no-unused-vars`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unused-vars
+          - @typescript-eslint/no-use-before-define (`ide_no-use-before-define`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-use-before-define
+          - @typescript-eslint/no-useless-constructor (`ide_no-useless-constructor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-useless-constructor
+          - @typescript-eslint/prefer-as-const (`ide_prefer-as-const`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-as-const
+          - @typescript-eslint/prefer-enum-initializers (`ide_prefer-enum-initializers`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-enum-initializers
+          - @typescript-eslint/prefer-for-of (`ide_prefer-for-of`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-for-of
+          - @typescript-eslint/prefer-function-type (`ide_prefer-function-type`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-function-type
+          - @typescript-eslint/prefer-includes (`ide_prefer-includes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-includes
+          - @typescript-eslint/prefer-literal-enum-member (`ide_prefer-literal-enum-member`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-literal-enum-member
+          - @typescript-eslint/prefer-namespace-keyword (`ide_prefer-namespace-keyword`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-namespace-keyword
+          - @typescript-eslint/prefer-nullish-coalescing (`ide_prefer-nullish-coalescing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-nullish-coalescing
+          - @typescript-eslint/prefer-optional-chain (`ide_prefer-optional-chain`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-optional-chain
+          - @typescript-eslint/prefer-readonly (`ide_prefer-readonly`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-readonly
+          - @typescript-eslint/prefer-readonly-parameter-types (`ide_prefer-readonly-parameter-types`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-readonly-parameter-types
+          - @typescript-eslint/prefer-reduce-type-parameter (`ide_prefer-reduce-type-parameter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-reduce-type-parameter
+          - @typescript-eslint/prefer-regexp-exec (`ide_prefer-regexp-exec`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-regexp-exec
+          - @typescript-eslint/prefer-string-starts-ends-with (`ide_prefer-string-starts-ends-with`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-string-starts-ends-with
+          - @typescript-eslint/prefer-ts-expect-error (`ide_prefer-ts-expect-error`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-ts-expect-error
+          - @typescript-eslint/promise-function-async (`ide_promise-function-async`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_promise-function-async
+          - @typescript-eslint/quotes (`ide_quotes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_quotes
+          - @typescript-eslint/require-array-sort-compare (`ide_require-array-sort-compare`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_require-array-sort-compare
+          - @typescript-eslint/require-await (`ide_require-await`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_require-await
+          - @typescript-eslint/restrict-plus-operands (`ide_restrict-plus-operands`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_restrict-plus-operands
+          - @typescript-eslint/restrict-template-expressions (`ide_restrict-template-expressions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_restrict-template-expressions
+          - @typescript-eslint/return-await (`ide_return-await`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_return-await
+          - @typescript-eslint/semi (`ide_semi`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_semi
+          - @typescript-eslint/space-before-function-paren (`ide_space-before-function-paren`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_space-before-function-paren
+          - @typescript-eslint/space-infix-ops (`ide_space-infix-ops`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_space-infix-ops
+          - @typescript-eslint/strict-boolean-expressions (`ide_strict-boolean-expressions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_strict-boolean-expressions
+          - @typescript-eslint/switch-exhaustiveness-check (`ide_switch-exhaustiveness-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_switch-exhaustiveness-check
+          - @typescript-eslint/triple-slash-reference (`ide_triple-slash-reference`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_triple-slash-reference
+          - @typescript-eslint/type-annotation-spacing (`ide_type-annotation-spacing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_type-annotation-spacing
+          - @typescript-eslint/typedef (`ide_typedef`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_typedef
+          - @typescript-eslint/unbound-method (`ide_unbound-method`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_unbound-method
+          - @typescript-eslint/unified-signatures (`ide_unified-signatures`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_unified-signatures
+          - prefer-const (`ide_prefer-const`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_prefer-const
+          - eqeqeq (`ide_eqeqeq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_eqeqeq
+        - 安全规则@security (`ide-security`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-security
+          - @security/no-commented-code (`ide_no-commented-code`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-commented-code
+          - @security/no-cycle (`ide_no-cycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-cycle
+          - @security/no-unsafe-aes (`ide_no-unsafe-aes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-aes
+          - @security/no-unsafe-dh (`ide_no-unsafe-dh`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-dh
+          - @security/no-unsafe-dsa (`ide_no-unsafe-dsa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-dsa
+          - @security/no-unsafe-dh-key (`ide_no-unsafe-dh-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-dh-key
+          - @security/no-unsafe-dsa-key (`ide_no-unsafe-dsa-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-dsa-key
+          - @security/no-unsafe-ecdsa (`ide_no-unsafe-ecdsa`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-ecdsa
+          - @security/no-unsafe-hash (`ide_no-unsafe-hash`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-hash
+          - @security/no-unsafe-mac (`ide_no-unsafe-mac`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-mac
+          - @security/no-unsafe-rsa-encrypt (`ide_no-unsafe-rsa-encrypt`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-rsa-encrypt
+          - @security/no-unsafe-rsa-key (`ide_no-unsafe-rsa-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-rsa-key
+          - @security/no-unsafe-rsa-sign (`ide_no-unsafe-rsa-sign`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-rsa-sign
+          - @security/no-unsafe-3des (`ide-no-unsafe-3des`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-no-unsafe-3des
+          - @security/specified-interface-call-chain-check (`ide-specified-interface-call-chain-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-specified-interface-call-chain-check
+          - @security/no-unsafe-kdf (`ide_no-unsafe-kdf`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-kdf
+          - @security/no-unsafe-sm4 (`ide_no-unsafe-sm4`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-sm4
+          - @security/no-unsafe-sm2-key (`ide_no-unsafe-sm2-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-sm2-key
+          - @security/no-unsafe-sm2-cipher (`ide_no-unsafe-sm2-cipher`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-sm2-cipher
+          - @security/no-unsafe-ecdh (`ide_no-unsafe-ecdh`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-ecdh
+          - @security/no-unsafe-huks (`ide_no-unsafe-huks`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unsafe-huks
+        - 性能规则@performance (`ide-performance`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-performance
+          - @performance/avoid-overusing-custom-component-check (`ide-avoid-overusing-custom-component-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-avoid-overusing-custom-component-check
+          - @performance/bad-deep-clone-check (`ide-bad-deep-clone-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-bad-deep-clone-check
+          - @performance/constant-property-referencing-check-in-loops (`ide-constant-property-check-in-loops`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-constant-property-check-in-loops
+          - @performance/crypto-replacement-check (`ide-crypto-replacement-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-crypto-replacement-check
+          - @performance/dark-color-mode-check (`ide-dark-color-mode-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-dark-color-mode-check
+          - @performance/datashare-query-unrelease-check (`ide-datashare-query-unrelease-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-datashare-query-unrelease-check
+          - @performance/foreach-args-check (`ide-foreach-args-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-foreach-args-check
+          - @performance/foreach-index-check (`ide-foreach-index-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-foreach-index-check
+          - @performance/gif-hardware-decoding-check (`ide-gif-hardware-decoding-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-gif-hardware-decoding-check
+          - @performance/hp-arkui-avoid-update-auto-state-var-in-aboutToReuse (`ide_hp-arkui-abouttoreuse`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-abouttoreuse
+          - @performance/hp-arkui-avoid-empty-callback (`ide_hp-arkui-avoid-empty-callback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-avoid-empty-callback
+          - @performance/hp-arkui-combine-same-arg-animateto (`ide_hp-arkui-combine-same-arg-animateto`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-combine-same-arg-animateto
+          - @performance/hp-arkui-image-async-load (`ide_hp-arkui-image-async-load`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-image-async-load
+          - @performance/hp-arkui-load-on-demand (`ide_hp-arkui-load-on-demand`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-load-on-demand
+          - @performance/hp-arkui-limit-refresh-scope（已下线） (`ide_hp-arkui-limit-refresh-scope`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-limit-refresh-scope
+          - @performance/hp-arkui-no-func-as-arg-for-reusable-component (`ide_hp-arkui-no-func-as-arg-for-reusable-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-no-func-as-arg-for-reusable-component
+          - @performance/hp-arkui-no-high-freq-log（已下线） (`ide-hp-arkui-no-high-freq-log`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkui-no-high-freq-log
+          - @performance/hp-arkui-no-stringify-in-lazyforeach-key-generator (`ide_hp-arkui-no-stringify-lazyforeach-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-no-stringify-lazyforeach-key
+          - @performance/hp-arkui-no-state-var-access-in-loop (`ide_hp-arkui-no-state-var-access-in-loop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-no-state-var-access-in-loop
+          - @performance/hp-arkts-no-use-any-export-current (`ide-hp-arkts-no-use-any-export-current`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkts-no-use-any-export-current
+          - @performance/hp-arkts-no-use-any-export-other (`ide-hp-arkts-no-use-any-export-other`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkts-no-use-any-export-other
+          - @performance/hp-arkui-remove-container-without-property (`ide_hp-arkui-remove-container-without-property`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-remove-container-without-property
+          - @performance/hp-arkui-replace-nested-reusable-component-by-builder (`ide_hp-arkui--replace-reusable-by-builder`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui--replace-reusable-by-builder
+          - @performance/hp-arkui-reduce-pangesture-distance (`ide-hp-arkui-reduce-ges-distance`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkui-reduce-ges-distance
+          - @performance/hp-arkui-remove-redundant-nest-container (`ide_hp-arkui-no-redundant-nest`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-no-redundant-nest
+          - @performance/hp-arkui-remove-redundant-state-var (`ide-hp-arkui-remove-redundant-state-var`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkui-remove-redundant-state-var
+          - @performance/hp-arkui-remove-unchanged-state-var (`ide-hp-arkui-remove-unchanged-state-var`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkui-remove-unchanged-state-var
+          - @performance/hp-arkui-set-cache-count-for-lazyforeach-grid (`ide_hp-arkui-set-cache-count-for-lazyforeach-grid`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-set-cache-count-for-lazyforeach-grid
+          - @performance/hp-arkui-suggest-cache-avplayer (`ide-hp-arkui-suggest-cache-avplayer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkui-suggest-cache-avplayer
+          - @performance/hp-arkui-suggest-reuseid-for-if-else-reusable-component (`ide_hp-arkui-use-reuseid-if-else-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-reuseid-if-else-component
+          - @performance/hp-arkui-suggest-use-effectkit-blur (`ide-hp-arkui-suggest-use-effectkit-blur`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkui-suggest-use-effectkit-blur
+          - @performance/hp-arkui-suggest-use-get-anonymousid-async (`ide-hp-arkui-sg-anonymousid-async`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkui-sg-anonymousid-async
+          - @performance/hp-arkui-use-attributeUpdater-control-refresh-scope (`ide-hp-attribute-update-refresh-scope`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-attribute-update-refresh-scope
+          - @performance/hp-arkui-use-grid-layout-options (`ide_hp-arkui-use-grid-layout-options`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-grid-layout-options
+          - @performance/hp-arkui-use-id-in-get-resource-sync-api (`ide_hp-arkui-use-id-in-get-resource-sync-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-id-in-get-resource-sync-api
+          - @performance/hp-arkui-use-local-var-to-replace-state-var (`ide_hp-arkui-use-local-var-to-replace-state-var`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-local-var-to-replace-state-var
+          - @performance/hp-arkui-use-onAnimationStart-for-swiper-preload (`ide_hp-arkui-use-onanimationstart-in-swiper`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-onanimationstart-in-swiper
+          - @performance/hp-arkui-use-object-link-to-replace-prop (`ide_hp-arkui-use-object-link-to-replace-prop`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-object-link-to-replace-prop
+          - @performance/hp-arkui-use-row-column-to-replace-flex (`ide_hp-arkui-use-row-column-to-replace-flex`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-row-column-to-replace-flex
+          - @performance/hp-arkui-use-reusable-component (`ide_hp-arkui-use-reusable-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-reusable-component
+          - @performance/hp-arkui-use-scale-to-replace-attr-animateto (`ide_hp-arkui-use-scale-to-replace-attr-animateto`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-scale-to-replace-attr-animateto
+          - @performance/hp-arkui-use-taskpool-for-web-request (`ide-hp-arkui-use-taskpool-for-web-request`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkui-use-taskpool-for-web-request
+          - @performance/hp-arkui-use-transition-to-replace-animateto (`ide_hp-arkui-use-transition-to-replace-animateto`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-transition-to-replace-animateto
+          - @performance/hp-arkui-use-word-break-to-replace-zero-width-space (`ide_hp-arkui-use-word-break-in-space`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-word-break-in-space
+          - @performance/hp-arkui-wrap-waterflow-if-else-footer（已下线） (`ide-hp-arkui-wrap-waterflow-if-else-footer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkui-wrap-waterflow-if-else-footer
+          - @performance/high-frequency-log-check (`ide-high-frequency-log-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-high-frequency-log-check
+          - @performance/hp-ffrt-no-use-std (`ide-hp-ffrt-no-use-std`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-ffrt-no-use-std
+          - @performance/hp-performance-no-closures (`ide_hp-performance-no-closures`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-performance-no-closures
+          - @performance/hp-performance-no-dynamic-cls-func (`ide_hp-performance-no-dynamic-cls-func`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-performance-no-dynamic-cls-func
+          - @performance/init-list-component (`ide-init-list-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-init-list-component
+          - @performance/js-code-cache-by-interception-check (`ide-js-code-cache-by-interception-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-js-code-cache-by-interception-check
+          - @performance/js-code-cache-by-precompile-check (`ide-js-code-cache-by-precompile-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-js-code-cache-by-precompile-check
+          - @performance/lazyforeach-args-check（已下线） (`ide-lazyforeach-args-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-lazyforeach-args-check
+          - @performance/lottie-animation-destroy-check (`ide-lottie-animation-destroy-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-lottie-animation-destroy-check
+          - @performance/multiple-associations-state-var-check (`ide-multi-associations-state-var-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-multi-associations-state-var-check
+          - @performance/monitor-invisible-area-in-image-animation (`ide-monitor-invisible-area-in-image-animation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-monitor-invisible-area-in-image-animation
+          - @performance/no-use-any-import (`ide-no-use-any-import`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-no-use-any-import
+          - @performance/no-high-loaded-frame-rate-range (`ide_no-high-loaded-frame-rate-range`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-high-loaded-frame-rate-range
+          - @performance/number-init-check (`ide-number-init-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-number-init-check
+          - @performance/nested-post-frame-callback-check (`ide-nested-post-frame-callback-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-nested-post-frame-callback-check
+          - @performance/object-creation-check（已下线） (`ide-object-creation-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-object-creation-check
+          - @performance/reasonable-audio-use-check (`ide-reasonable-audio-use-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-reasonable-audio-use-check
+          - @performance/reasonable-gps-use-check (`ide-reasonable-gps-use-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-reasonable-gps-use-check
+          - @performance/reuse-date-instances-check (`ide-reuse-date-instances-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-reuse-date-instances-check
+          - @performance/reasonable-sensor-use-check (`ide-reasonable-sensor-use-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-reasonable-sensor-use-check
+          - @performance/sparse-array-check (`ide-sparse-array-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-sparse-array-check
+          - @performance/start-window-icon-check (`ide-start-window-icon-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-start-window-icon-check
+          - @performance/typed-array-check (`ide-typed-array-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-typed-array-check
+          - @performance/timezone-interface-check (`ide-timezone-interface-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-timezone-interface-check
+          - @performance/tabs-on-change-check (`ide-tabs-on-change-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tabs-on-change-check
+          - @performance/update-state-var-between-animatetos-check (`ide-update-state-var-between-animatetos-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-update-state-var-between-animatetos-check
+          - @performance/web-cache-mode-check (`ide-performance-web-cache-mode-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-performance-web-cache-mode-check
+          - @performance/web-on-active-check (`ide-web-on-active-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-web-on-active-check
+          - @performance/waterflow-data-preload-check (`ide-waterflow-data-preload-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-waterflow-data-preload-check
+        - 预览规则@previewer (`ide-previewer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer
+          - @previewer/mandatory-default-value-for-local-initialization (`ide_value-for-local-initialization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_value-for-local-initialization
+          - @previewer/no-page-method-on-preview-component (`ide_no-page-method-on-preview-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-page-method-on-preview-component
+          - @previewer/no-unallowed-decorator-on-root-component (`ide_no-unallowed-decorator-on-root-component`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-unallowed-decorator-on-root-component
+        - 一次开发多端部署规则@cross-device-app-dev (`ide-cross-device-app-dev`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-cross-device-app-dev
+          - @cross-device-app-dev/color-contrast (`ide_color-contrast`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_color-contrast
+          - @cross-device-app-dev/color-value (`ide_color-value`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_color-value
+          - @cross-device-app-dev/font-size-unit (`ide_font-size-unit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_font-size-unit
+          - @cross-device-app-dev/font-size (`ide_font-size`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_font-size
+          - @cross-device-app-dev/grid-columns-span (`ide_grid-columns-span`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_grid-columns-span
+          - @cross-device-app-dev/grid-span-value (`ide_grid-span-value`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_grid-span-value
+          - @cross-device-app-dev/one-multi-breakpoint-check (`ide-one-multi-breakpoint-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-one-multi-breakpoint-check
+          - @cross-device-app-dev/sidebar-navigation (`ide_sidebar-navigation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_sidebar-navigation
+          - @cross-device-app-dev/size-unit (`ide_size-unit`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_size-unit
+          - @cross-device-app-dev/touch-target-size (`ide_touch-target-size`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_touch-target-size
+          - @cross-device-app-dev/window-size-change-listener-check (`ide-window-size-change-listener-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-window-size-change-listener-check
+          - @cross-device-app-dev/immersive-effect-check (`ide-immersive-effect-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-immersive-effect-check
+        - ArkTS代码风格规则@hw-stylistic (`ide-hw-stylistic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hw-stylistic
+          - @hw-stylistic/array-bracket-spacing (`ide_array-bracket-spacing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_array-bracket-spacing
+          - @hw-stylistic/brace-style (`ide-brace-style-stylistic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-brace-style-stylistic
+          - @hw-stylistic/comma-spacing (`ide-comma-spacing-stylistic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-comma-spacing-stylistic
+          - @hw-stylistic/curly (`ide_curly`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_curly
+          - @hw-stylistic/file-naming-convention (`ide-file-naming-convention`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-file-naming-convention
+          - @hw-stylistic/indent (`ide_indent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_indent
+          - @hw-stylistic/keyword-spacing (`ide-keyword-spacing-stylistic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-keyword-spacing-stylistic
+          - @hw-stylistic/max-len (`ide_max-len`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_max-len
+          - @hw-stylistic/no-multi-spaces (`ide_no-multi-spaces`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-multi-spaces
+          - @hw-stylistic/no-tabs (`ide_no-tabs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-tabs
+          - @hw-stylistic/object-property-newline (`ide_object-property-newline`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_object-property-newline
+          - @hw-stylistic/one-var-declaration-per-line (`ide_one-var-declaration-per-line`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_one-var-declaration-per-line
+          - @hw-stylistic/operator-linebreak (`ide_operator-linebreak`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_operator-linebreak
+          - @hw-stylistic/quotes (`ide-quotes-stylistic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quotes-stylistic
+          - @hw-stylistic/semi-spacing (`ide_semi-spacing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_semi-spacing
+          - @hw-stylistic/space-before-blocks (`ide_space-before-blocks`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_space-before-blocks
+          - @hw-stylistic/space-before-function-paren (`ide-space-before-function-paren-stylistic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-space-before-function-paren-stylistic
+          - @hw-stylistic/space-infix-ops (`ide-space-infix-ops-stylistic`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-space-infix-ops-stylistic
+        - 正确性规则@correctness (`ide-codelinter-correctness`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-codelinter-correctness
+          - @correctness/avsession-buttons-check (`ide-avsession-buttons-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-avsession-buttons-check
+          - @correctness/audio-interrupt-check (`ide-audio-interrupt-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-audio-interrupt-check
+          - @correctness/audio-pause-or-mute-check (`ide-audio-pause-or-mute-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-audio-pause-or-mute-check
+          - @correctness/avsession-metadata-check (`ide-avsession-metadata-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-avsession-metadata-check
+          - @correctness/image-pixel-format-check (`ide-image-pixel-format-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-image-pixel-format-check
+          - @correctness/image-interpolation-check (`ide-image-interpolation-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-image-interpolation-check
+          - @correctness/listen-default-network-change (`ide_listen-default-network-change`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_listen-default-network-change
+          - @correctness/listen-multi-network-concurrent (`ide_listen-multi-network-concurrent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_listen-multi-network-concurrent
+          - @correctness/redundant-dependency-check (`ide-redundant-dependency-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-redundant-dependency-check
+        - 兼容性规则@compatibility (`ide-codelinter-compatibility`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-codelinter-compatibility
+          - @compatibility/api-compatibility-check (`ide-api-compatibility-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-api-compatibility-check
+    - 代码重构 (`ide-code-refactoring`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-refactoring
+    - 生成ArkTSDoc文档 (`ide-arktsdoc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc
+      - 文档生成 (`ide-arktsdoc-generation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc-generation
+      - 标准标签 (`ide-arktsdocs-standard-label`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdocs-standard-label
+        - @author (`ide-arktsdoc-author`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc-author
+        - @copyright (`ide-arktsdoc-copyright`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc-copyright
+        - @deprecated (`ide-arktsdoc-deprecated`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc-deprecated
+        - @param (`ide-arktsdoc-param`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc-param
+        - @returns (`ide-arktsdoc-returns`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc-returns
+        - @since (`ide-arktsdoc-since`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc-since
+        - @throws (`ide-arktsdoc-throws`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc-throws
+        - @todo (`ide-arktsdoc-todo`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc-todo
+        - @version (`ide-arktsdoc-version`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc-version
+        - {@link} (`ide-arktsdoc-link`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arktsdoc-link
+    - 快速插入场景化代码片段 (`ide-kit-assistant`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-kit-assistant
+    - 跨语言代码编辑 (`ide-cross-language-code-editing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-cross-language-code-editing
+  - 界面预览 (`ide-previewer-01`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-01
+    - 概述 (`ide-previewer-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-overview
+    - PreviewChecker检测规则 (`ide-previewer-previewchecker`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-previewchecker
+    - 查看ArkTS/JS预览效果 (`ide-previewer-arkts-js`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-arkts-js
+    - 查看ArkUI预览效果 (`ide-previewer-arkui`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-arkui
+    - Profile Manager (`ide-previewer-profile-manager`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-profile-manager
+    - 查看多端设备预览效果 (`ide-previewer-multi-profile`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-multi-profile
+    - Inspector双向预览 (`ide-previewer-inspector`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-inspector
+    - 预览数据模拟 (`ide-previewer-mock`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-mock
+    - 使用预览器调试应用 (`ide-previewer-debug`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-debug
+    - 支持使用预览器的API清单 (`ide-previewer-api-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-api-list
+  - 配置调试签名 (`ide-signing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing
+  - 使用本地真机运行应用 (`ide-run-device`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device
+  - 使用仿真器运行轻量级穿戴应用 (`ide-run-simulator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-simulator
+  - 使用模拟器运行应用 (`ide-run-emulator`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-emulator
+    - 概述 (`ide-emulator-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-overview
+      - 使用环境 (`ide-emulator-requirements`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-requirements
+      - 设备支持类型 (`ide-emulator-devicetype`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-devicetype
+      - 模拟器与真机的差异 (`ide-emulator-specification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification
+    - 管理模拟器 (`ide-emulator-management`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-management
+      - 创建模拟器 (`ide-emulator-create`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-create
+      - 启动和关闭模拟器 (`ide-emulator-start-and-close`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-start-and-close
+    - 使用模拟器 (`ide-emulator-use`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-use
+      - 操控屏幕 (`ide-emulator-control-screen`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-control-screen
+      - 使用工具栏 (`ide-emulator-toolbar`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-toolbar
+      - 移动和缩放模拟器 (`ide-emulator-move-and-zoom`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-move-and-zoom
+      - 模拟器访问网络 (`ide-emulator-access-network`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-access-network
+      - 安装应用程序包和上传文件 (`ide-emulator-install-upload`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-install-upload
+      - 更多的扩展能力 (`ide-emulator-more-features`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-more-features
+    - 修改模拟器 (`ide-emulator-modify`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-modify
+      - 自定义屏幕配置 (`ide-emulator-customize-screen-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-customize-screen-configuration
+    - 通过命令行使用模拟器 (`ide-emulator-command-line`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-command-line
+    - 离线部署模拟器 (`ide-emulator-no-network`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-no-network
+    - 模拟器错误码 (`ide-emulator-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-faqs
+  - 应用调试 (`ide-debug-app`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-app
+    - 调试概述 (`ide-debug-device`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-device
+    - 自定义运行/调试配置 (`ide-run-debug-configurations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-debug-configurations
+    - 代码调试 (`ide-code-debugging`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-debugging
+      - ArkTS代码调试 (`ide-debug-arkts`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts
+        - 调试场景说明 (`ide-debug-arkts-worker-taskpool`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-worker-taskpool
+        - debug启动调试 (`ide-debug-arkts-debug`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-debug
+        - attach启动调试 (`ide-debug-arkts-attach`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-attach
+        - 等待调试 (`ide-debug-arkts-attach-to-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-attach-to-process
+        - 使用断点 (`ide-debug-arkts-breakpoint`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-breakpoint
+        - 检查变量 (`ide-debug-arkts-variables`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-variables
+        - 反向调试 (`ide-debug-arkts-reverse`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-reverse
+        - extension调试 (`ide-debug-arkts-extension`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-extension
+        - 多进程调试 (`ide-debug-multi-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-multi-process
+        - 打印表达式 (`ide-debug-arkts-evaluate-log`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-evaluate-log
+        - 智能步入 (`ide-debug-arkts-smart-step-into`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-smart-step-into
+        - 查看异步函数堆栈 (`ide-debug-async-stack-traces`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-async-stack-traces
+      - Native代码调试 (`ide-debug-native`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-native
+        - 启动调试 (`ide-debug-native-enable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-native-enable
+        - 使用断点 (`ide-debug-native-breakpoint`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-native-breakpoint
+        - 检查变量 (`ide-debug-native-variables`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-native-variables
+        - 汇编调试 (`ide-debug-native-disassembly`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-native-disassembly
+        - 查看内存信息 (`ide-debug-native-memory-view`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-native-memory-view
+        - 使用LLDB调试命令 (`ide-debug-native-lldb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-native-lldb
+        - 反向调试 (`ide-debug-native-reverse`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-native-reverse
+        - 堆栈可视化 (`ide-debug-native-parallel-stacks`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-native-parallel-stacks
+        - so信息可视化 (`ide-debug-native-so`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-native-so
+        - 设置执行点 (`ide-debug-native-execution-point`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-native-execution-point
+        - 智能步入 (`ide-smart-step-into`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-smart-step-into
+      - 使用调试器 (`ide-debug-arkts-debugger`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-debugger
+      - 跨语言调试 (`ide-cross-language-debugging`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-cross-language-debugging
+      - 三方库源码调试 (`ide-source-code-debugging`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-source-code-debugging
+      - 增量调试 (`ide-incremental-debugging`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-incremental-debugging
+      - Hot Reload (`ide-hot-reload`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hot-reload
+      - 查看ArkUI状态变量 (`ide-arkui-state`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-state
+    - 开发者选项 (`ide-developer-mode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode
+    - 布局分析 (`ide-arkui-inspector`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector
+    - 访问设备文件 (`ide-device-file-explorer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-device-file-explorer
+    - 访问应用数据库 (`ide-database-inspector`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-database-inspector
+    - 截屏 (`ide-screenshot`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-screenshot
+    - 录屏 (`ide-screen-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-screen-recording
+    - 调试错误码 (`ide-debug-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-errorcode
+      - 运行配置错误码 (`ide-debug-errorcode-00401`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-errorcode-00401
+      - 热重载和增量调试错误码 (`ide-debug-errorcode-00402`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-errorcode-00402
+      - 调试失败错误码 (`ide-debug-errorcode-00403`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-errorcode-00403
+      - hdc命令失败错误码 (`ide-debug-errorcode-00404`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-errorcode-00404
+  - 日志与故障分析 (`ide-log-and-fault-analysis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-log-and-fault-analysis
+    - 日志分析 (`ide-setup-hilog`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-setup-hilog
+    - 故障分析 (`ide-fault-analysis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-fault-analysis
+      - FaultLog (`ide-fault-log`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-fault-log
+      - 堆栈轨迹分析 (`ide-release-app-stack-analysis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-release-app-stack-analysis
+      - 异常堆栈解析原理 (`ide-exception-stack-parsing-principle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-exception-stack-parsing-principle
+      - 使用ASan检测内存错误 (`ide-asan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-asan
+      - 使用HWASan检测内存错误 (`ide-hwasan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hwasan
+      - 使用TSan检测线程错误 (`ide-tsan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tsan
+      - 使用UBSan检测未定义行为 (`ide-ubsan`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ubsan
+      - 方舟运行时检测 (`ide-multi-thread-check`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-multi-thread-check
+  - 开发自测试 (`ide-app-test`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-test
+    - 测试框架 (`ide-test`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-test
+      - 代码测试 (`ide-code-test`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-test
+        - Instrument Test (`ide-instrument-test`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-instrument-test
+        - Local Test (`ide-local-test`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-local-test
+      - Mock能力 (`ide-test-mock`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-test-mock
+      - 黑盒覆盖率测试 (`ide-ui-test`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test
+      - 测试框架错误码 (`ide-test-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-test-errorcode
+        - 仪器测试错误码 (`ide-instrument-test-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-instrument-test-errorcode
+        - 本地测试错误码 (`ide-local-test-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-local-test-errorcode
+    - 应用与元服务体检 (`ide-app-analyzer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer
+    - 附录 (`ide-app-analyzer-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-appendix
+      - 应用/元服务体检规则 (`ide-app-analyzer-rules`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-rules
+        - 规则总览 (`ide-app-analyzer-all-rules`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-all-rules
+        - 点击操作响应快 (`ide-quick-response-for-click-0403`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-response-for-click-0403
+        - 点击操作完成快 (`ide-quick-completion-for-click-0404`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-click-0404
+        - 滑动操作响应快 (`ide-quick-response-for-swipe-0405`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-response-for-swipe-0405
+        - 滑动过程流畅 (`ide-smooth-for-swipe-0413`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-smooth-for-swipe-0413
+        - 转场操作流畅 (`ide-smooth-for-transition-0414`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-smooth-for-transition-0414
+        - 动态内存峰值占用 (`ide-peak-dynamic-memory-usage-0417`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-dynamic-memory-usage-0417
+        - 前台场景内存峰值占用 (`ide-peak-foreground-memory-usage-0418`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-foreground-memory-usage-0418
+        - 后台CPU占用峰值 (`ide-peak-background-cpu-usage-0420`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-background-cpu-usage-0420
+        - 节点数超过500过多 (`ide-render-node-limit-0430`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-render-node-limit-0430
+        - 启动加载完成快 (`ide-quick-completion-for-boot`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-boot
+      - 应用/元服务体检场景 (`ide-app-analyzer-scenes`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-scenes
+  - 附录 (`ide-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-appendix
+    - 配置代理 (`ide-environment-config`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-environment-config
+    - Terminal环境变量说明 (`ide-environment-variable`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-environment-variable
+    - 运维服务 (`ide-operation-and-services`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-operation-and-services
+    - .tgz格式共享包转换为.har格式 (`ide-tgz-har-migrating`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tgz-har-migrating
+    - DevEco Studio配置参数列表 (`ide-configuration-parameter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-configuration-parameter
+    - 关闭数据采集 (`ide-close-send-usage-statistics`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-close-send-usage-statistics
+    - 日志上传 (`ide-log-postback`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-log-postback
+    - OHPM版本号规则 (`ide-ohpm-version-rules`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-version-rules
+    - pac.json5隐私清单文件 (`agc-pac`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-pac
+- 构建应用
+  - 概述 (`ide-hvigor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor
+    - 构建系统生命周期 (`ide-hvigor-life-cycle`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle
+    - 构建任务说明 (`ide-hvigor-task-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-task-process
+    - 构建产物说明 (`ide-compile-build`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-compile-build
+  - 配置文件 (`ide-hvigor-configuration-file`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-configuration-file
+    - 配置文件概述 (`ide-hvigor-configuration-file-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-configuration-file-overview
+    - hvigor-config.json5文件 (`ide-hvigor-set-options`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-set-options
+    - 工程级build-profile.json5文件 (`ide-hvigor-build-profile-app`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app
+    - 模块级build-profile.json5文件 (`ide-hvigor-build-profile`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile
+  - 配置构建流程 (`ide-hvigor-configuration`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-configuration
+    - 多模块管理 (`ide-hvigor-multi-module`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-multi-module
+    - 添加依赖项 (`ide-hvigor-dependencies`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-dependencies
+    - 配置多目标产物 (`ide-customized-multi-targets-and-products`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products
+      - 能力说明 (`ide-customized-multi-targets-and-products-guides`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides
+      - 实践说明 (`ide-customized-multi-targets-and-products-sample`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-sample
+    - 构建HAR (`ide-hvigor-build-har`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-har
+    - 配置CPP (`ide-hvigor-cpp`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-cpp
+    - 预构建库快速链接 (`ide-hvigor-so`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-so
+    - 多工程构建 (`ide-hvigor-multi-projects`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-multi-projects
+    - HAP唯一性校验逻辑 (`ide-hvigor-verification-rule`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-verification-rule
+    - 自定义.hvigor目录路径 (`ide-hvigor-path`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-path
+  - 定制构建 (`ide-build-customization`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-customization
+    - 灵活定制编译选项 (`ide-hvigor-compilation-options-customizing`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing
+      - 能力说明 (`ide-hvigor-compilation-options-customizing-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide
+      - 实践说明 (`ide-hvigor-compilation-options-customizing-sample`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-sample
+    - 获取自定义编译参数 (`ide-hvigor-get-build-profile-para`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-get-build-profile-para
+      - 能力说明 (`ide-hvigor-get-build-profile-para-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-get-build-profile-para-guide
+      - 实践说明 (`ide-hvigor-get-build-profile-para-sample`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-get-build-profile-para-sample
+    - 动态修改编译配置 (`ide-hvigor-config-ohos`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-config-ohos
+      - 能力说明 (`ide-hvigor-config-ohos-guide`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-config-ohos-guide
+      - 实践说明 (`ide-hvigor-config-ohos-sample`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-config-ohos-sample
+  - 提升构建效率 (`ide-build-optimized`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-optimized
+    - 分析构建过程 (`ide-hvigor-build-analyzer`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-analyzer
+    - 守护进程 (`ide-hvigor-daemon`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-daemon
+    - 并行构建 (`ide-hvigor-improve-performance`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-improve-performance
+    - 增量构建 (`ide-hvigor-incremental-build`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-incremental-build
+    - 性能优化实验特性 (`ide-hvigor-experimental-properties`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-experimental-properties
+    - 模块化编译 (`ide-hvigor-esmodule-compile`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-esmodule-compile
+  - 扩展构建能力 (`ide-build-expanding`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-expanding
+    - 开发Hvigor任务 (`ide-hvigor-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-task
+    - 开发Hvigor插件 (`ide-hvigor-plugin`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-plugin
+    - 扩展构建API (`ide-hvigor-apis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-apis
+      - 基础构建能力 (`ide-hvigor-api`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-api
+      - 插件上下文 (`ide-build-expanding-context`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-expanding-context
+      - API使用示例 (`ide-build-expanding-sample`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-expanding-sample
+  - 混淆加固 (`ide-build-obfuscation`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation
+  - 构建报错排查 (`ide-hvigor-faq`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-faq
+    - 使用日志记录 (`ide-hvigor-log`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-log
+    - 编译构建常见问题 (`ide-hvigor-faqs`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-faqs
+    - 编译构建错误码 (`ide-hvigor-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-errorcode
+      - 依赖错误码 (`ide-hvigor-errorcode-00301`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-errorcode-00301
+      - 脚本错误码 (`ide-hvigor-errorcode-00302`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-errorcode-00302
+      - 配置错误码 (`ide-hvigor-errorcode-00303-1`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-errorcode-00303-1
+      - 资源缺失错误码 (`ide-hvigor-errorcode-00304`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-errorcode-00304
+      - 语法错误码 (`ide-hvigor-errorcode-00305`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-errorcode-00305
+      - 规格错误码 (`ide-hvigor-errorcode-00306`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-errorcode-00306
+      - 权限错误码 (`ide-hvigor-errorcode-00307`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-errorcode-00307
+      - 操作异常错误码 (`ide-hvigor-errorcode-00308`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-errorcode-00308
+      - ArkTS编译错误码 (`ide-hvigor-errorcode-00309`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-errorcode-00309
+      - 签名工具错误码 (`hapsigntool-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hapsigntool-errorcode
+- 优化应用性能
+  - 性能调优工具简介 (`ide-insight-description`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-description
+  - DevEco Profiler调优工具简介 (`ide-profiler`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler
+    - 整体界面布局及概念 (`ide-profiler-layout`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-layout
+    - 会话区 (`ide-profiler-session`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-session
+    - 数据区 (`ide-profiler-data`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-data
+  - 使用Profiler进行性能调优 (`ide-profiler-introduction`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-introduction
+    - 性能优化过程简介 (`ide-profiler-process`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-process
+    - 性能问题定界：实时监控 (`realtime-monitor`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/realtime-monitor
+    - 性能问题定位：深度录制 (`deep-recording`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording
+  - 卡顿丢帧分析 (`ide-lag-and-frame-loss`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-lag-and-frame-loss
+    - Frame分析 (`ide-insight-session-frame`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame
+    - ArkUI分析 (`ide-arkui-analysis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-analysis
+    - 案例：使用Frame模板分析应用卡顿问题 (`ide-frame-case`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-frame-case
+  - 冷启动：Launch分析 (`ide-launch-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-launch-overview
+    - Launch模板基本操作 (`ide-insight-session-launch`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-launch
+    - 案例：应用冷启动首帧完成时延问题分析 (`ide-profiler-launch-case`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-launch-case
+  - 内存泄露：Snapshot分析 (`ide-insight-session-snapshot`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-snapshot
+    - 使用Snapshot模板基本操作 (`ide-snapshot-basic-operations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations
+    - 案例：ArkTS内存泄漏分析 (`ide-arkts-memory-leak-analysis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkts-memory-leak-analysis
+  - 基础内存：Allocation分析 (`ide-insight-session-allocations`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations
+    - 内存分析介绍 (`ide-insight-session-allocations-memory`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations-memory
+    - 内存分析数据筛选 (`ide-insight-session-allocations-data-filtering`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations-data-filtering
+    - 启动时内存分析 (`ide-insight-session-boot-memory`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-boot-memory
+    - 案例：Native内存泄漏分析 (`ide-native-allocation-case`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-native-allocation-case
+  - 能耗诊断：Energy分析 (`ide-profiler-energy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-energy
+  - 加载丢帧：ArkWeb分析 (`ide-profiler-arkweb`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-arkweb
+  - 网络诊断：Network分析 (`ide-profiler-network`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-network
+  - 并行并发：Concurrency分析 (`ide-parallel-concurrency-analysis`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-parallel-concurrency-analysis
+  - GPU活动分析 (`ide-profiler-gpu`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-gpu
+  - 基础耗时：Time分析 (`ide-insight-session-time`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-time
+  - CPU活动分析 (`ide-insight-session-cpu`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-cpu
+  - 附录 (`ide-profiler-appendix`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-appendix
+    - 快捷键 (`ide-shortcut-key`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-shortcut-key
+    - GPU帧捕获工具：Graphics Profiler抓帧入口 (`ide-graphics-profiler`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-graphics-profiler
+    - 错误码 (`ide-profiler-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-errorcode
+- 发布应用
+  - 发布应用 (`ide-publish-app`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app
+- 命令行工具
+  - 获取命令行工具 (`ide-commandline-get`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-commandline-get
+  - 代码检查工具（codelinter） (`ide-command-line-codelinter`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-command-line-codelinter
+  - 堆栈解析工具（hstack） (`ide-command-line-hstack`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-command-line-hstack
+  - 命令行构建工具（hvigorw） (`ide-hvigor-commandline`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-commandline
+  - 三方依赖管理工具（ohpm） (`ide-ohpm-cli`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-cli
+    - 系统平台要求 (`ide-ohpm-system-platform`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-system-platform
+    - ohpmrc (`ide-ohpmrc`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpmrc
+    - oh-package.json5 (`ide-oh-package-json5`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-oh-package-json5
+    - 常用命令 (`ide-ohpm-common-commands`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-common-commands
+      - ohpm config (`ide-ohpm-config`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-config
+      - ohpm help (`ide-ohpm-help`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-help
+      - ohpm info (`ide-ohpm-info`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-info
+      - ohpm init (`ide-ohpm-init`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-init
+      - ohpm install (`ide-ohpm-install`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-install
+      - ohpm list (`ide-ohpm-list`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-list
+      - ohpm publish (`ide-ohpm-publish`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-publish
+      - ohpm uninstall (`ide-ohpm-uninstall`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-uninstall
+      - ohpm prepublish (`ide-ohpm-prepublish`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-prepublish
+      - ohpm unpublish (`ide-ohpm-unpublish`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-unpublish
+      - ohpm update (`ide-ohpm-update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-update
+      - ohpm root (`ide-ohpm-root`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-root
+      - ohpm version (`ide-ohpm-version`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-version
+      - ohpm cache clean (`ide-ohpm-cache`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-cache
+      - ohpm run (`ide-ohpm-run`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-run
+      - ohpm --version (`ide-ohpm--version`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm--version
+      - ohpm ping (`ide-ohpm-ping`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-ping
+      - ohpm clean (`ide-ohpm-clean`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-clean
+      - ohpm dist-tags (`ide-ohpm-dist-tags`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-dist-tags
+      - ohpm convert (`ide-ohpm-convert`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-convert
+    - 错误码 (`ide-ohpm-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-errorcode
+      - ohpm config错误码 (`ide-ohpm-config-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-config-errorcode
+      - ohpm info错误码 (`ide-ohpm-info-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-info-errorcode
+      - ohpm install错误码 (`ide-ohpm-install-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-install-errorcode
+      - ohpm list错误码 (`ide-ohpm-list-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-list-errorcode
+      - ohpm publish错误码 (`ide-ohpm-publish-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-publish-errorcode
+      - ohpm uninstall错误码 (`ide-ohpm-uninstall-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-uninstall-errorcode
+      - ohpm unpublish错误码 (`ide-ohpm-unpublish-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-unpublish-errorcode
+      - ohpm update错误码 (`ide-ohpm-update-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-update-errorcode
+      - ohpm version错误码 (`ide-ohpm-version-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-version-errorcode
+      - ohpm cache clean错误码 (`ide-ohpm-cache-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-cache-errorcode
+      - ohpm run错误码 (`ide-ohpm-run-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-run-errorcode
+      - ohpm ping错误码 (`ide-ohpm-ping-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-ping-errorcode
+      - ohpm clean错误码 (`ide-ohpm-clean-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-clean-errorcode
+      - ohpm dist-tags错误码 (`ide-ohpm-dist-tags-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-dist-tags-errorcode
+      - ohpm convert错误码 (`ide-ohpm-convert-errorcode`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-convert-errorcode
+      - ohpm命令公共错误码 (`ide-ohpm-errorcode-universal`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-errorcode-universal
+  - 搭建流水线 (`ide-command-line-building-app`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-command-line-building-app
+- 应用体验建议
+  - 体验建议概述 (`experience-suggestions-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-overview
+  - 应用基础功能和兼容性体验建议 (`experience-suggestions-compatibility`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-compatibility
+    - 概述 (`compatibility-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/compatibility-overview
+    - 系统特性与基础功能 (`system-features-functions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-features-functions
+      - 通用规格 (`general-specifications`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/general-specifications
+      - 应用规格 (`app-specifications`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-specifications
+      - 元服务规格 (`atomic-specifications`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/atomic-specifications
+      - 卡片规格 (`widget-specifications`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/widget-specifications
+      - 自由流转规格 (`distributed-capability-specification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-capability-specification
+      - 音频规格 (`audio-specification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification
+      - 显示规格 (`display-specification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-specification
+      - 协议规格 (`protocol-specification`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/protocol-specification
+    - 基础兼容性 (`basic-compatibility`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-compatibility
+      - OS兼容 (`os-compatible`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/os-compatible
+      - 升级兼容 (`upgrade-compatible`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/upgrade-compatible
+      - 设备兼容 (`device-compatible`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-compatible
+  - 应用稳定性体验建议 (`experience-suggestions-stability`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-stability
+  - 应用性能体验建议 (`performance-experience-suggestions`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-experience-suggestions
+    - 概述 (`performance-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-overview
+    - 时延 (`performance-delay`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay
+    - 帧率 (`performance-frame-rate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate
+    - 内容显示 (`performance-content-display`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-content-display
+    - 内存占用 (`performance-memory-usage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-memory-usage
+    - CPU占用 (`performance-cpu-usage`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-cpu-usage
+  - 应用功耗体验建议 (`app-power-experience-standards`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-power-experience-standards
+    - 概述 (`app-power-experience-standards-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-power-experience-standards-overview
+    - 后台场景 (`standard-background-power`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-power
+      - 后台任务使用 (`standard-background-task`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-task
+      - 后台硬件资源使用 (`standard-background-hardware`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-hardware
+      - 后台软件资源使用 (`standard-background-software`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-software
+    - 前台场景 (`standard-foreground-power`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-power
+      - 前台帧率 (`standard-foreground-frame-rate`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-frame-rate
+      - 前台绘制渲染 (`standard-foreground-render`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-render
+      - 前台资源使用 (`standard-foreground-resource`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-resource
+  - 应用安全隐私体验建议 (`security-privacy-experience-standards`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-privacy-experience-standards
+    - 概述 (`standard-security-privacy-overview`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-privacy-overview
+    - 安全 (`standard-security`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security
+      - 组件安全 (`standard-security-base`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-base
+      - WebView安全 (`standard-security-debug`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-debug
+      - 存储安全 (`standard-security-release`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-release
+      - 配置安全 (`standard-security-update`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-update
+      - 签名安全 (`standard-security-maintain`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-maintain
+      - 实现安全 (`standard-security-realize`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-realize
+    - 隐私 (`standard-privacy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy
+      - 通知 (`standard-privacy-policy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-policy
+      - 选择和同意 (`standard-privacy-user-consent`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-user-consent
+      - 收集 (`standard-privacy-collect-use`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-collect-use
+      - 数据主体访问 (`standard-privacy-permission`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-permission
+      - 向第三方披露 (`standard-privacy-ad-identifier`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-ad-identifier
+      - 隐私保护能力 (`standard-privacy-deregister`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-deregister
+    - 纯净 (`standard-pure`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure
+      - 恶意弹窗 (`standard-pure-notice`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-notice
+      - 隐藏误导 (`standard-pure-mislead`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-mislead
+      - 恶意霸屏 (`standard-pure-occupy`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-occupy
+      - 保活拉活 (`standard-pure-retain`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-retain
+      - 伪造篡改 (`standard-pure-tampering`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-tampering
+      - 其他 (`standard-pure-others`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-others
+  - 应用UX体验建议 (`experience-suggestions-ux`) - https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-ux
+
+## 统计
+- 节点总数: 5114
+- 叶子节点数: 4160
+- 最大层级深度: 9
+- 一级目录数: 20
